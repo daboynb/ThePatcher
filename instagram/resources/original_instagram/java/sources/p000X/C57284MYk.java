@@ -1,0 +1,7 @@
+package p000X;
+
+/* renamed from: X.MYk, reason: case insensitive filesystem */
+/* loaded from: classes10.dex */
+public final class C57284MYk {
+    public String A00 = null;
+}

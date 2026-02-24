@@ -1,0 +1,104 @@
+package p000X;
+
+import android.content.Context;
+import android.view.View;
+import android.view.ViewGroup;
+import android.view.ViewStub;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import com.facebook.shimmer.ShimmerFrameLayout;
+import com.instagram.avatars.coinflip.ProfileCoinFlipView;
+import com.instagram.common.ui.base.IgSimpleImageView;
+import com.instagram.common.ui.base.IgTextView;
+import com.instagram.common.ui.widget.imageview.IgImageView;
+import com.instagram.common.ui.widget.touchinterceptorlayout.TouchInterceptorFrameLayout;
+import com.instagram.user.follow.FollowButton;
+import kotlin.jvm.functions.Function0;
+import kotlin.jvm.functions.Function2;
+
+/* renamed from: X.KlB, reason: case insensitive filesystem */
+/* loaded from: classes6.dex */
+public final class C52923KlB {
+    public View A00;
+    public View A01;
+    public ViewStub A02;
+    public ShimmerFrameLayout A03;
+    public C8CH A04;
+    public Function0 A05;
+    public Function2 A06;
+    public boolean A07;
+    public final View A08;
+    public final ViewGroup A09;
+    public final ViewGroup A0A;
+    public final ViewGroup A0B;
+    public final ViewGroup A0C;
+    public final ViewGroup A0D;
+    public final ViewGroup A0E;
+    public final ViewStub A0F;
+    public final ConstraintLayout A0G;
+    public final ProfileCoinFlipView A0H;
+    public final IgSimpleImageView A0I;
+    public final IgSimpleImageView A0J;
+    public final IgTextView A0K;
+    public final IgImageView A0L;
+    public final TouchInterceptorFrameLayout A0M;
+    public final DialogC557524l A0N;
+    public final FollowButton A0O;
+
+    public C52923KlB(View view) {
+        D1F.A0y(view);
+        this.A08 = view;
+        View requireViewById = view.requireViewById(2131433248);
+        D1F.A0k(requireViewById);
+        this.A0G = (ConstraintLayout) requireViewById;
+        View requireViewById2 = view.requireViewById(2131433247);
+        D1F.A0k(requireViewById2);
+        IgImageView igImageView = (IgImageView) requireViewById2;
+        this.A0L = igImageView;
+        View findViewById = view.findViewById(2131433243);
+        D1F.A0k(findViewById);
+        this.A0A = (ViewGroup) findViewById;
+        View requireViewById3 = view.requireViewById(2131433242);
+        D1F.A0k(requireViewById3);
+        this.A0H = (ProfileCoinFlipView) requireViewById3;
+        View requireViewById4 = view.requireViewById(2131433244);
+        D1F.A0k(requireViewById4);
+        this.A0I = (IgSimpleImageView) requireViewById4;
+        this.A00 = igImageView;
+        this.A06 = new C55486LlQ(igImageView, 1);
+        this.A05 = new C42475Ggj(this, 54);
+        View requireViewById5 = view.requireViewById(2131433245);
+        D1F.A0k(requireViewById5);
+        this.A0C = (ViewGroup) requireViewById5;
+        View requireViewById6 = view.requireViewById(2131433246);
+        D1F.A0k(requireViewById6);
+        this.A0K = (IgTextView) requireViewById6;
+        View requireViewById7 = view.requireViewById(2131439728);
+        D1F.A0k(requireViewById7);
+        this.A0B = (ViewGroup) requireViewById7;
+        View requireViewById8 = view.requireViewById(2131428510);
+        D1F.A0k(requireViewById8);
+        this.A09 = (ViewGroup) requireViewById8;
+        View requireViewById9 = view.requireViewById(2131443890);
+        D1F.A0k(requireViewById9);
+        this.A0E = (ViewGroup) requireViewById9;
+        View requireViewById10 = view.requireViewById(2131444599);
+        D1F.A0k(requireViewById10);
+        this.A0M = (TouchInterceptorFrameLayout) requireViewById10;
+        View requireViewById11 = view.requireViewById(2131433249);
+        D1F.A0k(requireViewById11);
+        this.A0J = (IgSimpleImageView) requireViewById11;
+        View requireViewById12 = view.requireViewById(2131437806);
+        D1F.A0k(requireViewById12);
+        this.A0F = (ViewStub) requireViewById12;
+        this.A02 = (ViewStub) view.requireViewById(2131433116);
+        Context context = view.getContext();
+        D1F.A0k(context);
+        this.A0N = new DialogC557524l(context, true);
+        View requireViewById13 = view.requireViewById(2131439790);
+        D1F.A0k(requireViewById13);
+        this.A0D = (ViewGroup) requireViewById13;
+        View requireViewById14 = view.requireViewById(2131439789);
+        D1F.A0k(requireViewById14);
+        this.A0O = (FollowButton) requireViewById14;
+    }
+}

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="0x7f0b0ebf"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <com.google.android.material.chip.Chip
+        android:textAppearance="0x7f15002e"
+        android:textColor="0x7f06006b"
+        android:id="0x7f0b2a2f"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checkable="false"
+        app:NOT_FOUND_0xf="false"
+        app:NOT_FOUND_0x10="0x7f06006a"
+        app:NOT_FOUND_0x11="false"
+        app:NOT_FOUND_0x12="0dp"
+        app:NOT_FOUND_0x13="0x7f060790"
+        app:NOT_FOUND_0x14="false"
+        app:NOT_FOUND_0x15="false"/>
+    <com.whatsapp.areffects.button.VerticalSeekBar
+        android:id="0x7f0b2e5c"
+        android:paddingTop="0x7f0700a4"
+        android:paddingBottom="0x7f0700a4"
+        android:layout_width="wrap_content"
+        android:layout_height="0x7f0700a3"
+        android:progress="50"
+        android:progressDrawable="0x7f080186"
+        android:thumb="0x7f080187"
+        android:layout_centerHorizontal="true"
+        android:layoutDirection="ltr"
+        android:layout_toEndOf="0x7f0b2a2f"
+        android:splitTrack="false"/>
+</RelativeLayout>

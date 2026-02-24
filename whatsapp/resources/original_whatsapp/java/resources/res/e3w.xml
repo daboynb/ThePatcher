@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_pressed="true"
+        android:drawable="0x7f0809fd"/>
+    <item
+        android:state_selected="true"
+        android:drawable="0x7f0809fd"/>
+    <item
+        android:drawable="0x7f0809fd"
+        android:state_activated="true"/>
+    <item
+        android:state_pressed="false"
+        android:drawable="0x7f0809fc"/>
+    <item
+        android:state_selected="false"
+        android:drawable="0x7f0809fc"/>
+    <item
+        android:drawable="0x7f0809fc"
+        android:state_activated="false"/>
+</selector>

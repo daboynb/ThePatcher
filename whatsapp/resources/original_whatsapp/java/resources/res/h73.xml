@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ViewStub
+        android:id="0x7f0b0361"
+        android:layout="0x7f0e0de1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0x7f07102e"
+        android:layout_marginEnd="0x7f07102e"/>
+    <com.whatsapp.profile.ui.ProfileSettingsRowIconText
+        android:id="0x7f0b2194"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:NOT_FOUND_0x7="0x7f122fb4"
+        app:NOT_FOUND_0x8="0x7f0805f1"
+        app:NOT_FOUND_0x9="?unknown_attr_ref: 7f04079c"
+        app:NOT_FOUND_0xa="?unknown_attr_ref: 7f04079b"
+        app:NOT_FOUND_0xb="0x7f1229eb"
+        style="?unknown_attr_ref: 7f0407a6"/>
+    <com.whatsapp.profile.ui.ProfileSettingsRowIconText
+        android:id="0x7f0b219b"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:NOT_FOUND_0x8="0x7f08053b"
+        app:NOT_FOUND_0x9="?unknown_attr_ref: 7f04079c"
+        app:NOT_FOUND_0xa="?unknown_attr_ref: 7f04079b"
+        app:NOT_FOUND_0xb="0x7f1229e9"
+        style="?unknown_attr_ref: 7f0407a6"/>
+    <com.whatsapp.profile.ui.ProfileSettingsRowIconText
+        android:id="0x7f0b219c"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:NOT_FOUND_0x8="0x7f080afd"
+        app:NOT_FOUND_0x9="?unknown_attr_ref: 7f04079c"
+        app:NOT_FOUND_0xa="?unknown_attr_ref: 7f04079b"
+        app:NOT_FOUND_0xb="0x7f1241e2"
+        style="?unknown_attr_ref: 7f0407a6"/>
+    <com.whatsapp.profile.ui.ProfileSettingsRowIconText
+        android:id="0x7f0b21a1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:NOT_FOUND_0x8="0x7f080437"
+        app:NOT_FOUND_0x9="?unknown_attr_ref: 7f04079c"
+        app:NOT_FOUND_0xb="0x7f1229ed"
+        style="?unknown_attr_ref: 7f0407a6"/>
+    <com.whatsapp.profile.ui.ProfileSettingsRowIconText
+        android:id="0x7f0b2196"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:NOT_FOUND_0x8="0x7f08055c"
+        app:NOT_FOUND_0x9="?unknown_attr_ref: 7f04079c"
+        app:NOT_FOUND_0xa="?unknown_attr_ref: 7f04079b"
+        app:NOT_FOUND_0xb="0x7f1229ef"
+        style="?unknown_attr_ref: 7f0407a6"/>
+    <ViewStub
+        android:id="0x7f0b03ea"
+        android:layout="0x7f0e0dcd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</merge>

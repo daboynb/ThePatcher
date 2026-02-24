@@ -1,0 +1,122 @@
+.class public final LX/07U;
+.super Ljava/lang/Object;
+.source ""
+
+# interfaces
+.implements LX/Bkn;
+
+
+# static fields
+.field public static final A00:LX/07U;
+
+.field public static final A01:LX/DaA;
+
+.field public static final A02:LX/DaA;
+
+.field public static final A03:LX/DaA;
+
+.field public static final A04:LX/DaA;
+
+.field public static final synthetic A05:[LX/paw;
+
+
+# direct methods
+.method public static constructor <clinit>()V
+    .locals 10
+
+    const-string/jumbo v1, "shouldShowLandingScreen"
+
+    const-string/jumbo v0, "getShouldShowLandingScreen()Lcom/instagram/experiments/LandingExperimentParameter;"
+
+    const-class v3, LX/07U;
+
+    const/4 v9, 0x0
+
+    new-instance v8, LX/2qx;
+
+    invoke-direct {v8, v3, v1, v0, v9}, LX/2qx;-><init>(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;I)V
+
+    const-string/jumbo v1, "shouldUseXmdsRefactor"
+
+    const-string/jumbo v0, "getShouldUseXmdsRefactor()Lcom/instagram/experiments/LandingExperimentParameter;"
+
+    new-instance v7, LX/2qx;
+
+    invoke-direct {v7, v3, v1, v0, v9}, LX/2qx;-><init>(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;I)V
+
+    const/4 v6, 0x1
+
+    const-string/jumbo v1, "shouldShowLayeredDesign"
+
+    const-string/jumbo v0, "getShouldShowLayeredDesign()Lcom/instagram/experiments/LandingExperimentParameter;"
+
+    new-instance v5, LX/2qx;
+
+    invoke-direct {v5, v3, v1, v0, v9}, LX/2qx;-><init>(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;I)V
+
+    const/4 v4, 0x2
+
+    const-string/jumbo v2, "shouldShowLDFallback"
+
+    const-string/jumbo v1, "getShouldShowLDFallback()Lcom/instagram/experiments/LandingExperimentParameter;"
+
+    new-instance v0, LX/2qx;
+
+    invoke-direct {v0, v3, v2, v1, v9}, LX/2qx;-><init>(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;I)V
+
+    const/4 v3, 0x3
+
+    filled-new-array {v8, v7, v5, v0}, [LX/paw;
+
+    move-result-object v2
+
+    sput-object v2, LX/07U;->A05:[LX/paw;
+
+    new-instance v1, LX/07U;
+
+    invoke-direct {v1}, Ljava/lang/Object;-><init>()V
+
+    sput-object v1, LX/07U;->A00:LX/07U;
+
+    aget-object v0, v2, v9
+
+    invoke-static {v1, v0}, LX/06E;->A00(LX/Bkn;LX/paw;)LX/06G;
+
+    move-result-object v0
+
+    sput-object v0, LX/07U;->A02:LX/DaA;
+
+    aget-object v0, v2, v6
+
+    invoke-static {v1, v0}, LX/06E;->A00(LX/Bkn;LX/paw;)LX/06G;
+
+    move-result-object v0
+
+    sput-object v0, LX/07U;->A04:LX/DaA;
+
+    aget-object v0, v2, v4
+
+    invoke-static {v1, v0}, LX/06E;->A00(LX/Bkn;LX/paw;)LX/06G;
+
+    move-result-object v0
+
+    sput-object v0, LX/07U;->A03:LX/DaA;
+
+    aget-object v0, v2, v3
+
+    invoke-static {v1, v0}, LX/06E;->A00(LX/Bkn;LX/paw;)LX/06G;
+
+    move-result-object v0
+
+    sput-object v0, LX/07U;->A01:LX/DaA;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" android:opacity="opaque">
+    <item
+        android:gravity="bottom|center_horizontal"
+        android:bottom="20dp">
+        <bitmap
+            android:gravity="bottom|center_horizontal"
+            android:src="0x7f080a2b"/>
+    </item>
+</layer-list>

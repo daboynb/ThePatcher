@@ -1,0 +1,16 @@
+package p000X;
+
+import android.os.Bundle;
+import com.facebookpay.logging.FBPayLoggerData;
+
+/* loaded from: classes12.dex */
+public final class JDC extends E0I {
+    public AbstractC17890ht A00;
+    public FBPayLoggerData A01;
+    public InterfaceC83610Ybt A02;
+
+    @Override // p000X.E0I
+    public final void A0c(Bundle bundle) {
+        this.A01 = E0I.A00(bundle);
+    }
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:focusable="true"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="0x7f0b2501"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:NOT_FOUND_0x7="0"
+        app:NOT_FOUND_0x8="0"
+        app:NOT_FOUND_0xa="0">
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="0x7f0e12a8"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <ViewStub
+        android:id="0x7f0b24fd"
+        android:layout="0x7f0e12bd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:NOT_FOUND_0x6="0"
+        app:NOT_FOUND_0x7="0"
+        app:NOT_FOUND_0x8="0"
+        app:NOT_FOUND_0x9="0x7f0b2501"/>
+</merge>

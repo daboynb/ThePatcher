@@ -1,0 +1,92 @@
+{
+  "name": "Grid Expand",
+  "curve": "Linear None",
+  "type": "fixed-outro",
+  "duration": 2.0,
+  "passes": [
+    {
+      "name": "grid expand",
+      "inputs": [
+        "default"
+      ],
+      "glsl": "precision highp float;
+
+varying vec2 textureCoordinate;
+varying vec2 sourceTextureCoordinate;
+
+// default uniforms for all filters
+uniform float time;
+uniform float strength;
+uniform vec2 inputSize; // size of the original default input texture
+uniform vec2 tex0Size; // size of tex0 for this pass
+
+// default uniforms for transitions and video effects
+uniform float progress; // normalized 0-1
+
+// default uniforms for video effects
+uniform float duration; // in seconds
+uniform float clipDuration; // in seconds
+
+// effect uniforms
+void main() {
+
+vec2 uv = sourceTextureCoordinate;
+
+float s1 = step(1.0/4.0, progress);
+float s2 = step(2.0/4.0, progress);
+float s3 = step(3.0/4.0, progress);
+
+vec2 subD = vec2(1.0 + s2 + s3, 1.0 + s1 + s3);
+
+vec2 localUV = fract(uv * subD);
+
+float vertGrid = s1 - s2;
+localUV.y = mix(localUV.y, localUV.y * 0.5 + 0.25, vertGrid);
+
+
+  vec4 color = sampleInput(localUV);
+  gl_FragColor = toOutputFormat(color);
+}
+",
+"metal": "
+using namespace metal;
+struct fragmentIn { float2 sourceTextureCoordinate [[user(locn1)]]; };
+struct fragmentOut { float4 _gl_FragColor [[color(0)]]; };
+typedef struct {
+  float4x4 content_transform;
+  float4x4 texture_transform;
+  float strength;
+  float progress;
+  float time_sec;
+  float duration_sec;
+  float clip_duration_sec;
+  float2 output_size;
+  float2 input_size;
+  float2 tex0Size;
+ } Uniforms;
+fragment fragmentOut fragmentShader(fragmentIn in [[stage_in]],
+ constant Uniforms & uniforms [[buffer(1)]],
+ DefaultInputs defaultInputs) {
+
+float2 uv = in.sourceTextureCoordinate;
+
+float s1 = step(1.0/4.0, uniforms.progress);
+float s2 = step(2.0/4.0, uniforms.progress);
+float s3 = step(3.0/4.0, uniforms.progress);
+
+float2 subD = float2(1.0 + s2 + s3, 1.0 + s1 + s3);
+
+float2 localUV = fract(uv * subD);
+
+float vertGrid = s1 - s2;
+localUV.y = mix(localUV.y, localUV.y * 0.5 + 0.25, vertGrid);
+
+
+  float4 color = sampleInput(defaultInputs, localUV);
+  return {toOutputFormat(color)};
+}
+  ",
+    "uniforms": {}
+    }
+  ]
+}

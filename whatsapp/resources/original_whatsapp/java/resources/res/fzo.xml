@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.chip.Chip xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:textAppearance="0x7f1505a7"
+    android:id="0x7f0b0205"
+    android:focusable="true"
+    android:clickable="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:checkable="false"
+    app:NOT_FOUND_0x7="0x7f080c66"
+    app:NOT_FOUND_0x8="true"
+    style="0x7f1501d0"/>

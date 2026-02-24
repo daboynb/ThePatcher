@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.whatsapp.status.layouts.custom.LayoutGridView
+        android:id="0x7f0b16cb"
+        android:background="0x7f0807c1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0x7f070724"
+        app:NOT_FOUND_0x7="0"
+        app:NOT_FOUND_0xa="0"/>
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="0x7f0b21b6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:NOT_FOUND_0x6="0x7f0608bd"
+        app:NOT_FOUND_0x7="0"
+        app:NOT_FOUND_0x8="0"
+        app:NOT_FOUND_0x9="0"
+        app:NOT_FOUND_0xa="0"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

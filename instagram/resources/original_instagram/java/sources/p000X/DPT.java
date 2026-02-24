@@ -1,0 +1,25 @@
+package p000X;
+
+import java.util.List;
+
+/* loaded from: classes11.dex */
+public final class DPT extends C1A9 {
+    public String A00;
+    public List A01;
+
+    public final boolean equals(Object obj) {
+        if (this != obj) {
+            if (obj instanceof DPT) {
+                DPT dpt = (DPT) obj;
+                if (!D1F.areEqual(this.A01, dpt.A01) || !D1F.areEqual(this.A00, dpt.A00)) {
+                }
+            }
+            return false;
+        }
+        return true;
+    }
+
+    public final int hashCode() {
+        return AnonymousClass021.A0H(this.A00, AnonymousClass021.A08(this.A01));
+    }
+}

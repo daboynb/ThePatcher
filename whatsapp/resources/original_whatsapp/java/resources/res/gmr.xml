@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.whatsapp.conversation.ui.conversationrow.litho.UnifiedResponseLithoDateWrapperView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_vertical"
+    android:layout_gravity="bottom|right"
+    android:orientation="horizontal"
+    android:id="0x7f0b0c41"
+    android:paddingLeft="0x7f071031"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ViewStub
+        android:id="0x7f0b1c2d"
+        android:layout="0x7f0e0bdf"
+        android:inflatedId="0x7f0b1c2d"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:NOT_FOUND_0x9="true"/>
+    <ViewStub
+        android:id="0x7f0b25cb"
+        android:layout="0x7f0e0edd"
+        android:inflatedId="0x7f0b25cb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ViewStub
+        android:id="0x7f0b0c28"
+        android:layout="0x7f0e04b8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ViewStub
+        android:id="0x7f0b2fed"
+        android:layout="0x7f0e0584"
+        android:inflatedId="0x7f0b2fed"
+        android:layout_width="0x7f070f29"
+        android:layout_height="0x7f070f28"
+        app:NOT_FOUND_0x9="true"/>
+</com.whatsapp.conversation.ui.conversationrow.litho.UnifiedResponseLithoDateWrapperView>

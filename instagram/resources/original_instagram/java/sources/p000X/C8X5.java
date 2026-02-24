@@ -1,0 +1,117 @@
+package p000X;
+
+/* renamed from: X.8X5, reason: invalid class name */
+/* loaded from: classes6.dex */
+public abstract class C8X5 {
+    public static String A00(Integer num) {
+        switch (num.intValue()) {
+            case 0:
+                return "trace_type";
+            case 1:
+                return "message_id_debug";
+            case 2:
+                return "hash_igd_message_id";
+            case 3:
+                return "1tid_trace_id";
+            case 4:
+                return "end_point_reason";
+            case 5:
+                return "message_send_type";
+            case 6:
+                return "send_message_logging_type";
+            case 7:
+                return AnonymousClass020.A00(349);
+            case 8:
+                return "attachment_count";
+            case 9:
+                return "at";
+            case 10:
+                return "ac";
+            case 11:
+                return "visual_type";
+            case 12:
+                return "is_disappearing_mode";
+            case 13:
+                return "ephemeral_lifetime_ms";
+            case 14:
+                return "after_view_ephemeral_lifetime_ms";
+            case 15:
+                return AnonymousClass000.A00(758);
+            case 16:
+                return "thread_type";
+            case 17:
+                return "forward_thread_type";
+            case 18:
+                return "transport_type";
+            case 19:
+                return "direct_mutation_type";
+            case 20:
+                return "direct_mutation_type_str";
+            case 21:
+                return "direct_message_type_str";
+            case 22:
+                return "is_reshare";
+            case 23:
+                return "is_forwarded";
+            case 24:
+                return "is_e2ee";
+            case 25:
+                return AnonymousClass019.A00(567);
+            case 26:
+                return "dispatched_from_disk";
+            case 27:
+                return AnonymousClass020.A00(446);
+            case 28:
+                return "first_send";
+            case 29:
+                return "is_optional_e2ee";
+            case 30:
+                return "alive_disk_io_start_ms";
+            case 31:
+                return "alive_disk_io_trigger";
+            case 32:
+                return "disk_io_blocking_start_ms";
+            case 33:
+                return "disk_io_blocking_end_ms";
+            case 34:
+                return "disk_io_blocking_trigger";
+            case 35:
+                return "io_blocking_send_event_start_ms";
+            case 36:
+                return "io_blocking_send_mutation_start_ms";
+            case 37:
+                return "mutation_manager_network_connected";
+            case 38:
+                return "is_hva_user";
+            case 39:
+            default:
+                return AnonymousClass000.A00(1158);
+            case 40:
+                return "mutation_count_in_store_at_dispatch";
+            case 41:
+                return "mutation_count_in_queue_at_dispatch";
+            case 42:
+                return "prev_mutation_start_time_ms";
+            case 43:
+                return "prev_mutation_end_time_ms";
+            case 44:
+                return "prev_mutation_type";
+            case 45:
+                return "is_send_mutation_pending";
+            case 46:
+                return "cancel_send_mutations_reason";
+            case 47:
+                return "send_error_domain";
+            case 48:
+                return "send_error_code";
+            case 49:
+                return "send_server_error_code";
+            case 50:
+                return "send_error_message";
+            case 51:
+                return "is_http_fallback";
+            case 52:
+                return "is_meta_ai_thread";
+        }
+    }
+}

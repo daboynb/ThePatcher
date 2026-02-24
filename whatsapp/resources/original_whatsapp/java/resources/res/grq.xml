@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:contentDescription="0x7f1200b9">
+    <androidx.recyclerview.widget.RecyclerView
+        android:orientation="horizontal"
+        android:id="0x7f0b0b78"
+        android:clipToPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="0x7f071038"
+        android:paddingStart="0x7f07102e"
+        android:paddingEnd="0x7f07102e"
+        app:NOT_FOUND_0xa="LinearLayoutManager"/>
+</FrameLayout>

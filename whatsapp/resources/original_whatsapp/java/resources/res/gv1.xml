@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.whatsapp.ui.coreui.ListItemWithLeftIcon xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:NOT_FOUND_0x3="0x7f120b47"
+    app:NOT_FOUND_0x4="0x7f080c84"
+    app:NOT_FOUND_0x5="?unknown_attr_ref: 7f040a29"
+    app:NOT_FOUND_0x6="false"
+    app:NOT_FOUND_0x7="0x7f120b4a"/>

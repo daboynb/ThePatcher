@@ -1,0 +1,65 @@
+package p000X;
+
+import android.os.Parcel;
+import android.os.Parcelable;
+import org.json.JSONObject;
+
+/* renamed from: X.CvJ, reason: case insensitive filesystem */
+/* loaded from: classes6.dex */
+public final class C29030CvJ implements DVY {
+    public static final Parcelable.Creator CREATOR = new C27543CSa();
+    public final String A00;
+    public final String A01;
+    public final String A02;
+
+    @Override // android.os.Parcelable
+    public int describeContents() {
+        return 0;
+    }
+
+    public boolean equals(Object obj) {
+        if (this != obj) {
+            if (obj instanceof C29030CvJ) {
+                C29030CvJ c29030CvJ = (C29030CvJ) obj;
+                if (!C00C.areEqual(this.A02, c29030CvJ.A02) || !C00C.areEqual(this.A01, c29030CvJ.A01) || !C00C.areEqual(this.A00, c29030CvJ.A00)) {
+                }
+            }
+            return false;
+        }
+        return true;
+    }
+
+    @Override // android.os.Parcelable
+    public void writeToParcel(Parcel parcel, int i) {
+        C00C.A0A(parcel, 0);
+        parcel.writeString(this.A02);
+        parcel.writeString(this.A01);
+        parcel.writeString(this.A00);
+    }
+
+    @Override // p000X.DVY
+    public JSONObject CAw() {
+        return DJ1.A00(this, 19);
+    }
+
+    public int hashCode() {
+        return AbstractC34861ag.A03(this.A00, AbstractC34881ai.A04(this.A01, AbstractC34861ag.A02(this.A02)));
+    }
+
+    public C29030CvJ(String str, String str2, String str3) {
+        AbstractC34851af.A18(str, str2, str3);
+        this.A02 = str;
+        this.A01 = str2;
+        this.A00 = str3;
+    }
+
+    public String toString() {
+        StringBuilder A04 = AnonymousClass000.A04();
+        A04.append("InternalMetadata(paymentIdentifier=");
+        A04.append(this.A02);
+        A04.append(", encryptionKey=");
+        A04.append(this.A01);
+        A04.append(", configurationName=");
+        return AbstractC34911al.A0c(this.A00, A04);
+    }
+}

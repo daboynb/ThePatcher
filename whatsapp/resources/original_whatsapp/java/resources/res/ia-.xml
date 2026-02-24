@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.chip.Chip xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:textColor="?unknown_attr_ref: 7f040a2f"
+    android:id="0x7f0b2578"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="27dp"
+    app:NOT_FOUND_0x5="?unknown_attr_ref: 7f040756"
+    app:NOT_FOUND_0x6="0x7f060922"
+    app:NOT_FOUND_0x7="true"
+    app:NOT_FOUND_0x8="?unknown_attr_ref: 7f040a2f"/>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="0x7f0b23b7"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.whatsapp.ui.coreui.base.WaImageView
+        android:id="0x7f0b23c1"
+        android:background="?unknown_attr_ref: 7f04076e"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="0x7f070cee"
+        android:layout_marginBottom="0x7f070cea"
+        android:src="0x7f080d87"
+        android:layout_marginStart="0x7f070cea"
+        app:NOT_FOUND_0xe="0"
+        app:NOT_FOUND_0x10="0"/>
+    <com.whatsapp.ui.coreui.base.WaTextView
+        android:id="0x7f0b23f2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0x7f070ce4"
+        android:layout_marginBottom="0x7f070ce7"
+        android:text="0x7f121e15"
+        android:layout_marginStart="0x7f070ce5"
+        android:layout_marginEnd="0x7f070ce5"
+        app:NOT_FOUND_0xc="0x7f0b23f1"
+        app:NOT_FOUND_0xd="0"
+        app:NOT_FOUND_0xe="0"
+        app:NOT_FOUND_0xf="0x7f0b23c1"
+        style="0x7f150712"/>
+    <com.whatsapp.ui.coreui.base.WaTextView
+        android:id="0x7f0b23f1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0x7f07066b"
+        android:text="0x7f121e14"
+        android:layout_marginStart="0x7f070ce5"
+        android:layout_marginEnd="0x7f070ce5"
+        app:NOT_FOUND_0xc="0x7f0b23ef"
+        app:NOT_FOUND_0xd="0"
+        app:NOT_FOUND_0xe="0"
+        style="0x7f15070f"/>
+    <com.whatsapp.ui.wds.components.button.WDSButton
+        android:id="0x7f0b23ef"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0x7f07103a"
+        android:layout_marginBottom="0x7f07103a"
+        android:text="0x7f1232e9"
+        android:layout_marginStart="0x7f07102e"
+        android:layout_marginEnd="0x7f07102e"
+        app:NOT_FOUND_0xa="7"
+        app:NOT_FOUND_0xb="0"
+        app:NOT_FOUND_0xe="0"
+        style="0x7f150711"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

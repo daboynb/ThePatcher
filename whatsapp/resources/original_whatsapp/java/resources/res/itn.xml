@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="0x7f0b0ad8"
+        android:background="0x7f08027a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true">
+        <ViewStub
+            android:id="0x7f0b21b7"
+            android:layout="0x7f0e0350"
+            android:inflatedId="0x7f0b21b7"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            app:NOT_FOUND_0x11="0"
+            app:NOT_FOUND_0x12="0"
+            app:NOT_FOUND_0x15="0"/>
+        <ViewStub
+            android:id="0x7f0b0771"
+            android:layout="0x7f0e031b"
+            android:inflatedId="0x7f0b0771"
+            android:layout_width="32dp"
+            android:layout_height="wrap_content"
+            app:NOT_FOUND_0x11="0"
+            app:NOT_FOUND_0x12="0"
+            app:NOT_FOUND_0x15="0"/>
+        <com.whatsapp.ui.coreui.base.WaTextView
+            android:textSize="0x7f070fbc"
+            android:textColor="?unknown_attr_ref: 7f04026b"
+            android:ellipsize="none"
+            android:gravity="center"
+            android:id="0x7f0b0ad5"
+            android:background="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:singleLine="true"
+            android:drawablePadding="4dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="10dp"
+            android:stateListAnimator="@null"
+            app:NOT_FOUND_0x10="0x7f0804b4"
+            app:NOT_FOUND_0x11="0"
+            app:NOT_FOUND_0x12="0"
+            app:NOT_FOUND_0x14="0"
+            app:NOT_FOUND_0x15="0"
+            app:NOT_FOUND_0x16="14"/>
+        <com.whatsapp.ui.coreui.base.WaTextView
+            android:textColor="?unknown_attr_ref: 7f04026b"
+            android:id="0x7f0b191a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="0x7f07043b"
+            android:paddingEnd="0x7f07043c"
+            app:NOT_FOUND_0x11="0"
+            app:NOT_FOUND_0x13="0x7f0b0771"
+            app:NOT_FOUND_0x14="0"
+            app:NOT_FOUND_0x15="0"
+            style="0x7f1501ad"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</merge>

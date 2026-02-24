@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="0x7f0708ae">
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_gravity="center_vertical"
+        android:id="0x7f0b1ff5"
+        android:clipToPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="0x7f070cec"
+        android:paddingEnd="0x7f070cec"/>
+</FrameLayout>

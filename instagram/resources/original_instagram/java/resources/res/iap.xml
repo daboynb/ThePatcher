@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" android:opacity="opaque">
+    <item>
+        <color android:color="0x7f0602b0"/>
+    </item>
+    <item android:bottom="112dp">
+        <bitmap
+            android:gravity="center"
+            android:src="0x7f081f6c"/>
+    </item>
+    <item android:bottom="80dp">
+        <bitmap
+            android:gravity="bottom"
+            android:src="0x7f081d25"/>
+    </item>
+</layer-list>

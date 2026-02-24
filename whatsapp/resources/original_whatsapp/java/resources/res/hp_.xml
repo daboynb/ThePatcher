@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="0x7f0b24fa"
+    android:layout_width="match_parent"
+    android:layout_height="0x7f07034a">
+    <com.whatsapp.ui.wds.components.profilephoto.WDSProfilePhoto
+        android:id="0x7f0b1fe4"
+        android:layout_width="0x7f070334"
+        android:layout_height="0x7f070334"
+        android:layout_marginTop="0x7f07103a"
+        android:layout_marginBottom="0x7f07103a"
+        android:layout_marginStart="0x7f07102e"
+        app:NOT_FOUND_0xc="0"
+        app:NOT_FOUND_0xd="0"
+        app:NOT_FOUND_0xe="2"/>
+    <com.whatsapp.ui.coreui.base.TextEmojiLabel
+        android:id="0x7f0b1b8e"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0x7f07103a"
+        android:layout_marginBottom="0x7f07103a"
+        android:layout_marginStart="0x7f07103a"
+        app:NOT_FOUND_0x9="0"
+        app:NOT_FOUND_0xb="0x7f0b1fe4"
+        app:NOT_FOUND_0xd="0"
+        style="0x7f150289"/>
+    <com.whatsapp.ui.wds.components.button.WDSButton
+        android:id="0x7f0b1603"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0x7f07103a"
+        android:layout_marginBottom="0x7f07103a"
+        android:text="0x7f121a0d"
+        app:NOT_FOUND_0x7="0"
+        app:NOT_FOUND_0x9="0"
+        app:NOT_FOUND_0xa="0"
+        app:NOT_FOUND_0xd="0"
+        app:NOT_FOUND_0xf="3"
+        app:NOT_FOUND_0x10="normal"/>
+    <com.whatsapp.ui.wds.components.divider.WDSDivider
+        android:id="0x7f0b0da2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:NOT_FOUND_0x8="1"
+        app:NOT_FOUND_0x9="0"
+        app:NOT_FOUND_0xc="0x7f0b1b8e"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

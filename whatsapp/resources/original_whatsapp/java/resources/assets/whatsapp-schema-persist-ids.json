@@ -1,0 +1,24 @@
+{
+  "_signature": "// @generated SignedSource<<19aa957699acad663e7c06434143f09b>> created by incremental-persist.py",
+  "data": {
+    "DeleteImagineMeOnboarding": "8726914694003146",
+    "GetImagineMeOnboarded": "7464954973630740",
+    "GetTextStatus": "6681894428597832",
+    "GetTextStatusList": "7313153618713617",
+    "NewsletterKotlinExample": "9702143139802327",
+    "NotificationIntegrityChallengeRequest": "25744739065197696",
+    "PaymentsIsAccountRecoverable": "25749315524737279",
+    "SetWamoUserIdVersion": "25457378233907275",
+    "UpdateTextStatus": "6679986965420430",
+    "UpiOnboardingSendOtpMutation": "9750189185067185",
+    "UpiOnboardingVerifyOtpQuery": "29721450344166819",
+    "WamoAfsAgeCollection": "25258424133767546",
+    "WamoAsfStateChangeNotification": "31680321571581438",
+    "WamoAssetCollection": "8821483957952305",
+    "WamoFetchAdhocNoticeById": "30861095643534901",
+    "WamoFetchIdentityToken": "30108688435441269",
+    "WamoSubGetComplianceInfo": "9133707526723587",
+    "WamoUserIdVersion": "7527285483991164"
+  },
+  "version": 1
+}

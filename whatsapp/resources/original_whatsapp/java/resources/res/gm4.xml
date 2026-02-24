@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:id="0x7f0b1829"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="30dp">
+        <ViewStub
+            android:id="0x7f0b0b27"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:NOT_FOUND_0x11="true"/>
+        <include layout="0x7f0e054e"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.whatsapp.ui.coreui.base.WaImageView
+                android:layout_gravity="top"
+                android:id="0x7f0b1ded"
+                android:padding="0x7f071035"
+                android:layout_width="0x7f070fdf"
+                android:layout_height="0x7f070fdf"
+                android:layout_marginLeft="0x7f071039"
+                android:layout_marginTop="0x7f071039"
+                android:layout_marginRight="0x7f071030"
+                android:layout_marginBottom="0x7f071039"
+                app:NOT_FOUND_0x10="0x7f08053b"
+                app:NOT_FOUND_0x12="0x7f0608de"/>
+            <view
+                android:layout_gravity="left"
+                android:paddingBottom="0x7f071035"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                class="com.whatsapp.ui.coreui.components.TextAndDateLayout">
+                <com.whatsapp.ui.coreui.base.TextEmojiLabel
+                    android:textAppearance="?unknown_attr_ref: 7f0409f6"
+                    android:textColor="?unknown_attr_ref: 7f040a46"
+                    android:textColorHighlight="?unknown_attr_ref: 7f040955"
+                    android:layout_gravity="top|left"
+                    android:id="0x7f0b1dee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0x7f071039"
+                    android:layout_marginRight="0x7f071039"
+                    android:layout_marginBottom="0x7f071039"/>
+                <include layout="0x7f0e04ba"/>
+            </view>
+        </LinearLayout>
+    </LinearLayout>
+</merge>

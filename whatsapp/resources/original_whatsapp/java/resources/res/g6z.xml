@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.whatsapp.ui.coreui.InfoCard xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="0x7f0b1345"
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:NOT_FOUND_0xf="?unknown_attr_ref: 7f040a59"
+    style="0x7f150256">
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="0x7f080272"
+        android:padding="0x7f0706a4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.whatsapp.ui.coreui.base.WaImageView
+            android:id="0x7f0b0bb8"
+            android:layout_width="0x7f070cf4"
+            android:layout_height="0x7f070cf4"
+            android:scaleType="fitCenter"
+            app:NOT_FOUND_0x10="0x7f080b50"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0x7f0706a4"
+            android:layout_weight="1"
+            android:layout_marginStart="0x7f0706a4">
+            <com.whatsapp.ui.coreui.base.TextEmojiLabel
+                android:textSize="0x7f070fb0"
+                android:textColor="?unknown_attr_ref: 7f04066e"
+                android:id="0x7f0b0bbb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0x7f12179d"/>
+            <com.whatsapp.ui.coreui.base.WaTextView
+                android:textColor="?unknown_attr_ref: 7f040a46"
+                android:id="0x7f0b0bb7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0x7f12179c"
+                app:NOT_FOUND_0x11="6"/>
+        </LinearLayout>
+    </LinearLayout>
+</com.whatsapp.ui.coreui.InfoCard>

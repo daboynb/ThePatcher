@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.whatsapp.ui.coreui.text.FinalBackspaceAwareEntry xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textSize="0x7f070fb0"
+    android:layout_gravity="center_vertical"
+    android:id="0x7f0b259a"
+    android:background="@null"
+    android:layout_width="wrap_content"
+    android:layout_height="0x7f070c4a"
+    android:minWidth="0x7f070c33"
+    android:maxLines="1"
+    android:layout_weight="1"/>

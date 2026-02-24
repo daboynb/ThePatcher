@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:id="0x7f0b12c3"
+    android:paddingLeft="0dp"
+    android:paddingTop="0x7f07102f"
+    android:paddingRight="0dp"
+    android:paddingBottom="0x7f07021d"
+    android:visibility="gone"
+    android:clipChildren="false"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.whatsapp.ui.coreui.base.WaImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:NOT_FOUND_0x12="0x7f080647"
+        app:NOT_FOUND_0x13="?unknown_attr_ref: 7f040a4f"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:visibility="visible"
+        android:clipChildren="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.whatsapp.ui.coreui.base.WaTextView
+            android:textSize="0x7f070fb6"
+            android:textStyle="bold"
+            android:textColor="?unknown_attr_ref: 7f040086"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0x7f070609"
+            android:layout_marginRight="0x7f071034"
+            android:layout_marginBottom="0dp"
+            android:text="0x7f121660"/>
+        <com.whatsapp.ui.coreui.base.WaTextView
+            android:textSize="0x7f070fb6"
+            android:id="0x7f0b12c2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0x7f070609"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="0x7f071034"
+            android:layout_marginBottom="0dp"
+            app:NOT_FOUND_0x14="6"/>
+    </LinearLayout>
+</LinearLayout>

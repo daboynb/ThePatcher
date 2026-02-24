@@ -1,0 +1,23 @@
+package p000X;
+
+import com.google.common.collect.ImmutableList;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Iterator;
+
+/* renamed from: X.J2v, reason: case insensitive filesystem */
+/* loaded from: classes15.dex */
+public abstract class AbstractC48823J2v extends AnonymousClass251 {
+    public static ImmutableList A00(C42R c42r) {
+        ImmutableList CIV = c42r.CIV(-683992599);
+        if (CIV == null) {
+            return null;
+        }
+        ArrayList A0c = AnonymousClass011.A0c(CIV);
+        Iterator<E> it = CIV.iterator();
+        while (it.hasNext()) {
+            A0c.add(new IWD(null, AnonymousClass011.A07(it)));
+        }
+        return ImmutableList.copyOf((Collection) A0c);
+    }
+}

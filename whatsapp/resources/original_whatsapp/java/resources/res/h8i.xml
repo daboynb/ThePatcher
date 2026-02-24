@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="0x7f0b0760"
+    android:background="?unknown_attr_ref: 7f040a2d"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:importantForAccessibility="no">
+    <FrameLayout
+        android:id="0x7f0b0741"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:importantForAccessibility="no">
+        <FrameLayout
+            android:id="0x7f0b0767"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:importantForAccessibility="no"/>
+        <com.whatsapp.ptv.SelfieCameraPlaceholder
+            android:id="0x7f0b075f"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:importantForAccessibility="no"/>
+        <FrameLayout
+            android:id="0x7f0b075d"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:importantForAccessibility="no"/>
+        <FrameLayout
+            android:id="0x7f0b2115"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:importantForAccessibility="yes"/>
+    </FrameLayout>
+    <ViewStub
+        android:layout_gravity="center"
+        android:id="0x7f0b204f"
+        android:layout="0x7f0e0d2a"
+        android:inflatedId="0x7f0b204f"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:importantForAccessibility="no"/>
+</FrameLayout>

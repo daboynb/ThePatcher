@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingTop="0x7f070cea"
+    android:paddingRight="0x7f070cea"
+    android:paddingBottom="0x7f070ce7"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingEnd="0x7f070cea">
+    <com.whatsapp.ui.coreui.base.WaTextView
+        android:layout_gravity="center_vertical"
+        android:id="0x7f0b2b22"
+        android:paddingLeft="0x7f070cea"
+        android:paddingRight="0x7f070cea"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:NOT_FOUND_0xf="0x7f0608c1"
+        style="?unknown_attr_ref: 7f0408d4"/>
+    <com.whatsapp.ui.wds.components.button.WDSButton
+        android:layout_gravity="center_vertical"
+        android:id="0x7f0b0176"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="0x7f07102b"
+        android:text="0x7f120199"
+        app:NOT_FOUND_0xe="6"
+        app:NOT_FOUND_0x10="0x7f080ae7"
+        app:NOT_FOUND_0x11="1"
+        app:NOT_FOUND_0x12="small"/>
+</LinearLayout>

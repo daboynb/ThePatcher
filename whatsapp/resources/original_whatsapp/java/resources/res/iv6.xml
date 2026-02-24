@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.whatsapp.ui.coreui.base.WaImageView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:whatsapp="http://schemas.android.com/apk/res-auto"
+    android:gravity="left"
+    android:paddingLeft="0x7f0703d2"
+    android:paddingRight="0x7f0703d2"
+    android:paddingBottom="0x7f071035"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:tint="0x7f0608de"
+    whatsapp:NOT_FOUND_0x7="0x7f080c6d"
+    style="?unknown_attr_ref: 7f0404e0"/>

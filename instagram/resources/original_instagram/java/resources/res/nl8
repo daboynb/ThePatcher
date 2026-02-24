@@ -1,0 +1,1 @@
+console.log(`[PostPayPalButtonClick.js] PostPayPalButtonClick.js injected into ${window.location.href}`),window.postMessage({event_name:"IABPaypalSmartButtonSyntheticClick"});

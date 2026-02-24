@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.whatsapp.ui.coreui.InfoCard xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="0x7f0b17a0"
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="0x7f150256">
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="?unknown_attr_ref: 7f040a59"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="68dp">
+        <FrameLayout
+            android:paddingLeft="0x7f0706a4"
+            style="0x7f150218">
+            <com.whatsapp.ui.coreui.base.WaTextView
+                android:id="0x7f0b1918"
+                android:text="0x7f120d16"
+                style="0x7f15021b"/>
+        </FrameLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:paddingLeft="0x7f0706a4"
+            android:paddingTop="10dp"
+            android:paddingBottom="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.whatsapp.ui.coreui.base.WaTextView
+                android:textSize="17sp"
+                android:textColor="?unknown_attr_ref: 7f040a47"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:id="0x7f0b17a7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+            <com.whatsapp.ui.coreui.base.WaImageView
+                android:layout_gravity="center"
+                android:id="0x7f0b17b0"
+                android:paddingLeft="0x7f07102f"
+                android:paddingRight="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:NOT_FOUND_0x11="0x7f08053f"
+                app:NOT_FOUND_0x12="0x7f060347"/>
+        </LinearLayout>
+    </LinearLayout>
+</com.whatsapp.ui.coreui.InfoCard>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingLeft="0x7f07021b"
+        android:paddingTop="0x7f07102e"
+        android:paddingRight="0x7f07021b"
+        android:paddingBottom="0x7f07021e"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0x7f07021c"
+            android:layout_marginRight="0x7f07021c">
+            <ProgressBar
+                android:layout_gravity="center"
+                android:id="0x7f0b1275"
+                android:visibility="visible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0x7f07021d"
+                android:indeterminate="true"
+                android:indeterminateOnly="true"
+                android:indeterminateTint="?unknown_attr_ref: 7f040a29"
+                android:indeterminateTintMode="src_atop"
+                style="?android:attr/progressBarStyleLarge"/>
+            <com.whatsapp.ui.coreui.base.WaTextView
+                android:textSize="18sp"
+                android:textColor="?unknown_attr_ref: 7f040a46"
+                android:layout_gravity="center"
+                android:id="0x7f0b1276"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="?unknown_attr_ref: 7f0403b6"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+    </LinearLayout>
+</ScrollView>

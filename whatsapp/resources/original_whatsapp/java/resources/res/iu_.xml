@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout
+        android:id="0x7f0b2a01"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:importantForAccessibility="no"
+        app:NOT_FOUND_0x16="0x7f0b2b26"
+        app:NOT_FOUND_0x1a="0"
+        app:NOT_FOUND_0x1b="0x7f0b2b26">
+        <com.whatsapp.ui.coreui.base.WaImageView
+            android:layout_gravity="center"
+            android:id="0x7f0b2a03"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="0x7f07103a"
+            android:layout_marginTop="0x7f07103a"
+            android:layout_marginRight="3dp"
+            android:layout_marginBottom="0x7f07103a"
+            android:importantForAccessibility="no"
+            app:NOT_FOUND_0x1c="0x7f080541"
+            app:NOT_FOUND_0x1d="0x7f060906"/>
+    </FrameLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:id="0x7f0b2b26"
+        android:paddingTop="0x7f071031"
+        android:paddingBottom="0x7f071031"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:importantForAccessibility="no"
+        android:layout_marginStart="0x7f07102e"
+        android:layout_marginEnd="0x7f07103a"
+        app:NOT_FOUND_0x16="0"
+        app:NOT_FOUND_0x18="0x7f0b29ff"
+        app:NOT_FOUND_0x19="0x7f0b2a01"
+        app:NOT_FOUND_0x1b="0">
+        <com.whatsapp.ui.coreui.base.WaTextView
+            android:textColor="?unknown_attr_ref: 7f040a46"
+            android:id="0x7f0b2a06"
+            android:focusable="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:importantForAccessibility="no"
+            style="0x7f1503fb"/>
+    </LinearLayout>
+    <com.whatsapp.ui.coreui.base.WaImageButton
+        android:id="0x7f0b29ff"
+        android:background="?unknown_attr_ref: 7f04076e"
+        android:padding="10dp"
+        android:visibility="visible"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:tint="0x7f060347"
+        android:contentDescription="0x7f1204a8"
+        android:importantForAccessibility="yes"
+        android:layout_marginEnd="0x7f07103a"
+        app:NOT_FOUND_0x16="0"
+        app:NOT_FOUND_0x17="0"
+        app:NOT_FOUND_0x1b="0"
+        app:NOT_FOUND_0x1c="0x7f080b18"/>
+</merge>

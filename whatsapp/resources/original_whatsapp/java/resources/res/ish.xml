@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="0x7f0b2e11"
+    android:paddingTop="0x7f07103a"
+    android:paddingBottom="0x7f07103a"
+    android:scrollbars="none"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.google.android.material.chip.ChipGroup
+        android:id="0x7f0b2e14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingEnd="0x7f07103a"
+        app:NOT_FOUND_0x7="true"
+        app:NOT_FOUND_0x8="true"
+        app:NOT_FOUND_0x9="true"/>
+</HorizontalScrollView>

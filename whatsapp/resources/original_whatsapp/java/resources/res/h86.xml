@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.whatsapp.ui.coreui.CircularProgressBar xmlns:android="http://schemas.android.com/apk/res/android" xmlns:whatsapp="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:id="0x7f0b2247"
+    android:paddingTop="0x7f0704c9"
+    android:paddingBottom="0x7f0704c9"
+    android:layout_width="0x7f0704ca"
+    android:layout_height="0x7f070450"
+    android:indeterminate="true"
+    android:paddingStart="0x7f0704c8"
+    android:paddingEnd="0x7f0704c8"
+    whatsapp:NOT_FOUND_0x9="0x7f060790"
+    whatsapp:NOT_FOUND_0xa="?unknown_attr_ref: 7f040a29"
+    whatsapp:NOT_FOUND_0xb="0"
+    whatsapp:NOT_FOUND_0xc="0"
+    whatsapp:NOT_FOUND_0xd="0"
+    style="?android:attr/progressBarStyle"/>

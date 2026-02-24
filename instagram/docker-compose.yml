@@ -1,0 +1,6 @@
+services:
+  patcher:
+    build: .
+    volumes:
+      - ./:/data
+    command: -p /data/Instagram.apk -o /data/PatchedInstagram.apk -t /tmp/instagram-temp

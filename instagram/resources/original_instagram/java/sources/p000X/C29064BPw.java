@@ -1,0 +1,14 @@
+package p000X;
+
+import android.widget.LinearLayout;
+import com.instagram.common.ui.base.IgSimpleImageView;
+import com.instagram.common.ui.base.IgTextView;
+
+/* renamed from: X.BPw, reason: case insensitive filesystem */
+/* loaded from: classes10.dex */
+public final class C29064BPw extends AbstractC190587Xa {
+    public LinearLayout A00;
+    public IgSimpleImageView A01;
+    public IgTextView A02;
+    public IgTextView A03;
+}

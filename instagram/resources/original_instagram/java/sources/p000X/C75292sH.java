@@ -1,0 +1,6 @@
+package p000X;
+
+/* renamed from: X.2sH, reason: invalid class name and case insensitive filesystem */
+/* loaded from: classes2.dex */
+public final class C75292sH extends C71126Rs8 {
+}

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="90dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="0x7f070b62">
+    <RelativeLayout
+        android:id="0x7f0b218a"
+        android:layout_width="0x7f070e70"
+        android:layout_height="0x7f070e70"
+        android:layout_marginLeft="0x7f070b5d"
+        android:layout_marginRight="0x7f070b5d"
+        android:layout_marginStart="0x7f070b5d"
+        android:layout_marginEnd="0x7f070b5d"
+        app:NOT_FOUND_0x16="0x7f0b0448"
+        app:NOT_FOUND_0x17="0"
+        app:NOT_FOUND_0x18="0"
+        app:NOT_FOUND_0x19="0"
+        app:NOT_FOUND_0x1a="0"
+        app:NOT_FOUND_0x1b="1">
+        <com.whatsapp.ui.coreui.components.button.ThumbnailButton
+            android:layout_gravity="center"
+            android:id="0x7f0b2188"
+            android:layout_width="0x7f070b1c"
+            android:layout_height="0x7f070b1c"
+            app:NOT_FOUND_0x1d="0x7f070cc5"/>
+        <com.whatsapp.ui.coreui.base.WaImageView
+            android:id="0x7f0b2189"
+            android:background="0x7f0801cd"
+            android:padding="3dp"
+            android:visibility="visible"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            app:NOT_FOUND_0x1c="0x7f0806cf"/>
+    </RelativeLayout>
+    <com.whatsapp.ui.coreui.base.WaTextView
+        android:textSize="0x7f070fbc"
+        android:gravity="center_horizontal"
+        android:id="0x7f0b0448"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0x7f070b60"
+        android:maxLines="2"
+        android:singleLine="false"
+        android:inputType="textNoSuggestions"
+        android:textAlignment="center"
+        app:NOT_FOUND_0x14="?unknown_attr_ref: 7f0403b6"
+        app:NOT_FOUND_0x15="0"
+        app:NOT_FOUND_0x17="0"
+        app:NOT_FOUND_0x19="0"
+        app:NOT_FOUND_0x1e="8"
+        style="0x7f150289"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

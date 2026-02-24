@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.whatsapp.ui.coreui.base.TextEmojiLabel
+        android:enabled="true"
+        android:textColor="?unknown_attr_ref: 7f040a45"
+        android:id="0x7f0b1d81"
+        android:background="0x7f0809dd"
+        android:layout_width="match_parent"
+        style="0x7f1501c7"/>
+</merge>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="0x7f0b055c"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <View
+        android:id="0x7f0b055d"
+        android:background="?unknown_attr_ref: 7f0400d2"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:theme="0x7f1504ae"
+        android:id="0x7f0b055b"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layoutDirection="ltr"
+        style="0x7f1505c9"/>
+</LinearLayout>

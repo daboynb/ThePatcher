@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:drawable="0x7f082a45"
+        app:state_blue="true"
+        app:state_disabled_blue="false"/>
+    <item
+        android:drawable="0x7f082a48"
+        app:state_blue="true"
+        app:state_disabled_blue="true"/>
+    <item
+        android:drawable="0x7f082c74"
+        app:state_disabled_blue="false"
+        app:state_grey="true"/>
+    <item
+        android:drawable="0x7f0600a8"
+        app:state_blue="false"
+        app:state_disabled_blue="false"
+        app:state_grey="false"/>
+</selector>

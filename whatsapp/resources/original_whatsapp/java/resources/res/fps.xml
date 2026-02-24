@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="0x7f0b097a"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="0x7f0709e9"
+    android:layout_marginTop="0x7f0709ea"
+    android:layout_marginRight="0x7f0709e9"
+    app:NOT_FOUND_0x14="true"
+    app:NOT_FOUND_0x15="0x7f0b0961"
+    app:NOT_FOUND_0x16="0"
+    app:NOT_FOUND_0x17="0"
+    app:NOT_FOUND_0x18="0x7f0b1461">
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="0x7f0b1b97"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="0x7f123dc2"
+        android:importantForAccessibility="yes"
+        android:labelFor="0x7f0b134e"
+        app:NOT_FOUND_0x13="0x7f15040d">
+        <com.whatsapp.ui.coreui.WaEditText
+            android:textSize="0x7f070fb0"
+            android:textColorHint="?unknown_attr_ref: 7f040a46"
+            android:id="0x7f0b134e"
+            android:background="0x7f0808e0"
+            android:paddingRight="0x7f070456"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:lines="1"
+            android:singleLine="true"
+            android:inputType="textCapWords"
+            android:imeOptions="flagNoExtractUi"
+            android:contentDescription="0x7f123dc2"/>
+    </com.google.android.material.textfield.TextInputLayout>
+</RelativeLayout>

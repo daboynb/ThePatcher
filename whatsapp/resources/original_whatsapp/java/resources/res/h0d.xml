@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?unknown_attr_ref: 7f04000d">
+        <com.whatsapp.ui.coreui.base.WaImageButton
+            android:layout_gravity="center_vertical"
+            android:id="0x7f0b039c"
+            android:visibility="visible"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:contentDescription="0x7f123d62"
+            app:NOT_FOUND_0x1b="0x7f0803f3"
+            app:NOT_FOUND_0x1c="0x7f0602b3"
+            style="?unknown_attr_ref: 7f040015"/>
+        <com.whatsapp.ui.coreui.base.WaTextView
+            android:textSize="0x7f070fb0"
+            android:textColor="?unknown_attr_ref: 7f040a47"
+            android:gravity="center_horizontal"
+            android:id="0x7f0b2b22"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="0x7f1224c7"
+            android:layout_weight="1"
+            app:NOT_FOUND_0x1a="?unknown_attr_ref: 7f0403b8"
+            app:NOT_FOUND_0x1d="5"/>
+        <com.whatsapp.ui.coreui.base.WaImageView
+            android:layout_gravity="center_vertical"
+            android:id="0x7f0b146d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_marginEnd="16dp"
+            app:NOT_FOUND_0x1b="0x7f0804d5"
+            app:NOT_FOUND_0x1c="0x7f0602b3"/>
+    </LinearLayout>
+    <com.whatsapp.ui.coreui.BottomSheetListView
+        android:id="0x7f0b1aad"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:listSelector="@android:color/transparent"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@null"
+        android:choiceMode="none"
+        android:headerDividersEnabled="false"
+        android:footerDividersEnabled="false"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="0x7f0b0195"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <FrameLayout
+        android:id="0x7f0b11f1"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

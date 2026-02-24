@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:height="0x7f070044"
+        android:width="0x7f070044">
+        <shape android:shape="rectangle">
+            <solid android:color="0x7f0600a7"/>
+            <corners android:radius="0x7f07012e"/>
+            <stroke
+                android:width="0x7f07003a"
+                android:color="?unknown_attr_ref: 7f040806"/>
+        </shape>
+    </item>
+    <item
+        android:gravity="center"
+        android:height="0x7f070013"
+        android:width="0x7f070013"
+        android:drawable="0x7f082707"/>
+</layer-list>

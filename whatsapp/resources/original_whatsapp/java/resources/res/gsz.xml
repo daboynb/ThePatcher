@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="fill_vertical|left"
+    android:layout_gravity="bottom|center_horizontal"
+    android:orientation="vertical"
+    android:id="0x7f0b2c14"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+        android:orientation="vertical"
+        android:id="0x7f0b078d"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="0x7f070d49"
+        app:NOT_FOUND_0xe="0x7f060915"
+        app:NOT_FOUND_0xf="0x7f070d47">
+        <com.whatsapp.ui.coreui.base.WaTextView
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="0x7f070fb6"
+            android:textColor="?unknown_attr_ref: 7f040a2f"
+            android:layout_gravity="bottom"
+            android:id="0x7f0b2c15"
+            android:paddingLeft="0x7f070d48"
+            android:paddingTop="0x7f070d4a"
+            android:paddingRight="0x7f070d48"
+            android:paddingBottom="0x7f070d4a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:NOT_FOUND_0x10="6"/>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

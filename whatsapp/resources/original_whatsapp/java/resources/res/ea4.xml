@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:ordering="together">
+    <objectAnimator
+        android:duration="500"
+        android:startOffset="500"
+        android:valueFrom="1"
+        android:valueTo="0.45"
+        android:valueType="floatType"
+        android:propertyName="fillAlpha"/>
+    <objectAnimator
+        android:duration="500"
+        android:startOffset="1000"
+        android:valueFrom="0.45"
+        android:valueTo="1"
+        android:valueType="floatType"
+        android:propertyName="fillAlpha"/>
+</set>

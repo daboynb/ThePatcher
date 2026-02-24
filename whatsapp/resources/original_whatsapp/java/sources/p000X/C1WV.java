@@ -1,0 +1,12 @@
+package p000X;
+
+/* renamed from: X.1WV, reason: invalid class name */
+/* loaded from: classes.dex */
+public class C1WV implements InterfaceC07120Nj {
+    public final C06170Jp A00 = (C06170Jp) C00H.A02(722);
+
+    @Override // p000X.InterfaceC07120Nj
+    public String getName() {
+        throw C37208Gi7.createAndThrow();
+    }
+}

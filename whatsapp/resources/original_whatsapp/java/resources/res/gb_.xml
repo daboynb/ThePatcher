@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.whatsapp.ui.coreui.ListItemWithLeftIcon
+        android:id="0x7f0b2ec0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:NOT_FOUND_0x4="0x7f080573"
+        app:NOT_FOUND_0x7="0x7f1238ba"
+        app:NOT_FOUND_0x8="0x7f060776"
+        app:NOT_FOUND_0x9="0x7f070fb0"/>
+    <com.whatsapp.ui.coreui.ListItemWithLeftIcon
+        android:id="0x7f0b0b83"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:NOT_FOUND_0x4="0x7f080491"
+        app:NOT_FOUND_0x6="false"
+        app:NOT_FOUND_0x7="0x7f120e50"
+        app:NOT_FOUND_0x8="0x7f060776"
+        app:NOT_FOUND_0x9="0x7f070fb0"/>
+    <com.whatsapp.ui.coreui.ListItemWithLeftIcon
+        android:id="0x7f0b23c2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:NOT_FOUND_0x4="0x7f0806a6"
+        app:NOT_FOUND_0x5="?unknown_attr_ref: 7f040a4f"
+        app:NOT_FOUND_0x6="false"
+        app:NOT_FOUND_0x7="0x7f124203"
+        app:NOT_FOUND_0x8="?unknown_attr_ref: 7f040a4f"
+        app:NOT_FOUND_0x9="0x7f070fb0"/>
+    <com.whatsapp.ui.coreui.ListItemWithLeftIcon
+        android:id="0x7f0b0caf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:NOT_FOUND_0x4="0x7f0804a1"
+        app:NOT_FOUND_0x5="?unknown_attr_ref: 7f040a4f"
+        app:NOT_FOUND_0x7="0x7f123ded"
+        app:NOT_FOUND_0x8="?unknown_attr_ref: 7f040a4f"
+        app:NOT_FOUND_0x9="0x7f070fb0"/>
+</LinearLayout>

@@ -1,0 +1,151 @@
+[Filter GradientTransformFilter]
+
+[Init]
+fun init(Filter filter) {
+  filter.passes = {{
+    name = 'pass0, inputs = {'default},
+    uniforms = {
+      strength = 1.0,
+      u_bottomColor = {0.0, 0.0, 0.0, 0.0},
+      u_topColor = {0.0, 0.0, 0.0, 0.0},
+      u_cropRect = {0.0, 0.0, 1.0, 1.0},
+      u_isGainmapEnabled = false,
+      u_isInputSamplingDisabled = false,
+      u_inputWidth = 0.0,
+      u_inputHeight = 0.0,
+      u_cornerRadius = 0.0
+    },
+    glslShader = glsl, metalShader = metal
+  }};
+}
+
+[PreRender]
+fun preRender(Filter filter) {
+  boolean useGainMap = getParameterBoolean('u_isGainmapEnabled);
+  setShaderUniform('pass0, 'u_isGainmapEnabled, useGainMap);
+
+  boolean disableSampling = getParameterBoolean('u_isInputSamplingDisabled);
+  setShaderUniform('pass0, 'u_isInputSamplingDisabled, disableSampling);
+}
+
+string glsl = "
+  varying vec2 textureCoordinate;
+  varying vec2 sourceTextureCoordinate;
+
+  BaseUniformsOpenGL;
+
+  uniform vec4 u_bottomColor;
+  uniform vec4 u_topColor;
+  uniform vec4 u_cropRect;
+  uniform bool u_isGainmapEnabled;
+  uniform bool u_isInputSamplingDisabled;
+  uniform float u_inputWidth;
+  uniform float u_inputHeight;
+  uniform float u_cornerRadius;
+
+  float roundedBox(vec2 p, vec2 b, float r) {
+    return length(max(abs(p) - b + r, 0.0)) - (r - 0.5);
+  }
+
+  void main(void) {
+    vec4 fbColor;
+    if (!u_isInputSamplingDisabled) {
+      fbColor = sampleInput(sourceTextureCoordinate);
+    } else {
+      fbColor = vec4(0.0, 0.0, 0.0, 1.0);
+    }
+    if (u_isGainmapEnabled) {
+      fbColor.a = 1.0 - fbColor.a;
+    }
+    float blendFactor = textureCoordinate.y;
+    vec4 bgColor = vec4(mix(u_bottomColor, u_topColor, blendFactor));
+
+    if (u_cornerRadius == 0.0) {
+      vec2 inside;
+      if (u_isInputSamplingDisabled) {
+        gl_FragColor = toOutputFormat(bgColor);
+      } else {
+        inside = (sourceTextureCoordinate.xy - u_cropRect.xy) *
+                 (u_cropRect.zw - sourceTextureCoordinate.xy);
+        inside = step(vec2(0.0), inside);
+        gl_FragColor =
+            toOutputFormat(mix(fbColor, mix(bgColor, fbColor, inside.x * inside.y), strength));
+      }
+    } else {
+      vec2 size = vec2(u_inputWidth, u_inputHeight);
+      vec2 p = abs(sourceTextureCoordinate - 0.5) * size;
+      vec2 b = vec2(0.5, 0.5) * size;
+      float factor = roundedBox(p, b, u_cornerRadius);
+      gl_FragColor = mix(fbColor, bgColor, smoothstep(0.0, 1.0, factor));
+    }
+  }
+";
+
+string metal = "
+  struct fragmentOut { float4 _gl_FragColor [[color(0)]]; };
+
+  struct fragmentIn {
+    float2 textureCoordinate [[user(locn0)]];
+    float2 sourceTextureCoordinate [[user(locn1)]];
+  };
+
+  typedef struct {
+    float4x4 content_transform;
+    float4x4 texture_transform;
+    float strength;
+    float4 u_bottomColor;
+    float4 u_topColor;
+    float4 u_cropRect;
+    bool u_isGainmapEnabled;
+    bool u_isInputSamplingDisabled;
+    float u_inputWidth;
+    float u_inputHeight;
+    float u_cornerRadius;
+  } Uniforms;
+
+  float roundedBox(float2 p, float2 b, float r) {
+    return length(max(abs(p) - b + r, 0.0)) - (r - 0.5);
+  }
+
+  fragment fragmentOut fragmentShader(fragmentIn in [[stage_in]],
+                                      constant Uniforms & uniforms [[buffer(1)]],
+                                      DefaultInputs defaultInputs) {
+
+    float2 textureCoordinate = in.textureCoordinate;
+    float2 sourceTextureCoordinate = in.sourceTextureCoordinate;
+
+    float4 fbColor;
+    if (!uniforms.u_isInputSamplingDisabled) {
+      fbColor = sampleInput(defaultInputs, sourceTextureCoordinate);
+    } else {
+      fbColor = float4(0.0, 0.0, 0.0, 1.0);
+    }
+    if (uniforms.u_isGainmapEnabled) {
+      fbColor.a = 1.0 - fbColor.a;
+    }
+    float blendFactor = textureCoordinate.y;
+    float4 bgColor = mix(uniforms.u_bottomColor, uniforms.u_topColor, blendFactor);
+
+    fragmentOut out = {};
+
+    if (uniforms.u_cornerRadius == 0.0) {
+      float2 inside;
+      if (uniforms.u_isInputSamplingDisabled) {
+        out._gl_FragColor = toOutputFormat(bgColor);
+      } else {
+        inside = (sourceTextureCoordinate.xy - uniforms.u_cropRect.xy) *
+                 (uniforms.u_cropRect.zw - sourceTextureCoordinate.xy);
+        inside = step(float2(0.0), inside);
+        out._gl_FragColor = toOutputFormat(mix(fbColor, mix(bgColor, fbColor, inside.x * inside.y), uniforms.strength));
+      }
+    } else {
+      float2 size = float2(uniforms.u_inputWidth, uniforms.u_inputHeight);
+      float2 p = abs(sourceTextureCoordinate - 0.5) * size;
+      float2 b = float2(0.5, 0.5) * size;
+      float factor = roundedBox(p, b, uniforms.u_cornerRadius);
+      out._gl_FragColor = toOutputFormat(mix(fbColor, bgColor, smoothstep(0.0, 1.0, factor)));
+    }
+
+    return out;
+  }
+";

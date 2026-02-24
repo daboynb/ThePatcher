@@ -1,0 +1,42 @@
+.class public abstract Lcom/meta/wearable/comms/calling/hera/engine/base/Engine;
+.super Ljava/lang/Object;
+.source ""
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public abstract attachEnhancer(Lcom/meta/wearable/comms/calling/hera/engine/base/EngineEnhancer;)V
+.end method
+
+.method public abstract dispatchBlocking(Lcom/meta/wearable/comms/calling/hera/engine/base/Any;)V
+.end method
+
+.method public abstract getStateBlocking()Lcom/meta/wearable/comms/calling/hera/engine/base/EngineState;
+.end method
+
+.method public abstract init()V
+.end method
+
+.method public abstract prepare()V
+.end method
+
+.method public abstract registerModule(Lcom/meta/wearable/comms/calling/hera/engine/base/ModuleInterface;)V
+.end method
+
+.method public abstract reset()V
+.end method
+
+.method public abstract subscribe(Lcom/meta/wearable/comms/calling/hera/engine/base/EngineSubscriber;)B
+.end method
+
+.method public abstract unsubscribe(B)V
+.end method

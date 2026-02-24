@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="0x7f0b1fbd"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_gravity="top"
+            android:orientation="vertical"
+            android:paddingLeft="0x7f07064c"
+            android:paddingTop="45dp"
+            android:paddingRight="0x7f07064c"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.whatsapp.ui.coreui.base.WaImageView
+                android:layout_gravity="center"
+                android:background="0x7f080334"
+                android:padding="28dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:NOT_FOUND_0xf="0x7f08056f"
+                app:NOT_FOUND_0x10="?unknown_attr_ref: 7f040a4b"/>
+            <com.whatsapp.ui.coreui.base.WaTextView
+                android:textSize="0x7f070fb6"
+                android:gravity="center"
+                android:paddingTop="45dp"
+                android:paddingBottom="36dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0x7f1227a5"
+                app:NOT_FOUND_0x11="6"
+                style="0x7f1503c7"/>
+            <com.whatsapp.ui.wds.components.button.WDSButton
+                android:layout_gravity="center"
+                android:id="0x7f0b0683"
+                android:layout_marginBottom="0x7f07102f"
+                android:text="0x7f1227d7"
+                style="0x7f150555"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</FrameLayout>

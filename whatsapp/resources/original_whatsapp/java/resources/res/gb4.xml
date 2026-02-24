@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:layout_gravity="center"
+        android:id="0x7f0b21a7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="0x7f080236"/>
+    <com.whatsapp.ui.wds.components.profilephoto.WDSProfilePhoto
+        android:layout_gravity="center"
+        android:id="0x7f0b303c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="0x7f070cec"
+        android:layout_marginTop="0x7f070cea"
+        android:src="0x7f08066d"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:contentDescription="0x7f1241e1"
+        android:transitionName="0x7f1242e3"
+        app:NOT_FOUND_0xb="6"/>
+</merge>

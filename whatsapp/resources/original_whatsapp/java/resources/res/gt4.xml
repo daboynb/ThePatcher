@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="0x7f0b3083"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="0x7f070126"
+    android:layout_marginBottom="0x7f070125">
+    <com.whatsapp.ui.wds.components.list.header.WDSSectionHeader
+        android:id="0x7f0b3081"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0x7f070c93"
+        android:layout_marginRight="0x7f070c93"
+        app:NOT_FOUND_0xe="0x7f123df4"/>
+    <RadioGroup
+        android:id="0x7f0b3082"
+        android:paddingLeft="0x7f070c90"
+        android:paddingRight="0x7f070c93"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:importantForAccessibility="yes">
+        <RadioButton
+            android:theme="?unknown_attr_ref: 7f04079e"
+            android:id="0x7f0b1074"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0x7f1241da"/>
+        <RadioButton
+            android:theme="?unknown_attr_ref: 7f04079e"
+            android:id="0x7f0b1b7e"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0x7f1241d9"/>
+    </RadioGroup>
+    <com.whatsapp.ui.wds.components.list.footer.WDSSectionFooter
+        android:id="0x7f0b3080"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0x7f070c93"
+        android:layout_marginRight="0x7f070c93"
+        app:NOT_FOUND_0xd="0x7f123df3"/>
+</LinearLayout>

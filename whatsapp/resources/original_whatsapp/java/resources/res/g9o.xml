@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="0x7f0b0ec6"
+    android:paddingBottom="0x7f070cea"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <include
+        android:id="0x7f0b0ec9"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="0x7f0e107e"/>
+    <com.whatsapp.metaai.ui.imaginev2.effects.EditActionsView
+        android:id="0x7f0b0ec8"
+        android:paddingLeft="0x7f070cea"
+        android:paddingTop="0x7f070ce7"
+        android:paddingRight="0x7f070cea"
+        android:paddingBottom="0x7f070ce7"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</FrameLayout>

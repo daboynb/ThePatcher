@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.whatsapp.ui.wds.components.internal.WDSCheckedTextView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:ellipsize="marquee"
+    android:gravity="center"
+    android:id="@android:id/text1"
+    android:paddingLeft="0x7f07002b"
+    android:paddingRight="?unknown_attr_ref: 7f0402cc"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="?unknown_attr_ref: 7f0404f2"
+    android:drawablePadding="0x7f070f32"
+    android:textAlignment="viewStart"
+    android:paddingStart="0x7f07002b"
+    android:paddingEnd="?unknown_attr_ref: 7f0402cc"
+    app:NOT_FOUND_0xc="?android:attr/listChoiceIndicatorMultiple"
+    app:NOT_FOUND_0xd="?android:attr/listChoiceIndicatorMultiple"/>

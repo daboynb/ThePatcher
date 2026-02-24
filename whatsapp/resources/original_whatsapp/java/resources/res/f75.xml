@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.facebook.shimmer.ShimmerFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="1">
+    <com.whatsapp.ui.coreui.base.WaImageView
+        android:id="0x7f0b2170"
+        android:background="?unknown_attr_ref: 7f040a33"
+        android:layout_width="match_parent"
+        android:layout_height="0x7f0704aa"
+        android:scaleType="centerCrop"/>
+    <com.whatsapp.ui.coreui.base.WaImageView
+        android:layout_gravity="center"
+        android:id="0x7f0b216d"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:NOT_FOUND_0x8="0x7f08042c"
+        app:NOT_FOUND_0x9="?unknown_attr_ref: 7f040a48"/>
+</com.facebook.shimmer.ShimmerFrameLayout>

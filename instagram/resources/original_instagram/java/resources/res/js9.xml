@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.instagram.common.ui.base.IgFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="0x7f0b3615"
+    android:background="?unknown_attr_ref: 7f040357"
+    android:layout_width="match_parent"
+    android:layout_height="0x7f070009">
+    <com.instagram.common.ui.base.IgTextView
+        android:textColor="?unknown_attr_ref: 7f0407c1"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="0x7f0b3614"
+        android:layout_width="match_parent"
+        android:layout_height="0x7f070009"
+        android:maxLines="1"
+        android:includeFontPadding="false"
+        android:lineSpacingMultiplier="1"
+        android:layout_marginStart="0x7f07001d"
+        android:layout_marginEnd="0x7f07001d"
+        android:autoSizeTextType="uniform"
+        android:autoSizePresetSizes="0x7f030019"/>
+</com.instagram.common.ui.base.IgFrameLayout>

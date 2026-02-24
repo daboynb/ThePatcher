@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:id="0x7f0b1705"
+        android:background="0x7f0809dd"
+        android:paddingLeft="16dp"
+        android:paddingTop="0x7f071034"
+        android:paddingRight="16dp"
+        android:paddingBottom="0x7f071034"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.whatsapp.ui.coreui.components.button.ThumbnailButton
+            android:enabled="false"
+            android:id="0x7f0b1461"
+            android:layout_width="0x7f0706fa"
+            android:layout_height="0x7f0706fa"
+            android:scaleType="fitCenter"
+            app:NOT_FOUND_0x12="0x7f0706f9"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <com.whatsapp.ui.coreui.base.WaTextView
+                android:textAppearance="0x7f1505a5"
+                android:textColor="?unknown_attr_ref: 7f040a47"
+                android:gravity="left"
+                android:id="0x7f0b1b8e"
+                android:paddingLeft="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="false"
+                app:NOT_FOUND_0x13="5"
+                style="0x7f150285"/>
+            <com.whatsapp.ui.coreui.base.WaTextView
+                android:textColor="?unknown_attr_ref: 7f040a45"
+                android:gravity="left"
+                android:id="0x7f0b1700"
+                android:paddingLeft="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="false"
+                app:NOT_FOUND_0x13="6"
+                style="0x7f1505a6"/>
+        </LinearLayout>
+    </LinearLayout>
+    <ViewStub
+        android:id="0x7f0b220e"
+        android:layout="0x7f0e0807"
+        android:inflatedId="0x7f0b220d"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

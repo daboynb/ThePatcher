@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false">
+        <ViewStub
+            android:id="0x7f0b1461"
+            android:layout="0x7f0e003a"
+            android:layout_width="0x7f070fdd"
+            android:layout_height="0x7f070fdd"
+            android:layout_margin="0x7f070ce9"
+            android:layout_weight="0"/>
+        <LinearLayout
+            android:gravity="start"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <com.whatsapp.ui.coreui.base.WaTextView
+                android:textColor="?unknown_attr_ref: 7f040a2f"
+                android:id="0x7f0b2be5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="4"
+                app:NOT_FOUND_0xc="9"
+                style="0x7f1505a9"/>
+            <ViewStub
+                android:id="0x7f0b2a70"
+                android:layout="0x7f0e003d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <ViewStub
+            android:id="0x7f0b2b33"
+            android:layout="0x7f0e0036"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:layout_marginStart="0x7f07102e"/>
+        <ViewStub
+            android:id="0x7f0b1466"
+            android:layout="0x7f0e003b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:layout_marginStart="0x7f070ce9"/>
+    </LinearLayout>
+</merge>

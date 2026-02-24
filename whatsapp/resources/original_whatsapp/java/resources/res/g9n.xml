@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.whatsapp.ui.coreui.base.WaTextView
+        android:textColor="0x7f060902"
+        android:id="0x7f0b14cd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0x7f1218f4"
+        app:NOT_FOUND_0x8="0"
+        app:NOT_FOUND_0x9="0"
+        app:NOT_FOUND_0xa="0"
+        app:NOT_FOUND_0xb="0"
+        app:NOT_FOUND_0xe="7"
+        style="0x7f1505a7"/>
+    <com.whatsapp.ui.wds.components.button.WDSButton
+        android:id="0x7f0b0e9e"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0x7f070cea"
+        android:text="0x7f1218f9"
+        app:NOT_FOUND_0x6="2"
+        app:NOT_FOUND_0x7="0x7f060907"
+        app:NOT_FOUND_0x8="0"
+        app:NOT_FOUND_0x9="0"
+        app:NOT_FOUND_0xa="0"
+        app:NOT_FOUND_0xc="1"
+        app:NOT_FOUND_0xd="large"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

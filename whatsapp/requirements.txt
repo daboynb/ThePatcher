@@ -1,0 +1,4 @@
+androguard @ git+https://github.com/androguard/androguard.git
+lxml~=5.3.1
+cryptography~=44.0.2
+requests~=2.32.3

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="?unknown_attr_ref: 7f04042f"/>
+        </shape>
+    </item>
+    <item
+        android:left="6dp"
+        android:top="6dp"
+        android:right="6dp"
+        android:bottom="6dp">
+        <bitmap
+            android:src="0x7f082193"
+            android:tint="?unknown_attr_ref: 7f0407e5"/>
+    </item>
+</layer-list>

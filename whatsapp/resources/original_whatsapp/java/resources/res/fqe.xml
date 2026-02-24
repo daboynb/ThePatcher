@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.textfield.TextInputLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="start|top"
+    android:id="0x7f0b1561"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="0x7f07102e"
+    android:layout_marginBottom="0x7f071039"
+    android:importantForAccessibility="yes"
+    android:layout_marginStart="0x7f07102e"
+    android:layout_marginEnd="0x7f07102e"
+    android:labelFor="0x7f0b155d"
+    android:importantForAutofill="no"
+    app:NOT_FOUND_0xe="0x7f071039"
+    app:NOT_FOUND_0xf="0x7f071039"
+    app:NOT_FOUND_0x10="0x7f071039"
+    app:NOT_FOUND_0x11="0x7f071039"
+    app:NOT_FOUND_0x12="true"
+    app:NOT_FOUND_0x13="2"
+    app:NOT_FOUND_0x14="0x7f1505be"
+    style="0x7f1501ce">
+    <com.whatsapp.ui.coreui.WaEditText
+        android:textColor="?unknown_attr_ref: 7f04066e"
+        android:gravity="start|top"
+        android:id="0x7f0b155d"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:inputType="textMultiLine"/>
+</com.google.android.material.textfield.TextInputLayout>

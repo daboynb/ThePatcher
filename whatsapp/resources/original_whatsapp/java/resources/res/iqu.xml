@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.recyclerview.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="0x7f0b2d5d"
+    android:visibility="gone"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    app:NOT_FOUND_0x4="androidx.recyclerview.widget.LinearLayoutManager"/>

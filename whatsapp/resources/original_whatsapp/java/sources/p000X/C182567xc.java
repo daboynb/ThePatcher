@@ -1,0 +1,16 @@
+package p000X;
+
+/* renamed from: X.7xc, reason: invalid class name and case insensitive filesystem */
+/* loaded from: classes4.dex */
+public final class C182567xc extends AbstractC033004y implements InterfaceC023900h {
+    public static final C182567xc A00 = new C182567xc();
+
+    public C182567xc() {
+        super(0);
+    }
+
+    @Override // p000X.InterfaceC023900h
+    public /* bridge */ /* synthetic */ Object invoke() {
+        return CML.A00("M28.1139 43.5863L30.7439 48.8963C33.4939 54.4363 37.6339 58.9563 42.6839 61.8963L47.5039 64.7063C49.1839 65.6863 49.1839 68.3763 47.5039 69.4863L42.6539 72.5563C37.5839 75.7563 33.4039 80.5163 30.6039 86.1963L27.9339 91.6363C26.9939 93.5363 24.5839 93.6163 23.6339 91.7663L21.0039 86.4563C18.2539 80.9163 14.1139 76.3963 9.06395 73.4663L4.24395 70.6563C2.56395 69.6763 2.56395 66.9863 4.24395 65.8763L9.09395 62.8063C14.1639 59.6063 18.3439 54.8463 21.1439 49.1663L23.8039 43.7263C24.7439 41.8263 27.1539 41.7563 28.1039 43.5963L28.1139 43.5863Z");
+    }
+}

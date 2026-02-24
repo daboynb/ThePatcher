@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="0x7f080365"
+    android:layout_width="0x7f0705d1"
+    android:layout_height="0x7f0705d1"
+    android:layout_margin="0x7f070dda">
+    <com.whatsapp.ui.coreui.base.WaTextView
+        android:textColor="0x7f0602c9"
+        android:layout_gravity="center"
+        android:id="0x7f0b11d2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aa"
+        app:NOT_FOUND_0x8="6"/>
+</FrameLayout>

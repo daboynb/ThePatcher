@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:background="?unknown_attr_ref: 7f040a59"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.whatsapp.payments.common.ui.widget.PaymentDescriptionRow
+        android:id="0x7f0b1eb2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+    <com.whatsapp.ui.coreui.base.WaImageView
+        android:layout_gravity="center"
+        android:id="0x7f0b108b"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:contentDescription="0x7f12249e"
+        app:NOT_FOUND_0xa="0x7f080276"/>
+</LinearLayout>

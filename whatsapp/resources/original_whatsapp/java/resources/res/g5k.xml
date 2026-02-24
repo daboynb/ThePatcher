@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="0x7f080a6f"
+    android:padding="0x7f070f40"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="0x7f071030">
+    <com.whatsapp.ui.coreui.base.WaImageView
+        android:id="0x7f0b1295"
+        android:layout_width="0x7f070fe7"
+        android:layout_height="0x7f070fe7"
+        android:layout_margin="0x7f070107"
+        android:tint="0x7f0608de"
+        app:NOT_FOUND_0xe="0"
+        app:NOT_FOUND_0x13="0"
+        app:NOT_FOUND_0x16="0x7f080b70"/>
+    <com.whatsapp.ui.coreui.base.WaTextView
+        android:textStyle="bold"
+        android:textColor="?unknown_attr_ref: 7f04066e"
+        android:id="0x7f0b1297"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="0x7f121685"
+        android:layout_marginStart="0x7f070f3f"
+        android:letterSpacing="0.025"
+        app:NOT_FOUND_0xf="0x7f0b1296"
+        app:NOT_FOUND_0x12="0x7f0b1295"
+        app:NOT_FOUND_0x15="0"
+        style="0x7f1503fa"/>
+    <com.whatsapp.ui.coreui.base.WaTextView
+        android:id="0x7f0b1296"
+        android:focusable="true"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="0x7f121684"
+        android:layout_marginStart="0x7f070f3f"
+        app:NOT_FOUND_0xe="0"
+        app:NOT_FOUND_0x11="0x7f0b1294"
+        app:NOT_FOUND_0x12="0x7f0b1295"
+        app:NOT_FOUND_0x14="0x7f0b1297"
+        style="0x7f1503fb"/>
+    <com.whatsapp.ui.coreui.base.WaImageButton
+        android:id="0x7f0b1294"
+        android:background="?unknown_attr_ref: 7f04076e"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tint="0x7f0608de"
+        android:contentDescription="0x7f121683"
+        app:NOT_FOUND_0x10="0"
+        app:NOT_FOUND_0x15="0"
+        app:NOT_FOUND_0x16="0x7f08047d"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

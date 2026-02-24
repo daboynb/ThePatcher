@@ -1,0 +1,102 @@
+package p000X;
+
+import java.util.List;
+
+/* renamed from: X.4C9, reason: invalid class name */
+/* loaded from: classes5.dex */
+public abstract class C4C9 {
+    public static final List A00;
+    public static final List A01;
+    public static final List A02;
+    public static final List A03;
+    public static final C6AV A04;
+    public static final C6AV A05;
+    public static final C6AV A06;
+    public static final C6AW A07;
+    public static final C6AW A08;
+    public static final C6AW A09;
+    public static final C6AW A0A;
+    public static final C6AW A0B;
+    public static final C6AW A0C;
+    public static final C6AW A0D;
+    public static final C6AW A0E;
+    public static final C6AW A0F;
+    public static final C6AW A0G;
+    public static final C6AW A0H;
+    public static final C6AW A0I;
+    public static final C6AW A0J;
+    public static final C6AW A0K;
+    public static final C6AW A0L;
+    public static final C6AW A0M;
+    public static final C6AW A0N;
+    public static final C6AW A0O;
+    public static final C6AW A0P;
+    public static final C6AW A0Q;
+    public static final C6AW A0R;
+
+    static {
+        C6AV c6av = new C6AV("user_values", "name='active_session_info'", new String[]{"name", "value"});
+        A04 = c6av;
+        C6AV c6av2 = new C6AV("user_values", "name='saved_session_info'", new String[]{"name", "value"});
+        A06 = c6av2;
+        C6AV c6av3 = new C6AV("user_values", "name='all_session_info'", new String[]{"name", "value"});
+        A05 = c6av3;
+        C6AP c6ap = C6AP.A03;
+        C104873yt c104873yt = AbstractC198287lA.A0j;
+        C6AW c6aw = new C6AW(c104873yt, "content://com.facebook.katana.liteprovider.FirstPartyUserValuesLiteProvider/user_values", "com.facebook.katana", c6av, c6ap);
+        A0E = c6aw;
+        C6AP c6ap2 = C6AP.A04;
+        C6AW c6aw2 = new C6AW(c104873yt, "content://com.facebook.wakizashi.liteprovider.FirstPartyUserValuesLiteProvider/user_values", "com.facebook.wakizashi", c6av, c6ap2);
+        A0B = c6aw2;
+        C6AW c6aw3 = new C6AW(c104873yt, "content://com.facebook.katana.liteprovider.FirstPartyUserValuesLiteProvider/user_values", "com.facebook.katana", c6av2, c6ap);
+        A0G = c6aw3;
+        C6AW c6aw4 = new C6AW(c104873yt, "content://com.facebook.wakizashi.liteprovider.FirstPartyUserValuesLiteProvider/user_values", "com.facebook.wakizashi", c6av2, c6ap2);
+        A0D = c6aw4;
+        C6AW c6aw5 = new C6AW(c104873yt, "content://com.facebook.katana.liteprovider.FirstPartyUserValuesLiteProvider/user_values", "com.facebook.katana", c6av3, c6ap);
+        A0F = c6aw5;
+        C6AW c6aw6 = new C6AW(c104873yt, "content://com.facebook.wakizashi.liteprovider.FirstPartyUserValuesLiteProvider/user_values", "com.facebook.wakizashi", c6av3, c6ap2);
+        A0C = c6aw6;
+        C6AP c6ap3 = C6AP.A0B;
+        C6AW c6aw7 = new C6AW(c104873yt, "content://com.facebook.orca.liteprovider.FamilyAppsUserValuesLiteProvider/user_values", "com.facebook.orca", c6av, c6ap3);
+        A0M = c6aw7;
+        C6AP c6ap4 = C6AP.A0C;
+        C6AW c6aw8 = new C6AW(c104873yt, "content://com.facebook.orca.liteprovider.FamilyAppsUserValuesLiteProvider/user_values", "com.facebook.orca", c6av, c6ap4);
+        A0N = c6aw8;
+        C6AW c6aw9 = new C6AW(c104873yt, "content://com.facebook.orca.liteprovider.FamilyAppsUserValuesLiteProvider/user_values", "com.facebook.orca", c6av2, c6ap3);
+        A0Q = c6aw9;
+        C6AW c6aw10 = new C6AW(c104873yt, "content://com.facebook.orca.liteprovider.FamilyAppsUserValuesLiteProvider/user_values", "com.facebook.orca", c6av2, c6ap4);
+        A0R = c6aw10;
+        C6AW c6aw11 = new C6AW(c104873yt, "content://com.facebook.orca.liteprovider.FamilyAppsUserValuesLiteProvider/user_values", "com.facebook.orca", c6av3, c6ap3);
+        A0O = c6aw11;
+        C6AW c6aw12 = new C6AW(c104873yt, "content://com.facebook.orca.liteprovider.FamilyAppsUserValuesLiteProvider/user_values", "com.facebook.orca", c6av3, c6ap4);
+        A0P = c6aw12;
+        C6AV c6av4 = new C6AV(null, null, new String[0]);
+        C6AP c6ap5 = C6AP.A0A;
+        C104873yt c104873yt2 = AbstractC198287lA.A14;
+        C6AW c6aw13 = new C6AW(c104873yt2, "content://com.instagram.liteprovider.FirstPartyUserValuesLiteProviderV2", "com.instagram.android", c6av4, c6ap5);
+        A0I = c6aw13;
+        C6AW c6aw14 = new C6AW(c104873yt2, "content://com.instagram.liteprovider.FirstPartyUserValuesLiteProviderV2", "com.instagram.android", new C6AV(null, "name='saved_session_info'", new String[0]), c6ap5);
+        A0L = c6aw14;
+        C6AW c6aw15 = new C6AW(c104873yt2, "content://com.instagram.liteprovider.FirstPartyUserValuesLiteProviderV2", "com.instagram.android", new C6AV(null, "name='all_session_info'", new String[0]), c6ap5);
+        A0J = c6aw15;
+        C6AW c6aw16 = new C6AW(c104873yt2, "content://com.instagram.liteprovider.FirstPartyUserValuesLiteProviderV2", "com.instagram.android", new C6AV(null, "name='mas_session_info'", new String[0]), c6ap5);
+        A0K = c6aw16;
+        C6AV c6av5 = new C6AV(null, null, new String[0]);
+        C6AP c6ap6 = C6AP.A0I;
+        C104873yt c104873yt3 = AbstractC198287lA.A15;
+        C6AW c6aw17 = new C6AW(c104873yt3, "content://com.instagram.barcelona.liteprovider.BarcelonaLiteContentProvider", "com.instagram.barcelona", c6av5, c6ap6);
+        A07 = c6aw17;
+        C6AW c6aw18 = new C6AW(c104873yt3, "content://com.instagram.barcelona.liteprovider.BarcelonaLiteContentProvider", "com.instagram.barcelona", new C6AV(null, "name='saved_session_info'", new String[0]), c6ap6);
+        A0A = c6aw18;
+        C6AW c6aw19 = new C6AW(c104873yt3, "content://com.instagram.barcelona.liteprovider.BarcelonaLiteContentProvider", "com.instagram.barcelona", new C6AV(null, "name='all_session_info'", new String[0]), c6ap6);
+        A08 = c6aw19;
+        C6AW c6aw20 = new C6AW(c104873yt3, "content://com.instagram.barcelona.liteprovider.BarcelonaLiteContentProvider", "com.instagram.barcelona", new C6AV(null, "name='mas_session_info'", new String[0]), c6ap6);
+        A09 = c6aw20;
+        C6AW c6aw21 = new C6AW(c104873yt, "content://com.facebook.lite.provider.LiteUserValuesProvider/user_values", "com.facebook.lite", c6av, C6AP.A06);
+        A0H = c6aw21;
+        A00 = AnonymousClass228.A0D(c6aw, c6aw2, c6aw7, c6aw8, c6aw13, c6aw21, c6aw17);
+        A03 = AnonymousClass228.A0D(c6aw3, c6aw4, c6aw9, c6aw10, c6aw14, c6aw18);
+        A01 = AnonymousClass228.A0D(c6aw5, c6aw6, c6aw11, c6aw12, c6aw15, c6aw19);
+        A02 = AnonymousClass228.A0D(c6aw16, c6aw20);
+    }
+}

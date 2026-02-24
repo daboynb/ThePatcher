@@ -1,0 +1,41 @@
+.class public final Lcom/facebook/wearable/mediastream/sessionx/data/models/device/PeakPowerState$Companion;
+.super Ljava/lang/Object;
+.source ""
+
+
+# static fields
+.field public static final synthetic $$INSTANCE:Lcom/facebook/wearable/mediastream/sessionx/data/models/device/PeakPowerState$Companion;
+
+.field public static final NORMAL:I = 0x1
+
+.field public static final SHUTDOWN:I = 0x5
+
+.field public static final THROTTLE_LEVEL_1:I = 0x2
+
+.field public static final THROTTLE_LEVEL_2:I = 0x3
+
+.field public static final THROTTLE_LEVEL_3:I = 0x4
+
+.field public static final UNKNOWN_PEAK_POWER_STATE:I
+
+
+# direct methods
+.method public static constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Lcom/facebook/wearable/mediastream/sessionx/data/models/device/PeakPowerState$Companion;
+
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    sput-object v0, Lcom/facebook/wearable/mediastream/sessionx/data/models/device/PeakPowerState$Companion;->$$INSTANCE:Lcom/facebook/wearable/mediastream/sessionx/data/models/device/PeakPowerState$Companion;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method

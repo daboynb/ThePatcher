@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<View xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="0x7f0801de"
+    android:layout_width="match_parent"
+    android:layout_height="146dp"
+    android:layout_marginLeft="0x7f070b5d"
+    android:layout_marginTop="0x7f070b5d"
+    android:layout_marginRight="0x7f070b5d"
+    android:layout_marginBottom="0x7f070b60"
+    style="BusinessLoadingFilterBarShimmerItem"/>

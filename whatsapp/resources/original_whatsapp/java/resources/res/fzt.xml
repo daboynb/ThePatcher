@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fadingEdgeLength="0x7f071034"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:requiresFadingEdge="vertical">
+    <androidx.fragment.app.FragmentContainerView
+        android:name="com.whatsapp.aicreation.product.ui.SharedVoiceSelectorFragment"
+        android:id="0x7f0b27ac"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</ScrollView>

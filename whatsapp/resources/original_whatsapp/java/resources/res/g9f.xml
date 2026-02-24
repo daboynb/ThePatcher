@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:whatsapp="http://schemas.android.com/apk/res-auto"
+    android:id="0x7f0b1ca6"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    whatsapp:NOT_FOUND_0x7="0"
+    whatsapp:NOT_FOUND_0x8="0"
+    whatsapp:NOT_FOUND_0x9="0"
+    whatsapp:NOT_FOUND_0xa="0">
+    <include
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="0x7f0b1259"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="0x7f0e07b6"/>
+    <ViewStub
+        android:layout_gravity="center"
+        android:id="0x7f0b1d3c"
+        android:layout="0x7f0e0c2c"
+        android:inflatedId="0x7f0b1d3c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ViewStub
+        android:layout_gravity="center"
+        android:id="0x7f0b1bda"
+        android:layout="0x7f0e0b96"
+        android:inflatedId="0x7f0b1bd9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</FrameLayout>

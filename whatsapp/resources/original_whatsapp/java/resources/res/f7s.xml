@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.whatsapp.catalog.product.biz.view.CatalogListImageFrame xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="0x7f071039"
+    android:paddingBottom="0x7f071039"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.whatsapp.ui.coreui.base.WaImageView
+        android:id="0x7f0b07ca"
+        android:background="?unknown_attr_ref: 7f040a59"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="0x7f1207ec"/>
+    <com.whatsapp.ui.coreui.base.WaImageView
+        android:layout_gravity="center"
+        android:id="0x7f0b204d"
+        android:background="0x7f08033f"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="center"
+        android:contentDescription="0x7f1228f7"
+        app:NOT_FOUND_0x9="0x7f0806d9"/>
+</com.whatsapp.catalog.product.biz.view.CatalogListImageFrame>

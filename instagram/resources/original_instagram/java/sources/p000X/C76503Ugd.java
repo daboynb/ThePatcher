@@ -1,0 +1,32 @@
+package p000X;
+
+import com.instagram.model.reelassets.ReelAsset;
+import java.util.List;
+
+/* renamed from: X.Ugd, reason: case insensitive filesystem */
+/* loaded from: classes12.dex */
+public final class C76503Ugd implements InterfaceC60508NkE {
+    public int A00;
+    public int A01;
+    public int A02;
+    public String A04 = "";
+    public String A03 = "";
+
+    @Override // p000X.InterfaceC60508NkE
+    public final /* synthetic */ List Bgy() {
+        return C26W.A00;
+    }
+
+    @Override // p000X.InterfaceC60508NkE
+    public final ReelAsset CXm() {
+        ReelAsset reelAsset = new ReelAsset();
+        reelAsset.A01 = EnumC180186x4.A04;
+        reelAsset.A01(AnonymousClass011.A0f("clips_watermark"));
+        return reelAsset;
+    }
+
+    @Override // p000X.InterfaceC60508NkE
+    public final EnumC32301Cgv D5b() {
+        return EnumC32301Cgv.A0G;
+    }
+}

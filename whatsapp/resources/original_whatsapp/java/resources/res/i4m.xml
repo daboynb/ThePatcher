@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="0x7f08065c"
+        android:id="0x7f0b19ef"
+        android:visible="false"
+        android:title="0x7f12420c"
+        app:showAsAction="collapseActionView|always"/>
+    <item
+        android:icon="0x7f08067d"
+        android:id="0x7f0b1968"
+        android:title="0x7f123da0"
+        app:showAsAction="ifRoom"/>
+</menu>

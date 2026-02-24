@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="0x7f0b2b0f"
+    android:background="?android:attr/selectableItemBackground"
+    android:focusable="true"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="0x7f07042a">
+    <com.whatsapp.ui.coreui.base.TextEmojiLabel
+        android:id="0x7f0b2b13"
+        android:focusable="false"
+        android:clickable="false"
+        style="0x7f1503c4"/>
+</FrameLayout>

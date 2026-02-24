@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_pressed="true"
+        android:color="0x7f060473"
+        android:alpha="0x7f07013f"/>
+    <item
+        android:state_focused="true"
+        android:color="0x7f060473"
+        android:alpha="0x7f07013f"
+        android:state_hovered="true"/>
+    <item
+        android:state_focused="true"
+        android:color="0x7f060473"
+        android:alpha="0x7f07013f"/>
+    <item
+        android:color="0x7f060473"
+        android:alpha="0x7f070140"
+        android:state_hovered="true"/>
+    <item android:color="@android:color/transparent"/>
+</selector>

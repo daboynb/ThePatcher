@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:whatsapp="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.whatsapp.contactphotos.contact.photos.MultiContactThumbnail
+        android:id="0x7f0b06bd"
+        android:layout_width="0x7f0701f7"
+        android:layout_height="0x7f0701f7"
+        whatsapp:NOT_FOUND_0xa="0"
+        whatsapp:NOT_FOUND_0xb="0"
+        whatsapp:NOT_FOUND_0xd="0"
+        whatsapp:NOT_FOUND_0xe="0"
+        whatsapp:NOT_FOUND_0xf="0x7f0701f5"
+        whatsapp:NOT_FOUND_0x10="0x7f0701f6"/>
+    <View
+        android:id="0x7f0b0c11"
+        android:background="0x7f08093a"
+        android:layout_width="0x7f0701f7"
+        android:layout_height="0x7f0701f7"
+        android:alpha="0"
+        whatsapp:NOT_FOUND_0xa="0"
+        whatsapp:NOT_FOUND_0xb="0"
+        whatsapp:NOT_FOUND_0xd="0"
+        whatsapp:NOT_FOUND_0xe="0"/>
+    <ViewStub
+        android:id="0x7f0b06f0"
+        android:layout="0x7f0e02b9"
+        android:inflatedId="0x7f0b06f0"
+        android:layout_width="0x7f0701b4"
+        android:layout_height="0x7f0701b4"
+        android:layout_marginTop="0x7f0701f1"
+        android:layout_marginBottom="0x7f0701f1"
+        android:layout_marginStart="0x7f0701f1"
+        whatsapp:NOT_FOUND_0xa="0"
+        whatsapp:NOT_FOUND_0xd="0"/>
+    <ViewStub
+        android:id="0x7f0b06f2"
+        android:layout="0x7f0e02b9"
+        android:inflatedId="0x7f0b06f2"
+        android:layout_width="0x7f0701b4"
+        android:layout_height="0x7f0701b4"
+        android:layout_marginTop="0x7f0701f1"
+        android:layout_marginBottom="0x7f0701f1"
+        android:layout_marginStart="0x7f0701f1"
+        whatsapp:NOT_FOUND_0xa="0"
+        whatsapp:NOT_FOUND_0xc="0x7f0b06f0"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

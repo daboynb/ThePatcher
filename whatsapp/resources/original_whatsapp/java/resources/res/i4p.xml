@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="0x7f0805dc"
+        android:id="0x7f0b0cb2"
+        android:orderInCategory="1"/>
+    <item
+        android:icon="0x7f080630"
+        android:id="0x7f0b0130"
+        android:orderInCategory="2"
+        android:title="0x7f123d3c"
+        app:showAsAction="always"/>
+</menu>

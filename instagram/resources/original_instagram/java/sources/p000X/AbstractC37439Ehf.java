@@ -1,0 +1,6 @@
+package p000X;
+
+/* renamed from: X.Ehf, reason: case insensitive filesystem */
+/* loaded from: classes7.dex */
+public abstract class AbstractC37439Ehf {
+}

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="0x7f0b07a4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <com.google.android.material.tabs.TabLayout
+        android:layout_gravity="bottom|center_horizontal"
+        android:id="0x7f0b1e1e"
+        android:layout_width="match_parent"
+        android:layout_height="0x7f070e94"
+        android:layout_marginTop="0x7f07102e"
+        android:overScrollMode="never"
+        app:NOT_FOUND_0x9="0x7f08025c"
+        app:NOT_FOUND_0xa="1"
+        app:NOT_FOUND_0xb="0dp"
+        app:NOT_FOUND_0xc="0x7f070e95"/>
+    <ViewStub
+        android:layout_gravity="center"
+        android:id="0x7f0b073d"
+        android:visibility="gone"
+        android:layout="0x7f0e0304"
+        android:inflatedId="0x7f0b073c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0x7f07102e"/>
+</merge>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="0x7f0b0c45"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.whatsapp.ui.coreui.base.WaTextView
+        android:textSize="0x7f070fb0"
+        android:textColor="?unknown_attr_ref: 7f04066e"
+        android:layout_gravity="start"
+        android:id="0x7f0b0846"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0x7f07025f"
+        android:layout_marginTop="0x7f070260"
+        android:layout_marginRight="0x7f07025f"
+        android:layout_marginBottom="0x7f070260"
+        android:lineSpacingExtra="5sp"
+        android:textAlignment="viewStart"
+        app:NOT_FOUND_0x17="?unknown_attr_ref: 7f0403b8"
+        app:NOT_FOUND_0x1a="4"/>
+    <com.whatsapp.ui.coreui.base.WaTextView
+        android:textSize="0x7f070fb0"
+        android:textColor="?unknown_attr_ref: 7f04066e"
+        android:layout_gravity="start"
+        android:id="0x7f0b0848"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0x7f070264"
+        android:layout_marginRight="0x7f070264"
+        android:layout_marginBottom="0x7f070263"
+        android:lineSpacingExtra="5sp"
+        android:textAlignment="viewStart"
+        app:NOT_FOUND_0x17="?unknown_attr_ref: 7f0403b6"
+        app:NOT_FOUND_0x1a="4"/>
+    <com.whatsapp.ui.coreui.WaEditText
+        android:textSize="0x7f070fb0"
+        android:layout_gravity="start"
+        android:id="0x7f0b0845"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0x7f070262"
+        android:layout_marginRight="0x7f070262"
+        android:layout_marginBottom="0x7f070261"
+        android:maxLines="1"
+        android:inputType="number"
+        android:textAlignment="viewStart"
+        app:NOT_FOUND_0x17="?unknown_attr_ref: 7f0403b6"/>
+    <com.whatsapp.ui.coreui.base.TextEmojiLabel
+        android:textColor="0x7f060788"
+        android:layout_gravity="start"
+        android:id="0x7f0b0849"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0x7f070262"
+        android:layout_marginRight="0x7f070262"
+        android:layout_marginBottom="0x7f070265"
+        android:textAlignment="viewStart"
+        app:NOT_FOUND_0x17="?unknown_attr_ref: 7f0403b6"/>
+    <com.whatsapp.ui.coreui.base.WaTextView
+        android:textColor="?unknown_attr_ref: 7f040a4f"
+        android:layout_gravity="start"
+        android:id="0x7f0b0847"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0x7f070262"
+        android:layout_marginRight="0x7f070262"
+        android:layout_marginBottom="0x7f070265"
+        android:lines="3"
+        android:textAlignment="viewStart"
+        app:NOT_FOUND_0x17="?unknown_attr_ref: 7f0403b6"
+        app:NOT_FOUND_0x1a="6"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0x7f07025d"
+        android:layout_marginBottom="0x7f07025e">
+        <com.whatsapp.ui.wds.components.button.WDSButton
+            android:id="0x7f0b20db"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0x7f120a18"
+            android:maxLines="1"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            app:NOT_FOUND_0x18="3"
+            app:NOT_FOUND_0x19="small"/>
+        <com.whatsapp.ui.wds.components.button.WDSButton
+            android:id="0x7f0b20da"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0x7f120a17"
+            android:maxLines="1"
+            android:layout_toLeftOf="0x7f0b20db"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="0x7f0b20db"
+            app:NOT_FOUND_0x18="3"
+            app:NOT_FOUND_0x19="small"/>
+    </RelativeLayout>
+</LinearLayout>

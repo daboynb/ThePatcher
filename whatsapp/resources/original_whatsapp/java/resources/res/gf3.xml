@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.whatsapp.contact.ui.picker.view.LayoutIssueFixListViewParentLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ViewStub
+        android:layout_gravity="top"
+        android:id="0x7f0b2661"
+        android:layout="0x7f0e040a"
+        android:inflatedId="0x7f0b2660"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <com.whatsapp.ui.coreui.collections.observablelistview.ObservableListView
+        android:id="@android:id/list"
+        android:background="?unknown_attr_ref: 7f0404f9"
+        android:paddingLeft="0x7f07032f"
+        android:paddingRight="0x7f070330"
+        android:paddingBottom="0x7f0708ae"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@null"
+        android:nestedScrollingEnabled="true"/>
+    <FrameLayout
+        android:gravity="center"
+        android:id="@android:id/empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:id="0x7f0b0a98"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <ProgressBar
+            android:layout_gravity="center"
+            android:id="0x7f0b153c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:attr/progressBarStyle"/>
+        <ViewStub
+            android:id="0x7f0b0fe1"
+            android:layout="0x7f0e03f7"
+            android:inflatedId="0x7f0b0fe1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </FrameLayout>
+</com.whatsapp.contact.ui.picker.view.LayoutIssueFixListViewParentLayout>

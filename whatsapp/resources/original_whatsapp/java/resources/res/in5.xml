@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.whatsapp.suspiciouslink.SuspiciousLinkView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:textSize="0x7f070dd7"
+    android:textColor="?unknown_attr_ref: 7f040a2f"
+    android:id="0x7f0b2ab5"
+    android:background="0x7f080a75"
+    android:paddingLeft="0x7f070ce7"
+    android:paddingTop="0x7f070cf0"
+    android:paddingRight="0x7f070ce7"
+    android:paddingBottom="0x7f070cf0"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:drawableLeft="0x7f08070c"
+    android:drawablePadding="0x7f070cec"
+    android:textAllCaps="true"
+    app:NOT_FOUND_0xd="true"/>

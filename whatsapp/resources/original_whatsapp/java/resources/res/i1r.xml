@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" style="0x7f150571">
+    <com.whatsapp.ui.coreui.base.WaImageView
+        android:id="0x7f0b03e2"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:scaleType="fitCenter"
+        android:cropToPadding="true"
+        android:importantForAccessibility="no"
+        app:NOT_FOUND_0xb="0"
+        app:NOT_FOUND_0xd="0"
+        app:NOT_FOUND_0xe="0x7f080b51"/>
+    <com.whatsapp.ui.coreui.base.WaImageView
+        android:id="0x7f0b0d95"
+        android:contentDescription="0x7f123e24"
+        app:NOT_FOUND_0x8="0"
+        app:NOT_FOUND_0xd="0"
+        app:NOT_FOUND_0xe="0x7f080b18"
+        app:NOT_FOUND_0xf="?unknown_attr_ref: 7f040a46"
+        style="0x7f150572"/>
+    <com.whatsapp.ui.coreui.base.TextEmojiLabel
+        android:id="0x7f0b03df"
+        app:NOT_FOUND_0x9="0x7f0b0d95"
+        app:NOT_FOUND_0xa="0x7f0b03e2"
+        app:NOT_FOUND_0xd="0x7f0b0d95"
+        style="0x7f150573"/>
+    <com.whatsapp.ui.coreui.base.TextEmojiLabel
+        android:id="0x7f0b03de"
+        app:NOT_FOUND_0x7="0"
+        app:NOT_FOUND_0x8="0"
+        app:NOT_FOUND_0xa="0x7f0b03e2"
+        app:NOT_FOUND_0xc="0x7f0b03df"
+        style="0x7f150574"/>
+</merge>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="0x7f08018a"
+        android:id="0x7f0b29f5"
+        android:title="0x7f12429e"
+        app:iconTint="0x7f060347"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:icon="0x7f08049e"
+        android:id="0x7f0b29f7"
+        android:title="0x7f12429f"
+        app:iconTint="0x7f060347"
+        app:showAsAction="ifRoom"/>
+</menu>

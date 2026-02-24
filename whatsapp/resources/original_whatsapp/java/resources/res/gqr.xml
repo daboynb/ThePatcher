@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.whatsapp.conversation.sidechat.SideChatDrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="0x7f0b27eb"
+    android:fitsSystemWindows="false"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="0x7f0e041d"/>
+    <FrameLayout
+        android:layout_gravity="end"
+        android:id="0x7f0b27e9"
+        android:fitsSystemWindows="false"
+        android:clickable="true"
+        android:clipToPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:id="0x7f0b27ea"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </FrameLayout>
+</com.whatsapp.conversation.sidechat.SideChatDrawerLayout>

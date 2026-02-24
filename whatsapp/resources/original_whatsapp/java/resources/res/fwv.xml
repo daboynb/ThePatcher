@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="0x7f0b254e"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <com.whatsapp.ui.wds.components.textlayout.WDSTextLayout
+        android:orientation="vertical"
+        android:id="0x7f0b2d41"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:importantForAccessibility="yes"
+        app:NOT_FOUND_0x8="0x7f080d67"
+        app:NOT_FOUND_0x9="0x7f1242fd"
+        app:NOT_FOUND_0xa="1"
+        app:NOT_FOUND_0xb="0x7f1242f6"/>
+</ScrollView>

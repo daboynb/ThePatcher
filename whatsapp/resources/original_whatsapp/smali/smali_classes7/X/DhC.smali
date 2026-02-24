@@ -1,0 +1,261 @@
+.class public final LX/DhC;
+.super LX/1Dp;
+.source ""
+
+
+# static fields
+.field public static final A03:LX/Dgr;
+
+
+# instance fields
+.field public final A00:LX/05V;
+
+.field public final A01:LX/Gae;
+
+.field public final A02:LX/FB6;
+
+
+# direct methods
+.method public static constructor <clinit>()V
+    .locals 1
+
+    .line 0
+    new-instance v0, LX/Dgr;
+
+    .line 1
+    .line 2
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    .line 3
+    .line 4
+    .line 5
+    sput-object v0, LX/DhC;->A03:LX/Dgr;
+
+    .line 6
+    .line 7
+    return-void
+.end method
+
+.method public constructor <init>(LX/Gae;)V
+    .locals 1
+
+    .line 0
+    const/4 v0, 0x0
+
+    .line 1
+    invoke-static {p1, v0}, LX/00C;->A0A(Ljava/lang/Object;I)V
+
+    .line 2
+    .line 3
+    .line 4
+    sget-object v0, LX/DhC;->A03:LX/Dgr;
+
+    .line 5
+    .line 6
+    invoke-direct {p0, v0}, LX/1Dp;-><init>(LX/1DE;)V
+
+    .line 7
+    .line 8
+    .line 9
+    iput-object p1, p0, LX/DhC;->A01:LX/Gae;
+
+    .line 10
+    .line 11
+    invoke-static {}, LX/1ab;->A0k()LX/05V;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object v0
+
+    .line 15
+    iput-object v0, p0, LX/DhC;->A00:LX/05V;
+
+    .line 16
+    .line 17
+    const v0, 0x1813d
+
+    .line 18
+    .line 19
+    .line 20
+    invoke-static {v0}, LX/00X;->A03(I)Ljava/lang/Object;
+
+    .line 21
+    .line 22
+    .line 23
+    move-result-object v0
+
+    .line 24
+    check-cast v0, LX/FB6;
+
+    .line 25
+    .line 26
+    iput-object v0, p0, LX/DhC;->A02:LX/FB6;
+
+    .line 27
+    .line 28
+    return-void
+    .line 29
+.end method
+
+
+# virtual methods
+.method public bridge synthetic BH8(LX/1HI;I)V
+    .locals 2
+
+    .line 0
+    check-cast p1, LX/DiS;
+
+    .line 1
+    .line 2
+    const/4 v0, 0x0
+
+    .line 3
+    invoke-static {p1, v0}, LX/00C;->A0A(Ljava/lang/Object;I)V
+
+    .line 4
+    .line 5
+    .line 6
+    iget-object v1, p1, LX/DiS;->A00:LX/FEp;
+
+    .line 7
+    .line 8
+    invoke-virtual {p0, p2}, LX/1Dp;->A0c(I)Ljava/lang/Object;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object v0
+
+    .line 12
+    invoke-static {v0}, LX/00C;->A06(Ljava/lang/Object;)V
+
+    .line 13
+    .line 14
+    .line 15
+    check-cast v0, LX/FN4;
+
+    .line 16
+    .line 17
+    invoke-virtual {v1, v0}, LX/FEp;->A00(LX/FN4;)V
+
+    .line 18
+    .line 19
+    .line 20
+    return-void
+    .line 21
+.end method
+
+.method public bridge synthetic BMB(Landroid/view/ViewGroup;I)LX/1HI;
+    .locals 8
+
+    .line 0
+    const/4 v2, 0x0
+
+    .line 1
+    invoke-static {p1, v2}, LX/1af;->A0F(Landroid/view/View;I)Landroid/view/LayoutInflater;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v1
+
+    .line 5
+    const v0, 0x7f0e03b9
+
+    .line 6
+    .line 7
+    .line 8
+    invoke-static {v1, p1, v0, v2}, LX/1ag;->A06(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;IZ)Landroid/view/View;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object v3
+
+    .line 12
+    iget-object v0, p0, LX/DhC;->A00:LX/05V;
+
+    .line 13
+    .line 14
+    invoke-static {v0}, LX/05V;->A02(LX/05V;)Ljava/lang/Object;
+
+    .line 15
+    .line 16
+    .line 17
+    move-result-object v2
+
+    .line 18
+    check-cast v2, LX/0kR;
+
+    .line 19
+    .line 20
+    invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
+
+    .line 21
+    .line 22
+    .line 23
+    move-result-object v1
+
+    .line 24
+    const-string v0, "payment-transactions"
+
+    .line 25
+    .line 26
+    invoke-virtual {v2, v1, v0}, LX/0kR;->A07(Landroid/content/Context;Ljava/lang/String;)LX/169;
+
+    .line 27
+    .line 28
+    .line 29
+    move-result-object v4
+
+    .line 30
+    iget-object v5, p0, LX/DhC;->A02:LX/FB6;
+
+    .line 31
+    .line 32
+    const/16 v0, 0x9
+
+    .line 33
+    .line 34
+    invoke-static {p0, v0}, LX/GLB;->A00(Ljava/lang/Object;I)LX/GLB;
+
+    .line 35
+    .line 36
+    .line 37
+    move-result-object v6
+
+    .line 38
+    const/16 v0, 0xa
+
+    .line 39
+    .line 40
+    invoke-static {p0, v0}, LX/GLB;->A00(Ljava/lang/Object;I)LX/GLB;
+
+    .line 41
+    .line 42
+    .line 43
+    move-result-object v7
+
+    .line 44
+    new-instance v2, LX/FEp;
+
+    .line 45
+    .line 46
+    invoke-direct/range {v2 .. v7}, LX/FEp;-><init>(Landroid/view/View;LX/168;LX/FB6;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;)V
+
+    .line 47
+    .line 48
+    .line 49
+    new-instance v0, LX/DiS;
+
+    .line 50
+    .line 51
+    invoke-direct {v0, v2}, LX/DiS;-><init>(LX/FEp;)V
+
+    .line 52
+    .line 53
+    .line 54
+    return-object v0
+    .line 55
+.end method

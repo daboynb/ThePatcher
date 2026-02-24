@@ -1,0 +1,6 @@
+package p000X;
+
+/* renamed from: X.Jkb, reason: case insensitive filesystem */
+/* loaded from: classes5.dex */
+public abstract class AbstractC50339Jkb {
+}

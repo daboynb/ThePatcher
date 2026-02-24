@@ -1,0 +1,19 @@
+package p000X;
+
+/* renamed from: X.HCh, reason: case insensitive filesystem */
+/* loaded from: classes8.dex */
+public final class C38346HCh extends HDI implements InterfaceC43700Jnd {
+    public C38346HCh() {
+        super(C38373HDi.DEFAULT_INSTANCE);
+    }
+
+    @Override // p000X.J6G
+    public /* bridge */ /* synthetic */ InterfaceC44351K0t A01() {
+        return super.A03();
+    }
+
+    @Override // p000X.J6G
+    public /* bridge */ /* synthetic */ Object clone() {
+        return super.A02();
+    }
+}

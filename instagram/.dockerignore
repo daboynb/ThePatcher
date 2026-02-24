@@ -1,0 +1,7 @@
+temp/
+*.apk
+__pycache__
+*.pyc
+.git
+smali_generator/library/
+resources/

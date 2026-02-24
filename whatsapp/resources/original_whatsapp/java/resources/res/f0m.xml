@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.whatsapp.ui.coreui.base.WaTextView
+        android:textAppearance="0x7f1505a7"
+        android:textSize="0x7f070b13"
+        android:textColor="0x7f0608de"
+        android:id="0x7f0b298e"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="0x7f070b12"
+        android:paddingEnd="0x7f070b11"/>
+    <androidx.cardview.widget.CardView
+        android:id="0x7f0b27b4"
+        android:background="?unknown_attr_ref: 7f040a3d"
+        android:layout_width="match_parent"
+        android:layout_height="0x7f070afc"
+        android:layout_marginTop="0x7f070afd"
+        android:layout_marginStart="0x7f070b12"
+        android:layout_marginEnd="0x7f070afb"
+        app:NOT_FOUND_0xd="0x7f070afa"
+        app:NOT_FOUND_0xe="0dp">
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="0x7f0b27bb"
+            android:background="?unknown_attr_ref: 7f040a3d"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

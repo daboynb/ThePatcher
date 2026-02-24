@@ -1,0 +1,32 @@
+package p000X;
+
+import android.os.IBinder;
+import android.os.IInterface;
+import android.os.Parcel;
+
+/* renamed from: X.FfB, reason: case insensitive filesystem */
+/* loaded from: classes7.dex */
+public abstract class AbstractC34803FfB implements IInterface {
+    public final String A00;
+    public final IBinder A01;
+
+    @Override // android.os.IInterface
+    public IBinder asBinder() {
+        return this.A01;
+    }
+
+    public AbstractC34803FfB(IBinder iBinder, String str) {
+        this.A01 = iBinder;
+        this.A00 = str;
+    }
+
+    public void A00(int i, Parcel parcel) {
+        Parcel obtain = Parcel.obtain();
+        try {
+            C87X.A1A(this.A01, parcel, obtain, i);
+        } finally {
+            parcel.recycle();
+            obtain.recycle();
+        }
+    }
+}

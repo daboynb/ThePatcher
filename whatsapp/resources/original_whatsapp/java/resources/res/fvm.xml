@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/content"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1">
+    <androidx.fragment.app.FragmentContainerView
+        android:name="com.whatsapp.conversation.conversationslist.InteropConversationsFragment"
+        android:id="0x7f0b1217"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <ViewStub
+        android:layout_gravity="bottom|right"
+        android:id="0x7f0b28b7"
+        android:layout="0x7f0e0933"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0x7f07058e"
+        android:layout_marginTop="0x7f07058e"
+        android:layout_marginRight="0x7f07058e"
+        android:layout_marginBottom="0x7f07058e"/>
+</FrameLayout>

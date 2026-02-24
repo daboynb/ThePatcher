@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.tabs.TabLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="0x7f0b2ae4"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:NOT_FOUND_0x3="0"
+    app:NOT_FOUND_0x4="?unknown_attr_ref: 7f040a29"
+    app:NOT_FOUND_0x5="2.5dp"
+    app:NOT_FOUND_0x6="1"
+    app:NOT_FOUND_0x7="0x7f0708a0"
+    app:NOT_FOUND_0x8="0x7f0708a0"
+    app:NOT_FOUND_0x9="0x7f0604db"
+    style="0x7f1502ab"/>

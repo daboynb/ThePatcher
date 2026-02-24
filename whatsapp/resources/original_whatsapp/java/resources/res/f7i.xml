@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="0x7f0b063a"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="0x7f0b0631"
+        style="0x7f15012a">
+        <include layout="0x7f0e0268"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="0x7f0b0632"
+        style="0x7f150129">
+        <include layout="0x7f0e0268"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="0x7f0b0633"
+        style="0x7f150129">
+        <include layout="0x7f0e0268"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="0x7f0b0634"
+        style="0x7f150129">
+        <include layout="0x7f0e0268"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="0x7f0b0635"
+        style="0x7f150129">
+        <include layout="0x7f0e0268"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="0x7f0b0636"
+        style="0x7f150129">
+        <include layout="0x7f0e0268"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="0x7f0b0637"
+        style="0x7f15012b">
+        <include layout="0x7f0e0268"/>
+    </LinearLayout>
+</LinearLayout>

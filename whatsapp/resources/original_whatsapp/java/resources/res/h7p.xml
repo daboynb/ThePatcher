@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <View
+        android:id="0x7f0b0936"
+        android:layout_marginTop="0x7f071039"
+        app:NOT_FOUND_0x11="0"
+        app:NOT_FOUND_0x15="0"
+        style="0x7f150355"/>
+    <com.whatsapp.ui.coreui.base.WaTextView
+        android:textColor="?unknown_attr_ref: 7f040a47"
+        android:ellipsize="end"
+        android:gravity="left"
+        android:id="0x7f0b2b67"
+        android:paddingTop="0x7f070b5c"
+        android:paddingBottom="0x7f070b5c"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:paddingStart="0x7f07102e"
+        app:NOT_FOUND_0x10="0x7f0b2b66"
+        app:NOT_FOUND_0x11="0"
+        app:NOT_FOUND_0x12="0x7f0b066b"
+        app:NOT_FOUND_0x14="0x7f0b0936"
+        app:NOT_FOUND_0x16="0x7f070b62"
+        app:NOT_FOUND_0x17="7"
+        style="0x7f1505a7"/>
+    <com.whatsapp.ui.coreui.base.WaTextView
+        android:textSize="0x7f070fb6"
+        android:textColor="?unknown_attr_ref: 7f040a46"
+        android:ellipsize="end"
+        android:gravity="left"
+        android:id="0x7f0b2b66"
+        android:visibility="gone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0x7f070b62"
+        android:singleLine="true"
+        app:NOT_FOUND_0x11="0x7f0b2b67"
+        app:NOT_FOUND_0x12="0x7f0b066b"
+        app:NOT_FOUND_0x14="0x7f0b2b67"
+        app:NOT_FOUND_0x17="6"/>
+    <com.whatsapp.ui.wds.components.button.WDSButton
+        android:id="0x7f0b066b"
+        android:text="0x7f120b85"
+        app:NOT_FOUND_0xf="0x7f0b2b67"
+        app:NOT_FOUND_0x13="0"
+        style="0x7f150148"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

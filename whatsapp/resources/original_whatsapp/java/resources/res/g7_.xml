@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub
+        android:layout_gravity="start|bottom"
+        android:id="0x7f0b13af"
+        android:layout="0x7f0e0839"
+        android:inflatedId="0x7f0b13af"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ViewStub
+        android:layout_gravity="start|bottom"
+        android:id="0x7f0b13b0"
+        android:layout="0x7f0e083a"
+        android:inflatedId="0x7f0b13b0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</merge>

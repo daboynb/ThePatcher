@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.whatsapp.ui.coreui.base.WaImageView
+            android:layout_gravity="center"
+            android:id="0x7f0b13f6"
+            android:layout_width="137dp"
+            android:layout_height="137dp"
+            android:layout_marginTop="46dp"
+            android:contentDescription="@null"
+            app:NOT_FOUND_0x10="0x7f080518"/>
+        <com.whatsapp.ui.coreui.base.WaTextView
+            android:textSize="23sp"
+            android:textColor="?unknown_attr_ref: 7f04066e"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="0x7f0b2d43"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="0x7f071036"
+            android:layout_marginRight="36dp"
+            android:text="0x7f1226f5"
+            android:lineSpacingExtra="6dp"
+            app:NOT_FOUND_0xf="?unknown_attr_ref: 7f0403b7"/>
+        <com.whatsapp.ui.coreui.base.WaTextView
+            android:textSize="0x7f070fb6"
+            android:textColor="?unknown_attr_ref: 7f040a46"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="0x7f0b2d42"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="94dp"
+            android:layout_marginRight="36dp"
+            android:layout_marginBottom="24dp"
+            android:text="0x7f122b4a"
+            android:lineSpacingExtra="6dp"
+            app:NOT_FOUND_0x11="6"/>
+        <ProgressBar
+            android:layout_gravity="center"
+            android:id="0x7f0b21b6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="34dp"
+            style="?android:attr/progressBarStyleInverse"/>
+    </LinearLayout>
+</ScrollView>

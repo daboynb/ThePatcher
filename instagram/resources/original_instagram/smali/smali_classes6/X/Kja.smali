@@ -1,0 +1,15 @@
+.class public final LX/Kja;
+.super Ljava/lang/Object;
+.source ""
+
+
+# instance fields
+.field public A00:LX/9Tv;
+
+.field public A01:Lcom/instagram/common/session/UserSession;
+
+.field public A02:Ljava/lang/String;
+
+.field public A03:Ljava/lang/String;
+
+.field public A04:Ljava/util/Map;

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="0x7f07103a"
+    android:paddingEnd="0x7f07103a">
+    <com.whatsapp.ui.coreui.base.WaImageButton
+        android:id="0x7f0b1ab9"
+        android:background="0x7f0801c1"
+        android:layout_width="0x7f070eba"
+        android:layout_height="0x7f070eba"
+        android:scaleType="center"
+        android:contentDescription="0x7f121e49"
+        app:NOT_FOUND_0xf="0x7f0b1560"
+        app:NOT_FOUND_0x10="0x7f0b2f0f"
+        app:NOT_FOUND_0x11="0x7f080b0b"
+        app:NOT_FOUND_0x12="?unknown_attr_ref: 7f040a2f"/>
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:id="0x7f0b1b27"
+        android:background="0x7f060790"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <com.whatsapp.ui.coreui.base.TextEmojiLabel
+            android:textColor="?unknown_attr_ref: 7f040a2f"
+            android:id="0x7f0b1b26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            style="0x7f1505a5"/>
+        <com.whatsapp.ui.coreui.base.TextEmojiLabel
+            android:textColor="?unknown_attr_ref: 7f040a2f"
+            android:id="0x7f0b1b25"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:shadowColor="0x7f06089e"
+            style="0x7f1505a6"/>
+    </LinearLayout>
+    <com.whatsapp.ui.coreui.base.WaImageButton
+        android:id="0x7f0b1967"
+        android:background="0x7f0801c1"
+        android:layout_width="0x7f070eba"
+        android:layout_height="0x7f070eba"
+        android:scaleType="center"
+        android:contentDescription="0x7f121e55"
+        app:NOT_FOUND_0xf="0x7f0b1560"
+        app:NOT_FOUND_0x10="0x7f0b2f0f"
+        app:NOT_FOUND_0x11="0x7f080be0"
+        app:NOT_FOUND_0x12="?unknown_attr_ref: 7f040a2f"/>
+</LinearLayout>

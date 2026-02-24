@@ -1,0 +1,188 @@
+=== REPORT DECOMPILAZIONE ===
+APK:  /home/taki/Documents/GitHub/revanced/apks/original_instagram.apk
+Data: 2026-02-23 11:20
+Size: 113M
+JVM:  JADX -Xmx6144M (4 thread), apktool -Xmx2048M
+
+--- Librerie native (.so) ---
+  /home/taki/Documents/GitHub/revanced/decompiled/original_instagram/native/arm64-v8a/libimage_processing_util_jni.so (29008 byte)
+  /home/taki/Documents/GitHub/revanced/decompiled/original_instagram/native/arm64-v8a/libbreakpad.so (500000 byte)
+  /home/taki/Documents/GitHub/revanced/decompiled/original_instagram/native/arm64-v8a/libgraphics-core.so (212112 byte)
+  /home/taki/Documents/GitHub/revanced/decompiled/original_instagram/native/arm64-v8a/libsurface_util_jni.so (4832 byte)
+  /home/taki/Documents/GitHub/revanced/decompiled/original_instagram/native/arm64-v8a/libc++_shared.so (449424 byte)
+  /home/taki/Documents/GitHub/revanced/decompiled/original_instagram/native/arm64-v8a/libbreakpad_cpp_helper.so (6640 byte)
+  /home/taki/Documents/GitHub/revanced/decompiled/original_instagram/native/arm64-v8a/libunwindstack_binary.so (11024 byte)
+  /home/taki/Documents/GitHub/revanced/decompiled/original_instagram/native/arm64-v8a/libsuperpack-jni.so (212720 byte)
+  /home/taki/Documents/GitHub/revanced/decompiled/original_instagram/native/arm64-v8a/libandroidx.graphics.path.so (10096 byte)
+  /home/taki/Documents/GitHub/revanced/decompiled/original_instagram/native/arm64-v8a/libdextricks-early.so (6256 byte)
+  /home/taki/Documents/GitHub/revanced/decompiled/original_instagram/native/arm64-v8a/libfbunwindstack.so (264464 byte)
+  /home/taki/Documents/GitHub/revanced/decompiled/original_instagram/native/arm64-v8a/libarcore_sdk_jni.so (117272 byte)
+
+--- File smali per DEX ---
+  smali: 8237 file
+  smali_classes10: 10029 file
+  smali_classes11: 8224 file
+  smali_classes12: 10155 file
+  smali_classes13: 8593 file
+  smali_classes14: 5426 file
+  smali_classes15: 9671 file
+  smali_classes16: 6812 file
+  smali_classes17: 13201 file
+  smali_classes18: 6010 file
+  smali_classes2: 9579 file
+  smali_classes3: 9907 file
+  smali_classes4: 9519 file
+  smali_classes5: 9919 file
+  smali_classes6: 11248 file
+  smali_classes7: 7074 file
+  smali_classes8: 6647 file
+  smali_classes9: 10168 file
+
+--- Pacchetti Java decompilati ---
+  acamera/
+  acamera/foundation/
+  android/
+  android/content/
+  android/support/
+  android/view/
+  androidx/
+  androidx/activity/
+  androidx/appcompat/
+  androidx/biometric/
+  androidx/browser/
+  androidx/camera/
+  androidx/cardview/
+  androidx/collection/
+  androidx/compose/
+  androidx/concurrent/
+  androidx/constraintlayout/
+  androidx/coordinatorlayout/
+  androidx/core/
+  androidx/credentials/
+  androidx/customview/
+  androidx/datastore/
+  androidx/drawerlayout/
+  androidx/emoji2/
+  androidx/fragment/
+  androidx/graphics/
+  androidx/hardware/
+  androidx/lifecycle/
+  androidx/loader/
+  androidx/media/
+  androidx/media3/
+  androidx/opengl/
+  androidx/paging/
+  androidx/preference/
+  androidx/profileinstaller/
+  androidx/recyclerview/
+  androidx/room/
+  androidx/savedstate/
+  androidx/sharetarget/
+  androidx/slidingpanelayout/
+  androidx/startup/
+  androidx/swiperefreshlayout/
+  androidx/transition/
+  androidx/versionedparcelable/
+  androidx/viewpager/
+  androidx/viewpager2/
+  androidx/webkit/
+  androidx/window/
+  androidx/work/
+  ca/
+  ca/psiphon/
+  com/
+  com/aiplatform/
+  com/airbnb/
+  com/android/
+  com/bloks/
+  com/bumptech/
+  com/crossapp/
+  com/encryptedbackups/
+  com/encryptedbackupsinstagram/
+  com/encryptedmessaging/
+  com/facebook/
+  com/facebookpay/
+  com/fasterxml/
+  com/fbpay/
+  com/google/
+  com/hierynomus/
+  com/instagram/
+  com/mcf/
+  com/mcftypeholder/
+  com/mci/
+  com/mcrypto/
+  com/messagepersistencestore/
+  com/messaging/
+  com/messagingclient/
+  com/messenger/
+  com/meta/
+  com/msys/
+  com/oculus/
+  com/sec/
+  com/spotify/
+  com/truepic/
+  com/trusteddevice/
+  com/whatsapp/
+  com/xiaomi/
+  exoplayer2/
+  exoplayer2/av1/
+  fb/
+  fb/androidx/
+  fx/
+  fxcache/
+  fxcache/model/
+  fx/thirdpartyoauth/
+  go/
+  instagram/
+  instagram/core/
+  instagram/features/
+  javax/
+  javax/inject/
+  kotlin/
+  kotlin/coroutines/
+  kotlin/enums/
+  kotlin/jvm/
+  kotlinx/
+  kotlinx/coroutines/
+  kotlinx/datetime/
+  kotlinx/serialization/
+  libraries/
+  libraries/access/
+  libraries/foa/
+  libraries/fxcache/
+  libraries/zero/
+  meta/
+  meta/androidx/
+  net/
+  net/trustly/
+  org/
+  org/chromium/
+  org/greenrobot/
+  org/microg/
+  org/pytorch/
+  org/slf4j/
+  org/tukaani/
+  org/webrtc/
+  p000X/
+  pl/
+  pl/droidsonroids/
+  psi/
+  redex/
+  secondary/
+  secondary/dex00/
+  secondary/dex01/
+  secondary/dex02/
+  secondary/dex03/
+  secondary/dex04/
+  secondary/dex05/
+  secondary/dex06/
+  secondary/dex07/
+
+--- Ricerca pacchetti chiave ---
+  com/primemods: smali=0, java=0
+  amimo/dcc: smali=0, java=0
+  psi/: smali=12, java=5
+  go/: smali=12, java=3
+  fx/: smali=23, java=17
+
+--- Classi native (JNI) in com.primemods ---

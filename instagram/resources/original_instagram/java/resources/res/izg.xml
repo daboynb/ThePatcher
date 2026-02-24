@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="0x7f0b3e4b"
+        android:height="28dp"
+        android:width="44dp"
+        android:drawable="0x7f082b38"
+        android:top="10dp"
+        android:bottom="14dp"
+        android:start="8dp"
+        android:end="8dp"/>
+    <item
+        android:id="0x7f0b3e4c"
+        android:height="20dp"
+        android:width="20dp"
+        android:drawable="0x7f082d30"
+        android:top="14dp"
+        android:bottom="18dp"
+        android:start="20dp"
+        android:end="20dp"/>
+</layer-list>

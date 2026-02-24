@@ -1,0 +1,100 @@
+.class public final Lcom/facebook/rsys/cowatch/gen/CowatchBrowseSurfaceApi$CProxy;
+.super Lcom/facebook/rsys/cowatch/gen/CowatchBrowseSurfaceApi;
+.source ""
+
+
+# instance fields
+.field public final mNativeHolder:Lcom/facebook/simplejni/NativeHolder;
+
+
+# direct methods
+.method public constructor <init>(Lcom/facebook/simplejni/NativeHolder;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lcom/facebook/rsys/cowatch/gen/CowatchBrowseSurfaceApi$CProxy;->mNativeHolder:Lcom/facebook/simplejni/NativeHolder;
+
+    return-void
+.end method
+
+.method public static native createFromMcfType(Lcom/facebook/djinni/msys/infra/McfReference;)Lcom/facebook/rsys/cowatch/gen/CowatchBrowseSurfaceApi;
+.end method
+
+.method private native nativeEquals(Ljava/lang/Object;)Z
+.end method
+
+.method public static native nativeGetMcfTypeId()J
+.end method
+
+
+# virtual methods
+.method public native back()V
+.end method
+
+.method public native dismiss()V
+.end method
+
+.method public native dismissSeasonPickerAction()V
+.end method
+
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 1
+
+    if-ne p0, p1, :cond_0
+
+    const/4 v0, 0x1
+
+    return v0
+
+    :cond_0
+    if-eqz p1, :cond_1
+
+    instance-of v0, p1, Lcom/facebook/rsys/cowatch/gen/CowatchBrowseSurfaceApi;
+
+    if-eqz v0, :cond_1
+
+    invoke-direct {p0, p1}, Lcom/facebook/rsys/cowatch/gen/CowatchBrowseSurfaceApi$CProxy;->nativeEquals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    return v0
+
+    :cond_1
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method public native expandMediaCellView(Ljava/lang/String;)V
+.end method
+
+.method public native hashCode()I
+.end method
+
+.method public native loadNextPage()V
+.end method
+
+.method public native open(Ljava/lang/String;ZLjava/lang/String;I)V
+.end method
+
+.method public native privacyNuxShown()V
+.end method
+
+.method public native search(Ljava/lang/String;)V
+.end method
+
+.method public native selectSearchField()V
+.end method
+
+.method public native selectShow(JJI)V
+.end method
+
+.method public native selectShowSeason(Ljava/lang/String;I)V
+.end method
+
+.method public native selectTabClientActionCreate(JZ)V
+.end method
+
+.method public native showSeasonPicker()V
+.end method

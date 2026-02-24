@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.whatsapp.ui.wds.components.list.header.WDSSectionHeader xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="0x7f0b1ccb"
+    android:paddingLeft="0x7f070a81"
+    android:paddingRight="0x7f070a82"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:NOT_FOUND_0x5="0"/>

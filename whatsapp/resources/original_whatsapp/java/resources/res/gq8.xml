@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:id="0x7f0b0b53"
+    android:layout_width="match_parent"
+    android:layout_height="0x7f070395"
+    style="0x7f15002f">
+    <com.whatsapp.ui.coreui.base.WaImageView
+        android:id="0x7f0b15eb"
+        android:layout_width="0x7f070362"
+        android:layout_height="match_parent"
+        android:scaleType="center"
+        app:NOT_FOUND_0x16="?unknown_attr_ref: 7f040059"/>
+    <com.whatsapp.ui.coreui.base.WaTextView
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical"
+        android:id="0x7f0b15e9"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="0x7f1219f1"
+        style="0x7f150289"/>
+    <FrameLayout
+        android:gravity="right"
+        android:layout_gravity="center_vertical"
+        android:id="0x7f0b15df"
+        android:visibility="gone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="0x7f070747"
+        android:layout_weight="1">
+        <com.whatsapp.ui.coreui.base.WaImageView
+            android:layout_gravity="right"
+            android:id="0x7f0b15ec"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0x7f0703e3"
+            android:contentDescription="0x7f123efe"
+            app:NOT_FOUND_0x15="0x7f0803eb"
+            app:NOT_FOUND_0x16="?unknown_attr_ref: 7f040954"/>
+        <com.whatsapp.ui.coreui.base.WaTextView
+            android:textSize="0x7f070fbc"
+            android:textColor="0x7f0606d6"
+            android:gravity="center"
+            android:layout_gravity="right"
+            android:id="0x7f0b15ea"
+            android:paddingLeft="0x7f070419"
+            android:paddingTop="0dp"
+            android:paddingRight="0x7f070419"
+            android:paddingBottom="0dp"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0x7f0703e3"
+            android:minWidth="21dp"
+            android:minHeight="21dp"
+            style="0x7f150030"/>
+    </FrameLayout>
+</LinearLayout>

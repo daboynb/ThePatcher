@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.whatsapp.status.composer.infra.VoiceStatusProfileAvatarView
+        android:id="0x7f0b2f4c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:NOT_FOUND_0xa="0"
+        app:NOT_FOUND_0xb="0"
+        app:NOT_FOUND_0xf="0"/>
+    <com.whatsapp.media.conversation.waveforms.VoiceVisualizer
+        android:id="0x7f0b2f50"
+        android:paddingLeft="0x7f070d77"
+        android:visibility="visible"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0x7f070ce7"
+        android:layout_marginRight="0x7f070ce7"
+        android:layout_weight="1"
+        app:NOT_FOUND_0xa="0"
+        app:NOT_FOUND_0xc="0x7f0b2f4c"
+        app:NOT_FOUND_0xd="0x7f0b2f0c"
+        app:NOT_FOUND_0xf="0"
+        app:NOT_FOUND_0x10="?unknown_attr_ref: 7f040a2f"
+        app:NOT_FOUND_0x11="?unknown_attr_ref: 7f040a2f"
+        app:NOT_FOUND_0x12="0x7f070d7d"
+        app:NOT_FOUND_0x13="0x7f070d7e"/>
+    <com.whatsapp.ui.coreui.base.WaTextView
+        android:textSize="0x7f070fb0"
+        android:textColor="?unknown_attr_ref: 7f040a2f"
+        android:id="0x7f0b2f0c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="0x7f070ce7"
+        app:NOT_FOUND_0xa="0"
+        app:NOT_FOUND_0xe="0"
+        app:NOT_FOUND_0xf="0"
+        app:NOT_FOUND_0x14="4"/>
+</merge>

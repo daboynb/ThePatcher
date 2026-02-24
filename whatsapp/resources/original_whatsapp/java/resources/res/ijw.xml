@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ViewStub
+        android:id="0x7f0b1b82"
+        android:inflatedId="0x7f0b1b82"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <ViewStub
+        android:id="0x7f0b107f"
+        android:inflatedId="0x7f0b107f"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <ViewStub
+        android:id="0x7f0b151a"
+        android:inflatedId="0x7f0b151a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <ViewStub
+        android:id="0x7f0b090b"
+        android:inflatedId="0x7f0b090b"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</RadioGroup>

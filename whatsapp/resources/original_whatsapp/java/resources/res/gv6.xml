@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="bottom"
+    android:id="0x7f0b1162"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="0x7f071033">
+    <FrameLayout
+        android:id="0x7f0b210e"
+        android:paddingTop="0x7f07102d"
+        android:paddingBottom="0x7f071030"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ViewStub
+            android:id="0x7f0b2ec7"
+            android:layout="0x7f0e0663"
+            android:inflatedId="0x7f0b1531"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="0x7f0709ee"/>
+        <com.whatsapp.mediacomposer.doodle.ImagePreviewContentLayout
+            android:layout_gravity="center"
+            android:id="0x7f0b2b8f"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="0x7f071033"
+            android:scaleType="fitCenter"
+            android:contentDescription="0x7f123e92"/>
+        <ProgressBar
+            android:layout_gravity="center"
+            android:id="0x7f0b17c5"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginBottom="0x7f071033"/>
+        <include layout="0x7f0e0a59"/>
+        <include layout="0x7f0e066f"/>
+    </FrameLayout>
+    <include layout="0x7f0e066b"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

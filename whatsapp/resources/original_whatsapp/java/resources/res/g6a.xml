@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.whatsapp.ui.coreui.components.MainChildCoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:NOT_FOUND_0xf="0x7f0b0566">
+    <View
+        android:id="0x7f0b03a3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="0x7f0b0566"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:NOT_FOUND_0xe="com.google.android.material.bottomsheet.BottomSheetBehavior">
+        <View style="0x7f150290"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="0x7f080392"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <FrameLayout
+                android:id="0x7f0b2598"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="0x7f070615"
+                android:elevation="?unknown_attr_ref: 7f04002f">
+                <include layout="0x7f0e084f"/>
+            </FrameLayout>
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:id="0x7f0b2bfa"
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="0x7f070615">
+                <com.whatsapp.ui.coreui.base.WaTextView
+                    android:textSize="18sp"
+                    android:textColor="?unknown_attr_ref: 7f040a45"
+                    android:id="0x7f0b27ae"
+                    android:paddingLeft="0x7f07102e"
+                    android:paddingRight="0x7f07102e"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+                <com.whatsapp.ui.coreui.base.WaImageView
+                    android:id="0x7f0b2566"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="0x7f12420c"
+                    app:NOT_FOUND_0x10="0x7f080658"
+                    app:NOT_FOUND_0x11="?unknown_attr_ref: 7f040a45"
+                    style="0x7f150001"/>
+            </LinearLayout>
+            <include layout="0x7f0e0b30"/>
+        </LinearLayout>
+    </LinearLayout>
+</com.whatsapp.ui.coreui.components.MainChildCoordinatorLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="0x7f0b11af"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.whatsapp.ui.coreui.PercentageBasedMaxHeightFrameLayout
+        android:id="0x7f0b11ae"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="0x7f0b2c29"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.whatsapp.ui.wds.components.topbar.WDSToolbar
+                android:theme="0x7f1504ce"
+                android:id="0x7f0b11b0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:NOT_FOUND_0x8="0x7f123dac"/>
+            <View
+                android:id="0x7f0b0db0"
+                android:layout_below="0x7f0b11b0"
+                style="0x7f150355"/>
+            <com.whatsapp.flows.ui.app.webview.view.FlowsInitialLoadingView
+                android:orientation="vertical"
+                android:id="0x7f0b11b3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="0x7f0b0db0"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="0x7f0b11b4"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </com.whatsapp.ui.coreui.PercentageBasedMaxHeightFrameLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

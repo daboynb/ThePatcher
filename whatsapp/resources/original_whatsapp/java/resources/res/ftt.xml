@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.whatsapp.chat.info.views.NotificationsAndSoundsInfoView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="0x7f0b1cf1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:NOT_FOUND_0x3="0x7f0805d2"
+    app:NOT_FOUND_0x4="false"
+    app:NOT_FOUND_0x5="0x7f122246"/>

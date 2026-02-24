@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:id="0x7f0b1829"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="30dp">
+        <ViewStub
+            android:id="0x7f0b0b27"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:NOT_FOUND_0x13="true"/>
+        <LinearLayout
+            android:layout_gravity="left"
+            android:orientation="horizontal"
+            android:paddingBottom="0x7f070cf0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.whatsapp.ui.coreui.base.WaImageView
+                android:layout_gravity="center"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginLeft="10dp"
+                android:scaleType="fitXY"
+                android:tint="?unknown_attr_ref: 7f040a46"
+                app:NOT_FOUND_0x12="0x7f080d7b"/>
+            <com.whatsapp.ui.coreui.components.TextAndDateLayout
+                android:layout_gravity="right"
+                android:paddingLeft="0x7f070cf0"
+                android:paddingRight="0x7f070cf0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.whatsapp.ui.coreui.base.TextEmojiLabel
+                    android:textSize="0x7f070fb6"
+                    android:textStyle="italic"
+                    android:textColor="?unknown_attr_ref: 7f040a46"
+                    android:layout_gravity="left"
+                    android:id="0x7f0b1a3a"
+                    android:paddingLeft="0x7f0703e4"
+                    android:paddingTop="0x7f071035"
+                    android:paddingRight="0x7f0703e4"
+                    android:paddingBottom="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0x7f121129"/>
+                <include layout="0x7f0e04ba"/>
+            </com.whatsapp.ui.coreui.components.TextAndDateLayout>
+        </LinearLayout>
+    </LinearLayout>
+</merge>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:padding="0x7f07102e"
+        android:paddingBottom="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="0x7f070f0f">
+        <com.whatsapp.ui.coreui.base.WaTextView
+            android:id="0x7f0b2fde"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0x7f071030"
+            android:textAlignment="center"
+            app:NOT_FOUND_0xb="0"
+            app:NOT_FOUND_0xc="0"
+            app:NOT_FOUND_0xf="0"
+            app:NOT_FOUND_0x10="3"
+            style="0x7f1505ab"/>
+        <ViewStub
+            android:id="0x7f0b2ed0"
+            android:layout="0x7f0e1287"
+            android:inflatedId="0x7f0b2ed0"
+            android:layout_width="match_parent"
+            android:layout_height="0x7f071033"
+            android:layout_marginTop="120dp"
+            app:NOT_FOUND_0xa="0"
+            app:NOT_FOUND_0xd="0"
+            app:NOT_FOUND_0xe="0x7f0b2fde"/>
+        <ViewStub
+            android:id="0x7f0b2ecf"
+            android:layout="0x7f0e1286"
+            android:inflatedId="0x7f0b2ecf"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:NOT_FOUND_0xe="0x7f0b2fde"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

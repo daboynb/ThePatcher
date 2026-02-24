@@ -1,0 +1,82 @@
+[Filter IgluscriptVideoGridZoomFilter]
+[BehaviorType fixedIntro]
+[BehaviorDuration 750]
+[AnimationCurve exponentialInOut]
+
+
+
+[Init]
+fun init(Filter filter) {
+  filter.passes = {{
+      name = 'grid_zoom, inputs = {'default},
+      uniforms = {
+        progress = 0.0,
+      },
+      glslShader = glsl, metalShader = metal
+    }};
+}
+
+[PreRender]
+fun preRender(Filter filter) {
+  # Get behavior parameters from parameter map (set by JNI/keyframe system)
+  f32 progressValue = getParameterFloat('progress);
+  
+  # Apply to shader uniform
+  setShaderUniform('grid_zoom, 'progress, progressValue);
+}
+
+string glsl = "precision highp float;
+
+varying vec2 textureCoordinate;
+varying vec2 sourceTextureCoordinate;
+
+BaseUniformsOpenGL;
+
+uniform float progress;
+
+void main() {
+
+vec2 uv = sourceTextureCoordinate;
+
+vec2 gridUV = fract(uv * 3.0);
+vec4 gridColor = sampleInput(gridUV);
+
+float scale = mix(1.0, 1.0/3.0, progress);
+vec2 zoomed = (uv - 0.5) * scale + 0.5;
+vec2 zoomGridUV = fract(zoomed * 3.0);
+vec4 zoomCol = sampleInput(zoomGridUV);
+
+vec4 color = mix(gridColor, zoomCol, progress);
+
+gl_FragColor = toOutputFormat(zoomCol);
+}
+";
+
+string metal = "
+using namespace metal;
+struct fragmentIn { float2 sourceTextureCoordinate [[user(locn1)]]; };
+struct fragmentOut { float4 _gl_FragColor [[color(0)]]; };
+typedef struct {
+  float4x4 content_transform;
+  float4x4 texture_transform;
+  float progress;
+ } Uniforms;
+fragment fragmentOut fragmentShader(fragmentIn in [[stage_in]],
+ constant Uniforms & uniforms [[buffer(1)]],
+ DefaultInputs defaultInputs) {
+
+float2 uv = in.sourceTextureCoordinate;
+
+float2 gridUV = fract(uv * 3.0);
+float4 gridColor = sampleInput(defaultInputs, gridUV);
+
+float scale = mix(1.0, 1.0/3.0, uniforms.progress);
+float2 zoomed = (uv - 0.5) * scale + 0.5;
+float2 zoomGridUV = fract(zoomed * 3.0);
+float4 zoomCol = sampleInput(defaultInputs, zoomGridUV);
+
+float4 color = mix(gridColor, zoomCol, uniforms.progress);
+
+return {toOutputFormat(zoomCol)};
+}
+";

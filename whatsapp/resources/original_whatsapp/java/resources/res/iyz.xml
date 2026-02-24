@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.whatsapp.ui.coreui.base.WaTextView
+        android:id="0x7f0b0d42"
+        style="0x7f1501e7"/>
+    <com.whatsapp.ui.coreui.base.WaTextView
+        android:id="0x7f0b0d41"
+        style="0x7f1501e6"/>
+</merge>

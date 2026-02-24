@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.facebook.shimmer.ShimmerFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="0x7f070b5d"
+    android:layout_marginBottom="0x7f070b5d"
+    style="0x7f15012c">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_gravity="center_horizontal"
+        android:id="0x7f0b20b3"
+        android:clipToPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="0x7f060790"/>
+</com.facebook.shimmer.ShimmerFrameLayout>

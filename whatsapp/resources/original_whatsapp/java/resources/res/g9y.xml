@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:layout_width="0x7f07067b"
+    android:layout_height="0x7f07067b"
+    android:layout_marginLeft="0x7f07067c"
+    android:layout_marginRight="0x7f07067c">
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_gravity="center"
+        android:id="0x7f0b079f"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:contentDescription="0x7f123e9f"
+        app:NOT_FOUND_0xf="0x7f150249"/>
+    <View
+        android:id="0x7f0b2681"
+        android:background="0x7f080773"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <FrameLayout
+        android:id="0x7f0b07a1"
+        android:background="0x7f080772"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_gravity="center"
+            android:id="0x7f0b07a0"
+            android:layout_width="0x7f07065d"
+            android:layout_height="0x7f07065d"
+            android:contentDescription="0x7f123ea2"
+            app:NOT_FOUND_0xc="true"
+            app:NOT_FOUND_0xd="true"
+            app:NOT_FOUND_0xe="0x7f140000"/>
+    </FrameLayout>
+</FrameLayout>

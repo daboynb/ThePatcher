@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:id="0x7f0b2c17"
+    android:background="0x7f08015a"
+    android:padding="8dp"
+    android:layout_width="32dp"
+    android:layout_height="32dp"
+    android:layout_marginBottom="8dp"
+    android:layout_marginEnd="12dp">
+    <ProgressBar
+        android:id="0x7f0b03f1"
+        android:visibility="gone"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:indeterminate="true"
+        android:indeterminateTint="0x7f06063f"
+        android:indeterminateTintMode="src_atop"/>
+    <com.whatsapp.ui.coreui.base.WaImageView
+        android:id="0x7f0b03f2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="center"
+        app:NOT_FOUND_0xe="0x7f080b95"
+        app:NOT_FOUND_0xf="0x7f06063f"/>
+</androidx.appcompat.widget.LinearLayoutCompat>

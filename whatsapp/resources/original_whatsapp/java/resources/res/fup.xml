@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.whatsapp.ui.wds.components.topbar.WDSToolbar
+        android:id="0x7f0b2c21"
+        style="0x7f150520"/>
+    <ScrollView
+        android:id="0x7f0b0999"
+        android:background="?unknown_attr_ref: 7f040a59"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_height="wrap_content"
+            style="0x7f1501a4">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                app:NOT_FOUND_0xc="0"
+                app:NOT_FOUND_0xd="0"
+                app:NOT_FOUND_0xe="0">
+                <com.whatsapp.ui.wds.components.list.header.WDSSectionHeader
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="0x7f07102e"
+                    android:paddingEnd="0x7f07102e"
+                    app:NOT_FOUND_0xa="0x7f120c61"
+                    app:NOT_FOUND_0xb="0"/>
+                <ViewStub
+                    android:id="0x7f0b0998"
+                    android:layout="0x7f0e0393"
+                    android:inflatedId="0x7f0b0998"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <com.whatsapp.ui.wds.components.list.listitem.WDSListItem
+                    android:id="0x7f0b0997"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:NOT_FOUND_0xf="0x7f123dc3"
+                    app:NOT_FOUND_0x10="0x7f120c55"
+                    app:NOT_FOUND_0x11="true"/>
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</LinearLayout>

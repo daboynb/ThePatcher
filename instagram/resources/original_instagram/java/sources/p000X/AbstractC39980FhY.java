@@ -1,0 +1,115 @@
+package p000X;
+
+/* renamed from: X.FhY, reason: case insensitive filesystem */
+/* loaded from: classes7.dex */
+public abstract class AbstractC39980FhY {
+    public static final String A00(EV0 ev0) {
+        switch (ev0.ordinal()) {
+            case 1:
+                return "AIRY";
+            case 2:
+                return "ALIEN";
+            case 3:
+                return "ANDROID_";
+            case 4:
+                return "ANGELIC";
+            case 5:
+                return "AUTOTUNE";
+            case 6:
+            case 8:
+            case 14:
+            case 19:
+            case 34:
+            case 35:
+            case 37:
+            case 40:
+            case 44:
+            case 52:
+            case 55:
+            case 56:
+            case 57:
+            default:
+                return "NONE";
+            case 7:
+                return "BASSBOOST";
+            case 9:
+                return "CHORUS";
+            case 10:
+                return "CRUNCHY";
+            case 11:
+                return "DEEP_ECHO";
+            case 12:
+                return "DEEP_SYNTH";
+            case 13:
+                return "DEMONIC";
+            case 15:
+                return "DOUBLE_UP";
+            case 16:
+                return "DREAMY";
+            case 17:
+                return "ECHO";
+            case 18:
+                return "FAN";
+            case 20:
+                return "FISHBOWL";
+            case 21:
+                return "FUZZ";
+            case 22:
+                return "GRITTY";
+            case 23:
+                return "HARMONIZE";
+            case 24:
+                return "HELIUM";
+            case 25:
+                return "INTERCOM";
+            case 26:
+                return "INTERMISSION";
+            case 27:
+                return "KARAOKE";
+            case 28:
+                return "LOFI";
+            case 29:
+                return "LOW";
+            case 30:
+                return "MACHINE";
+            case 31:
+                return "MICROPHONE";
+            case 32:
+                return "MONSTROUS";
+            case 33:
+                return "PIXEL";
+            case 36:
+                return "PSYCHEDELIC";
+            case 38:
+                return "RADIO";
+            case 39:
+                return "REVERSE";
+            case 41:
+                return "REVERSE_ECHO";
+            case 42:
+                return "SLAPBACK";
+            case 43:
+                return "SLOWED";
+            case 45:
+                return "SPED_UP";
+            case 46:
+                return "STADIUM";
+            case 47:
+                return "STEREO_SHIFT";
+            case 48:
+                return "SUPERNATURAL";
+            case 49:
+                return "SURF";
+            case 50:
+                return "SWIRL";
+            case 51:
+                return "TOY_SPEAKER";
+            case 53:
+                return "UNDERWATER";
+            case 54:
+                return "VINYL";
+            case 58:
+                return "WOBBLE";
+        }
+    }
+}

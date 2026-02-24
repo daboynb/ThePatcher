@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="0x7f0b1f51"
+        android:layout_width="match_parent"
+        android:layout_height="0x7f070aa1"
+        style="0x7f1502dd">
+        <View
+            android:background="0x7f080922"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+    <ViewStub
+        android:layout_gravity="center"
+        android:id="0x7f0b1ee4"
+        android:layout="0x7f0e0cbb"
+        android:layout_width="match_parent"
+        android:layout_height="0x7f070aa1"/>
+</merge>

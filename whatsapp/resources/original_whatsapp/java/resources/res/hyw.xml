@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="?unknown_attr_ref: 7f040a5a"
+    android:paddingLeft="0x7f070a5d"
+    android:paddingRight="0x7f070a5d"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.whatsapp.ui.coreui.base.WaImageView
+        android:id="0x7f0b0c13"
+        android:paddingLeft="0x7f070a65"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:paddingStart="0x7f070a65"
+        app:NOT_FOUND_0x1f="0x7f080904"/>
+    <RelativeLayout
+        android:id="0x7f0b1f19"
+        android:paddingTop="0x7f070a62"
+        android:paddingBottom="0x7f070a62"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0x7f070a60"
+        android:layout_marginBottom="0x7f070a63">
+        <androidx.cardview.widget.CardView
+            android:id="0x7f0b1f1a"
+            android:layout_width="0x7f070a6d"
+            android:layout_height="0x7f070a6d"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            app:NOT_FOUND_0x1c="?unknown_attr_ref: 7f040a5c"
+            app:NOT_FOUND_0x1d="0x7f070a69"
+            app:NOT_FOUND_0x1e="0dp">
+            <com.whatsapp.ui.coreui.base.WaImageView
+                android:paddingLeft="0x7f070a5b"
+                android:paddingTop="0x7f070a5c"
+                android:paddingRight="0x7f070a5b"
+                android:paddingBottom="0x7f070a5c"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:paddingStart="0x7f070a5b"
+                android:paddingEnd="0x7f070a5b"
+                app:NOT_FOUND_0x1f="0x7f080c7d"/>
+        </androidx.cardview.widget.CardView>
+        <com.whatsapp.ui.coreui.base.WaTextView
+            android:textSize="0x7f070fb6"
+            android:textColor="?unknown_attr_ref: 7f040a46"
+            android:id="0x7f0b1ee2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0x7f070a5b"
+            android:layout_marginTop="0x7f070a5f"
+            android:text="0x7f12247e"
+            android:layout_toRightOf="0x7f0b1f1a"
+            android:lineSpacingMultiplier="1.43"
+            android:layout_marginStart="0x7f070a5b"
+            app:NOT_FOUND_0x21="6"/>
+        <com.whatsapp.ui.coreui.base.WaTextView
+            android:textSize="0x7f070fb0"
+            android:textColor="?unknown_attr_ref: 7f04066e"
+            android:ellipsize="end"
+            android:id="0x7f0b1f14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0x7f070a5b"
+            android:layout_marginTop="0x7f070a5f"
+            android:text="0x7f122331"
+            android:singleLine="true"
+            android:layout_toRightOf="0x7f0b1f1a"
+            android:layout_below="0x7f0b1ee2"
+            android:lineSpacingMultiplier="1.5"
+            android:layout_marginStart="0x7f070a5b"
+            app:NOT_FOUND_0x21="4"/>
+        <com.whatsapp.ui.coreui.base.WaImageView
+            android:id="0x7f0b08bd"
+            android:layout_width="wrap_content"
+            android:layout_height="0x7f070a5b"
+            android:layout_marginLeft="0x7f070a63"
+            android:layout_marginRight="0x7f070a63"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            app:NOT_FOUND_0x1f="0x7f080649"
+            app:NOT_FOUND_0x20="0x7f060564"/>
+    </RelativeLayout>
+</LinearLayout>

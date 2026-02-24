@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.whatsapp.ui.wds.components.banners.WDSBanner xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingLeft="0x7f07102e"
+    android:paddingTop="0x7f070f40"
+    android:paddingRight="0x7f07102e"
+    android:paddingBottom="0x7f070f40"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="0x7f071039"
+    android:layout_marginStart="0x7f07102e"
+    android:layout_marginEnd="0x7f07102e"/>

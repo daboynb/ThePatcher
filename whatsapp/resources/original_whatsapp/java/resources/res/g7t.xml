@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.whatsapp.ui.coreui.base.WaTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textAppearance="0x7f1505a8"
+    android:textColor="?unknown_attr_ref: 7f040a4b"
+    android:background="0x7f080155"
+    android:paddingTop="2dp"
+    android:paddingBottom="2dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="0x7f121863"
+    android:paddingStart="4dp"
+    android:paddingEnd="4dp"/>

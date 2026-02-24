@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="0x7f0b26c5"
+        android:padding="0x7f070b62"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="24dp"
+        style="0x7f150531">
+        <View
+            android:layout_gravity="center"
+            android:background="0x7f080922"
+            android:layout_width="200dp"
+            android:layout_height="16dp"/>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:id="0x7f0b26c4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="24dp">
+        <LinearLayout
+            android:id="0x7f0b26c1"
+            android:background="0x7f0809b5"
+            android:padding="0x7f070b60"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <com.whatsapp.ui.coreui.base.WaImageView
+                android:layout_gravity="center_vertical"
+                android:id="0x7f0b26cd"
+                android:background="0x7f0809de"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginLeft="0x7f070b62"
+                android:scaleType="fitXY"
+                app:NOT_FOUND_0xf="0x7f0806a1"/>
+            <com.whatsapp.ui.coreui.base.WaTextView
+                android:textSize="0x7f070fb0"
+                android:textColor="?unknown_attr_ref: 7f040a46"
+                android:layout_gravity="center_vertical"
+                android:id="0x7f0b26c0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0x7f070b62"
+                android:layout_marginRight="0x7f070b62"
+                app:NOT_FOUND_0x10="4"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

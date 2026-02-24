@@ -1,0 +1,109 @@
+[Filter IgluscriptVideoMirrorFramesFilter]
+[BehaviorType fixedIntro]
+[BehaviorDuration 500]
+[AnimationCurve circularInOut]
+
+
+
+[Init]
+fun init(Filter filter) {
+  filter.passes = {{
+      name = 'mirror_frames, inputs = {'default},
+      uniforms = {
+        progress = 0.0,
+        inputSize = {1080.0, 1920.0},
+      },
+      glslShader = glsl, metalShader = metal
+    }};
+}
+
+[PreRender]
+fun preRender(Filter filter) {
+  # Get behavior parameters from parameter map (set by JNI/keyframe system)
+  f32 progressValue = getParameterFloat('progress);
+  
+  # Apply to shader uniform
+  setShaderUniform('mirror_frames, 'progress, progressValue);
+}
+
+string glsl = "precision highp float;
+
+varying vec2 textureCoordinate;
+varying vec2 sourceTextureCoordinate;
+
+BaseUniformsOpenGL;
+
+uniform vec2 inputSize;
+uniform float progress;
+
+const int LAYERS = 3;
+const vec2 center = vec2(0.5,0.5);
+
+void main() {
+
+  vec2 uv = sourceTextureCoordinate;
+  vec4 color = vec4(0.0);
+
+  float mainScale = mix(1.0, 0.7, progress);
+
+  for(int i = LAYERS; i >= 1; --i){
+    float f = float(i) / float(LAYERS);
+    float scale_i = mix(mainScale, 1.0, f);
+    vec2 p = (uv - center) / scale_i + center;
+
+    float m = step(0.0, p.x) * step(p.x, 1.0) * step(0.0, p.y) * step(p.y, 1.0);
+
+    color = mix(color, sampleInput(p), m);
+  }
+
+  {
+    vec2 p = (uv - center) / mainScale + center;
+    float m = step(0.0,p.x) * step(p.x, 1.0) * step(0.0,p.y) * step(p.y, 1.0);
+    color = mix(color, sampleInput(p), m);
+  }
+
+  gl_FragColor = toOutputFormat(color);
+}
+";
+
+string metal = "
+using namespace metal;
+struct fragmentIn { float2 sourceTextureCoordinate [[user(locn1)]]; };
+struct fragmentOut { float4 _gl_FragColor [[color(0)]]; };
+typedef struct {
+  float4x4 content_transform;
+  float4x4 texture_transform;
+  float progress;
+  float2 input_size;
+ } Uniforms;
+constant int LAYERS = 3;
+constant float2 center = float2(0.5,0.5);
+
+fragment fragmentOut fragmentShader(fragmentIn in [[stage_in]],
+ constant Uniforms & uniforms [[buffer(1)]],
+ DefaultInputs defaultInputs) {
+
+  float2 uv = in.sourceTextureCoordinate;
+  float4 color = float4(0.0);
+
+  float mainScale = mix(1.0, 0.7, uniforms.progress);
+
+  for(int i = LAYERS; i >= 1; --i){
+    float f = float(i) / float(LAYERS);
+    float scale_i = mix(mainScale, 1.0, f);
+    float2 p = (uv - center) / scale_i + center;
+
+    float m = step(0.0, p.x) * step(p.x, 1.0) * step(0.0, p.y) * step(p.y, 1.0);
+
+    color = mix(color, sampleInput(defaultInputs, p), m);
+  }
+
+  {
+    float2 p = (uv - center) / mainScale + center;
+    float m = step(0.0,p.x) * step(p.x, 1.0) * step(0.0,p.y) * step(p.y, 1.0);
+    color = mix(color, sampleInput(defaultInputs, p), m);
+  }
+
+  return {toOutputFormat(color)};
+}
+";

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="0x7f080640"
+        android:id="0x7f0b1248"
+        android:title="0x7f123e87"
+        app:iconTint="0x7f060347"/>
+    <item
+        android:icon="0x7f0804ae"
+        android:id="0x7f0b123f"
+        android:title="0x7f123e85"
+        app:iconTint="0x7f060347"/>
+    <item
+        android:icon="0x7f0806a6"
+        android:id="0x7f0b1243"
+        android:title="0x7f123e86"
+        app:iconTint="0x7f060347"/>
+</menu>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="0x7f0b2aab"
+    android:background="0x7f080778"
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.whatsapp.ui.coreui.base.WaTextView
+        android:textSize="0x7f070fb6"
+        android:textColor="?unknown_attr_ref: 7f040a47"
+        android:layout_gravity="center"
+        android:id="0x7f0b27ae"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="0x7f07103a"
+        android:lineSpacingExtra="0x7f070cec"
+        android:fontFamily="0x7f070fce"
+        android:letterSpacing="0.02"/>
+    <com.whatsapp.ui.wds.components.button.WDSButtonGroup
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:id="0x7f0b00f8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0x7f07103a"
+        android:layout_marginRight="0x7f07103a"
+        android:layout_marginBottom="0x7f07103a"
+        app:NOT_FOUND_0x12="0">
+        <com.whatsapp.ui.wds.components.button.WDSButton
+            android:textSize="0x7f070fb0"
+            android:id="0x7f0b0d8f"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0x7f1210cd"
+            android:lineSpacingExtra="0x7f070cec"
+            android:fontFamily="0x7f070fcd"
+            android:letterSpacing="0.01"
+            app:NOT_FOUND_0x13="2"
+            app:NOT_FOUND_0x14="small"/>
+        <com.whatsapp.ui.wds.components.button.WDSButton
+            android:textSize="0x7f070fb0"
+            android:id="0x7f0b28c4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="0x7f070cec"
+            android:fontFamily="0x7f070fcd"
+            android:letterSpacing="0.01"
+            app:NOT_FOUND_0x13="1"
+            app:NOT_FOUND_0x14="small"/>
+    </com.whatsapp.ui.wds.components.button.WDSButtonGroup>
+</LinearLayout>

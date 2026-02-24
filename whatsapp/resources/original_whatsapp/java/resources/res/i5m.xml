@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="0x7f0804b8"
+        android:id="0x7f0b29be"
+        android:title="0x7f123e30"
+        app:iconTint="0x7f0606ac"
+        app:showAsAction="collapseActionView"/>
+    <item
+        android:icon="0x7f080642"
+        android:id="0x7f0b29c9"
+        android:title="0x7f123e32"
+        app:iconTint="0x7f0606ac"
+        app:showAsAction="collapseActionView"/>
+    <item
+        android:icon="0x7f080662"
+        android:id="0x7f0b29ca"
+        android:title="0x7f124215"
+        app:iconTint="0x7f0606ac"
+        app:showAsAction="collapseActionView"/>
+    <item
+        android:icon="0x7f0806c1"
+        android:id="0x7f0b29cc"
+        android:title="0x7f123e34"
+        app:iconTint="0x7f0606ac"
+        app:showAsAction="collapseActionView"/>
+    <item
+        android:icon="0x7f08049e"
+        android:id="0x7f0b29c8"
+        android:title="0x7f12429f"
+        app:iconTint="0x7f0606ac"
+        app:showAsAction="collapseActionView"/>
+</menu>

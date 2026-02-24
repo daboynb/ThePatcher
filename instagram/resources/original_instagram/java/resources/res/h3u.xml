@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.facebook.fbui.drawable.custom.AppIkonDrawable xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fbui="http://schemas.android.com/apk/res-auto"
+    fbui:original_name="instagram_home_outline_24"
+    fbui:size_dp="24"
+    fbui:vector_index="496"/>

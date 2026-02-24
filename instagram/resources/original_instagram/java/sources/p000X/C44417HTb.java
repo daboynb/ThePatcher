@@ -1,0 +1,13 @@
+package p000X;
+
+import android.widget.TextView;
+import com.instagram.common.ui.widget.imageview.IgImageView;
+
+/* renamed from: X.HTb, reason: case insensitive filesystem */
+/* loaded from: classes15.dex */
+public final class C44417HTb extends AbstractC190587Xa {
+    public TextView A00;
+    public TextView A01;
+    public IgImageView A02;
+    public C82941Xyj A03;
+}

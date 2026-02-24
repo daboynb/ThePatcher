@@ -1,0 +1,50 @@
+.class public final LX/EVY;
+.super LX/EW4;
+.source ""
+
+
+# instance fields
+.field public final A00:Landroidx/appcompat/widget/AppCompatCheckBox;
+
+.field public final A01:Lcom/whatsapp/nativediscovery/businessdirectory/view/custom/FilterBottomSheetDialogFragment;
+
+
+# direct methods
+.method public constructor <init>(Landroidx/appcompat/widget/AppCompatCheckBox;Lcom/whatsapp/nativediscovery/businessdirectory/view/custom/FilterBottomSheetDialogFragment;)V
+    .locals 2
+
+    .line 0
+    const/4 v0, 0x0
+
+    .line 1
+    invoke-static {p1, v0}, LX/00C;->A0A(Ljava/lang/Object;I)V
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-direct {p0, p1}, LX/1HI;-><init>(Landroid/view/View;)V
+
+    .line 5
+    .line 6
+    .line 7
+    iput-object p1, p0, LX/EVY;->A00:Landroidx/appcompat/widget/AppCompatCheckBox;
+
+    .line 8
+    .line 9
+    iput-object p2, p0, LX/EVY;->A01:Lcom/whatsapp/nativediscovery/businessdirectory/view/custom/FilterBottomSheetDialogFragment;
+
+    .line 10
+    .line 11
+    const/4 v1, -0x1
+
+    .line 12
+    const/4 v0, -0x2
+
+    .line 13
+    invoke-static {p1, v1, v0}, LX/1ai;->A19(Landroid/view/View;II)V
+
+    .line 14
+    .line 15
+    .line 16
+    return-void
+.end method

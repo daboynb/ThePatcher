@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="0x7f08049e"
+        android:id="0x7f0b196f"
+        android:title="0x7f123d2b"
+        app:iconTint="0x7f060347"/>
+</menu>

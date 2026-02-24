@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="0x7f0b0d0c"
+    android:paddingBottom="0x7f070cf4"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="0x7f070cea"
+    style="0x7f1501a2">
+    <ViewStub
+        android:id="0x7f0b29c6"
+        android:layout="0x7f0e099c"
+        android:inflatedId="0x7f0b29c5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0x7f070cee"
+        android:layout_marginBottom="0x7f070cee"/>
+    <com.whatsapp.stickers.ui.BottomFadeRecyclerView
+        android:id="0x7f0b29d1"
+        android:paddingTop="0x7f070ce7"
+        android:paddingBottom="0x7f070cea"
+        android:fadingEdgeLength="0x7f070cea"
+        android:clipToPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:requiresFadingEdge="vertical"
+        android:layout_marginStart="0x7f070cea"
+        android:layout_marginEnd="0x7f070cea"
+        app:NOT_FOUND_0xf="0x7f070da4"/>
+</LinearLayout>

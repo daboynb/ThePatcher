@@ -1,0 +1,49 @@
+.class public LX/1Of;
+.super LX/1J0;
+.source ""
+
+
+# instance fields
+.field public A00:I
+
+.field public A01:J
+
+.field public A02:LX/1CU;
+
+.field public A03:Lcom/whatsapp/infra/core/jid/UserJid;
+
+.field public A04:Ljava/lang/String;
+
+.field public A05:Ljava/lang/String;
+
+.field public A06:Ljava/lang/String;
+
+.field public A07:Z
+
+
+# virtual methods
+.method public A0d()Ljava/lang/String;
+    .locals 1
+
+    .line 0
+    iget-object v0, p0, LX/1Of;->A04:Ljava/lang/String;
+
+    .line 1
+    .line 2
+    return-object v0
+    .line 3
+.end method
+
+.method public A0f(Ljava/lang/String;)V
+    .locals 0
+
+    .line 0
+    iput-object p1, p0, LX/1Of;->A04:Ljava/lang/String;
+
+    .line 1
+    .line 2
+    return-void
+    .line 3
+    .line 4
+    .line 5
+.end method

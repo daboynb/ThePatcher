@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.facebook.fbui.drawable.custom.AppRedrawableDrawable xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fbui="http://schemas.android.com/apk/res-auto"
+    android:height="516px"
+    android:width="1380px"
+    fbui:assetServerHandle="AQAEOH_n8W34"
+    fbui:density="640"/>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp">
+    <View
+        android:id="0x7f0b1e8c"
+        android:background="0x7f080345"
+        android:visibility="invisible"
+        android:layout_width="116dp"
+        android:layout_height="74dp"
+        app:NOT_FOUND_0xd="0"
+        app:NOT_FOUND_0xf="0"
+        app:NOT_FOUND_0x10="0"
+        app:NOT_FOUND_0x12="0"/>
+    <androidx.cardview.widget.CardView
+        android:id="0x7f0b1e8b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:NOT_FOUND_0xa="?unknown_attr_ref: 7f040a59"
+        app:NOT_FOUND_0xb="4dp"
+        app:NOT_FOUND_0xc="0dp"
+        app:NOT_FOUND_0xd="0"
+        app:NOT_FOUND_0xe="0"
+        app:NOT_FOUND_0x11="0"
+        app:NOT_FOUND_0x12="0">
+        <com.whatsapp.ui.coreui.base.WaImageView
+            android:id="0x7f0b03a9"
+            android:layout_width="112dp"
+            android:layout_height="70dp"
+            android:scaleType="fitXY"/>
+        <com.whatsapp.ui.coreui.base.WaImageView
+            android:layout_gravity="center"
+            android:id="0x7f0b247d"
+            android:background="0x7f080318"
+            android:visibility="gone"
+            android:layout_width="0x7f070581"
+            android:layout_height="0x7f070580"
+            android:scaleType="center"
+            app:NOT_FOUND_0x13="0x7f0804b3"/>
+        <ProgressBar
+            android:layout_gravity="center"
+            android:id="0x7f0b02eb"
+            android:visibility="gone"
+            android:layout_width="0x7f070583"
+            android:layout_height="0x7f070582"
+            android:indeterminate="true"/>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

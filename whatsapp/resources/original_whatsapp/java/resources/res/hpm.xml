@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:id="0x7f0b1ad1"
+    android:paddingTop="0x7f07092d"
+    android:paddingBottom="0x7f07092b"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <com.google.android.material.button.MaterialButton
+            android:gravity="start|center_vertical"
+            android:layout_gravity="start"
+            android:id="0x7f0b1ad2"
+            android:layout_width="wrap_content"
+            android:layout_height="0x7f07092c"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            app:NOT_FOUND_0xc="0x7f0807fd"
+            app:NOT_FOUND_0xd="0x4"
+            app:NOT_FOUND_0xe="4dp"
+            style="?unknown_attr_ref: 7f040543"/>
+    </FrameLayout>
+    <com.google.android.material.button.MaterialButton
+        android:gravity="center"
+        android:id="0x7f0b1ad4"
+        android:layout_width="0x7f07095e"
+        android:layout_height="0x7f07092c"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:contentDescription="0x7f124048"
+        app:NOT_FOUND_0xc="0x7f0807fb"
+        style="?unknown_attr_ref: 7f040540"/>
+    <com.google.android.material.button.MaterialButton
+        android:gravity="center"
+        android:id="0x7f0b1ad3"
+        android:layout_width="0x7f07095e"
+        android:layout_height="0x7f07092c"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:contentDescription="0x7f124047"
+        app:NOT_FOUND_0xc="0x7f0807fa"
+        style="?unknown_attr_ref: 7f040540"/>
+</LinearLayout>

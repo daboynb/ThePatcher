@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Transition
+        app:constraintSetEnd="0x7f0b0f9f"
+        app:constraintSetStart="0x7f0b28aa"
+        app:duration="500"
+        app:motionInterpolator="0"/>
+    <ConstraintSet android:id="0x7f0b28aa">
+        <Constraint
+            android:id="0x7f0b303e"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="1"
+            app:layout_constraintEnd_toEndOf="0"
+            app:layout_constraintStart_toStartOf="0"
+            app:layout_constraintTop_toTopOf="0"/>
+        <Constraint
+            android:id="0x7f0b1898"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="1"
+            app:layout_constraintEnd_toEndOf="0"
+            app:layout_constraintStart_toStartOf="0"
+            app:layout_constraintTop_toBottomOf="0x7f0b303e"/>
+    </ConstraintSet>
+    <ConstraintSet android:id="0x7f0b0f9f">
+        <Constraint
+            android:id="0x7f0b1898"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:alpha="0"
+            android:translationY="-500dp"
+            app:layout_constraintEnd_toEndOf="0"
+            app:layout_constraintStart_toStartOf="0"
+            app:layout_constraintTop_toTopOf="0"/>
+        <Constraint
+            android:id="0x7f0b303e"
+            android:layout_width="match_parent"
+            android:layout_height="?unknown_attr_ref: 7f04000d"
+            android:alpha="1"
+            app:layout_constraintEnd_toEndOf="0"
+            app:layout_constraintStart_toStartOf="0"
+            app:layout_constraintTop_toTopOf="0x7f0b1898"/>
+        <Constraint
+            android:id="0x7f0b2c2d"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:alpha="0"
+            app:layout_constraintEnd_toEndOf="0"
+            app:layout_constraintStart_toStartOf="0"
+            app:layout_constraintTop_toTopOf="0"
+            style="0x7f1502aa"/>
+    </ConstraintSet>
+</MotionScene>

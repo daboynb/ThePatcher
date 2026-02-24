@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <View
+        android:id="0x7f0b13d9"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:transitionName="0x7f1242e2"/>
+    <View
+        android:id="0x7f0b11f0"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:transitionName="0x7f1242e1"/>
+    <View
+        android:id="0x7f0b116b"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:transitionName="0x7f1242e0"/>
+    <View
+        android:layout_gravity="bottom|right"
+        android:id="0x7f0b2696"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginRight="44dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="44dp"
+        android:layout_alignParentEnd="true"
+        android:transitionName="0x7f1242e7"/>
+</merge>

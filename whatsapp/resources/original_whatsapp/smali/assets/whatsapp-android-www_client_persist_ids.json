@@ -1,0 +1,842 @@
+{
+  "AIStudioWAManageMemoryDeleteAllMutation": {
+    "operation_name": "AIStudioWAManageMemoryDeleteAllMutation",
+    "operation_name_hash": "4044438949",
+    "operation_text_hash": "12919687634934254595",
+    "client_doc_id": "404443894912919687634934254595",
+    "doc_id": 30717961127818650,
+    "schema": "whatsapp"
+  },
+  "AIStudioWAManageMemoryDeleteMutation": {
+    "operation_name": "AIStudioWAManageMemoryDeleteMutation",
+    "operation_name_hash": "3698487340",
+    "operation_text_hash": "14741381959344278634",
+    "client_doc_id": "369848734014741381959344278634",
+    "doc_id": 9705428856224794,
+    "schema": "whatsapp"
+  },
+  "AIStudioWAManageMemoryQuery": {
+    "operation_name": "AIStudioWAManageMemoryQuery",
+    "operation_name_hash": "2195650822",
+    "operation_text_hash": "23947038027273135",
+    "client_doc_id": "219565082223947038027273135",
+    "doc_id": 31947510941561277,
+    "schema": "whatsapp"
+  },
+  "AiCharacterUpdateHideStatus": {
+    "operation_name": "AiCharacterUpdateHideStatus",
+    "operation_name_hash": "1967901027",
+    "operation_text_hash": "5001262082522413145",
+    "client_doc_id": "19679010275001262082522413145",
+    "doc_id": 9487449704689543,
+    "schema": "whatsapp"
+  },
+  "AiCreationCheckCreatedByMe": {
+    "operation_name": "AiCreationCheckCreatedByMe",
+    "operation_name_hash": "1563104331",
+    "operation_text_hash": "8649872855921826067",
+    "client_doc_id": "15631043318649872855921826067",
+    "doc_id": 25141566425478198,
+    "schema": "whatsapp"
+  },
+  "AiCreationDeletePersona": {
+    "operation_name": "AiCreationDeletePersona",
+    "operation_name_hash": "741125193",
+    "operation_text_hash": "4589309061224592499",
+    "client_doc_id": "7411251934589309061224592499",
+    "doc_id": 24692252033716044,
+    "schema": "whatsapp"
+  },
+  "AiCreationFetchAiPersonaForEditing": {
+    "operation_name": "AiCreationFetchAiPersonaForEditing",
+    "operation_name_hash": "2738748962",
+    "operation_text_hash": "14010360494594985468",
+    "client_doc_id": "273874896214010360494594985468",
+    "doc_id": 25312225268410934,
+    "schema": "whatsapp"
+  },
+  "AiCreationFetchCreatedBot": {
+    "operation_name": "AiCreationFetchCreatedBot",
+    "operation_name_hash": "1607483460",
+    "operation_text_hash": "6451735647715159208",
+    "client_doc_id": "16074834606451735647715159208",
+    "doc_id": 25201089862855982,
+    "schema": "whatsapp"
+  },
+  "AiCreationFetchVoiceSample": {
+    "operation_name": "AiCreationFetchVoiceSample",
+    "operation_name_hash": "2063439304",
+    "operation_text_hash": "13915192257986618695",
+    "client_doc_id": "206343930413915192257986618695",
+    "doc_id": 25257088623922965,
+    "schema": "whatsapp"
+  },
+  "AiCreationGenerateImageCandidate": {
+    "operation_name": "AiCreationGenerateImageCandidate",
+    "operation_name_hash": "2618519025",
+    "operation_text_hash": "8699253373841351475",
+    "client_doc_id": "26185190258699253373841351475",
+    "doc_id": 9805965016171752,
+    "schema": "whatsapp"
+  },
+  "AiCreationUpdatePersona": {
+    "operation_name": "AiCreationUpdatePersona",
+    "operation_name_hash": "3159588527",
+    "operation_text_hash": "1967491578637621689",
+    "client_doc_id": "31595885271967491578637621689",
+    "doc_id": 25011855005109939,
+    "schema": "whatsapp"
+  },
+  "AiCreationUploadImageMutation": {
+    "operation_name": "AiCreationUploadImageMutation",
+    "operation_name_hash": "3475433326",
+    "operation_text_hash": "13816038732551694725",
+    "client_doc_id": "347543332613816038732551694725",
+    "doc_id": 25003350059353073,
+    "schema": "whatsapp"
+  },
+  "AiHomeFetchUserCreatedPersonasQuery": {
+    "operation_name": "AiHomeFetchUserCreatedPersonasQuery",
+    "operation_name_hash": "2027335855",
+    "operation_text_hash": "6071202385199200749",
+    "client_doc_id": "20273358556071202385199200749",
+    "doc_id": 24814544721573714,
+    "schema": "whatsapp"
+  },
+  "AiHomeLayoutCategoryQuery": {
+    "operation_name": "AiHomeLayoutCategoryQuery",
+    "operation_name_hash": "1645918907",
+    "operation_text_hash": "13254266499714641499",
+    "client_doc_id": "164591890713254266499714641499",
+    "doc_id": 24996109326708194,
+    "schema": "whatsapp"
+  },
+  "AiHomeSearchQuery": {
+    "operation_name": "AiHomeSearchQuery",
+    "operation_name_hash": "2693899848",
+    "operation_text_hash": "16212846426804267489",
+    "client_doc_id": "269389984816212846426804267489",
+    "doc_id": 25066522176370416,
+    "schema": "whatsapp"
+  },
+  "AiHomeSectionByTitleQuery": {
+    "operation_name": "AiHomeSectionByTitleQuery",
+    "operation_name_hash": "2149954000",
+    "operation_text_hash": "6283368726243840687",
+    "client_doc_id": "21499540006283368726243840687",
+    "doc_id": 25009431288747296,
+    "schema": "whatsapp"
+  },
+  "AiHomeSelectedPersonaInterestQuery": {
+    "operation_name": "AiHomeSelectedPersonaInterestQuery",
+    "operation_name_hash": "441752101",
+    "operation_text_hash": "5319353530776397010",
+    "client_doc_id": "4417521015319353530776397010",
+    "doc_id": 24857911700569519,
+    "schema": "whatsapp"
+  },
+  "AiSearchEmptyStateConversationStartersQuery": {
+    "operation_name": "AiSearchEmptyStateConversationStartersQuery",
+    "operation_name_hash": "1257209957",
+    "operation_text_hash": "14097158944456081582",
+    "client_doc_id": "125720995714097158944456081582",
+    "doc_id": 25793325203602626,
+    "schema": "whatsapp"
+  },
+  "AvatarUserRecovery": {
+    "operation_name": "AvatarUserRecovery",
+    "operation_name_hash": "3231949671",
+    "operation_text_hash": "7992861605269354427",
+    "client_doc_id": "32319496717992861605269354427",
+    "doc_id": 24876192928715394,
+    "schema": "whatsapp"
+  },
+  "BotProactiveMessageControlStatus": {
+    "operation_name": "BotProactiveMessageControlStatus",
+    "operation_name_hash": "4068757232",
+    "operation_text_hash": "15022577532382592989",
+    "client_doc_id": "406875723215022577532382592989",
+    "doc_id": 24651002484600325,
+    "schema": "whatsapp"
+  },
+  "BotProactiveMessageControlStatusUpdate": {
+    "operation_name": "BotProactiveMessageControlStatusUpdate",
+    "operation_name_hash": "3419514836",
+    "operation_text_hash": "10742964154836479695",
+    "client_doc_id": "341951483610742964154836479695",
+    "doc_id": 24122315620764244,
+    "schema": "whatsapp"
+  },
+  "BotProfilesSyncQuery": {
+    "operation_name": "BotProfilesSyncQuery",
+    "operation_name_hash": "409471163",
+    "operation_text_hash": "9900754364412857551",
+    "client_doc_id": "4094711639900754364412857551",
+    "doc_id": 24928863826766535,
+    "schema": "whatsapp"
+  },
+  "BrSaveCPF": {
+    "operation_name": "BrSaveCPF",
+    "operation_name_hash": "506102815",
+    "operation_text_hash": "5264531423110098203",
+    "client_doc_id": "5061028155264531423110098203",
+    "doc_id": 25491798377107610,
+    "schema": "whatsapp"
+  },
+  "BrandIdsGetPhoneNumbers": {
+    "operation_name": "BrandIdsGetPhoneNumbers",
+    "operation_name_hash": "3232215082",
+    "operation_text_hash": "3649123620627068229",
+    "client_doc_id": "32322150823649123620627068229",
+    "doc_id": 33159498536982766,
+    "schema": "whatsapp"
+  },
+  "CanonicalEntQueryFeature": {
+    "operation_name": "CanonicalEntQueryFeature",
+    "operation_name_hash": "516443803",
+    "operation_text_hash": "10351972685535533756",
+    "client_doc_id": "51644380310351972685535533756",
+    "doc_id": 24676915942008137,
+    "schema": "whatsapp"
+  },
+  "CanonicalEntSetupFeature": {
+    "operation_name": "CanonicalEntSetupFeature",
+    "operation_name_hash": "3994797968",
+    "operation_text_hash": "1577624965481556109",
+    "client_doc_id": "39947979681577624965481556109",
+    "doc_id": 24192659730425374,
+    "schema": "whatsapp"
+  },
+  "CanonicalEntTeardownFeature": {
+    "operation_name": "CanonicalEntTeardownFeature",
+    "operation_name_hash": "253389616",
+    "operation_text_hash": "9778258118183973797",
+    "client_doc_id": "2533896169778258118183973797",
+    "doc_id": 30858669277110518,
+    "schema": "whatsapp"
+  },
+  "CompletePixTransaction": {
+    "operation_name": "CompletePixTransaction",
+    "operation_name_hash": "2152258361",
+    "operation_text_hash": "6223470609334601451",
+    "client_doc_id": "21522583616223470609334601451",
+    "doc_id": 25561969973442564,
+    "schema": "whatsapp"
+  },
+  "CreateEvent": {
+    "operation_name": "CreateEvent",
+    "operation_name_hash": "1993675081",
+    "operation_text_hash": "17480516001336165916",
+    "client_doc_id": "199367508117480516001336165916",
+    "doc_id": 25542225318812412,
+    "schema": "whatsapp"
+  },
+  "DeleteGenAiTasks": {
+    "operation_name": "DeleteGenAiTasks",
+    "operation_name_hash": "3140900343",
+    "operation_text_hash": "10489306405029007262",
+    "client_doc_id": "314090034310489306405029007262",
+    "doc_id": 24358846127109425,
+    "schema": "whatsapp"
+  },
+  "DeleteUserBillAccount": {
+    "operation_name": "DeleteUserBillAccount",
+    "operation_name_hash": "3136832859",
+    "operation_text_hash": "7912656717111633514",
+    "client_doc_id": "31368328597912656717111633514",
+    "doc_id": 24937622855831031,
+    "schema": "whatsapp"
+  },
+  "EditAGenAiTask": {
+    "operation_name": "EditAGenAiTask",
+    "operation_name_hash": "1793556149",
+    "operation_text_hash": "16122220142019959632",
+    "client_doc_id": "179355614916122220142019959632",
+    "doc_id": 24357066917314968,
+    "schema": "whatsapp"
+  },
+  "ExternalCtxAuthoriseWAChat": {
+    "operation_name": "ExternalCtxAuthoriseWAChat",
+    "operation_name_hash": "2405946975",
+    "operation_text_hash": "3205537044838353134",
+    "client_doc_id": "24059469753205537044838353134",
+    "doc_id": 31162432756736008,
+    "schema": "whatsapp"
+  },
+  "FacebookAccountNameQuery": {
+    "operation_name": "FacebookAccountNameQuery",
+    "operation_name_hash": "2728584987",
+    "operation_text_hash": "10287297782128354274",
+    "client_doc_id": "272858498710287297782128354274",
+    "doc_id": 25250471057951834,
+    "schema": "whatsapp"
+  },
+  "GenAIImagine3pForIntentsWA": {
+    "operation_name": "GenAIImagine3pForIntentsWA",
+    "operation_name_hash": "1290060743",
+    "operation_text_hash": "502669673981311233",
+    "client_doc_id": "1290060743502669673981311233",
+    "doc_id": 25694806590191868,
+    "schema": "whatsapp"
+  },
+  "GenCreatePaymentKey": {
+    "operation_name": "GenCreatePaymentKey",
+    "operation_name_hash": "503372138",
+    "operation_text_hash": "1907395974103539275",
+    "client_doc_id": "5033721381907395974103539275",
+    "doc_id": 24662763616751127,
+    "schema": "whatsapp"
+  },
+  "GenDeletePaymentKey": {
+    "operation_name": "GenDeletePaymentKey",
+    "operation_name_hash": "874346956",
+    "operation_text_hash": "11300691053393228995",
+    "client_doc_id": "87434695611300691053393228995",
+    "doc_id": 25206218195637619,
+    "schema": "whatsapp"
+  },
+  "GenUpdatePaymentKey": {
+    "operation_name": "GenUpdatePaymentKey",
+    "operation_name_hash": "63909757",
+    "operation_text_hash": "12346993779295070546",
+    "client_doc_id": "6390975712346993779295070546",
+    "doc_id": 31853210500991234,
+    "schema": "whatsapp"
+  },
+  "GetAiPredictedAge": {
+    "operation_name": "GetAiPredictedAge",
+    "operation_name_hash": "3634815837",
+    "operation_text_hash": "6654145976909868961",
+    "client_doc_id": "36348158376654145976909868961",
+    "doc_id": 34158896507030941,
+    "schema": "whatsapp"
+  },
+  "GetBillComplaintUrl": {
+    "operation_name": "GetBillComplaintUrl",
+    "operation_name_hash": "1169813414",
+    "operation_text_hash": "1861435220866277166",
+    "client_doc_id": "11698134141861435220866277166",
+    "doc_id": 33320245170908123,
+    "schema": "whatsapp"
+  },
+  "GetBillReceipt": {
+    "operation_name": "GetBillReceipt",
+    "operation_name_hash": "661755942",
+    "operation_text_hash": "9242081853918027754",
+    "client_doc_id": "6617559429242081853918027754",
+    "doc_id": 24825217813815706,
+    "schema": "whatsapp"
+  },
+  "GetBillerPlans": {
+    "operation_name": "GetBillerPlans",
+    "operation_name_hash": "3432085797",
+    "operation_text_hash": "5495875362500636995",
+    "client_doc_id": "34320857975495875362500636995",
+    "doc_id": 24460981883581605,
+    "schema": "whatsapp"
+  },
+  "GetBusinessProfileWebsiteShimUrlQuery": {
+    "operation_name": "GetBusinessProfileWebsiteShimUrlQuery",
+    "operation_name_hash": "1620721449",
+    "operation_text_hash": "15308092582049477201",
+    "client_doc_id": "162072144915308092582049477201",
+    "doc_id": 32216187747994820,
+    "schema": "whatsapp"
+  },
+  "GetEvent": {
+    "operation_name": "GetEvent",
+    "operation_name_hash": "2351456212",
+    "operation_text_hash": "1220882062869435245",
+    "client_doc_id": "23514562121220882062869435245",
+    "doc_id": 25859215513733997,
+    "schema": "whatsapp"
+  },
+  "GetMerchantPixInfo": {
+    "operation_name": "GetMerchantPixInfo",
+    "operation_name_hash": "2690042484",
+    "operation_text_hash": "13419099720452802591",
+    "client_doc_id": "269004248413419099720452802591",
+    "doc_id": 32899184613062020,
+    "schema": "whatsapp"
+  },
+  "GetPaymentKey": {
+    "operation_name": "GetPaymentKey",
+    "operation_name_hash": "3123843325",
+    "operation_text_hash": "6765500711176474260",
+    "client_doc_id": "31238433256765500711176474260",
+    "doc_id": 32245076985140017,
+    "schema": "whatsapp"
+  },
+  "GetPixBankList": {
+    "operation_name": "GetPixBankList",
+    "operation_name_hash": "3075491595",
+    "operation_text_hash": "13759636326838146082",
+    "client_doc_id": "307549159513759636326838146082",
+    "doc_id": 23883352801362927,
+    "schema": "whatsapp"
+  },
+  "GetSubscribedTasksForThread": {
+    "operation_name": "GetSubscribedTasksForThread",
+    "operation_name_hash": "535147085",
+    "operation_text_hash": "14770657446252136941",
+    "client_doc_id": "53514708514770657446252136941",
+    "doc_id": 25301053199520773,
+    "schema": "whatsapp"
+  },
+  "GetSubscriptionsAndFeatureFlags": {
+    "operation_name": "GetSubscriptionsAndFeatureFlags",
+    "operation_name_hash": "3153975642",
+    "operation_text_hash": "10815838078549179984",
+    "client_doc_id": "315397564210815838078549179984",
+    "doc_id": 26245030708467559,
+    "schema": "whatsapp"
+  },
+  "GetUpiAccounts": {
+    "operation_name": "GetUpiAccounts",
+    "operation_name_hash": "2371564387",
+    "operation_text_hash": "3350221419548856960",
+    "client_doc_id": "23715643873350221419548856960",
+    "doc_id": 25691302307224710,
+    "schema": "whatsapp"
+  },
+  "GetUpiLiteDetails": {
+    "operation_name": "GetUpiLiteDetails",
+    "operation_name_hash": "3353444309",
+    "operation_text_hash": "18066056178652771234",
+    "client_doc_id": "335344430918066056178652771234",
+    "doc_id": 25808397275476137,
+    "schema": "whatsapp"
+  },
+  "GetUpiToken": {
+    "operation_name": "GetUpiToken",
+    "operation_name_hash": "2040382152",
+    "operation_text_hash": "11292373250288451744",
+    "client_doc_id": "204038215211292373250288451744",
+    "doc_id": 25639185495767704,
+    "schema": "whatsapp"
+  },
+  "ImagineCanvasContentQuery": {
+    "operation_name": "ImagineCanvasContentQuery",
+    "operation_name_hash": "2776759545",
+    "operation_text_hash": "10595097578959873690",
+    "client_doc_id": "277675954510595097578959873690",
+    "doc_id": 25210964258554526,
+    "schema": "whatsapp"
+  },
+  "ImagineEditMutation": {
+    "operation_name": "ImagineEditMutation",
+    "operation_name_hash": "163889763",
+    "operation_text_hash": "5714128742407002850",
+    "client_doc_id": "1638897635714128742407002850",
+    "doc_id": 25323664330587394,
+    "schema": "whatsapp"
+  },
+  "ImagineExpandMutation": {
+    "operation_name": "ImagineExpandMutation",
+    "operation_name_hash": "2198997369",
+    "operation_text_hash": "1654692386956092046",
+    "client_doc_id": "21989973691654692386956092046",
+    "doc_id": 32858583790455344,
+    "schema": "whatsapp"
+  },
+  "ImagineGenerateAnimateMutation": {
+    "operation_name": "ImagineGenerateAnimateMutation",
+    "operation_name_hash": "2648393992",
+    "operation_text_hash": "17231303392415465947",
+    "client_doc_id": "264839399217231303392415465947",
+    "doc_id": 24448515001488351,
+    "schema": "whatsapp"
+  },
+  "ImagineIntentsMutation": {
+    "operation_name": "ImagineIntentsMutation",
+    "operation_name_hash": "2006348850",
+    "operation_text_hash": "17626422794467358856",
+    "client_doc_id": "200634885017626422794467358856",
+    "doc_id": 25251273411203084,
+    "schema": "whatsapp"
+  },
+  "ImagineMeDeleteOnboardingMutation": {
+    "operation_name": "ImagineMeDeleteOnboardingMutation",
+    "operation_name_hash": "2501868635",
+    "operation_text_hash": "14177329094905840584",
+    "client_doc_id": "250186863514177329094905840584",
+    "doc_id": 25412186125078290,
+    "schema": "whatsapp"
+  },
+  "ImagineMeIsOnboardedQuery": {
+    "operation_name": "ImagineMeIsOnboardedQuery",
+    "operation_name_hash": "2379203868",
+    "operation_text_hash": "2065044425680214413",
+    "client_doc_id": "23792038682065044425680214413",
+    "doc_id": 25177591448557895,
+    "schema": "whatsapp"
+  },
+  "ImagineMeOnboardingMutation": {
+    "operation_name": "ImagineMeOnboardingMutation",
+    "operation_name_hash": "1375342458",
+    "operation_text_hash": "12304435298048234186",
+    "client_doc_id": "137534245812304435298048234186",
+    "doc_id": 33085607387721667,
+    "schema": "whatsapp"
+  },
+  "ImagineMeOnboardingWithValidationMutation": {
+    "operation_name": "ImagineMeOnboardingWithValidationMutation",
+    "operation_name_hash": "698433124",
+    "operation_text_hash": "2476542689482797802",
+    "client_doc_id": "6984331242476542689482797802",
+    "doc_id": 33430299463235084,
+    "schema": "whatsapp"
+  },
+  "ImagineReportMutation": {
+    "operation_name": "ImagineReportMutation",
+    "operation_name_hash": "2265603647",
+    "operation_text_hash": "13144409217671644614",
+    "client_doc_id": "226560364713144409217671644614",
+    "doc_id": 26056343243953412,
+    "schema": "whatsapp"
+  },
+  "ImagineSpotlightMutation": {
+    "operation_name": "ImagineSpotlightMutation",
+    "operation_name_hash": "820546291",
+    "operation_text_hash": "16732021883500199964",
+    "client_doc_id": "82054629116732021883500199964",
+    "doc_id": 24814269768178582,
+    "schema": "whatsapp"
+  },
+  "ImmersiveCreationCompleteCreationMutation": {
+    "operation_name": "ImmersiveCreationCompleteCreationMutation",
+    "operation_name_hash": "2640099865",
+    "operation_text_hash": "17078148186390524138",
+    "client_doc_id": "264009986517078148186390524138",
+    "doc_id": 25751460157775135,
+    "schema": "whatsapp"
+  },
+  "ImmersiveCreationConfigurationQuery": {
+    "operation_name": "ImmersiveCreationConfigurationQuery",
+    "operation_name_hash": "1961732927",
+    "operation_text_hash": "18301368701453393828",
+    "client_doc_id": "196173292718301368701453393828",
+    "doc_id": 32047877418194044,
+    "schema": "whatsapp"
+  },
+  "ImmersiveCreationInitiateCreationMutation": {
+    "operation_name": "ImmersiveCreationInitiateCreationMutation",
+    "operation_name_hash": "4158739487",
+    "operation_text_hash": "15490876667272395731",
+    "client_doc_id": "415873948715490876667272395731",
+    "doc_id": 24740630152286229,
+    "schema": "whatsapp"
+  },
+  "ImmersiveCreationUpdateIntroFieldMutation": {
+    "operation_name": "ImmersiveCreationUpdateIntroFieldMutation",
+    "operation_name_hash": "1288873441",
+    "operation_text_hash": "6551574348214477466",
+    "client_doc_id": "12888734416551574348214477466",
+    "doc_id": 9329315157192247,
+    "schema": "whatsapp"
+  },
+  "ImmersiveCreationUpdateNameFieldMutation": {
+    "operation_name": "ImmersiveCreationUpdateNameFieldMutation",
+    "operation_name_hash": "3478881117",
+    "operation_text_hash": "17278073331178194866",
+    "client_doc_id": "347888111717278073331178194866",
+    "doc_id": 25101403806206806,
+    "schema": "whatsapp"
+  },
+  "ImmersiveCreationUpdatePersonalityFieldMutation": {
+    "operation_name": "ImmersiveCreationUpdatePersonalityFieldMutation",
+    "operation_name_hash": "2681146460",
+    "operation_text_hash": "13171191669191688988",
+    "client_doc_id": "268114646013171191669191688988",
+    "doc_id": 24953198350958076,
+    "schema": "whatsapp"
+  },
+  "ImmersiveCreationUpdateVoiceFieldMutation": {
+    "operation_name": "ImmersiveCreationUpdateVoiceFieldMutation",
+    "operation_name_hash": "330172162",
+    "operation_text_hash": "6896925436050330984",
+    "client_doc_id": "3301721626896925436050330984",
+    "doc_id": 25686973447571242,
+    "schema": "whatsapp"
+  },
+  "InstagramAccountNameQuery": {
+    "operation_name": "InstagramAccountNameQuery",
+    "operation_name_hash": "346720653",
+    "operation_text_hash": "16454853416751832736",
+    "client_doc_id": "34672065316454853416751832736",
+    "doc_id": 25214758521544979,
+    "schema": "whatsapp"
+  },
+  "LoadAvatarPoses": {
+    "operation_name": "LoadAvatarPoses",
+    "operation_name_hash": "1379187799",
+    "operation_text_hash": "4218820752319515627",
+    "client_doc_id": "13791877994218820752319515627",
+    "doc_id": 25262916630008929,
+    "schema": "whatsapp"
+  },
+  "MetaAIMemoryDelete": {
+    "operation_name": "MetaAIMemoryDelete",
+    "operation_name_hash": "2873417172",
+    "operation_text_hash": "10841381401633833321",
+    "client_doc_id": "287341717210841381401633833321",
+    "doc_id": 24675700195394533,
+    "schema": "whatsapp"
+  },
+  "MetaAIMemoryDeleteAll": {
+    "operation_name": "MetaAIMemoryDeleteAll",
+    "operation_name_hash": "1750606776",
+    "operation_text_hash": "2218888763639548222",
+    "client_doc_id": "17506067762218888763639548222",
+    "doc_id": 25139336568989424,
+    "schema": "whatsapp"
+  },
+  "MetaAIMemoryQuery": {
+    "operation_name": "MetaAIMemoryQuery",
+    "operation_name_hash": "1220578374",
+    "operation_text_hash": "13683642556165994164",
+    "client_doc_id": "122057837413683642556165994164",
+    "doc_id": 24926755306989286,
+    "schema": "whatsapp"
+  },
+  "MetaAIUnifiedMemoryQuery": {
+    "operation_name": "MetaAIUnifiedMemoryQuery",
+    "operation_name_hash": "983156567",
+    "operation_text_hash": "4426931977087987631",
+    "client_doc_id": "9831565674426931977087987631",
+    "doc_id": 25207057475554615,
+    "schema": "whatsapp"
+  },
+  "MetaAIVoiceWAOptionsFetchQuery": {
+    "operation_name": "MetaAIVoiceWAOptionsFetchQuery",
+    "operation_name_hash": "1570756879",
+    "operation_text_hash": "7691305823645894010",
+    "client_doc_id": "15707568797691305823645894010",
+    "doc_id": 25173439348954281,
+    "schema": "whatsapp"
+  },
+  "MetaAIVoiceWAOptionsWithDefaultFetchQuery": {
+    "operation_name": "MetaAIVoiceWAOptionsWithDefaultFetchQuery",
+    "operation_name_hash": "326251702",
+    "operation_text_hash": "8177011216832788538",
+    "client_doc_id": "3262517028177011216832788538",
+    "doc_id": 32678535865070707,
+    "schema": "whatsapp"
+  },
+  "MetaAIWAMemoryOptOutStatusQuery": {
+    "operation_name": "MetaAIWAMemoryOptOutStatusQuery",
+    "operation_name_hash": "3408348602",
+    "operation_text_hash": "13197348168486590243",
+    "client_doc_id": "340834860213197348168486590243",
+    "doc_id": 32233077506339604,
+    "schema": "whatsapp"
+  },
+  "MetaAIWAMemoryOptOutStatusUpdate": {
+    "operation_name": "MetaAIWAMemoryOptOutStatusUpdate",
+    "operation_name_hash": "2446845625",
+    "operation_text_hash": "1899485572102012577",
+    "client_doc_id": "24468456251899485572102012577",
+    "doc_id": 24192448100382072,
+    "schema": "whatsapp"
+  },
+  "MetaPoiTypeAhead": {
+    "operation_name": "MetaPoiTypeAhead",
+    "operation_name_hash": "3848206196",
+    "operation_text_hash": "10233270752117375156",
+    "client_doc_id": "384820619610233270752117375156",
+    "doc_id": 24998731673114764,
+    "schema": "whatsapp"
+  },
+  "OxygenChannelOptInMutation": {
+    "operation_name": "OxygenChannelOptInMutation",
+    "operation_name_hash": "2772859561",
+    "operation_text_hash": "2907702886488413297",
+    "client_doc_id": "27728595612907702886488413297",
+    "doc_id": 32987565744221084,
+    "schema": "whatsapp"
+  },
+  "OxygenChannelOptOutMutation": {
+    "operation_name": "OxygenChannelOptOutMutation",
+    "operation_name_hash": "3408199189",
+    "operation_text_hash": "10770757336098698982",
+    "client_doc_id": "340819918910770757336098698982",
+    "doc_id": 25230178203329240,
+    "schema": "whatsapp"
+  },
+  "OxygenChannelStatusQuery": {
+    "operation_name": "OxygenChannelStatusQuery",
+    "operation_name_hash": "671184792",
+    "operation_text_hash": "5680551615457560615",
+    "client_doc_id": "6711847925680551615457560615",
+    "doc_id": 25600766796255945,
+    "schema": "whatsapp"
+  },
+  "PaslGetLoggerConfig": {
+    "operation_name": "PaslGetLoggerConfig",
+    "operation_name_hash": "1140545915",
+    "operation_text_hash": "12700446042830304188",
+    "client_doc_id": "114054591512700446042830304188",
+    "doc_id": 25514254748263113,
+    "schema": "whatsapp"
+  },
+  "PayWithPixPrecheck": {
+    "operation_name": "PayWithPixPrecheck",
+    "operation_name_hash": "1834131214",
+    "operation_text_hash": "5681200190580304430",
+    "client_doc_id": "18341312145681200190580304430",
+    "doc_id": 25489011890740687,
+    "schema": "whatsapp"
+  },
+  "PersonaInterestCategories": {
+    "operation_name": "PersonaInterestCategories",
+    "operation_name_hash": "3042836585",
+    "operation_text_hash": "13045425331054228671",
+    "client_doc_id": "304283658513045425331054228671",
+    "doc_id": 24880695001590454,
+    "schema": "whatsapp"
+  },
+  "QuickPromotionWhatsAppBatchFetchRoot": {
+    "operation_name": "QuickPromotionWhatsAppBatchFetchRoot",
+    "operation_name_hash": "2439990228",
+    "operation_text_hash": "16355983943976757401",
+    "client_doc_id": "243999022816355983943976757401",
+    "doc_id": 25890797043844036,
+    "schema": "whatsapp"
+  },
+  "RegisterAllAccounts": {
+    "operation_name": "RegisterAllAccounts",
+    "operation_name_hash": "847229954",
+    "operation_text_hash": "8784920833609519460",
+    "client_doc_id": "8472299548784920833609519460",
+    "doc_id": 33722449810701638,
+    "schema": "whatsapp"
+  },
+  "RegisterInit": {
+    "operation_name": "RegisterInit",
+    "operation_name_hash": "1579982745",
+    "operation_text_hash": "16189024002261583870",
+    "client_doc_id": "157998274516189024002261583870",
+    "doc_id": 25224082377250598,
+    "schema": "whatsapp"
+  },
+  "SaveAvatarPose": {
+    "operation_name": "SaveAvatarPose",
+    "operation_name_hash": "1684408753",
+    "operation_text_hash": "6474112965461555928",
+    "client_doc_id": "16844087536474112965461555928",
+    "doc_id": 24194307116878703,
+    "schema": "whatsapp"
+  },
+  "SelectedOrDefaultPoseQuery": {
+    "operation_name": "SelectedOrDefaultPoseQuery",
+    "operation_name_hash": "2723576575",
+    "operation_text_hash": "5838218577450826948",
+    "client_doc_id": "27235765755838218577450826948",
+    "doc_id": 24956844700642720,
+    "schema": "whatsapp"
+  },
+  "SetInterestMutation": {
+    "operation_name": "SetInterestMutation",
+    "operation_name_hash": "2882485523",
+    "operation_text_hash": "617153008820822175",
+    "client_doc_id": "2882485523617153008820822175",
+    "doc_id": 24923204200600659,
+    "schema": "whatsapp"
+  },
+  "SubmitBugReportMutation": {
+    "operation_name": "SubmitBugReportMutation",
+    "operation_name_hash": "4183342920",
+    "operation_text_hash": "8445516118206567862",
+    "client_doc_id": "41833429208445516118206567862",
+    "doc_id": 25907249708909478,
+    "schema": "whatsapp"
+  },
+  "UnifiedConversationStartersQuery": {
+    "operation_name": "UnifiedConversationStartersQuery",
+    "operation_name_hash": "3693238795",
+    "operation_text_hash": "14859896229300016053",
+    "client_doc_id": "369323879514859896229300016053",
+    "doc_id": 34518642361068688,
+    "schema": "whatsapp"
+  },
+  "WAQuickPromotionLogMutation": {
+    "operation_name": "WAQuickPromotionLogMutation",
+    "operation_name_hash": "2140154143",
+    "operation_text_hash": "6893770795445042346",
+    "client_doc_id": "21401541436893770795445042346",
+    "doc_id": 24712276558462963,
+    "schema": "whatsapp"
+  },
+  "WASupportMessageFeedbackMutation": {
+    "operation_name": "WASupportMessageFeedbackMutation",
+    "operation_name_hash": "4021328514",
+    "operation_text_hash": "2531486988490855955",
+    "client_doc_id": "40213285142531486988490855955",
+    "doc_id": 25850332711237186,
+    "schema": "whatsapp"
+  },
+  "WAWebBizCreateOrderJobMutation": {
+    "operation_name": "WAWebBizCreateOrderJobMutation",
+    "operation_name_hash": "1272471581",
+    "operation_text_hash": "8492674105628411445",
+    "client_doc_id": "12724715818492674105628411445",
+    "doc_id": 25358587583799492,
+    "schema": "whatsapp"
+  },
+  "WAWebBizGraphQLRefreshCartJob": {
+    "operation_name": "WAWebBizGraphQLRefreshCartJob",
+    "operation_name_hash": "3780523829",
+    "operation_text_hash": "7203465346998513264",
+    "client_doc_id": "37805238297203465346998513264",
+    "doc_id": 25132965943036702,
+    "schema": "whatsapp"
+  },
+  "WAWebBizQueryOrderJobQuery": {
+    "operation_name": "WAWebBizQueryOrderJobQuery",
+    "operation_name_hash": "1151593269",
+    "operation_text_hash": "923776899303712846",
+    "client_doc_id": "1151593269923776899303712846",
+    "doc_id": 33408128418834683,
+    "schema": "whatsapp"
+  },
+  "WWWCanonicalUserValid": {
+    "operation_name": "WWWCanonicalUserValid",
+    "operation_name_hash": "2739940124",
+    "operation_text_hash": "12118908205018122567",
+    "client_doc_id": "273994012412118908205018122567",
+    "doc_id": 25129145013440739,
+    "schema": "whatsapp"
+  },
+  "WamoAfsSubscriptionInfoQuery": {
+    "operation_name": "WamoAfsSubscriptionInfoQuery",
+    "operation_name_hash": "3187172068",
+    "operation_text_hash": "17585526585002438944",
+    "client_doc_id": "318717206817585526585002438944",
+    "doc_id": 26173991525527519,
+    "schema": "whatsapp"
+  },
+  "WamoSubCancelSubscription": {
+    "operation_name": "WamoSubCancelSubscription",
+    "operation_name_hash": "1935534507",
+    "operation_text_hash": "673903876959426078",
+    "client_doc_id": "1935534507673903876959426078",
+    "doc_id": 24229142763394573,
+    "schema": "whatsapp"
+  },
+  "WamoSubQueryStatus": {
+    "operation_name": "WamoSubQueryStatus",
+    "operation_name_hash": "110620671",
+    "operation_text_hash": "17982037347088506410",
+    "client_doc_id": "11062067117982037347088506410",
+    "doc_id": 25015488928115162,
+    "schema": "whatsapp"
+  },
+  "WhatsappCatalogReportProduct": {
+    "operation_name": "WhatsappCatalogReportProduct",
+    "operation_name_hash": "2659287406",
+    "operation_text_hash": "6762105822459448173",
+    "client_doc_id": "26592874066762105822459448173",
+    "doc_id": 31943750621890740,
+    "schema": "whatsapp"
+  }
+}

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ViewStub
+        android:layout_gravity="bottom"
+        android:id="0x7f0b190b"
+        android:inflatedId="0x7f0b1908"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <com.whatsapp.ui.coreui.base.WaImageButton
+        android:layout_gravity="bottom|right"
+        android:id="0x7f0b268e"
+        android:background="0x7f08078a"
+        android:layout_width="0x7f0708b3"
+        android:layout_height="0x7f0708b3"
+        android:layout_marginRight="0x7f070ce7"
+        android:layout_marginBottom="0x7f070ce7"
+        android:scaleType="center"
+        android:contentDescription="0x7f124217"
+        android:transitionName="0x7f1242e7"
+        android:stateListAnimator="0x7f010034"
+        app:NOT_FOUND_0x18="0x7f080794"
+        app:NOT_FOUND_0x19="?unknown_attr_ref: 7f040a4b"/>
+    <com.whatsapp.ui.coreui.base.WaTextView
+        android:textSize="0x7f070fb0"
+        android:textColor="0x7f0609ad"
+        android:ellipsize="none"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="0x7f0b1ab0"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="97dp"
+        android:text="0x7f1239fb"
+        android:singleLine="true"
+        android:drawablePadding="0x7f070ce7"
+        app:NOT_FOUND_0x15="0x7f0806f1"
+        app:NOT_FOUND_0x16="0x7f0609ad"
+        app:NOT_FOUND_0x17="5"
+        app:NOT_FOUND_0x1a="4"/>
+    <com.whatsapp.ui.coreui.base.WaImageButton
+        android:layout_gravity="bottom|right"
+        android:id="0x7f0b1aae"
+        android:padding="0x7f070ce8"
+        android:layout_width="0x7f0708b3"
+        android:layout_height="0x7f0708b3"
+        android:layout_marginRight="0x7f070ce7"
+        android:layout_marginBottom="0x7f070ce7"
+        android:scaleType="fitCenter"
+        android:contentDescription="0x7f124217"
+        android:transitionName="0x7f1242e7"
+        android:stateListAnimator="0x7f010034"
+        app:NOT_FOUND_0x18="0x7f08059a"
+        app:NOT_FOUND_0x19="?unknown_attr_ref: 7f040a4b"/>
+</merge>

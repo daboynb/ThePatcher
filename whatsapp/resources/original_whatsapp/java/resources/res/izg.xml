@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:whatsapp="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.whatsapp.ui.coreui.CircularProgressBar
+        android:layout_gravity="center"
+        android:id="0x7f0b17b8"
+        android:visibility="gone"
+        android:layout_width="118dp"
+        android:layout_height="118dp"
+        android:indeterminateOnly="true"
+        whatsapp:NOT_FOUND_0x6="@android:color/transparent"
+        whatsapp:NOT_FOUND_0x7="0x7f060541"
+        whatsapp:NOT_FOUND_0x8="@android:color/transparent"
+        whatsapp:NOT_FOUND_0x9="0x7f060542"
+        whatsapp:NOT_FOUND_0xa="1dp"
+        whatsapp:NOT_FOUND_0xb="10"/>
+</FrameLayout>

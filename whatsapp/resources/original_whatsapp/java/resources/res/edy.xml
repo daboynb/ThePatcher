@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:state_checked="true"
+        android:drawable="0x7f080ac3"/>
+    <item
+        android:state_pressed="false"
+        android:drawable="0x7f080ade"
+        app:tint="?unknown_attr_ref: 7f040a29"/>
+</selector>

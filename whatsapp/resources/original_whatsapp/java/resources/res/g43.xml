@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:clipChildren="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.whatsapp.ui.wds.components.actiontile.WDSActionTileGroup
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:background="?unknown_attr_ref: 7f040a32"
+        android:paddingTop="0x7f0705f5"
+        android:paddingBottom="0x7f0705f5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="0x7f07102e"
+        android:paddingEnd="0x7f07102e"/>
+</FrameLayout>

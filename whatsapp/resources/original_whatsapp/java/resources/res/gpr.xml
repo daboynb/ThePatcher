@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:id="0x7f0b1829"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="30dp">
+        <ViewStub
+            android:id="0x7f0b0b27"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:NOT_FOUND_0xd="true"/>
+        <include layout="0x7f0e0588"/>
+        <view
+            android:layout_gravity="left"
+            android:id="0x7f0b0b3f"
+            android:padding="0x7f070cf0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            class="com.whatsapp.ui.coreui.components.TextAndDateLayout">
+            <com.whatsapp.ui.wds.components.richtextview.WDSRichTextView
+                android:textAppearance="?unknown_attr_ref: 7f0409f0"
+                android:layout_gravity="left"
+                android:id="0x7f0b1a3a"
+                android:paddingLeft="0x7f0703e4"
+                android:paddingRight="0x7f0703e4"
+                android:paddingBottom="1dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:layout_gravity="bottom|right"
+                android:orientation="horizontal"
+                android:id="0x7f0b0c41"
+                android:paddingLeft="0x7f071031"
+                android:paddingRight="0x7f071031"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ViewStub
+                    android:id="0x7f0b0c28"
+                    android:paddingBottom="1dp"
+                    android:layout="0x7f0e04b8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </view>
+    </LinearLayout>
+</merge>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" style="0x7f1502b9">
+    <com.whatsapp.ui.coreui.base.WaImageView
+        app:NOT_FOUND_0x4="0x7f080c8d"
+        style="0x7f1502b8"/>
+    <com.whatsapp.ui.coreui.base.WaTextView
+        android:id="0x7f0b1bff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="4sp"
+        app:NOT_FOUND_0x5="6"/>
+</LinearLayout>

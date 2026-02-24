@@ -1,0 +1,484 @@
+.class public final LX/QXV;
+.super LX/03S;
+.source ""
+
+
+# instance fields
+.field public A00:I
+
+.field public A01:LX/03W;
+
+.field public A02:Lcom/instagram/clips/intf/ClipsViewerConfig;
+
+.field public A03:Lcom/instagram/common/session/UserSession;
+
+.field public A04:LX/eAN;
+
+.field public A05:LX/QIO;
+
+.field public A06:LX/4fW;
+
+.field public A07:Ljava/lang/Boolean;
+
+
+# virtual methods
+.method public final A0d(LX/4cQ;)LX/9mA;
+    .locals 26
+
+    const/4 v10, 0x0
+
+    move-object/from16 v7, p1
+
+    invoke-static {v7, v10}, LX/D1F;->A12(Ljava/lang/Object;I)V
+
+    move-object/from16 v8, p0
+
+    iget-object v9, v8, LX/QXV;->A05:LX/QIO;
+
+    iget-object v6, v9, LX/QIO;->A00:LX/7bB;
+
+    iget-object v5, v9, LX/QIO;->A01:LX/5Sl;
+
+    iget-object v11, v6, LX/7bB;->A0L:LX/4vm;
+
+    const/4 v4, 0x0
+
+    if-nez v11, :cond_0
+
+    return-object v4
+
+    :cond_0
+    iget-object v12, v5, LX/5Sl;->A0B:LX/3vR;
+
+    invoke-static {v11}, LX/BSI;->A0d(LX/4vm;)LX/KAE;
+
+    move-result-object v2
+
+    const/16 v24, 0x1
+
+    iget-object v3, v8, LX/QXV;->A02:Lcom/instagram/clips/intf/ClipsViewerConfig;
+
+    iget-object v0, v3, Lcom/instagram/clips/intf/ClipsViewerConfig;->A0a:Lcom/instagram/unifieddatamodel/audio/AudioOverlayTrack;
+
+    if-eqz v0, :cond_1
+
+    iget-object v1, v0, Lcom/instagram/unifieddatamodel/audio/AudioOverlayTrack;->A0A:Lcom/instagram/music/common/model/MusicAssetModel;
+
+    :goto_0
+    iget-object v0, v8, LX/QXV;->A03:Lcom/instagram/common/session/UserSession;
+
+    filled-new-array {v6, v11, v2, v1, v0}, [Ljava/lang/Object;
+
+    move-result-object v1
+
+    const/16 v14, 0x1b
+
+    new-instance v0, LX/D97;
+
+    move-object v13, v0
+
+    move-object v15, v2
+
+    move-object/from16 v16, v8
+
+    move-object/from16 v17, v11
+
+    move-object/from16 v18, v6
+
+    invoke-direct/range {v13 .. v18}, LX/D97;-><init>(ILjava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
+
+    invoke-static {v7, v0, v1}, LX/4kS;->A00(LX/4cQ;Lkotlin/jvm/functions/Function0;[Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, LX/4nG;
+
+    if-nez v2, :cond_2
+
+    return-object v4
+
+    :cond_1
+    move-object v1, v4
+
+    goto :goto_0
+
+    :cond_2
+    iget-boolean v1, v2, LX/4nG;->A06:Z
+
+    filled-new-array {v2}, [Ljava/lang/Object;
+
+    move-result-object v11
+
+    const/16 v0, 0x21
+
+    invoke-static {v7, v8, v2, v0}, LX/CUg;->A00(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)LX/CUg;
+
+    move-result-object v0
+
+    invoke-static {v7, v0, v11}, LX/4kS;->A00(LX/4cQ;Lkotlin/jvm/functions/Function0;[Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v14
+
+    if-eqz v12, :cond_a
+
+    iget-boolean v0, v12, LX/3vR;->A2U:Z
+
+    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v11
+
+    :goto_1
+    if-eqz v12, :cond_9
+
+    iget-object v0, v12, LX/3vR;->A4u:LX/3vX;
+
+    iget-object v0, v0, LX/3vX;->A00:Ljava/lang/Object;
+
+    :goto_2
+    filled-new-array {v2, v11, v0}, [Ljava/lang/Object;
+
+    move-result-object v11
+
+    const/16 v13, 0x1c
+
+    new-instance v0, LX/D97;
+
+    move-object v12, v0
+
+    move-object v15, v8
+
+    move-object/from16 v16, v7
+
+    move-object/from16 v17, v2
+
+    invoke-direct/range {v12 .. v17}, LX/D97;-><init>(ILjava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
+
+    invoke-static {v7, v0, v11}, LX/4kS;->A00(LX/4cQ;Lkotlin/jvm/functions/Function0;[Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v12
+
+    check-cast v12, LX/1On;
+
+    filled-new-array {v12}, [Ljava/lang/Object;
+
+    move-result-object v11
+
+    const/16 v0, 0x10
+
+    invoke-static {v12, v0}, LX/D2S;->A01(Ljava/lang/Object;I)LX/D2S;
+
+    move-result-object v0
+
+    invoke-static {v7, v0, v11}, LX/4lN;->A00(LX/4cQ;Lkotlin/jvm/functions/Function0;[Ljava/lang/Object;)V
+
+    iget-boolean v0, v3, Lcom/instagram/clips/intf/ClipsViewerConfig;->A1t:Z
+
+    if-nez v0, :cond_8
+
+    if-nez v1, :cond_8
+
+    sget-object v0, LX/03W;->A02:LX/4jN;
+
+    const/16 v0, 0x3b
+
+    invoke-static {v12, v0}, LX/E4U;->A00(Ljava/lang/Object;I)LX/E4U;
+
+    move-result-object v0
+
+    invoke-static {v0}, LX/210;->A0N(Ljava/lang/Object;)LX/4oV;
+
+    move-result-object v0
+
+    invoke-static {v4, v0}, LX/031;->A0F(LX/03W;LX/03Y;)LX/03W;
+
+    move-result-object v3
+
+    const/16 v0, 0x3c
+
+    invoke-static {v12, v0}, LX/E4U;->A00(Ljava/lang/Object;I)LX/E4U;
+
+    move-result-object v1
+
+    sget-object v0, LX/4oU;->A04:LX/4oU;
+
+    invoke-static {v3, v0, v1}, LX/215;->A0b(LX/03W;LX/4oU;Ljava/lang/Object;)LX/03W;
+
+    move-result-object v13
+
+    :goto_3
+    sget-object v11, LX/03W;->A02:LX/4jN;
+
+    invoke-static {v4}, LX/216;->A0I(LX/03W;)LX/03W;
+
+    move-result-object v3
+
+    invoke-virtual {v12}, Landroid/graphics/drawable/Drawable;->getIntrinsicHeight()I
+
+    move-result v0
+
+    int-to-long v0, v0
+
+    const-wide/high16 v17, 0x7ff9000000000000L
+
+    or-long v0, v0, v17
+
+    invoke-static {v3, v0, v1}, LX/216;->A0U(LX/03W;J)LX/03W;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v13}, LX/03W;->A00(LX/03W;)LX/03W;
+
+    move-result-object v23
+
+    new-instance v3, LX/9aR;
+
+    move-object/from16 v22, v4
+
+    move/from16 v25, v10
+
+    move-object/from16 v19, v3
+
+    move-object/from16 v20, v4
+
+    move-object/from16 v21, v12
+
+    invoke-direct/range {v19 .. v25}, LX/9aR;-><init>(Landroid/content/res/ColorStateList;Landroid/graphics/drawable/Drawable;Landroid/widget/ImageView$ScaleType;LX/03W;ZZ)V
+
+    iget-object v10, v7, LX/4cQ;->A06:LX/2ir;
+
+    invoke-virtual {v10}, LX/2ir;->A01()Landroid/content/res/Resources;
+
+    move-result-object v13
+
+    invoke-static {v13}, LX/19F;->A02(Landroid/content/res/Resources;)I
+
+    move-result v15
+
+    const v0, 0x7f070048
+
+    invoke-virtual {v13, v0}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    move-result v0
+
+    mul-int/lit8 v16, v0, 0x2
+
+    iget-object v0, v10, LX/2ir;->A0B:Landroid/content/Context;
+
+    invoke-static {v0}, LX/19F;->A01(Landroid/content/Context;)I
+
+    move-result v14
+
+    iget-object v0, v8, LX/QXV;->A07:Ljava/lang/Boolean;
+
+    if-eqz v0, :cond_7
+
+    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v0
+
+    :goto_4
+    iget v9, v8, LX/QXV;->A00:I
+
+    invoke-virtual {v12}, LX/1On;->A00()I
+
+    move-result v1
+
+    add-int v1, v1, v16
+
+    if-eqz v0, :cond_6
+
+    int-to-float v14, v14
+
+    const v0, 0x3ecccccd    # 0.4f
+
+    invoke-static {v14, v0}, LX/327;->A09(FF)I
+
+    move-result v0
+
+    :goto_5
+    const/16 v16, 0x1
+
+    sub-int v9, v15, v9
+
+    if-lt v0, v9, :cond_3
+
+    const/16 v16, 0x0
+
+    :cond_3
+    invoke-static {v1, v9}, Ljava/lang/Math;->min(II)I
+
+    move-result v14
+
+    if-eqz v16, :cond_5
+
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v9
+
+    :goto_6
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    invoke-virtual {v12, v9, v1}, LX/1On;->A04(Ljava/lang/Integer;Ljava/lang/Integer;)V
+
+    if-nez v16, :cond_4
+
+    move v0, v14
+
+    :cond_4
+    int-to-float v12, v0
+
+    int-to-float v9, v15
+
+    const/high16 v1, 0x3e800000    # 0.25f
+
+    mul-float/2addr v9, v1
+
+    cmpg-float v1, v12, v9
+
+    if-gtz v1, :cond_b
+
+    return-object v4
+
+    :cond_5
+    const/4 v9, 0x0
+
+    goto :goto_6
+
+    :cond_6
+    invoke-static {v1, v15}, Ljava/lang/Math;->min(II)I
+
+    move-result v0
+
+    goto :goto_5
+
+    :cond_7
+    iget-boolean v0, v9, LX/QIO;->A02:Z
+
+    goto :goto_4
+
+    :cond_8
+    move-object v13, v4
+
+    goto/16 :goto_3
+
+    :cond_9
+    move-object v0, v4
+
+    goto/16 :goto_2
+
+    :cond_a
+    move-object v11, v4
+
+    goto/16 :goto_1
+
+    :cond_b
+    iget-object v12, v8, LX/QXV;->A01:LX/03W;
+
+    int-to-long v0, v0
+
+    or-long v0, v0, v17
+
+    sget-object v9, LX/4oH;->A0Q:LX/4oH;
+
+    invoke-static {v9, v0, v1}, LX/210;->A0V(LX/4oH;J)LX/99u;
+
+    move-result-object v0
+
+    if-ne v12, v11, :cond_c
+
+    move-object v12, v4
+
+    :cond_c
+    invoke-static {v12, v0}, LX/031;->A0F(LX/03W;LX/03Y;)LX/03W;
+
+    move-result-object v1
+
+    const/16 v0, 0x3a
+
+    invoke-static {v8, v0}, LX/E4U;->A00(Ljava/lang/Object;I)LX/E4U;
+
+    move-result-object v0
+
+    invoke-static {v1, v0}, LX/216;->A0m(LX/03W;Ljava/lang/Object;)LX/03W;
+
+    move-result-object v4
+
+    const/16 v0, 0x35
+
+    invoke-static {v7, v8, v0}, LX/D7t;->A00(Ljava/lang/Object;Ljava/lang/Object;I)LX/D7t;
+
+    move-result-object v1
+
+    sget-object v0, LX/4oI;->A0I:LX/4oI;
+
+    invoke-static {v4, v0, v1}, LX/031;->A0J(LX/03W;LX/4oI;Ljava/lang/Object;)LX/03W;
+
+    move-result-object v1
+
+    const/16 v0, 0x14
+
+    invoke-static {v6, v5, v8, v2, v0}, LX/C9S;->A00(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)LX/C9S;
+
+    move-result-object v0
+
+    invoke-static {v1, v0}, LX/216;->A0l(LX/03W;Ljava/lang/Object;)LX/03W;
+
+    move-result-object v4
+
+    const v5, 0x7f1312ec
+
+    iget-object v1, v2, LX/4nG;->A05:Ljava/lang/String;
+
+    iget-object v0, v2, LX/4nG;->A04:Ljava/lang/String;
+
+    filled-new-array {v1, v0}, [Ljava/lang/Object;
+
+    move-result-object v0
+
+    invoke-virtual {v13, v5, v0}, Landroid/content/res/Resources;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_d
+
+    sget-object v0, LX/4qT;->A05:LX/4qT;
+
+    invoke-static {v4, v0, v1}, LX/216;->A0e(LX/03W;LX/4qT;Ljava/lang/Object;)LX/03W;
+
+    move-result-object v4
+
+    :cond_d
+    sget-object v1, LX/4qT;->A03:LX/4qT;
+
+    const-string v0, "android.widget.Button"
+
+    invoke-static {v4, v1, v0}, LX/216;->A0e(LX/03W;LX/4qT;Ljava/lang/Object;)LX/03W;
+
+    move-result-object v5
+
+    invoke-static {v10}, LX/031;->A0E(LX/2ir;)LX/04B;
+
+    move-result-object v4
+
+    invoke-static {v4}, LX/D7C;->A00(LX/Ozw;)LX/03W;
+
+    move-result-object v2
+
+    iget-object v1, v4, LX/04B;->A00:LX/2ir;
+
+    invoke-static {v3, v1}, LX/216;->A0D(LX/9mA;LX/2ir;)LX/04B;
+
+    move-result-object v0
+
+    invoke-static {v1, v0, v2}, LX/4jQ;->A0C(LX/2ir;LX/04B;LX/03W;)LX/8sz;
+
+    move-result-object v0
+
+    invoke-static {v0, v10, v4, v5}, LX/210;->A0L(LX/9mA;LX/2ir;LX/04B;LX/03W;)LX/8sz;
+
+    move-result-object v0
+
+    return-object v0
+.end method

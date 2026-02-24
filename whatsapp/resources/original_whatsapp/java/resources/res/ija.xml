@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.whatsapp.ui.wds.components.button.WDSButton xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="0x7f0b2953"
+    android:paddingTop="0x7f070d4d"
+    android:paddingBottom="0x7f070d4d"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="0x7f1231ca"
+    android:paddingStart="0x7f070d4c"
+    android:paddingEnd="0x7f070d4c"
+    app:NOT_FOUND_0x8="2"
+    app:NOT_FOUND_0x9="0x7f0803e3"/>

@@ -1,0 +1,88 @@
+87
+m
+dl
+c
+EGL
+GLESv2
+OpenSLES
+android
+log
+z
+jnigraphics
+GLESv3
+androidx.graphics.path 2 1 0
+aom 2 0
+c++_shared 2 1
+xplat_third-party_zstd__zstd 2
+curve25519 2
+dav1d 2
+fb_sqlite_3500300 2 1
+fortify 2
+ggml_core_ops_enhanced 2 0
+ggml_core_ops_universal 2 0
+sodium 2
+s 2
+sqlitevec 2 0
+vlc 2
+wzav1 2 1 0
+wzav1_v2 2 1 0
+arcore_sdk_c 7 6 2 1 0
+wa_log 7 2
+superpack 7 6 2 1
+native-filters 9 7 2 0
+fbjni 13 7
+glog 13
+fbsocketthreadlocalscope 13
+fbunwindstack 13 7 0
+flexlayout 13 7 0
+graphstorecerealutil 13
+graphutil 13
+minscompiler-jni 13 0
+profilo_logger 13 0
+rtvip 13 7
+simplejni 13 7
+sqlitejni 17 13 7
+native_utils 28
+fbsofterror 31
+fbjni_kt 31
+hiddenapis2 31
+ar-bundle3 32 31 0
+unwindstack_binary 34
+profilo_multi_buffer_logger 39 7
+profilo_mmapbuf_buffer 39
+fb 44 32 0
+webpencoder-native 47
+yoga 47
+profilo_mmapbuf_buffer_jni 50 31
+ar-bundle2 51 47 10 6 5 4 3
+essential 51 28
+gifimage 51 9
+nativeutil-jni 51 47
+profilo 51 49 47
+static-webp 51 47 9
+profilo_mmapbuf 54 51
+smartglasses-bundle 55 14
+pytorch 55 18
+profilo_stacktrace 59 55 34
+profilo_counters 59
+profilo_threadmetadata 59
+whatsappmerged 62 58 41 37 36 21
+ar-bundle5 62
+executorch 63
+torch-code-gen 63
+profilo_atrace 64
+profilo_systemcounters 65
+ffsingletonmerged 67 33 17 8
+mobileconfig-jni 67
+ohai 67
+pando-client-runtimedefaults-jni 67
+pando-graphql-bloks-jni 67
+wasafedeps 67
+ar-bundle4 69 68 67 8
+xplat_psi 69
+pyspeech 69
+wasafe 78
+graphicsengine-arengineservices-whatsappservicehost-native 79
+psi 80
+whatsapp 81 67 28 24 9 8
+unityjni 85

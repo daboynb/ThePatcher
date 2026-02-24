@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.whatsapp.stickers.StickerView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="center"
+    android:id="0x7f0b0ac8"
+    android:background="0x7f0802a6"
+    android:layout_width="0x7f070383"
+    android:layout_height="0x7f070380"
+    android:layout_marginTop="0x7f07039e"
+    android:layout_marginBottom="0x7f07039e"
+    android:layout_marginStart="0x7f070382"
+    android:layout_marginEnd="0x7f070381"
+    style="0x7f150006"/>

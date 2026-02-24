@@ -1,0 +1,250 @@
+[Filter IgluscriptZoomBlurFilter]
+
+
+
+[Init]
+fun init(Filter filter) {
+  filter.passes = {{
+      name = 'focus0, inputs = {'default},
+      uniforms = {
+            strength = 1.0,
+            samples = 1.0,
+            abberation = 0.02,
+            innerRadius = 0.60,
+            sampleDistance = 0.125,
+            uInputImageSize = {1.0,1.0}
+      },
+      glslShader = glsl, metalShader = metal
+    },{
+      name = 'focus1, inputs = {'focus0},
+      uniforms = {
+            strength = 1.0,
+            samples = 15.0,
+            abberation = 0.0,
+            innerRadius = 0.7,
+            sampleDistance = 0.04,
+            uInputImageSize = {1.0,1.0}
+      },
+      glslShader = glsl, metalShader = metal
+    }};
+}
+
+[PreRender]
+fun preRender(Filter filter) {
+    vec2 textureSize = getTextureSize('default);
+
+    setShaderUniform('focus0, 'uInputImageSize, textureSize);
+    setShaderUniform('focus1, 'uInputImageSize, textureSize);
+
+
+    f32 strength = getParameterFloat('strength);
+
+    setShaderUniform('focus0, 'strength, strength);
+    setShaderUniform('focus1, 'strength, strength);
+
+    setShaderUniform('focus0, 'abberation, 0.02*strength);
+    setShaderUniform('focus1, 'abberation, 0.0*strength);
+
+    setShaderUniform('focus0, 'sampleDistance, 0.125*strength);
+    setShaderUniform('focus1, 'sampleDistance, 0.04*strength);
+
+}
+
+string glsl = "
+      uniform float innerRadius; uniform float samples; uniform float abberation;
+      uniform float sampleDistance;
+
+      varying vec2 sourceTextureCoordinate;
+      uniform vec2 uInputImageSize;
+
+      BaseUniformsOpenGL;
+
+      varying vec2 vTexCoord;
+
+      vec4 zoomBlurAbberate(
+          vec2 uv, float innerRadius, float samples, float abberation, float sampleDistance) {
+        vec2 newUV = uv;
+
+        vec2 res = uInputImageSize;
+        float aspect = res.x / res.y;
+
+        vec3 dir;
+        dir.xy = uv * 2.0 * vec2(aspect, 1.0) - vec2(aspect, 1.0);
+        dir.z = dot(dir.xy, dir.xy);
+        dir *= inversesqrt(dir.z);
+
+        vec4 colorR = vec4(0.0);
+        vec4 colorG = vec4(0.0);
+        vec4 colorB = vec4(0.0);
+
+        const float maxSamples = 30.0;
+        vec4 color = vec4(0.0);
+        if (abberation > 0.0) {
+          for (float i = 0.0; i < maxSamples; i++) {
+            if (i >= samples)
+              break;
+            float pct = i / samples;
+            float d = mix(1.0, sampleDistance, pct);
+
+            vec2 duv = uv * 2.0 - 1.0;
+            duv *= d;
+
+            vec2 uvR = duv * (1.0 - abberation);
+            uvR = uvR * 0.5 + 0.5;
+
+            vec2 uvG = duv * 0.5 + 0.5;
+
+            vec2 uvB = duv * (1.0 + abberation);
+            uvB = uvB * 0.5 + 0.5;
+
+            colorR += sampleInput(uvR);
+            colorG += sampleInput(uvG);
+            colorB += sampleInput(uvB);
+          }
+
+          colorR /= samples;
+          colorG /= samples;
+          colorB /= samples;
+          float alpha = sampleInput(uv).a;
+
+          color = vec4(colorR.r, colorG.g, colorB.b, alpha);
+        } else {
+          for (float i = 0.0; i < maxSamples; i++) {
+            if (i >= samples)
+              break;
+
+            float pct = i / samples;
+            newUV = uv * 2.0 - 1.0;
+            newUV *= mix(1.0, sampleDistance, pct);
+            newUV = newUV * 0.5 + 0.5;
+
+            color += sampleInput(newUV);
+          }
+          color /= samples;
+        }
+
+        color = mix(sampleInput(uv), color, smoothstep(0.0, innerRadius, clamp(dir.z, 0.0, 1.0)));
+
+        return color;
+      }
+
+      void main() {
+        vec2 uv = sourceTextureCoordinate;
+
+        vec4 color =
+            zoomBlurAbberate(uv, innerRadius, floor(samples), abberation, 1.0 - sampleDistance);
+        gl_FragColor = toOutputFormat(color);
+      }
+      ";
+
+string metal = "
+      using namespace metal;
+
+      struct fragmentOut { float4 _gl_FragColor [[color(0)]]; };
+
+      struct fragmentIn { float2 sourceTextureCoordinate [[user(locn1)]]; };
+
+      typedef struct {
+        BaseUniformsMetal;
+        float samples;
+        float abberation;
+        float innerRadius;
+        float sampleDistance;
+        float2 uInputImageSize;
+      } Uniforms;
+
+      float4 zoomBlurAbberate(DefaultInputs defaultInputs,
+                              float2 uv,
+                              float2 imageSize,
+                              float innerRadius,
+                              float samples,
+                              float abberation,
+                              float sampleDistance) {
+        float2 newUV = uv;
+
+        float2 res = imageSize;
+        float aspect = res.x / res.y;
+
+        float3 dir;
+        dir.xy = uv * 2.0 * float2(aspect, 1.0) - float2(aspect, 1.0);
+        dir.z = dot(dir.xy, dir.xy);
+        dir *= rsqrt(dir.z);
+
+        float4 colorR = float4(0.0);
+        float4 colorG = float4(0.0);
+        float4 colorB = float4(0.0);
+
+        const float maxSamples = 30.0;
+        float4 color = float4(0.0);
+        float alpha = sampleInput(defaultInputs, uv).a;
+        if (abberation > 0.0) {
+          for (float i = 0.0; i < maxSamples; i++) {
+            if (i >= samples)
+              break;
+
+            float pct = i / samples;
+            float d = mix(1.0, sampleDistance, pct);
+
+            float2 duv = uv * 2.0 - 1.0;
+            duv *= d;
+
+            float2 uvR = duv * (1.0 - abberation);
+            uvR = uvR * 0.5 + 0.5;
+
+            float2 uvG = duv * 0.5 + 0.5;
+
+            float2 uvB = duv * (1.0 + abberation);
+            uvB = uvB * 0.5 + 0.5;
+
+            colorR += sampleInput(defaultInputs, uvR);
+            colorG += sampleInput(defaultInputs, uvG);
+            colorB += sampleInput(defaultInputs, uvB);
+          }
+          colorR /= samples;
+          colorG /= samples;
+          colorB /= samples;
+
+          color = float4(colorR.r, colorG.g, colorB.b, alpha);
+        } else {
+          for (float i = 0.0; i < maxSamples; i++) {
+            if (i >= samples)
+              break;
+
+            float pct = i / samples;
+
+            newUV = uv * 2.0 - 1.0;
+            newUV *= mix(1.0, sampleDistance, pct);
+            newUV = newUV * 0.5 + 0.5;
+
+            color += sampleInput(defaultInputs, newUV);
+          }
+          color /= samples;
+        }
+
+        color = mix(sampleInput(defaultInputs, uv),
+                    color,
+                    smoothstep(0.0, innerRadius, clamp(dir.z, 0.0, 1.0)));
+
+        return color;
+      }
+
+      fragment fragmentOut fragmentShader(fragmentIn in [[stage_in]],
+                                          constant Uniforms & uniforms [[buffer(1)]],
+                                          DefaultInputs defaultInputs) {
+        fragmentOut out = {};
+
+        float2 uv = in.sourceTextureCoordinate;
+
+        float4 color = zoomBlurAbberate(defaultInputs,
+                                        uv,
+                                        uniforms.uInputImageSize,
+                                        uniforms.innerRadius,
+                                        uniforms.samples,
+                                        uniforms.abberation,
+                                        1.0 - uniforms.sampleDistance);
+        out._gl_FragColor = toOutputFormat(color);
+
+        return out;
+      }
+
+      ";

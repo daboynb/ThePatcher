@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <FrameLayout
+        android:id="0x7f0b033d"
+        android:background="?android:attr/selectableItemBackground"
+        android:paddingTop="0x7f07102e"
+        android:paddingBottom="0x7f07102e"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.whatsapp.ui.coreui.base.WaImageView
+            android:layout_gravity="center"
+            android:paddingLeft="28dp"
+            android:paddingRight="28dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:NOT_FOUND_0x14="0x7f080519"
+            app:NOT_FOUND_0x15="?unknown_attr_ref: 7f04079c"/>
+        <com.whatsapp.ui.coreui.base.WaTextView
+            android:ellipsize="none"
+            android:gravity="center_vertical"
+            android:layout_gravity="center"
+            android:id="0x7f0b0340"
+            android:paddingLeft="0x7f071032"
+            android:paddingRight="86dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0x7f12045e"
+            android:singleLine="false"
+            style="?unknown_attr_ref: 7f0407b5"/>
+        <com.whatsapp.ui.wds.components.toggle.WDSSwitch
+            android:layout_gravity="center"
+            android:id="0x7f0b033f"
+            android:paddingLeft="0x7f07103b"
+            android:paddingRight="0x7f07103b"
+            android:focusable="false"
+            android:clickable="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </FrameLayout>
+    <ViewStub
+        android:id="0x7f0b033e"
+        android:inflatedId="0x7f0b033e"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0x7f070c93"
+        android:layout_marginRight="0x7f070c93"/>
+</LinearLayout>

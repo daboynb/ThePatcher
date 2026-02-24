@@ -1,0 +1,202 @@
+[Filter IgluscriptVideoBounceFilter]
+
+[Init]
+fun init(Filter filter) {
+  filter.passes = {{
+      name = 'bounce, inputs = {'default},
+      uniforms = {
+        time_sec = 0.0,
+        scale = 1.0,
+      },
+      glslShader = glsl, metalShader = metal
+    }};
+}
+
+fun fract(f32 x) f32 {
+  return x - floor(x);
+}
+
+fun easeInOutCubic(f32 t) f32 {
+  if (t < 0.5) {
+    return 4.0 * t * t * t;
+  } else {
+    f32 temp = -2.0 * t + 2.0;
+    return 1.0 - pow(temp, 3.0) / 2.0;
+  }
+}
+
+fun mix(f32 a, f32 b, f32 t) f32 {
+  return a * (1.0 - t) + b * t;
+}
+
+[PreRender]
+fun preRender(Filter filter) {
+  f32 timeSec = getParameterFloat('time_sec);
+
+  f32 loopDuration = 3.0;
+  # TODO how can we set default values for parameters?
+  # f32 loopDuration = getParameterFloat('loopDuration) : 3.0;
+  # print('loopDuration', getParameterFloat('loopDuration));
+
+  f32 p = fract(timeSec / loopDuration);
+
+  # Keyframe times
+  f32 T0 = 0.0 / 90.0;
+  f32 T1 = 5.0 / 90.0;
+  f32 T2 = 10.0 / 90.0;
+  f32 T3 = 16.0 / 90.0;
+  f32 T4 = 20.0 / 90.0;
+  f32 T5 = 25.0 / 90.0;
+  f32 T6 = 29.0 / 90.0;
+  f32 T7 = 45.0 / 90.0;
+  f32 T8 = 50.0 / 90.0;
+  f32 T9 = 55.0 / 90.0;
+  f32 T10 = 61.0 / 90.0;
+  f32 T11 = 65.0 / 90.0;
+  f32 T12 = 70.0 / 90.0;
+  f32 T13 = 74.0 / 90.0;
+  f32 T14 = 1.0;
+
+  # Keyframe values
+  f32 K0 = 1.0;
+  f32 K1 = 0.893;
+  f32 K2 = 1.265;
+  f32 K3 = 0.95;
+  f32 K4 = 1.058;
+  f32 K5 = 0.982;
+  f32 K6 = 1.0;
+  f32 K7 = 1.0;
+  f32 K8 = 0.893;
+  f32 K9 = 1.265;
+  f32 K10 = 0.95;
+  f32 K11 = 1.058;
+  f32 K12 = 0.982;
+  f32 K13 = 1.0;
+  f32 K14 = 1.0;
+
+  # Calculate scale with easing
+  f32 scale = 1.0;
+  f32 f = 0.0;
+  f32 t = 0.0;
+
+  if (p < T1) {
+    f = (p - T0) / (T1 - T0);
+    t = easeInOutCubic(f);
+    scale = mix(K0, K1, t);
+  } else if (p < T2) {
+    f = (p - T1) / (T2 - T1);
+    t = easeInOutCubic(f);
+    scale = mix(K1, K2, t);
+  } else if (p < T3) {
+    f = (p - T2) / (T3 - T2);
+    t = easeInOutCubic(f);
+    scale = mix(K2, K3, t);
+  } else if (p < T4) {
+    f = (p - T3) / (T4 - T3);
+    t = easeInOutCubic(f);
+    scale = mix(K3, K4, t);
+  } else if (p < T5) {
+    f = (p - T4) / (T5 - T4);
+    t = easeInOutCubic(f);
+    scale = mix(K4, K5, t);
+  } else if (p < T6) {
+    f = (p - T5) / (T6 - T5);
+    t = easeInOutCubic(f);
+    scale = mix(K5, K6, t);
+  } else if (p < T7) {
+    f = (p - T6) / (T7 - T6);
+    t = easeInOutCubic(f);
+    scale = mix(K6, K7, t);
+  } else if (p < T8) {
+    f = (p - T7) / (T8 - T7);
+    t = easeInOutCubic(f);
+    scale = mix(K7, K8, t);
+  } else if (p < T9) {
+    f = (p - T8) / (T9 - T8);
+    t = easeInOutCubic(f);
+    scale = mix(K8, K9, t);
+  } else if (p < T10) {
+    f = (p - T9) / (T10 - T9);
+    t = easeInOutCubic(f);
+    scale = mix(K9, K10, t);
+  } else if (p < T11) {
+    f = (p - T10) / (T11 - T10);
+    t = easeInOutCubic(f);
+    scale = mix(K10, K11, t);
+  } else if (p < T12) {
+    f = (p - T11) / (T12 - T11);
+    t = easeInOutCubic(f);
+    scale = mix(K11, K12, t);
+  } else if (p < T13) {
+    f = (p - T12) / (T13 - T12);
+    t = easeInOutCubic(f);
+    scale = mix(K12, K13, t);
+  } else if (p < T14) {
+    f = (p - T13) / (T14 - T13);
+    t = easeInOutCubic(f);
+    scale = mix(K13, K14, t);
+  } else {
+    scale = K14;
+  }
+
+  setShaderUniform('bounce, 'time_sec, timeSec);
+  setShaderUniform('bounce, 'scale, scale);
+}
+
+string glsl = "varying vec2 sourceTextureCoordinate;
+
+BaseUniformsOpenGL;
+
+uniform float time_sec;
+uniform float scale;
+
+vec2 mirrorUv(vec2 v) {
+  v = fract(v * 0.5) * 2.0;
+  return 1.0 - abs(1.0 - v);
+}
+
+void main() {
+  vec2 uv = sourceTextureCoordinate;
+  vec2 center = vec2(0.5);
+  uv = (uv - center) / scale + center;
+  uv = mirrorUv(uv);
+
+  vec4 color = sampleInput(uv);
+  gl_FragColor = toOutputFormat(color);
+}
+";
+
+string metal = "
+using namespace metal;
+struct fragmentIn { float2 textureCoordinate [[user(locn0)]]; float2 sourceTextureCoordinate [[user(locn1)]]; };
+struct fragmentOut { float4 _gl_FragColor [[color(0)]]; };
+typedef struct {
+  float4x4 content_transform;
+  float4x4 texture_transform;
+  float time_sec;
+  float scale;
+ } Uniforms;
+
+    float mod(float x, float y) { return x - y * floor(x / y); }
+    float2 mod(float2 x, float2 y) { return x - y * floor(x / y); }
+    float3 mod(float3 x, float3 y) { return x - y * floor(x / y); }
+    float4 mod(float4 x, float4 y) { return x - y * floor(x / y); }
+
+float2 mirrorUv(float2 v) {
+  v = fract(v * 0.5) * 2.0;
+  return 1.0 - abs(1.0 - v);
+}
+
+fragment fragmentOut fragmentShader(fragmentIn in [[stage_in]],
+ constant Uniforms & uniforms [[buffer(1)]],
+ DefaultInputs defaultInputs) {
+
+  float2 uv = in.sourceTextureCoordinate;
+  float2 center = float2(0.5);
+  uv = (uv - center) / uniforms.scale + center;
+  uv = mirrorUv(uv);
+
+  float4 color = sampleInput(defaultInputs, uv);
+  return {toOutputFormat(color)};
+}
+";

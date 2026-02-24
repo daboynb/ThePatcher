@@ -1,0 +1,109 @@
+[Filter IgluscriptVideoWashedOutFilter]
+[BehaviorType static]
+
+
+
+[Init]
+fun init(Filter filter) {
+  filter.passes = {{
+      name = 'washed_out, inputs = {'default},
+      uniforms = {
+        inputSize = {1080.0, 1920.0},
+      },
+      glslShader = glsl, metalShader = metal
+    }};
+}
+
+[PreRender]
+fun preRender(Filter filter) {
+  # Get behavior parameters from parameter map (set by JNI/keyframe system)
+  f32 progressValue = getParameterFloat('progress);
+  
+  # Apply to shader uniform
+  setShaderUniform('washed_out, 'progress, progressValue);
+}
+
+string glsl = "precision highp float;
+
+varying vec2 sourceTextureCoordinate;
+
+BaseUniformsOpenGL;
+
+uniform vec2 inputSize;
+
+vec4 sharpen(vec2 uv){
+  vec2 d = 1.25 / inputSize;
+  vec4 c = sampleInput(uv) * 5.0;
+  c -= sampleInput(uv + vec2(d.x, 0.0));
+  c -= sampleInput(uv + vec2(-d.x, 0.0));
+  c -= sampleInput(uv + vec2(0.0,d.y));
+  c -= sampleInput(uv + vec2(0.0,-d.y));
+  return c;
+}
+
+vec3 colorCorrect(vec3 col){
+  col *= 2.0;
+  col -= 0.2;
+  col.rb += 0.045;
+  col = clamp(col, 0.0, 0.9);
+  col += 0.025;
+  col = pow(col, vec3(0.8));
+  col /= 1.25;
+  return col;
+}
+
+void main() {
+  vec2 uv = sourceTextureCoordinate;
+
+  vec4 s = sharpen(uv);
+  vec3 cc = colorCorrect(s.rgb);
+
+  vec4 color = vec4(cc, 1.0);
+  gl_FragColor = toOutputFormat(color);
+}
+";
+
+string metal = "
+using namespace metal;
+struct fragmentIn { float2 textureCoordinate [[user(locn0)]]; float2 sourceTextureCoordinate [[user(locn1)]]; };
+struct fragmentOut { float4 _gl_FragColor [[color(0)]]; };
+typedef struct {
+  float4x4 content_transform;
+  float4x4 texture_transform;
+  float2 input_size;
+ } Uniforms;
+
+float4 sharpen(float2 uv, DefaultInputs defaultInputs, constant Uniforms & uniforms){
+  float2 d = 1.25 / uniforms.input_size;
+  float4 c = sampleInput(defaultInputs, uv) * 5.0;
+  c -= sampleInput(defaultInputs, uv + float2(d.x, 0.0));
+  c -= sampleInput(defaultInputs, uv + float2(-d.x, 0.0));
+  c -= sampleInput(defaultInputs, uv + float2(0.0,d.y));
+  c -= sampleInput(defaultInputs, uv + float2(0.0,-d.y));
+  return c;
+}
+
+float3 colorCorrect(float3 col){
+  col *= 2.0;
+  col -= 0.2;
+  col.rb += 0.045;
+  col = clamp(col, 0.0, 0.9);
+  col += 0.025;
+  col = pow(col, float3(0.8));
+  col /= 1.25;
+  return col;
+}
+
+fragment fragmentOut fragmentShader(fragmentIn in [[stage_in]],
+ constant Uniforms & uniforms [[buffer(1)]],
+ DefaultInputs defaultInputs) {
+
+  float2 uv = in.sourceTextureCoordinate;
+
+  float4 s = sharpen(uv, defaultInputs, uniforms);
+  float3 cc = colorCorrect(s.rgb);
+
+  float4 color = float4(cc, 1.0);
+  return {toOutputFormat(color)};
+}
+";

@@ -1,0 +1,41 @@
+.class public final LX/73l;
+.super LX/BKI;
+.source ""
+
+
+# instance fields
+.field public final A00:Lcom/instagram/common/session/UserSession;
+
+
+# direct methods
+.method public constructor <init>(Lcom/instagram/common/session/UserSession;)V
+    .locals 1
+
+    const/4 v0, 0x0
+
+    invoke-static {p1, v0}, LX/D1F;->A12(Ljava/lang/Object;I)V
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, LX/73l;->A00:Lcom/instagram/common/session/UserSession;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final bridge synthetic A05()LX/0em;
+    .locals 2
+
+    iget-object v0, p0, LX/73l;->A00:Lcom/instagram/common/session/UserSession;
+
+    new-instance v1, LX/73m;
+
+    invoke-direct {v1, v0}, LX/73m;-><init>(Lcom/instagram/common/session/UserSession;)V
+
+    new-instance v0, Lcom/instagram/creation/capture/quickcapture/storiestemplates/v1/viewmodel/StoriesTemplateParticipationViewModel;
+
+    invoke-direct {v0, v1}, Lcom/instagram/creation/capture/quickcapture/storiestemplates/v1/viewmodel/StoriesTemplateParticipationViewModel;-><init>(LX/73m;)V
+
+    return-object v0
+.end method

@@ -1,0 +1,379 @@
+[Filter IgluscriptColorLeakFilter]
+
+[Init]
+fun init(Filter filter) {
+  filter.passes = {{
+      name = 'pass0, inputs = {'default},
+      uniforms = {
+        strength = 1.0,
+        uInputImageSize = {100.0,100.0},
+
+        colorSeedR = 1.411764705882353,
+        colorSeedG = 2.196078431372549,
+        colorSeedB = 2.784313725490196,
+
+        maskSeed = 89.726,
+        aberration = 0.002,
+        grainAmt = 0.04,
+        blurAmt = 0.3,
+        leakBlendAmt = 0.8,
+        leakFalloff = 1.5,
+        contrast = 0.24,
+
+        time = 0.0,
+        },
+      glslShader = colorLeakGlslShader, metalShader = colorLeakMetalShader
+    }};
+}
+
+[PreRender]
+fun preRender(Filter filter) {
+  vec2 textureSize = getTextureSize('default);
+
+  setShaderUniform('pass0, 'uInputImageSize, textureSize);
+
+  f32 strength = getParameterFloat('strength);
+
+  setShaderUniform('pass0, 'strength, strength);
+  setShaderUniform('pass0, 'aberration, 0.002*strength);
+  setShaderUniform('pass0, 'grainAmt, 0.04*strength);
+  setShaderUniform('pass0, 'blurAmt, 0.3*strength);
+  setShaderUniform('pass0, 'leakBlendAmt, 0.8*strength);
+  setShaderUniform('pass0, 'contrast, 0.24*strength);
+
+  f32 timeSec = getParameterFloat('time_sec);
+  # timeSec = getLocalTime(); # uncomment to use in sample app
+
+  setShaderUniform('pass0, 'time, timeSec);
+}
+
+
+string colorLeakGlslShader = "
+      varying vec2 sourceTextureCoordinate;
+
+      BaseUniformsOpenGL;
+      uniform vec2 uInputImageSize;
+      uniform float colorSeedR;
+      uniform float colorSeedG;
+      uniform float colorSeedB;
+      uniform float maskSeed;
+      uniform float aberration;
+      uniform float grainAmt;
+      uniform float blurAmt;
+      uniform float leakBlendAmt;
+      uniform float leakFalloff;
+      uniform float contrast;
+      uniform float time;
+
+      float rand(vec2 st) {
+        vec3 p3 = fract(vec3(st.xyx) * vec4(443.897, 441.423, .0973, .1099).xyz);
+        p3 += dot(p3, p3.yzx + 33.33);
+        return fract((p3.x + p3.y) * p3.z);
+      }
+
+      float noise(vec2 p) {
+        vec2 ip = floor(p);
+        vec2 u = fract(p);
+        u = u * u * (3.0 - 2.0 * u);
+
+        float res = mix(mix(rand(ip), rand(ip + vec2(1.0, 0.0)), u.x),
+                        mix(rand(ip + vec2(0.0, 1.0)), rand(ip + vec2(1.0, 1.0)), u.x),
+                        u.y);
+        return res * res;
+      }
+
+      float fbm(vec2 p, float offset) {
+        mat2 mtx = mat2(0.80, 0.60, -0.60, -0.80);
+
+        float f = 0.0;
+
+        f += 0.500000 * noise(p - offset);
+        p = mtx * p * 2.02;
+        f += 0.031250 * noise(p + offset);
+        p = mtx * p * 2.01;
+        f += 0.250000 * noise(p + offset);
+        p = mtx * p * 2.03;
+        f += 0.125000 * noise(p + offset);
+        p = mtx * p * 2.01;
+        // f += 0.062500*noise( p + offset ); p = mtx*p*2.04;
+        // f += 0.515625*noise( p + offset);
+
+        return f / 1.46875;
+      }
+
+      float blendScreen(float base, float blend) { return 1.0 - ((1.0 - base) * (1.0 - blend)); }
+
+      vec3 blendScreen(vec3 base, vec3 blend) {
+        return vec3(blendScreen(base.r, blend.r),
+                    blendScreen(base.g, blend.g),
+                    blendScreen(base.b, blend.b));
+      }
+
+      vec3 blendScreen(vec3 base, vec3 blend, float opacity) {
+        return (blendScreen(base, blend) * opacity + base * (1.0 - opacity));
+      }
+
+      float luma(vec3 color) { return dot(color, vec3(0.299, 0.587, 0.114)); }
+
+      vec3 brightnessContrast(vec3 value, float brightness, float contrast) {
+        return (value - 0.5 + brightness) * (1.0 + contrast) + 0.5;
+      }
+
+      vec3 saturation(vec3 color, float amount) {
+        return mix(vec3(dot(vec3(0.299, 0.587, 0.114), color)), color, amount);
+      }
+
+      // smoothed stepped animation
+      float staircase(float x, float k) {
+        float f = 2.0 * fract(x) - 1.0;
+        return floor(x) + 0.5 - 0.5 * (pow(1.0 - abs(f), k) - 1.0) * sign(f);
+      }
+
+      void main() {
+        // aspect ratio correction
+        float longestSide = step(uInputImageSize.y, uInputImageSize.x);
+        float aspect = uInputImageSize.x / uInputImageSize.y;
+        vec2 res = vec2(mix(aspect, 1.0, longestSide), mix(1.0, 1.0 / aspect, longestSide));
+        vec2 uv = sourceTextureCoordinate;
+
+        // calculate random animated noise for light leak
+        const float colorAnimation = 1.0; // speed at which color changes
+        float t = 0.5 * staircase(0.5 * time, 2.0) + 0.5 * time;
+        float s = t * colorAnimation;
+        float r = 0.5 + 0.4 * fbm(uv, 0.0 + colorSeedR + s);
+        float g = 0.2 + 0.5 * fbm(uv, 5.0 + colorSeedG + s);
+        float b = 0.1 + 0.9 * fbm(uv, 10.0 + colorSeedB + s);
+
+        // increase leak saturation and brightness
+        vec3 leak = vec3(r, g, b);
+        leak = saturation(leak * 1.5, 2.0);
+
+        // animated noise-based mask
+        const float maskAnimation = 1.0; // speed at which the mask changes
+        float m = fbm((uv - 0.5) * 4.0, maskSeed + t * maskAnimation);
+        m *= 6.0;
+        m = pow(m, leakFalloff);
+
+        float vignette = smoothstep(0.1, 1.5, length((uv - 0.5) * res));
+        m *= vignette;
+        m = clamp(m, 0.0, 1.0);
+
+        leak *= m;
+
+        // simple chromatic aberration
+        vec4 cr = sampleInput(uv + vec2(aberration, 0.0));
+        vec4 cg = sampleInput(uv);
+        vec4 cb = sampleInput(uv - vec2(aberration, 0.0));
+        vec4 tex = vec4(cr.x, cg.y, cb.z, 1.0);
+        float alpha = sampleInput(uv).a;
+
+        // blur overlay
+        vec2 offset = (2.0 * blurAmt) / (vec2(aspect, 1330.0) * 675.0);
+        vec4 blurTex = tex;
+        blurTex += sampleInput(uv + vec2(offset.x, 0.0));
+        blurTex += sampleInput(uv + vec2(-offset.x, 0.0));
+        blurTex += sampleInput(uv + vec2(0.0, offset.y));
+        blurTex += sampleInput(uv + vec2(0.0, -offset.y));
+        blurTex += sampleInput(uv + vec2(offset.x, offset.y));
+        blurTex += sampleInput(uv + vec2(offset.x, -offset.y));
+        blurTex += sampleInput(uv + vec2(-offset.x, offset.y));
+        blurTex += sampleInput(uv + vec2(-offset.x, -offset.y));
+        blurTex /= 9.0;
+
+        tex = mix(tex, blurTex, blurAmt);
+
+        // increase saturation
+        float lum = luma(tex.rgb);
+        tex.rgb = mix(vec3(lum), tex.rgb, 1.0 + 0.2 * strength);
+
+        // crush highlights & shadows
+        tex.rgb -= 0.1 * smoothstep(0.85, 1.0, lum) * strength;
+        tex.rgb += 0.1 * smoothstep(0.15, 0.0, lum) * strength;
+
+        // contrast
+        tex.rgb = brightnessContrast(tex.rgb, 0.0, contrast);
+
+        // shift slightly magenta
+        tex.rgb += vec3(1.0, 0.0, 1.0) * 0.05 * strength;
+
+        // shift blur slightly
+        tex.rgb += vec3(0.0, 0.3, 1.0) * 0.03 * strength;
+
+        // film grain
+        float grain = rand(uv * res * 0.2 + fract(time)) * 2.0 - 1.0;
+        tex.rgb += grain * grainAmt;
+
+        // blend leak
+        tex.rgb = blendScreen(tex.rgb, leak, leakBlendAmt);
+        tex.rgb = blendScreen(tex.rgb, leak, smoothstep(0.0, 0.5, leakBlendAmt));
+
+        gl_FragColor = toOutputFormat(vec4(tex.rgb, alpha));
+      }
+";
+
+string colorLeakMetalShader = "
+     typedef struct { float2 sourceTextureCoordinate [[user(locn1)]]; } RasterizerData;
+
+      typedef struct {
+        BaseUniformsMetal;
+        float2 uInputImageSize;
+        float colorSeedR;
+        float colorSeedG;
+        float colorSeedB;
+        float maskSeed;
+        float aberration;
+        float grainAmt;
+        float blurAmt;
+        float leakBlendAmt;
+        float leakFalloff;
+        float contrast;
+        float time;
+      } Uniforms;
+
+      float rand(float2 st) {
+        float3 p3 = fract(float3(st.xyx) * float4(443.897, 441.423, .0973, .1099).xyz);
+        p3 += dot(p3, p3.yzx + 33.33);
+        return fract((p3.x + p3.y) * p3.z);
+      }
+
+      float noise(float2 p) {
+        float2 ip = floor(p);
+        float2 u = fract(p);
+        u = u * u * (3.0 - 2.0 * u);
+
+        float res = mix(mix(rand(ip), rand(ip + float2(1.0, 0.0)), u.x),
+                        mix(rand(ip + float2(0.0, 1.0)), rand(ip + float2(1.0, 1.0)), u.x),
+                        u.y);
+        return res * res;
+      }
+
+      float fbm(float2 p, float offset) {
+        float2x2 mtx = float2x2(0.80, 0.60, -0.60, -0.80);
+
+        float f = 0.0;
+
+        f += 0.500000 * noise(p - offset);
+        p = mtx * p * 2.02;
+        f += 0.031250 * noise(p + offset);
+        p = mtx * p * 2.01;
+        f += 0.250000 * noise(p + offset);
+        p = mtx * p * 2.03;
+        f += 0.125000 * noise(p + offset);
+        p = mtx * p * 2.01;
+        // f += 0.062500*noise( p + offset ); p = mtx*p*2.04;
+        // f += 0.515625*noise( p + offset);
+
+        return f / 1.46875;
+      }
+
+      float blendScreen(float base, float blend) { return 1.0 - ((1.0 - base) * (1.0 - blend)); }
+
+      float3 blendScreen(float3 base, float3 blend) {
+        return float3(blendScreen(base.r, blend.r),
+                      blendScreen(base.g, blend.g),
+                      blendScreen(base.b, blend.b));
+      }
+
+      float3 blendScreen(float3 base, float3 blend, float opacity) {
+        return (blendScreen(base, blend) * opacity + base * (1.0 - opacity));
+      }
+
+      float luma(float3 color) { return dot(color, float3(0.299, 0.587, 0.114)); }
+
+      float3 brightnessContrast(float3 value, float brightness, float contrast) {
+        return (value - 0.5 + brightness) * (1.0 + contrast) + 0.5;
+      }
+
+      float3 saturation(float3 color, float amount) {
+        return mix(float3(dot(float3(0.299, 0.587, 0.114), color)), color, amount);
+      }
+
+      // smoothed stepped animation
+      float staircase(float x, float k) {
+        float f = 2.0 * fract(x) - 1.0;
+        return floor(x) + 0.5 - 0.5 * (pow(1.0 - abs(f), k) - 1.0) * sign(f);
+      }
+
+      fragment float4 fragmentShader(RasterizerData fragmentIn [[stage_in]],
+                                     constant Uniforms & uniforms [[buffer(1)]],
+                                     DefaultInputs defaultInputs) {
+        // aspect ratio correction
+        float longestSide = step(uniforms.uInputImageSize.y, uniforms.uInputImageSize.x);
+        float aspect = uniforms.uInputImageSize.x / uniforms.uInputImageSize.y;
+        float2 res = float2(mix(aspect, 1.0, longestSide), mix(1.0, 1.0 / aspect, longestSide));
+        float2 uv = fragmentIn.sourceTextureCoordinate;
+
+        // calculate random noise for light leak
+        float colorAnimation = 1.0; // speed at which color changes
+        float t = 0.5 * staircase(0.5 * uniforms.time, 2.0) + 0.5 * uniforms.time;
+        float s = t * colorAnimation;
+        float r = 0.5 + 0.4 * fbm(uv, 0.0 + uniforms.colorSeedR + s);
+        float g = 0.2 + 0.5 * fbm(uv, 5.0 + uniforms.colorSeedG + s);
+        float b = 0.1 + 0.9 * fbm(uv, 10.0 + uniforms.colorSeedB + s);
+
+        // increase leak saturation and brightness
+        float3 leak = float3(r, g, b);
+        leak = saturation(leak * 1.5, 2.0);
+
+        // animated noise-based mask
+        const float maskAnimation = 1.0; // speed at which the mask changes
+        float m = fbm((uv - 0.5) * 4.0, uniforms.maskSeed + t * maskAnimation);
+        m *= 6.0;
+        m = pow(m, uniforms.leakFalloff);
+
+        float vignette = smoothstep(0.1, 1.5, length((uv - 0.5) * res));
+        m *= vignette;
+        m = clamp(m, 0.0, 1.0);
+
+        leak *= m;
+
+        // simple chromatic aberration
+        float4 cr = sampleInput(defaultInputs, uv + float2(uniforms.aberration, 0.0));
+        float4 cg = sampleInput(defaultInputs, uv);
+        float4 cb = sampleInput(defaultInputs, uv - float2(uniforms.aberration, 0.0));
+        float4 tex = float4(cr.x, cg.y, cb.z, 1.0);
+        float alpha = cg.a;
+
+        // blur overlay
+        float2 offset = (2.0 * uniforms.blurAmt) / (float2(aspect, 1330.0) * 675.0);
+        float4 blurTex = tex;
+        blurTex += sampleInput(defaultInputs, uv + float2(offset.x, 0.0));
+        blurTex += sampleInput(defaultInputs, uv + float2(-offset.x, 0.0));
+        blurTex += sampleInput(defaultInputs, uv + float2(0.0, offset.y));
+        blurTex += sampleInput(defaultInputs, uv + float2(0.0, -offset.y));
+        blurTex += sampleInput(defaultInputs, uv + float2(offset.x, offset.y));
+        blurTex += sampleInput(defaultInputs, uv + float2(offset.x, -offset.y));
+        blurTex += sampleInput(defaultInputs, uv + float2(-offset.x, offset.y));
+        blurTex += sampleInput(defaultInputs, uv + float2(-offset.x, -offset.y));
+        blurTex /= 9.0;
+
+        tex = mix(tex, blurTex, uniforms.blurAmt);
+
+        // increase saturation
+        float lum = luma(tex.rgb);
+        tex.rgb = mix(float3(lum), tex.rgb, 1.0 + 0.2 * uniforms.strength);
+
+        // crush highlights & shadows
+        tex.rgb -= 0.1 * smoothstep(0.85, 1.0, lum) * uniforms.strength;
+        tex.rgb += 0.1 * smoothstep(0.15, 0.0, lum) * uniforms.strength;
+
+        // contrast
+        tex.rgb = brightnessContrast(tex.rgb, 0.0, uniforms.contrast);
+
+        // shift slightly magenta
+        tex.rgb += float3(1.0, 0.0, 1.0) * 0.05 * uniforms.strength;
+
+        // shift blur slightly
+        tex.rgb += float3(0.0, 0.3, 1.0) * 0.03 * uniforms.strength;
+
+        // film grain
+        float grain = rand(uv * res * 0.2 + fract(uniforms.time)) * 2.0 - 1.0;
+        tex.rgb += grain * uniforms.grainAmt;
+
+        // blend leak
+        tex.rgb = blendScreen(tex.rgb, leak, uniforms.leakBlendAmt);
+        tex.rgb = blendScreen(tex.rgb, leak, smoothstep(0.0, 0.5, uniforms.leakBlendAmt));
+
+        return toOutputFormat(float4(tex.rgb, alpha));
+      }
+";

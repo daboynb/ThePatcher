@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="0x7f1501a4">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="0x7f070126"
+            android:layout_marginBottom="0x7f070125"
+            app:NOT_FOUND_0xe="0"
+            app:NOT_FOUND_0xf="0"
+            app:NOT_FOUND_0x10="0"
+            app:NOT_FOUND_0x11="0">
+            <ViewStub
+                android:id="0x7f0b300e"
+                android:inflatedId="0x7f0b300e"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0x7f070c7b"
+                android:layout_marginRight="0x7f070c7b"/>
+            <ViewStub
+                android:id="0x7f0b13b3"
+                android:inflatedId="0x7f0b13b3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0x7f070c93"
+                android:layout_marginRight="0x7f070c93"/>
+            <RadioGroup
+                android:paddingLeft="34dp"
+                android:paddingRight="24dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:theme="?unknown_attr_ref: 7f04079e"
+                    android:id="0x7f0b1074"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="@null"/>
+                <RadioButton
+                    android:theme="?unknown_attr_ref: 7f04079e"
+                    android:id="0x7f0b1b7e"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="@null"/>
+                <RadioButton
+                    android:theme="?unknown_attr_ref: 7f04079e"
+                    android:id="0x7f0b1b7f"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="@null"/>
+                <RadioButton
+                    android:theme="?unknown_attr_ref: 7f04079e"
+                    android:id="0x7f0b1cbe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="@null"/>
+            </RadioGroup>
+            <View style="?unknown_attr_ref: 7f040799"/>
+            <ViewStub
+                android:id="0x7f0b1d53"
+                android:inflatedId="0x7f0b1d53"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0x7f070c93"
+                android:layout_marginRight="0x7f070c93"/>
+            <RadioGroup
+                android:paddingLeft="34dp"
+                android:paddingRight="24dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:theme="?unknown_attr_ref: 7f04079e"
+                    android:id="0x7f0b08bf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="@null"/>
+                <RadioButton
+                    android:theme="?unknown_attr_ref: 7f04079e"
+                    android:id="0x7f0b08c1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="@null"/>
+            </RadioGroup>
+            <ViewStub
+                android:id="0x7f0b231a"
+                android:inflatedId="0x7f0b231a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0x7f070c93"
+                android:layout_marginRight="0x7f070c93"/>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

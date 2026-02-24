@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:id="0x7f0b2e89"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <View
+        android:id="0x7f0b2b91"
+        android:background="?unknown_attr_ref: 7f040a2d"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <com.whatsapp.mediaview.api.PhotoView
+        android:layout_gravity="center"
+        android:id="0x7f0b2b90"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"/>
+    <com.whatsapp.videoplayback.ExoPlayerErrorFrame
+        android:id="0x7f0b1089"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <com.whatsapp.videoplayback.FbHeroPlaybackControlView
+        android:id="0x7f0b0ad4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</FrameLayout>

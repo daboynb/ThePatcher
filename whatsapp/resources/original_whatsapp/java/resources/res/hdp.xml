@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="0x7f070d8e"
+    android:layout_height="0x7f070d8e">
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="0x7f0b2687"
+        android:duplicateParentState="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"
+        android:importantForAccessibility="no"
+        app:NOT_FOUND_0x8="0"
+        app:NOT_FOUND_0x9="0"
+        app:NOT_FOUND_0xa="0"
+        app:NOT_FOUND_0xb="0"
+        app:NOT_FOUND_0xd="0x7f0809fb"/>
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="0x7f0b1461"
+        android:padding="1dp"
+        android:duplicateParentState="true"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:scaleType="fitCenter"
+        android:importantForAccessibility="no"
+        app:NOT_FOUND_0x8="0"
+        app:NOT_FOUND_0x9="0"
+        app:NOT_FOUND_0xa="0"
+        app:NOT_FOUND_0xb="0"
+        app:NOT_FOUND_0xc="0x7f15033f"
+        app:NOT_FOUND_0xe="?unknown_attr_ref: 7f040350"
+        app:NOT_FOUND_0xf="1dp"/>
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="0x7f0b03ba"
+        android:layout_width="0x7f0709d8"
+        android:layout_height="0x7f0709d8"
+        android:layout_margin="0x7f070cf0"
+        android:importantForAccessibility="no"
+        app:NOT_FOUND_0x9="0"
+        app:NOT_FOUND_0xb="0"
+        app:NOT_FOUND_0xd="0x7f080a00"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

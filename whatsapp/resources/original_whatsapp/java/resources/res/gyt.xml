@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <com.whatsapp.ui.coreui.WaLinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0x7f07054a"
+            android:layout_marginRight="0x7f07054a">
+            <com.whatsapp.ui.coreui.base.WaTextView
+                android:text="0x7f121246"
+                style="0x7f150203"/>
+            <com.whatsapp.ui.coreui.base.WaTextView
+                android:id="0x7f0b0f99"
+                android:text="0x7f121245"
+                style="0x7f1501fb"/>
+            <RelativeLayout
+                android:id="0x7f0b0f90"
+                style="0x7f1501fe">
+                <com.whatsapp.ui.wds.components.button.WDSButton
+                    android:textSize="0x7f070fb6"
+                    android:textColor="?unknown_attr_ref: 7f040a29"
+                    android:id="0x7f0b0f9a"
+                    android:background="0x7f060790"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textAllCaps="false"
+                    app:NOT_FOUND_0xd="3"/>
+                <FrameLayout
+                    android:id="0x7f0b0f98"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+        </com.whatsapp.ui.coreui.WaLinearLayout>
+    </ScrollView>
+    <com.whatsapp.ui.wds.components.button.WDSButton
+        android:id="0x7f0b0f97"
+        android:text="0x7f121244"
+        style="0x7f1501ff"/>
+</LinearLayout>

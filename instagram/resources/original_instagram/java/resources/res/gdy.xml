@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="0x7f0b44a1"
+        android:drawable="0x7f080543"
+        android:left="0x7f070000"
+        android:top="0x7f070000"
+        android:right="0x7f070000"
+        android:bottom="0x7f070000"/>
+</layer-list>

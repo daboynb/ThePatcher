@@ -1,0 +1,84 @@
+.class public final LX/5Au;
+.super Ljava/lang/Object;
+.source ""
+
+# interfaces
+.implements LX/Ipp;
+
+
+# instance fields
+.field public A00:Lkotlin/jvm/functions/Function2;
+
+.field public final A01:Lcom/instagram/common/session/UserSession;
+
+.field public final A02:LX/Eul;
+
+
+# direct methods
+.method public constructor <init>(Lcom/instagram/common/session/UserSession;LX/Eul;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, LX/5Au;->A01:Lcom/instagram/common/session/UserSession;
+
+    iput-object p2, p0, LX/5Au;->A02:LX/Eul;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final DIU(LX/4vm;LX/19K;)V
+    .locals 4
+
+    invoke-static {p2}, LX/D1F;->A0y(Ljava/lang/Object;)V
+
+    invoke-static {p1}, LX/D1F;->A0z(Ljava/lang/Object;)V
+
+    sget-object v0, LX/19K;->A0U:LX/19K;
+
+    if-ne p2, v0, :cond_0
+
+    sget-object v3, LX/ANq;->A00:LX/ANq;
+
+    sget-object v2, LX/Jk1;->A03:LX/Jk1;
+
+    iget-object v1, p0, LX/5Au;->A01:Lcom/instagram/common/session/UserSession;
+
+    iget-object v0, p0, LX/5Au;->A02:LX/Eul;
+
+    invoke-virtual {v3, v2, v0, v1, p1}, LX/ANq;->A01(LX/Jk1;LX/9Tv;Lcom/instagram/common/session/UserSession;LX/4vm;)V
+
+    :cond_0
+    return-void
+.end method
+
+.method public final DIV(LX/4vm;LX/19K;)V
+    .locals 1
+
+    invoke-static {p2}, LX/D1F;->A0y(Ljava/lang/Object;)V
+
+    invoke-static {p1}, LX/D1F;->A0z(Ljava/lang/Object;)V
+
+    iget-object v0, p0, LX/5Au;->A00:Lkotlin/jvm/functions/Function2;
+
+    if-eqz v0, :cond_0
+
+    invoke-interface {v0, p2, p1}, Lkotlin/jvm/functions/Function2;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    :cond_0
+    return-void
+.end method
+
+.method public final Fvl(Lkotlin/jvm/functions/Function2;)V
+    .locals 1
+
+    const/4 v0, 0x0
+
+    invoke-static {p1, v0}, LX/D1F;->A12(Ljava/lang/Object;I)V
+
+    iput-object p1, p0, LX/5Au;->A00:Lkotlin/jvm/functions/Function2;
+
+    return-void
+.end method

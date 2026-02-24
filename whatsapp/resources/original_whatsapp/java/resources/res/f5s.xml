@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center_horizontal"
+    android:id="0x7f0b1e2f"
+    android:background="@android:color/black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:id="0x7f0b2e66"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:NOT_FOUND_0x5="0"
+        app:NOT_FOUND_0x6="0"
+        app:NOT_FOUND_0x9="0"
+        app:NOT_FOUND_0xa="0"/>
+    <com.whatsapp.videoplayback.ExoPlayerErrorFrame
+        android:id="0x7f0b1089"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:NOT_FOUND_0x5="0"
+        app:NOT_FOUND_0x6="0"
+        app:NOT_FOUND_0x9="0"
+        app:NOT_FOUND_0xa="0"/>
+    <com.whatsapp.videoplayback.HeroPlaybackControlView
+        android:id="0x7f0b0ad4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:NOT_FOUND_0x5="0"
+        app:NOT_FOUND_0x6="0"
+        app:NOT_FOUND_0x9="0"
+        app:NOT_FOUND_0xa="0"/>
+    <include
+        android:id="0x7f0b11d7"
+        app:NOT_FOUND_0x5="0"
+        app:NOT_FOUND_0x7="0"
+        app:NOT_FOUND_0x8="0"
+        app:NOT_FOUND_0xb="1"
+        layout="0x7f0e0a7f"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

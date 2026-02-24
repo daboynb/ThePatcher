@@ -1,0 +1,9 @@
+.class public final LX/Qf7;
+.super Ljava/lang/Object;
+.source ""
+
+
+# instance fields
+.field public A00:Landroid/content/Context;
+
+.field public A01:Lcom/instagram/common/session/UserSession;

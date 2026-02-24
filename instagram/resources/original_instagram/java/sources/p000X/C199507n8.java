@@ -1,0 +1,19 @@
+package p000X;
+
+/* renamed from: X.7n8, reason: invalid class name and case insensitive filesystem */
+/* loaded from: classes3.dex */
+public final class C199507n8 implements InterfaceC70328Rey {
+    public final int $t;
+
+    public C199507n8(int i) {
+        this.$t = i;
+    }
+
+    @Override // p000X.InterfaceC70328Rey
+    public final /* synthetic */ void Eme(boolean z) {
+    }
+
+    @Override // p000X.InterfaceC70328Rey
+    public final /* synthetic */ void Emf() {
+    }
+}

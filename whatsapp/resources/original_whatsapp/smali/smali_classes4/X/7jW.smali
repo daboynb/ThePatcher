@@ -1,0 +1,522 @@
+.class public final LX/7jW;
+.super Ljava/lang/Object;
+.source ""
+
+# interfaces
+.implements LX/85w;
+
+
+# instance fields
+.field public final A00:LX/05V;
+
+.field public final A01:LX/05V;
+
+.field public final A02:LX/05V;
+
+.field public final A03:LX/05V;
+
+.field public final A04:LX/05V;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 1
+
+    .line 0
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-static {}, LX/1ab;->A0F()LX/05V;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    iput-object v0, p0, LX/7jW;->A04:LX/05V;
+
+    .line 8
+    .line 9
+    invoke-static {}, LX/5is;->A0h()LX/05V;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object v0
+
+    .line 13
+    iput-object v0, p0, LX/7jW;->A01:LX/05V;
+
+    .line 14
+    .line 15
+    invoke-static {}, LX/1ab;->A0P()LX/05V;
+
+    .line 16
+    .line 17
+    .line 18
+    move-result-object v0
+
+    .line 19
+    iput-object v0, p0, LX/7jW;->A03:LX/05V;
+
+    .line 20
+    .line 21
+    invoke-static {}, LX/5is;->A0N()LX/05V;
+
+    .line 22
+    .line 23
+    .line 24
+    move-result-object v0
+
+    .line 25
+    iput-object v0, p0, LX/7jW;->A00:LX/05V;
+
+    .line 26
+    .line 27
+    const v0, 0xc117
+
+    .line 28
+    .line 29
+    .line 30
+    invoke-static {v0}, LX/05Q;->A00(I)LX/05V;
+
+    .line 31
+    .line 32
+    .line 33
+    move-result-object v0
+
+    .line 34
+    iput-object v0, p0, LX/7jW;->A02:LX/05V;
+
+    .line 35
+    .line 36
+    return-void
+    .line 37
+    .line 38
+.end method
+
+
+# virtual methods
+.method public APa(Lcom/whatsapp/mediacomposer/doodle/titlebar/TitleBarView;)Landroid/view/View;
+    .locals 1
+
+    .line 0
+    iget-object v0, p1, Lcom/whatsapp/mediacomposer/doodle/titlebar/TitleBarView;->A05:Landroid/widget/FrameLayout;
+
+    .line 1
+    .line 2
+    return-object v0
+    .line 3
+    .line 4
+    .line 5
+.end method
+
+.method public AsF(Landroid/content/Context;)Ljava/lang/String;
+    .locals 1
+
+    .line 0
+    const v0, 0x7f1231bd
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-static {p1, v0}, LX/1ac;->A1C(Landroid/content/Context;I)Ljava/lang/String;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    return-object v0
+    .line 8
+.end method
+
+.method public B3r()Z
+    .locals 9
+
+    .line 0
+    iget-object v0, p0, LX/7jW;->A01:LX/05V;
+
+    .line 1
+    .line 2
+    iget-object v4, v0, LX/05V;->A00:LX/00q;
+
+    .line 3
+    .line 4
+    invoke-static {v4}, LX/5iw;->A0E(LX/00q;)Landroid/content/SharedPreferences;
+
+    .line 5
+    .line 6
+    .line 7
+    move-result-object v1
+
+    .line 8
+    const-string v0, "question_sticker_tooltip_show_count"
+
+    .line 9
+    .line 10
+    invoke-static {v1, v0}, LX/1ah;->A01(Landroid/content/SharedPreferences;Ljava/lang/String;)I
+
+    .line 11
+    .line 12
+    .line 13
+    move-result v1
+
+    .line 14
+    const/4 v0, 0x3
+
+    .line 15
+    if-ge v1, v0, :cond_0
+
+    .line 16
+    .line 17
+    iget-object v0, p0, LX/7jW;->A03:LX/05V;
+
+    .line 18
+    .line 19
+    iget-object v8, v0, LX/05V;->A00:LX/00q;
+
+    .line 20
+    .line 21
+    invoke-static {v8}, LX/1ac;->A06(LX/00q;)J
+
+    .line 22
+    .line 23
+    .line 24
+    move-result-wide v2
+
+    .line 25
+    invoke-static {v4}, LX/5iw;->A0E(LX/00q;)Landroid/content/SharedPreferences;
+
+    .line 26
+    .line 27
+    .line 28
+    move-result-object v1
+
+    .line 29
+    const-string v0, "sticker_tray_last_opened_timestamp"
+
+    .line 30
+    .line 31
+    invoke-static {v1, v0}, LX/000;->A00(Landroid/content/SharedPreferences;Ljava/lang/String;)J
+
+    .line 32
+    .line 33
+    .line 34
+    move-result-wide v0
+
+    .line 35
+    sub-long/2addr v2, v0
+
+    .line 36
+    const-wide/32 v6, 0x48190800
+
+    .line 37
+    .line 38
+    .line 39
+    cmp-long v0, v2, v6
+
+    .line 40
+    .line 41
+    if-lez v0, :cond_0
+
+    .line 42
+    .line 43
+    iget-object v0, p0, LX/7jW;->A04:LX/05V;
+
+    .line 44
+    .line 45
+    iget-object v5, v0, LX/05V;->A00:LX/00q;
+
+    .line 46
+    .line 47
+    invoke-static {v5}, LX/1aa;->A0g(LX/00q;)LX/05f;
+
+    .line 48
+    .line 49
+    .line 50
+    move-result-object v0
+
+    .line 51
+    invoke-virtual {v0}, LX/05f;->A07()J
+
+    .line 52
+    .line 53
+    .line 54
+    move-result-wide v3
+
+    .line 55
+    const-wide/16 v1, 0x0
+
+    .line 56
+    .line 57
+    cmp-long v0, v3, v1
+
+    .line 58
+    .line 59
+    if-eqz v0, :cond_0
+
+    .line 60
+    .line 61
+    invoke-static {v8}, LX/1ac;->A06(LX/00q;)J
+
+    .line 62
+    .line 63
+    .line 64
+    move-result-wide v2
+
+    .line 65
+    invoke-static {v5}, LX/1aa;->A0g(LX/00q;)LX/05f;
+
+    .line 66
+    .line 67
+    .line 68
+    move-result-object v0
+
+    .line 69
+    invoke-virtual {v0}, LX/05f;->A07()J
+
+    .line 70
+    .line 71
+    .line 72
+    move-result-wide v0
+
+    .line 73
+    sub-long/2addr v2, v0
+
+    .line 74
+    cmp-long v0, v2, v6
+
+    .line 75
+    .line 76
+    if-lez v0, :cond_0
+
+    .line 77
+    .line 78
+    iget-object v0, p0, LX/7jW;->A00:LX/05V;
+
+    .line 79
+    .line 80
+    invoke-static {v0}, LX/5iw;->A0R(LX/05V;)LX/07B;
+
+    .line 81
+    .line 82
+    .line 83
+    move-result-object v1
+
+    .line 84
+    const/16 v0, 0x4438
+
+    .line 85
+    .line 86
+    invoke-virtual {v1, v0}, LX/00I;->A0Z(I)Z
+
+    .line 87
+    .line 88
+    .line 89
+    move-result v0
+
+    .line 90
+    const/4 v1, 0x1
+
+    .line 91
+    if-nez v0, :cond_1
+
+    .line 92
+    .line 93
+    :cond_0
+    const/4 v1, 0x0
+
+    .line 94
+    :cond_1
+    return v1
+.end method
+
+.method public synthetic B62()Z
+    .locals 1
+
+    .line 0
+    const/4 v0, 0x0
+
+    .line 1
+    return v0
+    .line 2
+.end method
+
+.method public BNp()V
+    .locals 2
+
+    .line 0
+    iget-object v0, p0, LX/7jW;->A01:LX/05V;
+
+    .line 1
+    .line 2
+    invoke-static {v0}, LX/05V;->A02(LX/05V;)Ljava/lang/Object;
+
+    .line 3
+    .line 4
+    .line 5
+    move-result-object v1
+
+    .line 6
+    check-cast v1, LX/1YR;
+
+    .line 7
+    .line 8
+    const/4 v0, 0x3
+
+    .line 9
+    invoke-virtual {v1, v0}, LX/1YR;->A01(I)V
+
+    .line 10
+    .line 11
+    .line 12
+    return-void
+.end method
+
+.method public Bg7()V
+    .locals 4
+
+    .line 0
+    iget-object v0, p0, LX/7jW;->A01:LX/05V;
+
+    .line 1
+    .line 2
+    iget-object v0, v0, LX/05V;->A00:LX/00q;
+
+    .line 3
+    .line 4
+    invoke-interface {v0}, LX/00q;->get()Ljava/lang/Object;
+
+    .line 5
+    .line 6
+    .line 7
+    move-result-object v2
+
+    .line 8
+    check-cast v2, LX/1YR;
+
+    .line 9
+    .line 10
+    invoke-static {v0}, LX/5iw;->A0E(LX/00q;)Landroid/content/SharedPreferences;
+
+    .line 11
+    .line 12
+    .line 13
+    move-result-object v1
+
+    .line 14
+    const-string v0, "question_sticker_tooltip_show_count"
+
+    .line 15
+    .line 16
+    invoke-static {v1, v0}, LX/1ah;->A01(Landroid/content/SharedPreferences;Ljava/lang/String;)I
+
+    .line 17
+    .line 18
+    .line 19
+    move-result v0
+
+    .line 20
+    add-int/lit8 v0, v0, 0x1
+
+    .line 21
+    .line 22
+    invoke-virtual {v2, v0}, LX/1YR;->A01(I)V
+
+    .line 23
+    .line 24
+    .line 25
+    iget-object v0, p0, LX/7jW;->A02:LX/05V;
+
+    .line 26
+    .line 27
+    invoke-static {v0}, LX/05V;->A02(LX/05V;)Ljava/lang/Object;
+
+    .line 28
+    .line 29
+    .line 30
+    move-result-object v3
+
+    .line 31
+    check-cast v3, LX/7BY;
+
+    .line 32
+    .line 33
+    sget-object v2, LX/IO7;->A01:Ljava/lang/Integer;
+
+    .line 34
+    .line 35
+    iget-object v0, v3, LX/7BY;->A01:LX/05V;
+
+    .line 36
+    .line 37
+    invoke-static {v0}, LX/5iw;->A0R(LX/05V;)LX/07B;
+
+    .line 38
+    .line 39
+    .line 40
+    move-result-object v1
+
+    .line 41
+    const/16 v0, 0x5598
+
+    .line 42
+    .line 43
+    invoke-virtual {v1, v0}, LX/00I;->A0Z(I)Z
+
+    .line 44
+    .line 45
+    .line 46
+    move-result v0
+
+    .line 47
+    if-eqz v0, :cond_0
+
+    .line 48
+    .line 49
+    iput-object v2, v3, LX/7BY;->A00:Ljava/lang/Integer;
+
+    .line 50
+    .line 51
+    :cond_0
+    return-void
+    .line 52
+    .line 53
+    .line 54
+.end method
+
+.method public Bi9()V
+    .locals 2
+
+    .line 0
+    iget-object v0, p0, LX/7jW;->A01:LX/05V;
+
+    .line 1
+    .line 2
+    invoke-static {v0}, LX/05V;->A02(LX/05V;)Ljava/lang/Object;
+
+    .line 3
+    .line 4
+    .line 5
+    move-result-object v1
+
+    .line 6
+    check-cast v1, LX/1YR;
+
+    .line 7
+    .line 8
+    const/4 v0, 0x3
+
+    .line 9
+    invoke-virtual {v1, v0}, LX/1YR;->A01(I)V
+
+    .line 10
+    .line 11
+    .line 12
+    return-void
+.end method

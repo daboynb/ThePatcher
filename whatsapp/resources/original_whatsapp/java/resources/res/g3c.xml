@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="0x7f0b2744"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ViewStub
+            android:id="0x7f0b228a"
+            android:layout="0x7f0e0934"
+            android:inflatedId="0x7f0b2289"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0x7f070ce8"/>
+        <com.whatsapp.ui.wds.components.list.listitem.WDSListItem
+            android:id="0x7f0b15ee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:NOT_FOUND_0x7="0x7f1219fc"
+            app:NOT_FOUND_0x8="2"
+            app:NOT_FOUND_0x9="0x7f123577"
+            app:NOT_FOUND_0xa="0"
+            app:NOT_FOUND_0xc="0x7f080ba4"
+            app:NOT_FOUND_0xd="2"/>
+        <com.whatsapp.ui.wds.components.list.listitem.WDSListItem
+            android:id="0x7f0b1ce3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:NOT_FOUND_0x7="0x7f122a67"
+            app:NOT_FOUND_0x8="2"
+            app:NOT_FOUND_0x9="0x7f122a6c"
+            app:NOT_FOUND_0xa="0"
+            app:NOT_FOUND_0xb="1"
+            app:NOT_FOUND_0xc="0x7f080c95"
+            app:NOT_FOUND_0xd="2"/>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="0x7f0800da">
+    <target
+        android:name="path"
+        android:animation="0x7f0800db"/>
+    <target
+        android:name="path_9"
+        android:animation="0x7f0800dd"/>
+    <target
+        android:name="path_1"
+        android:animation="0x7f0800de"/>
+    <target
+        android:name="path_2"
+        android:animation="0x7f0800df"/>
+    <target
+        android:name="path_3"
+        android:animation="0x7f0800e0"/>
+    <target
+        android:name="path_4"
+        android:animation="0x7f0800e1"/>
+    <target
+        android:name="path_5"
+        android:animation="0x7f0800e2"/>
+    <target
+        android:name="path_6"
+        android:animation="0x7f0800e3"/>
+    <target
+        android:name="path_7"
+        android:animation="0x7f0800e4"/>
+    <target
+        android:name="path_8"
+        android:animation="0x7f0800dc"/>
+</animated-vector>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.whatsapp.gallery.views.MediaPickerRecyclerView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:whatsapp="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="0x7f071033"
+    android:scrollbars="none"
+    android:clipToPadding="false"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:cacheColorHint="0x7f060790"
+    android:nestedScrollingEnabled="true"
+    whatsapp:NOT_FOUND_0x7="0"
+    whatsapp:NOT_FOUND_0x8="0"
+    whatsapp:NOT_FOUND_0x9="0"
+    whatsapp:NOT_FOUND_0xa="0"
+    whatsapp:NOT_FOUND_0xb="0x7f0705fc"
+    whatsapp:NOT_FOUND_0xc="0x7f0705fd"
+    whatsapp:NOT_FOUND_0xd="0x7f0705fb"/>

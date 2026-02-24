@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="0x7f0b2652"
+    android:focusable="true"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0x7f070cea">
+        <com.whatsapp.ui.coreui.base.WaImageView
+            android:gravity="center_vertical"
+            android:id="0x7f0b04d3"
+            android:layout_width="0x7f070cee"
+            android:layout_height="0x7f070cee"
+            android:tint="0x7f060347"
+            android:contentDescription="0x7f123dac"
+            app:NOT_FOUND_0xf="0x7f08047d"/>
+        <com.whatsapp.ui.coreui.base.WaTextView
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center"
+            android:id="0x7f0b04d2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0x7f1206a9"
+            android:fontFamily="?unknown_attr_ref: 7f0403b6"
+            style="0x7f150121"/>
+    </FrameLayout>
+    <View style="0x7f150355"/>
+    <FrameLayout
+        android:id="0x7f0b04db"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:ordering="together">
+    <objectAnimator
+        android:interpolator="0x7f08001b"
+        android:duration="733"
+        android:startOffset="0"
+        android:valueFrom="M-5.06 -0.18 C-5.06,-0.18 -5.06,9.52 -5.06,9.52 C-5.06,9.52 -5.06,10.13 -5.06,10.13 "
+        android:valueTo="M-5.06 -3.04 C-5.06,-3.04 -5.06,13.52 -5.06,13.52 C-5.06,13.52 -5.06,13.69 -5.06,13.69 "
+        android:valueType="pathType"
+        android:propertyName="pathData"/>
+    <objectAnimator
+        android:interpolator="0x7f08001c"
+        android:duration="267"
+        android:startOffset="733"
+        android:valueFrom="M-5.06 -3.04 C-5.06,-3.04 -5.06,13.52 -5.06,13.52 C-5.06,13.52 -5.06,13.69 -5.06,13.69 "
+        android:valueTo="M-5.06 -0.18 C-5.06,-0.18 -5.06,9.52 -5.06,9.52 C-5.06,9.52 -5.06,10.13 -5.06,10.13 "
+        android:valueType="pathType"
+        android:propertyName="pathData"/>
+</set>

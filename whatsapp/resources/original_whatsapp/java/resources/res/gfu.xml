@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:whatsapp="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <com.whatsapp.ui.coreui.base.WaImageView
+        android:layout_gravity="bottom|center_horizontal"
+        android:id="0x7f0b0a56"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        whatsapp:NOT_FOUND_0x10="0x7f080567"/>
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="7dp"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.whatsapp.locationsharing.location.ContactLiveLocationThumbnail
+            android:layout_gravity="center"
+            android:id="0x7f0b0a52"
+            android:padding="2.5dp"
+            android:layout_width="0x7f07076b"
+            android:layout_height="0x7f07076b"
+            android:scaleType="fitCenter"
+            whatsapp:NOT_FOUND_0xd="?unknown_attr_ref: 7f040504"
+            whatsapp:NOT_FOUND_0xe="2dp"
+            whatsapp:NOT_FOUND_0xf="12"
+            whatsapp:NOT_FOUND_0x11="?unknown_attr_ref: 7f040504"
+            whatsapp:NOT_FOUND_0x12="1dp"
+            whatsapp:NOT_FOUND_0x13="false"
+            whatsapp:NOT_FOUND_0x14="0x7f070cc5"/>
+        <com.whatsapp.ui.coreui.base.WaImageView
+            android:layout_gravity="center"
+            android:id="0x7f0b0a28"
+            android:background="0x7f0807d7"
+            android:layout_width="4dp"
+            android:layout_height="4dp"
+            android:layout_marginTop="1dp"
+            android:scaleType="center"/>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,27 @@
+.class public final LX/1pn;
+.super LX/1HI;
+.source ""
+
+
+# instance fields
+.field public final A00:LX/00q;
+
+
+# direct methods
+.method public constructor <init>(Landroid/view/View;LX/00q;)V
+    .locals 0
+
+    .line 0
+    invoke-direct {p0, p1}, LX/1HI;-><init>(Landroid/view/View;)V
+
+    .line 1
+    .line 2
+    .line 3
+    iput-object p2, p0, LX/1pn;->A00:LX/00q;
+
+    .line 4
+    .line 5
+    return-void
+    .line 6
+    .line 7
+.end method

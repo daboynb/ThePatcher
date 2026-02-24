@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.whatsapp.videoplayback.VideoSurfaceView
+        android:layout_gravity="center"
+        android:id="0x7f0b2e89"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"/>
+    <ProgressBar
+        android:layout_gravity="center"
+        android:id="0x7f0b17c5"
+        android:layout_width="70dp"
+        android:layout_height="70dp"/>
+    <com.whatsapp.ui.coreui.base.WaImageView
+        android:layout_gravity="center"
+        android:id="0x7f0b2050"
+        android:background="0x7f08033f"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
+        android:contentDescription="0x7f1228f7"
+        app:NOT_FOUND_0x7="0x7f0806d9"/>
+</FrameLayout>

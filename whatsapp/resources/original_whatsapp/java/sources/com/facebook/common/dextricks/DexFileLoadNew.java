@@ -1,0 +1,13 @@
+package com.facebook.common.dextricks;
+
+import dalvik.system.DexFile;
+
+/* loaded from: classes8.dex */
+public final class DexFileLoadNew {
+    public static Class loadClassBinaryName(DexFile dexFile, String str, ClassLoader classLoader) {
+        return dexFile.loadClassBinaryName(str, classLoader, null);
+    }
+
+    public static void init() {
+    }
+}

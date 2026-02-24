@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="0x7f0b249f"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="0x7f0b2a94"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <HorizontalScrollView
+        android:layout_gravity="center_vertical"
+        android:id="0x7f0b10b7"
+        android:background="?unknown_attr_ref: 7f040a5a"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.chip.ChipGroup
+            android:id="0x7f0b10b6"
+            android:paddingTop="0x7f071031"
+            android:paddingBottom="0x7f071030"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="0x7f07102e"
+            android:paddingEnd="0x7f07102e"
+            app:NOT_FOUND_0xd="0x7f071039"
+            app:NOT_FOUND_0xe="true"/>
+    </HorizontalScrollView>
+    <ViewStub
+        android:id="0x7f0b308c"
+        android:layout="0x7f0e0e7c"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <ViewStub
+        android:id="0x7f0b2148"
+        android:layout="0x7f0e0e7d"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <ViewStub
+        android:id="0x7f0b0ac5"
+        android:layout="0x7f0e0417"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

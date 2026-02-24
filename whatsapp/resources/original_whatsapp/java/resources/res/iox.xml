@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:textAppearance="0x7f1505a6"
+        android:id="0x7f0b08ab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0x7f07103b"
+        android:layout_marginEnd="0x7f07103b"
+        android:buttonTint="0x7f0606bd"/>
+</LinearLayout>

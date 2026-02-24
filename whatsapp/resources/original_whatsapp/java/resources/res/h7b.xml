@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="0x7f07102e"
+    android:paddingEnd="0x7f07102e">
+    <com.whatsapp.ui.wds.components.radiobutton.WDSRadioButton
+        android:theme="0x7f1503ab"
+        android:id="0x7f0b1b7e"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="0x7f1505a4"/>
+</FrameLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:icon="0x7f0804e7"
+        android:id="0x7f0b249a"
+        android:orderInCategory="200"
+        android:title="0x7f123f0a"
+        android:showAsAction="always"/>
+</menu>

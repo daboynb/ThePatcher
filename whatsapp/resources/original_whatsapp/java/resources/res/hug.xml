@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingBottom="0x7f0706f3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="0x7f0e0bcc"/>
+        <com.whatsapp.ui.coreui.SectionHeaderView
+            android:id="0x7f0b158d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:NOT_FOUND_0xa="0x7f1220af"
+            style="0x7f1502be"/>
+        <com.whatsapp.chatinfo.newsletter.insights.view.InsightsSectionView
+            android:id="0x7f0b1574"
+            android:paddingTop="0x7f07103a"
+            android:paddingBottom="0x7f07103a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="0x7f07102e"
+            android:paddingEnd="0x7f07102e">
+            <com.whatsapp.ui.coreui.base.WaTextView
+                android:layout_gravity="center_horizontal"
+                android:id="0x7f0b1575"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:NOT_FOUND_0xb="2"
+                style="0x7f1505aa"/>
+            <com.whatsapp.ui.coreui.base.WaTextView
+                android:layout_gravity="center_horizontal"
+                android:id="0x7f0b1573"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0x7f071030"
+                app:NOT_FOUND_0xb="6"/>
+        </com.whatsapp.chatinfo.newsletter.insights.view.InsightsSectionView>
+        <include layout="0x7f0e0bd7"/>
+    </LinearLayout>
+</ScrollView>

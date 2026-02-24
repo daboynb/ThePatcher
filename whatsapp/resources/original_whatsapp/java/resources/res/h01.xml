@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout
+        android:id="0x7f0b18d4"
+        android:paddingLeft="0x7f071035"
+        android:paddingTop="0x7f071035"
+        android:paddingRight="0x7f071035"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.whatsapp.stickers.StickerView
+            android:layout_gravity="center_horizontal"
+            android:id="0x7f0b29b1"
+            android:layout_width="0x7f070416"
+            android:layout_height="0x7f070416"
+            android:contentDescription="0x7f123222"/>
+        <FrameLayout
+            android:layout_gravity="center"
+            android:id="0x7f0b0ad8"
+            android:background="0x7f080318"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <com.whatsapp.ui.coreui.CircularProgressBar
+                android:layout_gravity="center"
+                android:id="0x7f0b21b7"
+                android:visibility="gone"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:indeterminateOnly="false"
+                android:indeterminateTint="@android:color/white"
+                android:indeterminateTintMode="src_atop"/>
+            <com.whatsapp.ui.coreui.base.WaImageView
+                android:layout_gravity="center"
+                android:id="0x7f0b0771"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="0x7f123d9b"
+                app:NOT_FOUND_0xd="0x7f080488"/>
+            <com.whatsapp.ui.wds.components.button.WDSButton
+                android:id="0x7f0b0ad5"
+                style="0x7f1501b4"/>
+        </FrameLayout>
+    </FrameLayout>
+</merge>

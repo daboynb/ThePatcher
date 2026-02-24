@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="0x7f070575"
+    android:layout_height="0x7f070575">
+    <com.whatsapp.ui.coreui.base.WaTextView
+        android:textColor="0x7f0608dd"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="0x7f0b1ae9"
+        android:background="0x7f080a5a"
+        android:focusable="true"
+        android:clickable="true"
+        android:layout_width="0x7f070a7e"
+        android:layout_height="0x7f070a7e"
+        app:NOT_FOUND_0x9="7"
+        style="0x7f1505a7"/>
+</FrameLayout>

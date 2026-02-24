@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <View
+        android:id="0x7f0b0564"
+        style="0x7f150282"/>
+    <View
+        android:id="0x7f0b0f53"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"/>
+    <View
+        android:id="0x7f0b2c3c"
+        style="0x7f150290"/>
+</LinearLayout>

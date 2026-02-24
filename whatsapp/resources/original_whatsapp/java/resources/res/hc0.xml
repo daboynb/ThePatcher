@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="?unknown_attr_ref: 7f040a59"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="?unknown_attr_ref: 7f04002f">
+    <include layout="0x7f0e10cb"/>
+    <FrameLayout
+        android:id="0x7f0b15ed"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="?unknown_attr_ref: 7f04000d"/>
+</FrameLayout>

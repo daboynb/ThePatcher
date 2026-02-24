@@ -1,0 +1,90 @@
+[Filter ChromaKeyFilter]
+
+
+[Init]
+fun init(Filter filter) {
+  filter.passes = {{
+      name = 'pass0, inputs = {'default},
+      uniforms = {
+            strength = 1.0,
+            keyColor = {0.0, 1.0, 0.0, 1.0},
+            threshold = 0.2,
+      },
+      glslShader = glsl, metalShader = metal
+    }};
+}
+
+[PreRender]
+fun preRender(Filter filter) {
+
+}
+
+string glsl = "
+  varying vec2 sourceTextureCoordinate;
+
+  BaseUniformsOpenGL;
+
+  uniform vec4 keyColor;
+  uniform float threshold;
+
+  vec2 RGBtoUV(vec4 rgb) {
+    return vec2(
+      rgb.r * -0.169 + rgb.g * -0.331 + rgb.b *  0.5 + 0.5,
+      rgb.r *  0.5   + rgb.g * -0.419 + rgb.b * -0.081 + 0.5
+    );
+  }
+
+  void main() {
+    vec2 uv = sourceTextureCoordinate;
+    vec4 texel = sampleInput(uv);
+    float chromaDist = distance(RGBtoUV(texel), RGBtoUV(keyColor));
+
+    // For similarity
+    float baseMask = chromaDist - 0.46;
+
+    // For smoothness
+    float fullMask = pow(clamp(baseMask / 0.08, 0., 1.), 1.5);
+    if (fullMask < threshold) {
+      texel = mix(vec4(0.0), texel, step(threshold, fullMask));
+    }
+
+    gl_FragColor = toOutputFormat(texel);
+  }
+";
+
+string metal = "
+  typedef struct { float2 sourceTextureCoordinate [[user(locn1)]]; } RasterizerData;
+
+  typedef struct {
+    BaseUniformsMetal;
+    float4 keyColor;
+    float threshold;
+  } Uniforms;
+
+  float2 RGBtoUV(float4 rgb) {
+    return float2(
+      rgb.r * -0.169 + rgb.g * -0.331 + rgb.b *  0.5 + 0.5,
+      rgb.r *  0.5   + rgb.g * -0.419 + rgb.b * -0.081 + 0.5
+    );
+  }
+
+  fragment float4 fragmentShader(RasterizerData fragmentIn [[stage_in]],
+                                  constant Uniforms & uniforms [[buffer(1)]],
+                                  DefaultInputs defaultInputs) {
+
+    float2 uv = fragmentIn.sourceTextureCoordinate;
+    float4 texel = sampleInput(defaultInputs, uv);
+    float chromaDist = distance(RGBtoUV(texel), RGBtoUV(uniforms.keyColor));
+
+    // For similarity
+    float baseMask = chromaDist - 0.46;
+
+    // For smoothness
+    float fullMask = pow(clamp(baseMask / 0.08, 0., 1.), 1.5);
+    if (fullMask < uniforms.threshold) {
+      texel = mix(float4(0.0), texel, step(uniforms.threshold, fullMask));
+    }
+
+    return toOutputFormat(texel);
+  }
+";

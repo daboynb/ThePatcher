@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.whatsapp.ui.coreui.base.WaImageView
+        android:id="0x7f0b1018"
+        android:background="0x7f060940"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="0x7f07102e"
+        android:scaleType="centerCrop"/>
+    <com.whatsapp.ui.coreui.base.WaTextView
+        android:id="0x7f0b1063"
+        android:paddingTop="0x7f07102e"
+        android:paddingBottom="0x7f071039"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="0x7f07102e"
+        android:paddingEnd="0x7f07102e"
+        style="0x7f1505aa"/>
+    <com.google.android.material.tabs.TabLayout
+        android:id="0x7f0b1062"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:NOT_FOUND_0xf="0"
+        app:NOT_FOUND_0x10="0x7f060930"
+        app:NOT_FOUND_0x11="true"
+        app:NOT_FOUND_0x12="0dp"
+        app:NOT_FOUND_0x13="1"
+        app:NOT_FOUND_0x14="0x7f060930"
+        app:NOT_FOUND_0x15="0x7f1505a5"
+        app:NOT_FOUND_0x16="0x7f060948"/>
+    <View style="0x7f150355"/>
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="0x7f0b1066"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <LinearLayout
+        android:background="?unknown_attr_ref: 7f040a59"
+        android:padding="0x7f07102e"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="4dp">
+        <com.whatsapp.ui.wds.components.button.WDSButton
+            android:id="0x7f0b0e90"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0x7f123e54"/>
+    </LinearLayout>
+</LinearLayout>

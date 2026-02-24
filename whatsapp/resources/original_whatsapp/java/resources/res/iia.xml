@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.whatsapp.status.updates.ui.StatusItemLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:whatsapp="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:id="0x7f0b0aa5"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="0x7f070d13"
+    android:layout_marginEnd="0x7f070d13">
+    <FrameLayout
+        android:id="0x7f0b0a6f"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.whatsapp.status.api.ContactStatusThumbnail
+            android:layout_gravity="center"
+            android:id="0x7f0b0a78"
+            android:padding="2.5dp"
+            android:layout_width="0x7f07064a"
+            android:layout_height="0x7f07064a"
+            android:scaleType="centerCrop"
+            whatsapp:NOT_FOUND_0x12="?unknown_attr_ref: 7f040a4f"
+            whatsapp:NOT_FOUND_0x13="0x7f060713"
+            whatsapp:NOT_FOUND_0x14="0x7f060718"
+            whatsapp:NOT_FOUND_0x15="0x7f070d12"
+            whatsapp:NOT_FOUND_0x16="false"
+            whatsapp:NOT_FOUND_0x17="0x7f070cc5"/>
+        <ViewStub
+            android:layout_gravity="bottom|right"
+            android:id="0x7f0b28d7"
+            android:visibility="gone"
+            android:layout="0x7f0e0f93"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:importantForAccessibility="no"/>
+        <View
+            android:layout_gravity="bottom|right"
+            android:id="0x7f0b03bb"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:contentDescription="0x7f123f02"/>
+    </FrameLayout>
+    <com.whatsapp.ui.coreui.base.TextEmojiLabel
+        android:textSize="0x7f070fbc"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:id="0x7f0b0a4b"
+        android:paddingTop="0x7f070df4"
+        android:layout_width="0x7f070d67"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        style="0x7f150183"/>
+</com.whatsapp.status.updates.ui.StatusItemLinearLayout>

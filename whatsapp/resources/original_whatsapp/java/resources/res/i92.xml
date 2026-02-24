@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <external-path
+        name="external"
+        path="."/>
+    <external-media-path
+        name="external_media"
+        path="/"/>
+    <files-path
+        name="notification_thumbs"
+        path=".trash/notification_thumbs/"/>
+</paths>

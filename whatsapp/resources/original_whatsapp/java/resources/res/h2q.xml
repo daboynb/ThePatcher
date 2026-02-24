@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="0x7f0b1654"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0x7f070c16"
+        android:layout_marginTop="0x7f070c16"
+        android:tint="?unknown_attr_ref: 7f04072a"
+        android:rotationY="0x7f0c003c"
+        android:layout_marginStart="0x7f070c16"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="0x7f0b17b1"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+        <TextView
+            android:gravity="center"
+            android:id="0x7f0b2d09"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:fontFamily="?unknown_attr_ref: 7f040716"/>
+        <TextView
+            android:gravity="center"
+            android:id="0x7f0b2d05"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"/>
+    </LinearLayout>
+    <FrameLayout
+        android:id="0x7f0b1192"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageButton
+            android:layout_gravity="bottom|center_horizontal"
+            android:id="@android:id/button3"
+            android:background="0x7f0809c0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="48dp"
+            android:elevation="4dp"/>
+    </FrameLayout>
+</FrameLayout>

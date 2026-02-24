@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:whatsapp="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="0x7f0b2d6e"
+        android:background="?unknown_attr_ref: 7f040a59"
+        android:paddingTop="0x7f070cea"
+        android:paddingBottom="0x7f070ce9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="0x7f0706a4"
+        android:paddingEnd="0x7f07102c">
+        <com.whatsapp.ui.coreui.base.WaTextView
+            android:id="0x7f0b2d6d"
+            android:layout_width="0dp"
+            android:text="0x7f1213af"
+            android:layout_weight="1"
+            style="0x7f15021b"/>
+        <com.whatsapp.ui.coreui.base.WaTextView
+            android:id="0x7f0b2d65"
+            android:includeFontPadding="false"
+            whatsapp:NOT_FOUND_0xd="0x7f0604da"
+            style="0x7f150219"/>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="0x7f0b2d68"
+        android:background="?unknown_attr_ref: 7f040a59"
+        android:paddingBottom="0x7f070cea"
+        android:clipToPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="0x7f070cea"
+        android:paddingEnd="0x7f070cea"/>
+</merge>

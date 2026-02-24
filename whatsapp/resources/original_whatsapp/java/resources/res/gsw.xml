@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.whatsapp.ui.coreui.base.WaTextView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:textSize="20sp"
+    android:paddingLeft="0x7f07103b"
+    android:paddingTop="18dp"
+    android:paddingRight="0x7f07103b"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:NOT_FOUND_0x7="?unknown_attr_ref: 7f0403b8"/>

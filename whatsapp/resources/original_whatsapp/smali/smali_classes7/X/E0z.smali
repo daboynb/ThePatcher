@@ -1,0 +1,139 @@
+.class public final LX/E0z;
+.super LX/Frl;
+.source ""
+
+
+# static fields
+.field public static final CREATOR:Landroid/os/Parcelable$Creator;
+
+
+# instance fields
+.field public final A00:Landroid/app/PendingIntent;
+
+.field public final A01:LX/E10;
+
+
+# direct methods
+.method public static constructor <clinit>()V
+    .locals 1
+
+    .line 0
+    new-instance v0, LX/FgP;
+
+    .line 1
+    .line 2
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    .line 3
+    .line 4
+    .line 5
+    sput-object v0, LX/E0z;->CREATOR:Landroid/os/Parcelable$Creator;
+
+    .line 6
+    .line 7
+    return-void
+.end method
+
+.method public constructor <init>(Landroid/app/PendingIntent;LX/E10;)V
+    .locals 1
+
+    .line 0
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 1
+    .line 2
+    .line 3
+    iput-object p1, p0, LX/E0z;->A00:Landroid/app/PendingIntent;
+
+    .line 4
+    .line 5
+    iput-object p2, p0, LX/E0z;->A01:LX/E10;
+
+    .line 6
+    .line 7
+    if-nez p1, :cond_0
+
+    .line 8
+    .line 9
+    if-nez p2, :cond_0
+
+    .line 10
+    .line 11
+    const-string v0, "pendingIntent or createCredentialResponse must be specified."
+
+    .line 12
+    .line 13
+    invoke-static {v0}, LX/1aa;->A0y(Ljava/lang/String;)Ljava/lang/IllegalArgumentException;
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-object v0
+
+    .line 17
+    throw v0
+
+    .line 18
+    :cond_0
+    return-void
+    .line 19
+    .line 20
+    .line 21
+.end method
+
+
+# virtual methods
+.method public writeToParcel(Landroid/os/Parcel;I)V
+    .locals 4
+
+    .line 0
+    const/4 v3, 0x0
+
+    .line 1
+    invoke-static {p1, v3}, LX/00C;->A0A(Ljava/lang/Object;I)V
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-static {p1}, LX/Fdu;->A00(Landroid/os/Parcel;)I
+
+    .line 5
+    .line 6
+    .line 7
+    move-result v2
+
+    .line 8
+    iget-object v1, p0, LX/E0z;->A00:Landroid/app/PendingIntent;
+
+    .line 9
+    .line 10
+    const/4 v0, 0x1
+
+    .line 11
+    invoke-static {p1, v1, v0, p2, v3}, LX/Fdu;->A0C(Landroid/os/Parcel;Landroid/os/Parcelable;IIZ)V
+
+    .line 12
+    .line 13
+    .line 14
+    const/4 v1, 0x2
+
+    .line 15
+    iget-object v0, p0, LX/E0z;->A01:LX/E10;
+
+    .line 16
+    .line 17
+    invoke-static {p1, v0, v1, p2, v3}, LX/Fdu;->A0C(Landroid/os/Parcel;Landroid/os/Parcelable;IIZ)V
+
+    .line 18
+    .line 19
+    .line 20
+    invoke-static {p1, v2}, LX/Fdu;->A08(Landroid/os/Parcel;I)V
+
+    .line 21
+    .line 22
+    .line 23
+    return-void
+    .line 24
+    .line 25
+    .line 26
+.end method

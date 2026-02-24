@@ -1,0 +1,65 @@
+.class public final Lcom/facebook/graphql/enums/GraphQLMessengerBroadcastSectionTypeSet;
+.super Ljava/lang/Object;
+.source ""
+
+
+# static fields
+.field public static final A00:Ljava/util/Set;
+
+
+# direct methods
+.method public static constructor <clinit>()V
+    .locals 12
+
+    const-string v0, "ACTIVE_NOW"
+
+    const-string v1, "BLENDED_CONTACTS"
+
+    const-string v2, "CLIENT_NEEDY_RECONNECT"
+
+    const-string v3, "CLIENT_NEEDY_SUGGESTIONS"
+
+    const-string v4, "COMMUNITY_CHATS"
+
+    const-string v5, "CONTACTS"
+
+    const-string v6, "GROUPS"
+
+    const-string v7, "NEEDY_CONTACTS"
+
+    const-string v8, "RECENTS"
+
+    const-string v9, "TOP_CLIENT_CONTACTS"
+
+    const-string v10, "TOP_CONTACTS"
+
+    const-string v11, "TOP_FRIENDS"
+
+    filled-new-array/range {v0 .. v11}, [Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v0}, LX/1ru;->A00([Ljava/lang/Object;)Ljava/util/HashSet;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/facebook/graphql/enums/GraphQLMessengerBroadcastSectionTypeSet;->A00:Ljava/util/Set;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public static final getSet()Ljava/util/Set;
+    .locals 1
+
+    sget-object v0, Lcom/facebook/graphql/enums/GraphQLMessengerBroadcastSectionTypeSet;->A00:Ljava/util/Set;
+
+    return-object v0
+.end method

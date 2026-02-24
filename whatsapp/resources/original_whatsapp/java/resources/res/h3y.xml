@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingTop="0x7f07102e"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.whatsapp.ui.wds.components.list.listitem.WDSListItem
+            android:id="0x7f0b281a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:NOT_FOUND_0x6="0x7f123069"
+            app:NOT_FOUND_0x7="0"
+            app:NOT_FOUND_0x8="1"
+            app:NOT_FOUND_0x9="5"
+            app:NOT_FOUND_0xa="3"/>
+        <com.whatsapp.ui.wds.components.list.listitem.WDSListItem
+            android:id="0x7f0b2080"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:NOT_FOUND_0x5="0x7f124085"
+            app:NOT_FOUND_0x6="0x7f12292c"
+            app:NOT_FOUND_0x7="0"
+            app:NOT_FOUND_0x9="5"
+            app:NOT_FOUND_0xa="3"/>
+    </LinearLayout>
+</ScrollView>

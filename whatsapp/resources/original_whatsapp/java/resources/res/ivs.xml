@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.whatsapp.ui.coreui.base.WaTextView
+        android:gravity="start"
+        android:id="0x7f0b1d95"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0x7f070cee"
+        android:text="0x7f123541"
+        style="0x7f15040e"/>
+    <com.whatsapp.ui.coreui.text.SeeMoreTextView
+        android:textColor="?unknown_attr_ref: 7f040a47"
+        android:id="0x7f0b1d94"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingMultiplier="1.5"
+        android:textIsSelectable="true"
+        style="0x7f1505a4"/>
+    <com.whatsapp.ui.coreui.base.WaTextView
+        android:gravity="start"
+        android:id="0x7f0b2cd8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0x7f070cee"
+        android:text="0x7f123548"
+        style="0x7f15040e"/>
+    <com.whatsapp.ui.coreui.text.SeeMoreTextView
+        android:textColor="?unknown_attr_ref: 7f040a47"
+        android:id="0x7f0b2cd7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingMultiplier="1.5"
+        android:textIsSelectable="true"
+        style="0x7f1505a4"/>
+    <include
+        android:gravity="start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0x7f070ceb"
+        layout="0x7f0e10de"/>
+    <com.whatsapp.ui.wds.components.button.WDSButton
+        android:enabled="false"
+        android:id="0x7f0b2ccf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0x7f070ceb"
+        android:layout_marginBottom="0x7f070ceb"
+        android:text="0x7f123529"
+        style="0x7f15055c"/>
+</LinearLayout>

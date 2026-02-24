@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.whatsapp.ui.coreui.LockableCoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="0x7f0b24eb"
+    android:background="@android:color/transparent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:id="0x7f0b2ebc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="?unknown_attr_ref: 7f04002f"
+        app:NOT_FOUND_0xc="0x7f123d7b">
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="0x7f080cbd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToOutline="true">
+            <FrameLayout
+                android:id="0x7f0b2ebf"
+                android:background="?unknown_attr_ref: 7f040923"
+                android:paddingTop="0x7f07103a"
+                android:paddingBottom="0x7f071030"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <include
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    layout="0x7f0e12a2"/>
+            </FrameLayout>
+            <com.whatsapp.ui.wds.components.topbar.WDSToolbar
+                android:id="0x7f0b2ebd"
+                android:background="?unknown_attr_ref: 7f04002e"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="?unknown_attr_ref: 7f04000d"
+                app:NOT_FOUND_0xd="0x7f080116"
+                app:NOT_FOUND_0xe="?unknown_attr_ref: 7f040a47"/>
+            <include
+                android:id="0x7f0b2c21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="0x7f0e10cb"/>
+            <FrameLayout
+                android:background="?unknown_attr_ref: 7f040a31"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <androidx.fragment.app.FragmentContainerView
+                    android:id="0x7f0b1216"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </FrameLayout>
+        </LinearLayout>
+    </FrameLayout>
+</com.whatsapp.ui.coreui.LockableCoordinatorLayout>

@@ -1,0 +1,242 @@
+package com.google.android.recaptcha.internal;
+
+import p000X.AbstractC127915iy;
+import p000X.AbstractC37199Ghy;
+import p000X.DYX;
+
+/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
+/* loaded from: classes8.dex */
+public final class zzik {
+    public static final zzik zzA;
+    public static final zzik zzB;
+    public static final zzik zzC;
+    public static final zzik zzD;
+    public static final zzik zzE;
+    public static final zzik zzF;
+    public static final zzik zzG;
+    public static final zzik zzH;
+    public static final zzik zzI;
+    public static final zzik zzJ;
+    public static final zzik zzK;
+    public static final zzik zzL;
+    public static final zzik zzM;
+    public static final zzik zzN;
+    public static final zzik zzO;
+    public static final zzik zzP;
+    public static final zzik zzQ;
+    public static final zzik zzR;
+    public static final zzik zzS;
+    public static final zzik zzT;
+    public static final zzik zzU;
+    public static final zzik zzV;
+    public static final zzik zzW;
+    public static final zzik zzX;
+    public static final zzik zzY;
+    public static final zzik[] zzZ;
+    public static final zzik zza;
+    public static final /* synthetic */ zzik[] zzaa;
+    public static final zzik zzb;
+    public static final zzik zzc;
+    public static final zzik zzd;
+    public static final zzik zze;
+    public static final zzik zzf;
+    public static final zzik zzg;
+    public static final zzik zzh;
+    public static final zzik zzi;
+    public static final zzik zzj;
+    public static final zzik zzk;
+    public static final zzik zzl;
+    public static final zzik zzm;
+    public static final zzik zzn;
+    public static final zzik zzo;
+    public static final zzik zzp;
+    public static final zzik zzq;
+    public static final zzik zzr;
+    public static final zzik zzs;
+    public static final zzik zzt;
+    public static final zzik zzu;
+    public static final zzik zzv;
+    public static final zzik zzw;
+    public static final zzik zzx;
+    public static final zzik zzy;
+    public static final zzik zzz;
+    public final zzjf zzab;
+    public final int zzac;
+    public final Class zzad;
+
+    static {
+        zzjf zzjfVar = zzjf.zze;
+        zzik A0I = AbstractC37199Ghy.A0I(zzjfVar, "DOUBLE", 0, 1);
+        zza = A0I;
+        zzjf zzjfVar2 = zzjf.zzd;
+        zzik zzikVar = new zzik("FLOAT", 1, 1, 1, zzjfVar2);
+        zzb = zzikVar;
+        zzjf zzjfVar3 = zzjf.zzc;
+        zzik A0I2 = AbstractC37199Ghy.A0I(zzjfVar3, "INT64", 2, 1);
+        zzc = A0I2;
+        zzik A0I3 = AbstractC37199Ghy.A0I(zzjfVar3, "UINT64", 3, 1);
+        zzd = A0I3;
+        zzjf zzjfVar4 = zzjf.zzb;
+        zzik A0I4 = AbstractC37199Ghy.A0I(zzjfVar4, "INT32", 4, 1);
+        zze = A0I4;
+        zzik A0I5 = AbstractC37199Ghy.A0I(zzjfVar3, "FIXED64", 5, 1);
+        zzf = A0I5;
+        zzik A0I6 = AbstractC37199Ghy.A0I(zzjfVar4, "FIXED32", 6, 1);
+        zzg = A0I6;
+        zzjf zzjfVar5 = zzjf.zzf;
+        zzik A0I7 = AbstractC37199Ghy.A0I(zzjfVar5, "BOOL", 7, 1);
+        zzh = A0I7;
+        zzjf zzjfVar6 = zzjf.zzg;
+        zzik A0I8 = AbstractC37199Ghy.A0I(zzjfVar6, "STRING", 8, 1);
+        zzi = A0I8;
+        zzjf zzjfVar7 = zzjf.zzj;
+        zzik A0I9 = AbstractC37199Ghy.A0I(zzjfVar7, "MESSAGE", 9, 1);
+        zzj = A0I9;
+        zzjf zzjfVar8 = zzjf.zzh;
+        zzik A0I10 = AbstractC37199Ghy.A0I(zzjfVar8, "BYTES", 10, 1);
+        zzk = A0I10;
+        zzik A0I11 = AbstractC37199Ghy.A0I(zzjfVar4, "UINT32", 11, 1);
+        zzl = A0I11;
+        zzjf zzjfVar9 = zzjf.zzi;
+        zzik A0I12 = AbstractC37199Ghy.A0I(zzjfVar9, "ENUM", 12, 1);
+        zzm = A0I12;
+        zzik A0I13 = AbstractC37199Ghy.A0I(zzjfVar4, "SFIXED32", 13, 1);
+        zzn = A0I13;
+        zzik A0I14 = AbstractC37199Ghy.A0I(zzjfVar3, "SFIXED64", 14, 1);
+        zzo = A0I14;
+        zzik A0I15 = AbstractC37199Ghy.A0I(zzjfVar4, "SINT32", 15, 1);
+        zzp = A0I15;
+        zzik A0I16 = AbstractC37199Ghy.A0I(zzjfVar3, "SINT64", 16, 1);
+        zzq = A0I16;
+        zzik A0I17 = AbstractC37199Ghy.A0I(zzjfVar7, "GROUP", 17, 1);
+        zzr = A0I17;
+        zzik A0I18 = AbstractC37199Ghy.A0I(zzjfVar, "DOUBLE_LIST", 18, 2);
+        zzs = A0I18;
+        zzik A0I19 = AbstractC37199Ghy.A0I(zzjfVar2, "FLOAT_LIST", 19, 2);
+        zzt = A0I19;
+        zzik A0I20 = AbstractC37199Ghy.A0I(zzjfVar3, "INT64_LIST", 20, 2);
+        zzu = A0I20;
+        zzik A0I21 = AbstractC37199Ghy.A0I(zzjfVar3, "UINT64_LIST", 21, 2);
+        zzv = A0I21;
+        zzik A0I22 = AbstractC37199Ghy.A0I(zzjfVar4, "INT32_LIST", 22, 2);
+        zzw = A0I22;
+        zzik A0I23 = AbstractC37199Ghy.A0I(zzjfVar3, "FIXED64_LIST", 23, 2);
+        zzx = A0I23;
+        zzik A0I24 = AbstractC37199Ghy.A0I(zzjfVar4, "FIXED32_LIST", 24, 2);
+        zzy = A0I24;
+        zzik A0I25 = AbstractC37199Ghy.A0I(zzjfVar5, "BOOL_LIST", 25, 2);
+        zzz = A0I25;
+        zzik A0I26 = AbstractC37199Ghy.A0I(zzjfVar6, "STRING_LIST", 26, 2);
+        zzA = A0I26;
+        zzik A0I27 = AbstractC37199Ghy.A0I(zzjfVar7, "MESSAGE_LIST", 27, 2);
+        zzB = A0I27;
+        zzik A0I28 = AbstractC37199Ghy.A0I(zzjfVar8, "BYTES_LIST", 28, 2);
+        zzC = A0I28;
+        zzik A0I29 = AbstractC37199Ghy.A0I(zzjfVar4, "UINT32_LIST", 29, 2);
+        zzD = A0I29;
+        zzik A0I30 = AbstractC37199Ghy.A0I(zzjfVar9, "ENUM_LIST", 30, 2);
+        zzE = A0I30;
+        zzik A0I31 = AbstractC37199Ghy.A0I(zzjfVar4, "SFIXED32_LIST", 31, 2);
+        zzF = A0I31;
+        zzik A0I32 = AbstractC37199Ghy.A0I(zzjfVar3, "SFIXED64_LIST", 32, 2);
+        zzG = A0I32;
+        zzik A0I33 = AbstractC37199Ghy.A0I(zzjfVar4, "SINT32_LIST", 33, 2);
+        zzH = A0I33;
+        zzik A0I34 = AbstractC37199Ghy.A0I(zzjfVar3, "SINT64_LIST", 34, 2);
+        zzI = A0I34;
+        zzik A0I35 = AbstractC37199Ghy.A0I(zzjfVar, "DOUBLE_LIST_PACKED", 35, 3);
+        zzJ = A0I35;
+        zzik A0I36 = AbstractC37199Ghy.A0I(zzjfVar2, "FLOAT_LIST_PACKED", 36, 3);
+        zzK = A0I36;
+        zzik A0I37 = AbstractC37199Ghy.A0I(zzjfVar3, "INT64_LIST_PACKED", 37, 3);
+        zzL = A0I37;
+        zzik A0I38 = AbstractC37199Ghy.A0I(zzjfVar3, "UINT64_LIST_PACKED", 38, 3);
+        zzM = A0I38;
+        zzik A0I39 = AbstractC37199Ghy.A0I(zzjfVar4, "INT32_LIST_PACKED", 39, 3);
+        zzN = A0I39;
+        zzik A0I40 = AbstractC37199Ghy.A0I(zzjfVar3, "FIXED64_LIST_PACKED", 40, 3);
+        zzO = A0I40;
+        zzik A0I41 = AbstractC37199Ghy.A0I(zzjfVar4, "FIXED32_LIST_PACKED", 41, 3);
+        zzP = A0I41;
+        zzik A0I42 = AbstractC37199Ghy.A0I(zzjfVar5, "BOOL_LIST_PACKED", 42, 3);
+        zzQ = A0I42;
+        zzik A0I43 = AbstractC37199Ghy.A0I(zzjfVar4, "UINT32_LIST_PACKED", 43, 3);
+        zzR = A0I43;
+        zzik A0I44 = AbstractC37199Ghy.A0I(zzjfVar9, "ENUM_LIST_PACKED", 44, 3);
+        zzS = A0I44;
+        zzik A0I45 = AbstractC37199Ghy.A0I(zzjfVar4, "SFIXED32_LIST_PACKED", 45, 3);
+        zzT = A0I45;
+        zzik A0I46 = AbstractC37199Ghy.A0I(zzjfVar3, "SFIXED64_LIST_PACKED", 46, 3);
+        zzU = A0I46;
+        zzik A0I47 = AbstractC37199Ghy.A0I(zzjfVar4, "SINT32_LIST_PACKED", 47, 3);
+        zzV = A0I47;
+        zzik A0I48 = AbstractC37199Ghy.A0I(zzjfVar3, "SINT64_LIST_PACKED", 48, 3);
+        zzW = A0I48;
+        zzik A0I49 = AbstractC37199Ghy.A0I(zzjfVar7, "GROUP_LIST", 49, 2);
+        zzX = A0I49;
+        zzik A0I50 = AbstractC37199Ghy.A0I(zzjf.zza, "MAP", 50, 4);
+        zzY = A0I50;
+        zzik[] zzikVarArr = new zzik[51];
+        zzikVarArr[0] = A0I;
+        zzikVarArr[1] = zzikVar;
+        zzikVarArr[2] = A0I2;
+        zzikVarArr[3] = A0I3;
+        zzikVarArr[4] = A0I4;
+        zzikVarArr[5] = A0I5;
+        zzikVarArr[6] = A0I6;
+        zzikVarArr[7] = A0I7;
+        zzikVarArr[8] = A0I8;
+        zzikVarArr[9] = A0I9;
+        DYX.A1J(A0I10, A0I11, zzikVarArr);
+        zzikVarArr[12] = A0I12;
+        AbstractC37199Ghy.A1A(A0I13, A0I14, A0I15, A0I16, zzikVarArr);
+        zzikVarArr[17] = A0I17;
+        AbstractC37199Ghy.A1D(A0I18, A0I19, A0I20, zzikVarArr);
+        zzikVarArr[21] = A0I21;
+        zzikVarArr[22] = A0I22;
+        zzikVarArr[23] = A0I23;
+        AbstractC37199Ghy.A1F(A0I24, A0I25, zzikVarArr);
+        zzikVarArr[26] = A0I26;
+        zzikVarArr[27] = A0I27;
+        AbstractC127915iy.A1L(A0I28, A0I29, A0I30, A0I31, zzikVarArr);
+        zzikVarArr[32] = A0I32;
+        zzikVarArr[33] = A0I33;
+        zzikVarArr[34] = A0I34;
+        zzikVarArr[35] = A0I35;
+        AbstractC127915iy.A1N(A0I36, A0I37, A0I38, A0I39, zzikVarArr);
+        zzikVarArr[40] = A0I40;
+        zzikVarArr[41] = A0I41;
+        zzikVarArr[42] = A0I42;
+        AbstractC37199Ghy.A1B(A0I43, A0I44, A0I45, A0I46, zzikVarArr);
+        zzikVarArr[47] = A0I47;
+        zzikVarArr[48] = A0I48;
+        zzikVarArr[49] = A0I49;
+        zzikVarArr[50] = A0I50;
+        zzaa = zzikVarArr;
+        zzik[] values = values();
+        zzik[] zzikVarArr2 = new zzik[values.length];
+        zzZ = zzikVarArr2;
+        for (zzik zzikVar2 : values) {
+            zzikVarArr2[zzikVar2.zzac] = zzikVar2;
+        }
+    }
+
+    public static zzik[] values() {
+        return (zzik[]) zzaa.clone();
+    }
+
+    public final int zza() {
+        return this.zzac;
+    }
+
+    public zzik(String str, int i, int i2, int i3, zzjf zzjfVar) {
+        this.zzac = i2;
+        this.zzab = zzjfVar;
+        int i4 = i3 - 1;
+        this.zzad = (i4 == 1 || i4 == 3) ? zzjfVar.zza() : null;
+        if (i3 == 1) {
+            zzjf zzjfVar2 = zzjf.zza;
+        }
+    }
+}

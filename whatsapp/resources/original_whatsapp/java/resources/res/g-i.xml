@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.whatsapp.ui.wds.components.textlayout.WDSTextLayout
+            android:id="0x7f0b2d8e"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="0x7f070b5d"
+            app:NOT_FOUND_0xc="0"
+            app:NOT_FOUND_0xd="1"/>
+        <com.whatsapp.ui.coreui.base.TextEmojiLabel
+            android:textAppearance="0x7f1505a8"
+            android:gravity="center_horizontal"
+            android:id="0x7f0b2d90"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0x7f070b5d"
+            android:lineSpacingMultiplier="1.33"
+            android:layout_marginStart="0x7f070b5d"
+            android:layout_marginEnd="0x7f070b5d"/>
+        <com.whatsapp.ui.coreui.base.TextEmojiLabel
+            android:textAppearance="0x7f1505a8"
+            android:gravity="center_horizontal"
+            android:id="0x7f0b2b1f"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0x7f070b5d"
+            android:lineSpacingMultiplier="1.33"
+            android:layout_marginStart="0x7f070b5d"
+            android:layout_marginEnd="0x7f070b5d"/>
+        <com.whatsapp.ui.coreui.WaButtonWithLoader
+            android:textColor="?unknown_attr_ref: 7f040a2f"
+            android:gravity="bottom|center_horizontal"
+            android:id="0x7f0b2d8f"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0x7f070b5d"
+            android:layout_marginBottom="0x7f070b5d"/>
+    </LinearLayout>
+</ScrollView>

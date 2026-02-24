@@ -1,0 +1,47 @@
+package p000X;
+
+import android.util.SparseArray;
+
+/* renamed from: X.4sQ, reason: invalid class name and case insensitive filesystem */
+/* loaded from: classes2.dex */
+public enum EnumC126344sQ {
+    AD_DESTINATION_WEB(1),
+    AD_DESTINATION_APP_STORE(2),
+    AD_DESTINATION_DEEPLINK(3),
+    AD_DESTINATION_PHONE(4),
+    AD_DESTINATION_MAP(5),
+    AD_DESTINATION_CANVAS(6),
+    AD_DESTINATION_LEAD_AD(7),
+    AD_DESTINATION_PROFILE_VISIT(8),
+    AD_DESTINATION_DIRECT_MESSAGE(10),
+    IG_DESTINATION_SHOPPING_SHEET(12),
+    IG_DESTINATION_MINI_SHOP_STOREFRONT(13),
+    AD_DESTINATION_SHOPPING_PDP(14),
+    IG_DESTINATION_MINI_SHOP_COLLECTION(17),
+    IG_DESTINATION_BLOKS(20),
+    IGTV_CHANNEL_DESTINATION(21),
+    IGTV_VIDEO_DESTINATION(22),
+    AD_DESTINATION_CLIPS_VIEWER(23),
+    AD_DESTINATION_AUDIO_PAGE(24),
+    AD_DESTINATION_CLIPS_PROFILE(25),
+    AD_DESTINATION_AR_CAMERA(26),
+    AD_DESTINATION_ORGANIC_COLLECTION(32),
+    AD_DESTINATION_METADATA_BOTTOMSHEET(34),
+    AD_DESTINATION_BLOKS_OCULUS_CHECKOUT(35),
+    AD_DESTINATION_WATCH_LIVE_VIDEO(36),
+    AD_DESTINATION_PLAYABLES(37),
+    AD_DESTINATION_COMMERCE_PAGE(38);
+
+    public static final SparseArray A01 = new SparseArray();
+    public final int A00;
+
+    static {
+        for (EnumC126344sQ enumC126344sQ : values()) {
+            A01.put(enumC126344sQ.A00, enumC126344sQ);
+        }
+    }
+
+    EnumC126344sQ(int i) {
+        this.A00 = i;
+    }
+}

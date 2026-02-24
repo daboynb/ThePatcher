@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="?unknown_attr_ref: 7f040a59"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="0x7f070643"
+    android:paddingEnd="0x7f070644">
+    <com.whatsapp.ui.coreui.collections.ObservableRecyclerView
+        android:id="0x7f0b2d89"
+        android:paddingBottom="0x7f070e4e"
+        android:scrollbars="none"
+        android:clipToPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</FrameLayout>

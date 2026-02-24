@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="0x7f070ea8">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="0x7f0b0309"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.whatsapp.ui.coreui.base.WaImageView
+            android:id="0x7f0b301b"
+            android:background="0x7f080cb4"
+            android:padding="0x7f07103b"
+            android:focusable="false"
+            android:visibility="visible"
+            android:layout_width="0x7f070eb1"
+            android:layout_height="0x7f070eb1"
+            android:layout_margin="0x7f07102f"
+            android:importantForAccessibility="no"
+            app:NOT_FOUND_0x16="0x7f0b301e"
+            app:NOT_FOUND_0x17="0"
+            app:NOT_FOUND_0x18="0"
+            app:NOT_FOUND_0x19="0"/>
+        <ViewStub
+            android:id="0x7f0b301d"
+            android:layout="0x7f0e1294"
+            android:inflatedId="0x7f0b301c"
+            android:layout_width="0x7f070eb1"
+            android:layout_height="0x7f070eb1"
+            app:NOT_FOUND_0x15="0x7f0b301b"
+            app:NOT_FOUND_0x17="0x7f0b301b"
+            app:NOT_FOUND_0x18="0x7f0b301b"
+            app:NOT_FOUND_0x19="0x7f0b301b"/>
+        <com.whatsapp.ui.coreui.base.TextEmojiLabel
+            android:textStyle="bold"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:id="0x7f0b301e"
+            android:visibility="visible"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0x7f070ea2"
+            android:text="0x7f123d51"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:fontFamily="?unknown_attr_ref: 7f0403b6"
+            android:paddingStart="0x7f070eb0"
+            android:paddingEnd="0x7f070eb0"
+            app:NOT_FOUND_0x15="0"
+            app:NOT_FOUND_0x17="0"
+            app:NOT_FOUND_0x18="0"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

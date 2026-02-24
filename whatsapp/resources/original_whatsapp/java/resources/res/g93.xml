@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:gravity="center_vertical"
+        android:padding="0x7f070afb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.whatsapp.ui.coreui.base.WaTextView
+            android:id="0x7f0b2cfe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:NOT_FOUND_0xc="0"
+            app:NOT_FOUND_0xe="0"
+            app:NOT_FOUND_0xf="0"
+            style="0x7f150715"/>
+        <RadioButton
+            android:id="0x7f0b2283"
+            android:focusable="false"
+            android:clickable="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="@null"
+            android:buttonTint="0x7f060643"
+            app:NOT_FOUND_0xc="0"
+            app:NOT_FOUND_0xd="0"
+            app:NOT_FOUND_0xf="0"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <View
+        android:id="0x7f0b0da2"
+        android:background="0x7f060107"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+</LinearLayout>

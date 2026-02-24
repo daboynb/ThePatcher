@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ViewStub
+        android:layout_gravity="center"
+        android:id="0x7f0b21b7"
+        android:layout="0x7f0e0350"
+        android:inflatedId="0x7f0b21b7"
+        android:layout_width="0x7f0703d1"
+        android:layout_height="0x7f0703d1"/>
+    <ViewStub
+        android:layout_gravity="center"
+        android:id="0x7f0b0771"
+        android:layout="0x7f0e0318"
+        android:inflatedId="0x7f0b0771"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <com.whatsapp.ui.wds.components.button.WDSButton
+        android:layout_gravity="center"
+        android:id="0x7f0b0ad5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?unknown_attr_ref: 7f04025e"/>
+</merge>

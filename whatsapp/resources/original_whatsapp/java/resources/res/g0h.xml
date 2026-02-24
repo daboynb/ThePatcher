@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:id="0x7f0b10a5"
+    android:paddingTop="0x7f071039"
+    android:paddingBottom="0x7f071039"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="72dp"
+    android:paddingStart="0x7f07102e"
+    android:paddingEnd="0x7f07102e">
+    <com.whatsapp.ui.wds.components.icon.WDSIcon
+        android:id="0x7f0b10a6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:NOT_FOUND_0x14="2"
+        app:NOT_FOUND_0x15="3"
+        app:NOT_FOUND_0x16="3"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginStart="0x7f07103a"
+        android:layout_marginEnd="0x7f07103a">
+        <com.whatsapp.ui.wds.components.textview.WDSTextView
+            android:textColor="?unknown_attr_ref: 7f040a47"
+            android:ellipsize="end"
+            android:id="0x7f0b10a8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            app:NOT_FOUND_0x17="4"/>
+        <com.whatsapp.ui.wds.components.textview.WDSTextView
+            android:textColor="?unknown_attr_ref: 7f040a46"
+            android:ellipsize="end"
+            android:id="0x7f0b10a7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            app:NOT_FOUND_0x17="6"/>
+    </LinearLayout>
+    <com.whatsapp.ui.wds.components.button.WDSButton
+        android:id="0x7f0b10a3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:NOT_FOUND_0x12="2"
+        app:NOT_FOUND_0x13="small"/>
+    <com.whatsapp.ui.wds.components.icon.WDSIcon
+        android:id="0x7f0b10a4"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:NOT_FOUND_0x11="0x7f08047a"
+        app:NOT_FOUND_0x14="2"
+        app:NOT_FOUND_0x15="3"
+        app:NOT_FOUND_0x16="3"/>
+</LinearLayout>

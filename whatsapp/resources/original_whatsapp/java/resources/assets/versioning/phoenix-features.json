@@ -1,0 +1,58 @@
+{
+  "pass": {
+    "input_selector": {},
+    "parameters": {},
+    "result_path": {}
+  },
+  "choice": {
+    "choices": {
+      "and": {},
+      "eq": {},
+      "eq_any": {},
+      "eq_path": {},
+      "eq_any_path": {},
+      "gte": {},
+      "gt": {},
+      "gt_path": {},
+      "gte_path": {},
+      "isPresent": {},
+      "lt": {},
+      "lt_path": {},
+      "lte": {},
+      "lte_path": {},
+      "neq": {},
+      "neq_any": {},
+      "neq_path": {},
+      "neq_any_path": {},
+      "not": {},
+      "or": {},
+      "regex_match": {}
+    }
+  },
+  "resource": {
+    "ids": {
+      "br_verify_card_deeplink": {},
+      "client_dasl_query": {},
+      "dismiss_bottom_sheet": {},
+      "error_response": {},
+      "native_flow_npci_common_library": {
+        "mode": {
+          "collect": {}
+        }
+      },
+      "native_flow_call_manager": {},
+      "native_p2m_lite_compliance": {},
+      "native_p2m_lite_hpp_checkout": {},
+      "open_bloks_screen_graphql": {},
+      "open_bloks_screen_static": {},
+      "payment_encrypt_with_public_key": {},
+      "send_fds_iq": {}
+    },
+    "input_selector": {},
+    "parameters": {},
+    "result_selector": {},
+    "result_path": {}
+  },
+  "succeed": {},
+  "fail": {}
+}

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.whatsapp.ui.wds.components.topbar.WDSToolbar
+        android:id="0x7f0b0ded"
+        android:layout_height="wrap_content"
+        android:minHeight="?unknown_attr_ref: 7f04000d"
+        style="0x7f150520"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        style="0x7f150358"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:orientation="vertical"
+        android:id="0x7f0b0dea"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <com.whatsapp.ui.wds.components.button.WDSButtonGroup
+        android:background="0x7f060883"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="0x7f060883"
+        app:NOT_FOUND_0x9="1">
+        <com.whatsapp.ui.wds.components.button.WDSButton
+            android:id="0x7f0b0dec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Suppress"
+            app:NOT_FOUND_0xa="3"/>
+        <com.whatsapp.ui.wds.components.button.WDSButton
+            android:id="0x7f0b0deb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"/>
+    </com.whatsapp.ui.wds.components.button.WDSButtonGroup>
+</LinearLayout>

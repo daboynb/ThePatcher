@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:id="0x7f0b1b84"
+    android:layout_width="0x7f070fee"
+    android:layout_height="0x7f070fee"
+    app:NOT_FOUND_0x7="?unknown_attr_ref: 7f040a59"
+    app:NOT_FOUND_0x8="0x7f070b25"
+    app:NOT_FOUND_0x9="0dp">
+    <com.whatsapp.ui.coreui.base.WaImageView
+        android:layout_gravity="center"
+        android:id="0x7f0b1b85"
+        android:background="0x7f08038e"
+        android:layout_width="0x7f070f34"
+        android:layout_height="0x7f070f34"
+        android:scaleType="fitCenter"/>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,138 @@
+package p000X;
+
+import com.instagram.common.notifications.model.NotificationGenerationSource;
+import com.instagram.common.notifications.push.intf.PushChannelType;
+import java.util.List;
+
+/* renamed from: X.6Qy, reason: invalid class name and case insensitive filesystem */
+/* loaded from: classes3.dex */
+public final class C163526Qy {
+    public static final C163546Ra A0Z = new C163546Ra(0, 0);
+    public final int A00;
+    public final long A01;
+    public final long A02;
+    public final long A03;
+    public final long A04;
+    public final long A05;
+    public final EnumC246329gS A06;
+    public final NotificationGenerationSource A07;
+    public final PushChannelType A08;
+    public final Double A09;
+    public final Integer A0A;
+    public final Long A0B;
+    public final Long A0C;
+    public final Long A0D;
+    public final String A0E;
+    public final String A0F;
+    public final String A0G;
+    public final String A0H;
+    public final String A0I;
+    public final String A0J;
+    public final String A0K;
+    public final String A0L;
+    public final String A0M;
+    public final String A0N;
+    public final String A0O;
+    public final String A0P;
+    public final String A0Q;
+    public final String A0R;
+    public final String A0S;
+    public final String A0T;
+    public final String A0U;
+    public final List A0V;
+    public final boolean A0W;
+    public final boolean A0X;
+    public final boolean A0Y;
+
+    public C163526Qy(C163386Qk c163386Qk) {
+        String str = c163386Qk.A0M;
+        this.A0M = str == null ? "empty-or-null-ig4a" : str;
+        String str2 = c163386Qk.A0N;
+        this.A0N = str2 == null ? "empty-or-null-ig4a" : str2;
+        String str3 = c163386Qk.A0H;
+        this.A0H = str3 == null ? "empty-or-null-ig4a" : str3;
+        String str4 = c163386Qk.A0T;
+        this.A0T = str4 == null ? "empty-or-null-ig4a" : str4;
+        String str5 = c163386Qk.A0K;
+        this.A0K = str5 != null ? str5 : "empty-or-null-ig4a";
+        PushChannelType pushChannelType = c163386Qk.A04;
+        this.A08 = pushChannelType == null ? PushChannelType.A0C : pushChannelType;
+        Long l = c163386Qk.A0C;
+        this.A04 = l != null ? l.longValue() : 0L;
+        this.A0W = c163386Qk.A0W;
+        String str6 = c163386Qk.A0I;
+        this.A0I = str6 == null ? "" : str6;
+        String str7 = c163386Qk.A0R;
+        this.A0R = str7 == null ? "" : str7;
+        this.A06 = c163386Qk.A02;
+        this.A0B = c163386Qk.A08;
+        this.A0D = c163386Qk.A0D;
+        this.A0A = c163386Qk.A06;
+        this.A05 = c163386Qk.A01;
+        this.A0Y = c163386Qk.A0Y;
+        Long l2 = c163386Qk.A0B;
+        this.A03 = l2 != null ? l2.longValue() : 0L;
+        this.A0F = c163386Qk.A0F;
+        this.A0O = c163386Qk.A0O;
+        this.A0V = c163386Qk.A0V;
+        String str8 = c163386Qk.A0S;
+        this.A0S = str8 == null ? "" : str8;
+        String str9 = c163386Qk.A0Q;
+        this.A0Q = str9 != null ? str9 : "";
+        Long l3 = c163386Qk.A07;
+        this.A01 = l3 != null ? l3.longValue() : 0L;
+        Long l4 = c163386Qk.A0A;
+        this.A02 = l4 != null ? l4.longValue() : 0L;
+        this.A0X = c163386Qk.A0X;
+        this.A0C = c163386Qk.A09;
+        this.A0P = c163386Qk.A0P;
+        this.A0J = c163386Qk.A0J;
+        this.A0U = c163386Qk.A0U;
+        this.A0G = c163386Qk.A0G;
+        this.A09 = c163386Qk.A05;
+        this.A0E = c163386Qk.A0E;
+        this.A00 = c163386Qk.A00;
+        this.A07 = c163386Qk.A03;
+        this.A0L = c163386Qk.A0L;
+    }
+
+    public C163526Qy(PushChannelType pushChannelType, Integer num, Long l, Long l2, Long l3, String str, String str2, String str3, String str4, String str5, String str6, String str7, String str8, List list, boolean z, boolean z2, boolean z3) {
+        String str9 = str8;
+        String str10 = str5;
+        this.A0M = str4 == null ? "empty-or-null-ig4a" : str4;
+        this.A0N = str5 == null ? "empty-or-null-ig4a" : str10;
+        this.A0H = str == null ? "empty-or-null-ig4a" : str;
+        this.A0T = str8 == null ? "empty-or-null-ig4a" : str9;
+        this.A0K = str2 != null ? str2 : "empty-or-null-ig4a";
+        this.A08 = pushChannelType == null ? PushChannelType.A0C : pushChannelType;
+        this.A04 = l2 != null ? l2.longValue() : 0L;
+        this.A0W = z;
+        this.A0I = "";
+        this.A0R = "";
+        this.A06 = null;
+        this.A0B = null;
+        this.A0D = l3;
+        this.A0A = num;
+        this.A05 = -1L;
+        this.A0Y = z3;
+        this.A03 = 0L;
+        this.A0F = null;
+        this.A0O = str6;
+        this.A0V = list;
+        this.A0S = "";
+        this.A0Q = "";
+        this.A01 = 0L;
+        this.A02 = 0L;
+        this.A0X = z2;
+        this.A0C = l;
+        this.A0P = str7;
+        this.A0J = null;
+        this.A0U = null;
+        this.A0G = null;
+        this.A09 = null;
+        this.A0E = null;
+        this.A00 = -1;
+        this.A07 = null;
+        this.A0L = str3;
+    }
+}

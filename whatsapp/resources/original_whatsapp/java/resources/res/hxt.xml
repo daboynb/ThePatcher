@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="0x7f07103a"
+    android:layout_marginBottom="0x7f07103a">
+    <RelativeLayout
+        android:layout_width="66dp"
+        android:layout_height="66dp">
+        <com.whatsapp.ui.coreui.base.WaImageView
+            android:id="0x7f0b03ce"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="0x7f080209"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"/>
+        <com.whatsapp.ui.coreui.components.button.ThumbnailButton
+            android:id="0x7f0b03cd"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:scaleType="centerCrop"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            app:NOT_FOUND_0x15="0x7f070f94"/>
+        <com.whatsapp.ui.coreui.base.WaImageView
+            android:id="0x7f0b1312"
+            android:background="0x7f08038c"
+            android:padding="0.5dp"
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            app:NOT_FOUND_0x14="0x7f08046b"/>
+    </RelativeLayout>
+    <WebView
+        android:id="0x7f0b03cf"
+        android:layout_width="64dp"
+        android:layout_height="64dp"/>
+    <com.whatsapp.ui.coreui.base.WaTextView
+        android:textSize="0x7f070fbc"
+        android:textColor="?unknown_attr_ref: 7f04066e"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:id="0x7f0b03d3"
+        android:paddingTop="0x7f071039"
+        android:layout_width="64dp"
+        android:layout_height="32dp"
+        android:singleLine="true"
+        app:NOT_FOUND_0x16="8"/>
+</LinearLayout>

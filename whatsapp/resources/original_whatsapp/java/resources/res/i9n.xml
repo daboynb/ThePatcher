@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transitionSet xmlns:android="http://schemas.android.com/apk/res/android" android:transitionOrdering="together">
+    <slide
+        android:interpolator="@android:interpolator/decelerate_cubic"
+        android:duration="125"
+        android:slideEdge="bottom"/>
+    <fade android:duration="50"/>
+</transitionSet>

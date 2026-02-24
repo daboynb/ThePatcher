@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.whatsapp.ui.coreui.base.WaImageButton xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:id="0x7f0b2f0f"
+    android:background="0x7f080790"
+    android:padding="0x7f070f7e"
+    android:layout_width="0x7f0706d8"
+    android:layout_height="0x7f0706d8"
+    android:scaleType="fitCenter"
+    android:adjustViewBounds="true"
+    android:contentDescription="0x7f1239ea"
+    app:NOT_FOUND_0x9="0x7f080bf5"
+    app:NOT_FOUND_0xa="?unknown_attr_ref: 7f040a4b"/>

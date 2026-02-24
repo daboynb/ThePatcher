@@ -1,0 +1,18 @@
+package p000X;
+
+import kotlin.jvm.functions.Function1;
+
+/* renamed from: X.5Rn, reason: invalid class name and case insensitive filesystem */
+/* loaded from: classes3.dex */
+public final class C120215Rn extends AbstractC033004y implements Function1 {
+    public static final C120215Rn A00 = new C120215Rn();
+
+    public C120215Rn() {
+        super(1);
+    }
+
+    @Override // kotlin.jvm.functions.Function1
+    public /* bridge */ /* synthetic */ Object invoke(Object obj) {
+        return C06930Mq.A00;
+    }
+}

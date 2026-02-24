@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="0x7f070575"
+    android:layout_marginTop="0x7f071035"
+    android:layout_marginBottom="0x7f071035">
+    <ViewStub
+        android:layout_gravity="center"
+        android:id="0x7f0b1b30"
+        android:layout="0x7f0e103f"
+        android:layout_width="0x7f070573"
+        android:layout_height="0x7f070573"/>
+    <FrameLayout
+        android:layout_gravity="center"
+        android:id="0x7f0b2992"
+        android:background="0x7f0809df"
+        android:layout_width="0x7f070573"
+        android:layout_height="0x7f070573">
+        <com.whatsapp.stickers.StickerView
+            android:layout_gravity="center"
+            android:id="0x7f0b2991"
+            android:layout_width="0x7f070571"
+            android:layout_height="0x7f070571"/>
+        <ViewStub
+            android:layout_gravity="center"
+            android:id="0x7f0b1b32"
+            android:layout="0x7f0e1032"
+            android:layout_width="0x7f070573"
+            android:layout_height="0x7f070573"/>
+    </FrameLayout>
+    <ViewStub
+        android:layout_gravity="end|top"
+        android:id="0x7f0b1b31"
+        android:layout="0x7f0e1040"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</FrameLayout>

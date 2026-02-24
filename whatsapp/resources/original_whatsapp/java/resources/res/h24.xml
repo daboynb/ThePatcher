@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.whatsapp.ui.coreui.base.WaTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textColor="?unknown_attr_ref: 7f040a47"
+    android:gravity="center_vertical"
+    android:id="@android:id/text1"
+    android:paddingLeft="0x7f07102e"
+    android:paddingRight="0x7f07102e"
+    android:layout_width="match_parent"
+    android:layout_height="0x7f071038"
+    android:singleLine="true"
+    style="?android:attr/spinnerDropDownItemStyle"/>

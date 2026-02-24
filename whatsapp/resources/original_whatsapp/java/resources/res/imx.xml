@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="0x7f0b29c7"
+    android:layout_width="40dp"
+    android:layout_height="40dp">
+    <com.whatsapp.ui.coreui.base.WaImageView
+        android:layout_gravity="center"
+        android:id="0x7f0b2687"
+        android:visibility="gone"
+        android:layout_width="0x7f07057f"
+        android:layout_height="0x7f07057f"
+        android:scaleType="fitCenter"
+        android:importantForAccessibility="no"
+        app:NOT_FOUND_0xc="0x7f0809fe"/>
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_gravity="center"
+        android:id="0x7f0b1461"
+        android:layout_width="0x7f0700e9"
+        android:layout_height="0x7f0700e9"
+        android:src="0x7f080c9d"
+        android:scaleType="fitCenter"
+        android:importantForAccessibility="no"/>
+    <FrameLayout
+        android:id="0x7f0b2afe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:importantForAccessibility="no"/>
+    <View
+        android:layout_gravity="top|right"
+        android:id="0x7f0b03ba"
+        android:visibility="gone"
+        android:importantForAccessibility="no"
+        style="0x7f1503bc"/>
+    <ViewStub
+        android:layout_gravity="bottom|right"
+        android:id="0x7f0b2068"
+        android:visibility="gone"
+        android:layout="0x7f0e1065"
+        android:inflatedId="0x7f0b2068"
+        android:layout_width="0x7f070dab"
+        android:layout_height="0x7f070dab"
+        android:layout_marginBottom="0x7f070daa"
+        android:importantForAccessibility="no"
+        android:layout_marginEnd="0x7f070daa"/>
+</FrameLayout>

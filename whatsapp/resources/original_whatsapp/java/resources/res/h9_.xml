@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.whatsapp.ui.coreui.StickyHeadersRecyclerView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="0x7f0b1313"
+    android:paddingBottom="0x7f071033"
+    android:scrollbars="vertical"
+    android:clipToPadding="false"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:cacheColorHint="0x7f060790"
+    android:nestedScrollingEnabled="true"
+    app:NOT_FOUND_0x8="0dp"/>

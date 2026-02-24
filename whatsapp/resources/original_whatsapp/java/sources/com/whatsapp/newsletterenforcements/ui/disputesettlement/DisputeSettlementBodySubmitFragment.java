@@ -1,0 +1,73 @@
+package com.whatsapp.newsletterenforcements.ui.disputesettlement;
+
+import android.content.Context;
+import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import com.whatsapp.ui.coreui.fragments.WaFragment;
+import com.whatsapp.ui.wds.components.list.listitem.WDSListItem;
+import com.whatsapp.ui.wds.components.textlayout.WDSTextLayout;
+import p000X.AbstractC107594py;
+import p000X.C00C;
+import p000X.C0M0;
+import p000X.C32599Eeb;
+import p000X.C34643Fbq;
+import p000X.C3WH;
+import p000X.C81633fy;
+import p000X.C82213h3;
+import p000X.EnumC32700EhS;
+import p000X.InterfaceC024100j;
+import p000X.ViewOnClickListenerC109674tX;
+
+/* loaded from: classes3.dex */
+public final class DisputeSettlementBodySubmitFragment extends WaFragment {
+    public C81633fy A00;
+    public C82213h3 A01;
+    public final C34643Fbq A02 = C3WH.A0d();
+    public final InterfaceC024100j A03 = AbstractC107594py.A00(this, "user_report_id");
+
+    @Override // androidx.fragment.app.Fragment
+    public View A28(Bundle bundle, LayoutInflater layoutInflater, ViewGroup viewGroup) {
+        C00C.A0A(layoutInflater, 0);
+        View inflate = layoutInflater.inflate(2131625551, viewGroup, false);
+        View inflate2 = layoutInflater.inflate(2131625552, viewGroup, false);
+        WDSListItem wDSListItem = (WDSListItem) inflate2.findViewById(2131429591);
+        wDSListItem.setText(2131894313);
+        wDSListItem.setSubText(2131894312);
+        WDSListItem wDSListItem2 = (WDSListItem) inflate2.findViewById(2131435992);
+        wDSListItem2.setText(2131894325);
+        wDSListItem2.setSubText(2131894324);
+        WDSListItem wDSListItem3 = (WDSListItem) inflate2.findViewById(2131435866);
+        wDSListItem3.setText(2131894323);
+        wDSListItem3.setSubText(2131894322);
+        WDSTextLayout wDSTextLayout = (WDSTextLayout) inflate.findViewById(2131430816);
+        wDSTextLayout.setHeadlineText(A1Z(2131894321));
+        wDSTextLayout.setPrimaryButtonText(A1Z(2131891834));
+        wDSTextLayout.setPrimaryButtonClickListener(ViewOnClickListenerC109674tX.A00(this, 22));
+        wDSTextLayout.setContent(new C32599Eeb(inflate2));
+        wDSTextLayout.setFootnoteText(A1Z(2131894318));
+        wDSTextLayout.setFootnotePosition(EnumC32700EhS.A03);
+        return inflate;
+    }
+
+    @Override // androidx.fragment.app.Fragment
+    public void A2D(Context context) {
+        C00C.A0A(context, 0);
+        super.A2D(context);
+        Object value = this.A03.getValue();
+        C0M0 A1T = A1T();
+        if (value != null) {
+            this.A01 = C3WH.A0f(A1T);
+        } else {
+            this.A00 = C3WH.A0e(A1T);
+        }
+    }
+
+    @Override // com.whatsapp.ui.coreui.fragments.WaFragment, androidx.fragment.app.Fragment
+    public void A2B() {
+        super.A2B();
+        A1T().setTitle(2131894330);
+        this.A02.A04(10);
+    }
+}

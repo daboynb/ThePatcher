@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.whatsapp.mediacomposer.ui.app.bottombar.filterswipe.FilterSwipeButtonView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:id="0x7f0b1166"
+    android:paddingBottom="3dp"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="21dp"
+    android:layout_above="0x7f0b2b94"/>

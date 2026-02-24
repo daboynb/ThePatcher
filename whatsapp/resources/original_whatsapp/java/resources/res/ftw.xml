@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.whatsapp.ui.wds.components.topbar.WDSToolbar
+        android:id="0x7f0b2c0b"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:NOT_FOUND_0x9="0x7f150704"/>
+    <ViewStub
+        android:layout_gravity="center"
+        android:id="0x7f0b2c10"
+        android:layout="0x7f0e0e45"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <com.whatsapp.ui.wds.components.textlayout.WDSTextLayout
+        android:orientation="vertical"
+        android:id="0x7f0b0d12"
+        android:paddingTop="0x7f070cee"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:NOT_FOUND_0x7="0x7f080991"
+        app:NOT_FOUND_0x8="1"/>
+</LinearLayout>

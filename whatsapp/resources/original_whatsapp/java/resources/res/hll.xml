@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="0x7f0b1aed"
+    android:paddingLeft="0x7f070ce8"
+    android:paddingTop="0x7f070ce8"
+    android:paddingRight="0x7f070ce8"
+    android:paddingBottom="0x7f070ce8"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.whatsapp.mediaview.ui.MotionPhotoIcon
+        android:id="0x7f0b1aee"
+        android:background="0x7f08097a"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="0x7f070ce7"
+        android:scaleType="center"
+        app:NOT_FOUND_0xa="0x7f0609a6"/>
+</FrameLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.whatsapp.ui.wds.components.banners.WDSBanner
+        android:id="0x7f0b228c"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="0x7f150576"/>
+</LinearLayout>

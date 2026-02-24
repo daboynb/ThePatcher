@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.whatsapp.ui.coreui.WaLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:id="0x7f0b0191"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ViewStub
+        android:id="0x7f0b0192"
+        android:inflatedId="0x7f0b0192"
+        android:layout_width="0x7f070cfa"
+        android:layout_height="wrap_content"/>
+    <com.whatsapp.ui.coreui.base.WaTextView
+        android:textColor="0x7f060904"
+        android:gravity="center"
+        android:id="0x7f0b21d5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="0x7f070cea"
+        android:text="0x7f120208"
+        app:NOT_FOUND_0x9="0"
+        app:NOT_FOUND_0xa="0"
+        app:NOT_FOUND_0xb="0x7f0b21d3"
+        app:NOT_FOUND_0xc="6"
+        style="0x7f1505a6"/>
+</com.whatsapp.ui.coreui.WaLinearLayout>

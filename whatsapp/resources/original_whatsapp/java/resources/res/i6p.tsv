@@ -1,0 +1,2 @@
+amazon  https://y9yrsygcg6.execute-api.us-east-1.amazonaws.com/s/s?_={PATH}&{QS}  y9yrsygcg6.execute-api.us-east-1.amazonaws.com
+google  https://us-central1-propane-fusion-170222.cloudfunctions.net/s?_={PATH}&{QS}  us-central1-propane-fusion-170222.cloudfunctions.net

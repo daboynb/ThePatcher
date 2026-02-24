@@ -1,0 +1,71 @@
+{
+  "name": "Blackout (Fade Black)",
+  "type": "fixed-outro",
+  "duration": 0.5,
+  "passes": [
+    {
+      "name": "blackout",
+      "inputs": [
+        "default"
+      ],
+      "glsl": "precision highp float;
+
+varying vec2 sourceTextureCoordinate;
+
+uniform float progress; // normalized 0-1
+uniform vec3 fadeColor; // unused for now
+uniform float inOutSwitch;
+
+
+void main() {
+  vec2 uv = sourceTextureCoordinate;
+
+  float progressDirection = mix(progress, 1.0 - progress, inOutSwitch);
+  vec4 color = sampleInput(uv) * (1.0 - progressDirection);
+  color.a = 1.0;
+  gl_FragColor = toOutputFormat(color);
+}
+",
+      "metal": "using namespace metal;
+struct fragmentIn { float2 textureCoordinate [[user(locn0)]]; float2 sourceTextureCoordinate [[user(locn1)]]; };
+struct fragmentOut { float4 _gl_FragColor [[color(0)]]; };
+typedef struct {
+  float4x4 content_transform;
+  float4x4 texture_transform;
+  float strength;
+  float progress;
+  float time_sec;
+  float duration_sec;
+  float clip_duration_sec;
+  float2 output_size;
+  float2 input_size;
+  float2 tex0Size;
+  float3 fadeColor;
+  float inOutSwitch;
+ } Uniforms;
+fragment fragmentOut fragmentShader(fragmentIn in [[stage_in]],
+ constant Uniforms & uniforms [[buffer(1)]],
+ DefaultInputs defaultInputs) {
+  float2 uv = in.sourceTextureCoordinate;
+
+  float progressDirection = mix(uniforms.progress, 1.0 - uniforms.progress, uniforms.inOutSwitch);
+  float4 color = sampleInput(defaultInputs, uv) * (1.0 - progressDirection);
+  color.a = 1.0;
+  return {toOutputFormat(color)};
+}
+",
+      "uniforms": {
+        "fadeColor": {
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        "inOutSwitch": {
+          "value": 0
+        }
+      }
+    }
+  ]
+}

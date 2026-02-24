@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="0x7f0b1859">
+        <item
+            android:icon="@null"
+            android:id="0x7f0b185d"
+            android:title="0x7f123ee6"/>
+        <item
+            android:icon="@null"
+            android:id="0x7f0b185e"
+            android:title="0x7f123ee7"/>
+        <item
+            android:icon="@null"
+            android:id="0x7f0b185f"
+            android:title="0x7f123ee8"/>
+        <item
+            android:icon="@null"
+            android:id="0x7f0b185c"
+            android:title="0x7f123ee5"
+            android:checkable="true"/>
+    </group>
+</menu>

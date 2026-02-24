@@ -1,0 +1,7 @@
+package p000X;
+
+/* renamed from: X.El1, reason: case insensitive filesystem */
+/* loaded from: classes7.dex */
+public final class C32906El1 extends Exception {
+    public final int errorCode = 4177001;
+}

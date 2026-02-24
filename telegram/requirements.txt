@@ -1,0 +1,2 @@
+androguard @ git+https://github.com/androguard/androguard.git
+cryptography~=44.0.2

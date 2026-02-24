@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="0x7f070607"
+    android:layout_height="0x7f070607"
+    app:NOT_FOUND_0x4="0x7f070600"
+    app:NOT_FOUND_0x5="0dp"
+    app:NOT_FOUND_0x6="0dp"
+    app:NOT_FOUND_0x7="0x7f0602d2"
+    app:NOT_FOUND_0x8="2dp">
+    <com.whatsapp.gallery.ui.RotatableThumbnailImageView
+        android:id="0x7f0b2673"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"/>
+</com.google.android.material.card.MaterialCardView>

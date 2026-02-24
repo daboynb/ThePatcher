@@ -1,0 +1,15 @@
+abi_version=1.8.0
+builtins_platform=NATIVE
+commonizer_native_targets=android_arm32 android_arm64 android_x64 android_x86
+commonizer_target=(android_arm32, android_arm64, android_x64, android_x86)
+compiler_version=2.0.0
+depends=stdlib
+exportForwardDeclarations=
+includedForwardDeclarations=
+interop=true
+ir_signature_versions=1,2
+library_version=unspecified
+metadata_version=1.4.1
+native_targets=android_arm32 android_arm64 android_x64 android_x86
+package=interop
+unique_name=org.jetbrains.kotlinx\:atomicfu-cinterop-interop

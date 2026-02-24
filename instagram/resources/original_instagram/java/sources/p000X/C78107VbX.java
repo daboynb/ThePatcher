@@ -1,0 +1,34 @@
+package p000X;
+
+import android.view.View;
+import com.instagram.common.ui.base.IgTextView;
+import com.instagram.common.ui.widget.imageview.CircularImageView;
+import com.instagram.ui.widget.framelayout.MediaFrameLayout;
+
+/* renamed from: X.VbX, reason: case insensitive filesystem */
+/* loaded from: classes13.dex */
+public final class C78107VbX implements InterfaceC45143Hin, InterfaceC47145Ia7 {
+    public View A00;
+    public IgTextView A01;
+    public CircularImageView A02;
+    public InterfaceC49712JaU A03;
+    public InterfaceC49712JaU A04;
+    public InterfaceC49712JaU A05;
+    public MediaFrameLayout A06;
+    public InterfaceC83246YIz A07;
+
+    @Override // p000X.InterfaceC45143Hin
+    public final View Bz1() {
+        return this.A00;
+    }
+
+    @Override // p000X.InterfaceC47145Ia7
+    public final InterfaceC83246YIz CHY() {
+        return this.A07;
+    }
+
+    @Override // p000X.InterfaceC47145Ia7
+    public final void G1k(InterfaceC83246YIz interfaceC83246YIz) {
+        this.A07 = interfaceC83246YIz;
+    }
+}

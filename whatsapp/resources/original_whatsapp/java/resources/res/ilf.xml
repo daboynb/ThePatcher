@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="0x7f0b299e"
+    android:background="?unknown_attr_ref: 7f04076d"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.whatsapp.ui.coreui.components.button.ThumbnailButton
+        android:enabled="false"
+        android:id="0x7f0b299d"
+        android:layout_width="0x7f070bb3"
+        android:layout_height="0x7f070bb3"
+        android:layout_marginLeft="0x7f070ce8"
+        android:layout_marginTop="0x7f070ce7"
+        android:layout_marginBottom="0x7f070ce7"
+        app:NOT_FOUND_0xe="0"
+        app:NOT_FOUND_0x10="0"
+        app:NOT_FOUND_0x15="0"
+        app:NOT_FOUND_0x17="false"
+        app:NOT_FOUND_0x18="0x7f070cc5"
+        app:NOT_FOUND_0x19="@android:color/transparent"/>
+    <com.whatsapp.ui.coreui.base.WaTextView
+        android:textSize="0x7f070fb0"
+        android:textColor="0x7f0608df"
+        android:gravity="left"
+        android:id="0x7f0b299f"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0x7f070ce8"
+        android:layout_marginRight="0x7f070ce8"
+        android:fontFamily="?unknown_attr_ref: 7f0403b6"
+        app:NOT_FOUND_0xf="0x7f0b29a0"
+        app:NOT_FOUND_0x11="0x7f0b299d"
+        app:NOT_FOUND_0x12="0x7f0b29a1"
+        app:NOT_FOUND_0x15="0"
+        app:NOT_FOUND_0x16="2"
+        app:NOT_FOUND_0x1a="4"/>
+    <com.whatsapp.ui.coreui.base.WaTextView
+        android:gravity="left"
+        android:id="0x7f0b29a0"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0x7f070ce8"
+        android:layout_marginRight="0x7f070ce8"
+        app:NOT_FOUND_0xe="0"
+        app:NOT_FOUND_0x11="0x7f0b299d"
+        app:NOT_FOUND_0x12="0x7f0b29a1"
+        app:NOT_FOUND_0x14="0x7f0b299f"
+        style="0x7f15032e"/>
+    <com.whatsapp.stickers.StickerView
+        android:id="0x7f0b29a1"
+        android:layout_width="0x7f070d87"
+        android:layout_height="0x7f070d87"
+        android:layout_marginRight="0x7f070cea"
+        android:scaleType="centerCrop"
+        app:NOT_FOUND_0xe="0"
+        app:NOT_FOUND_0x13="0"
+        app:NOT_FOUND_0x15="0"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

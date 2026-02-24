@@ -1,0 +1,6 @@
+services:
+  patcher:
+    build: .
+    volumes:
+      - ./:/data
+    command: -p /data/Telegram.apk -o /data/PatchedTelegram.apk -t /tmp/telegram-temp

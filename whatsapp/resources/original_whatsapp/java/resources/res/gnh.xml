@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:gravity="center"
+        android:layout_gravity="right"
+        android:orientation="vertical"
+        android:id="0x7f0b0aad"
+        android:focusable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="0x7f0703d9"
+        android:minHeight="30dp">
+        <ViewStub
+            android:id="0x7f0b0b27"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:NOT_FOUND_0xb="true"/>
+        <include layout="0x7f0e054e"/>
+        <ViewStub
+            android:id="0x7f0b0b07"
+            android:layout="0x7f0e0476"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:NOT_FOUND_0xb="true"/>
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="0x7f0e0928"/>
+        <View
+            android:id="0x7f0b0673"
+            style="0x7f150356"/>
+        <com.whatsapp.conversation.ui.conversationrow.businessmessaging.interactive.components.InteractiveMessageButton
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:id="0x7f0b0661"
+            android:focusable="true"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</merge>

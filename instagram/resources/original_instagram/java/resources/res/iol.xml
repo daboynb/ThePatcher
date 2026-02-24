@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_enabled="true"
+        android:state_checked="true">
+        <bitmap
+            android:src="0x7f082b05"
+            android:tint="0x7f06012b"/>
+    </item>
+    <item
+        android:state_enabled="false"
+        android:state_checked="true">
+        <bitmap
+            android:src="0x7f082b05"
+            android:tint="0x7f060457"/>
+    </item>
+    <item
+        android:state_enabled="true"
+        android:state_checked="false">
+        <bitmap
+            android:src="0x7f082b07"
+            android:tint="0x7f060459"/>
+    </item>
+    <item
+        android:state_enabled="false"
+        android:state_checked="false">
+        <bitmap
+            android:src="0x7f082b07"
+            android:tint="0x7f060457"/>
+    </item>
+</selector>

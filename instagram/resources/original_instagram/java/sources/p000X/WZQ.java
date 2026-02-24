@@ -1,0 +1,13 @@
+package p000X;
+
+/* loaded from: classes18.dex */
+public enum WZQ {
+    COMMERCE_FAQ_ENABLED,
+    COMMERCE_NUX_ENABLED,
+    COMPOSER_INPUT_DISABLED,
+    IN_MESSENGER_SHOPPING_ENABLED,
+    NULL_STATE_CTA_BUTTON_ALWAYS_ENABLED,
+    STRUCTURED_MENU_ENABLED,
+    /* JADX INFO: Fake field, exist only in values array */
+    USER_CONTROL_TOPIC_MANAGE_ENABLED
+}

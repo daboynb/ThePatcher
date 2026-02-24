@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<account-authenticator xmlns:android="http://schemas.android.com/apk/res/android"
+    android:label="0x7f123d51"
+    android:icon="0x7f130002"
+    android:accountType="com.whatsapp"
+    android:smallIcon="0x7f130002"
+    android:accountPreferences="0x7f180000"/>

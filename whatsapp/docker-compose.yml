@@ -1,0 +1,6 @@
+services:
+  patcher:
+    build: .
+    volumes:
+      - ./:/data
+    command: -p /data/Whatsapp.apk -o /data/PatchedWhatsApp.apk -t /tmp/whatsapp-temp

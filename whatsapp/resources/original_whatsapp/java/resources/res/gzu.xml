@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.whatsapp.ui.coreui.base.WaImageView
+        android:layout_gravity="top"
+        android:id="0x7f0b1043"
+        android:layout_width="0x7f070fdb"
+        android:layout_height="0x7f070fdb"
+        android:layout_marginTop="0x7f070cf0"
+        app:NOT_FOUND_0xe="0x7f080bed"
+        app:NOT_FOUND_0xf="0x7f060347"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.whatsapp.ui.coreui.base.WaTextView
+            android:id="0x7f0b1044"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0x7f123c9c"
+            android:layout_marginStart="0x7f070cea"
+            app:NOT_FOUND_0xb="3"
+            app:NOT_FOUND_0xc="?unknown_attr_ref: 7f040a29"
+            app:NOT_FOUND_0xd="0x7f122aa4"
+            app:NOT_FOUND_0x11="4"
+            style="0x7f1505a4"/>
+        <com.whatsapp.ui.coreui.base.WaTextView
+            android:textColor="0x7f060397"
+            android:id="0x7f0b1017"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0x7f121353"
+            android:layout_marginStart="0x7f070cea"
+            app:NOT_FOUND_0x11="6"
+            style="0x7f1505a6"/>
+        <com.whatsapp.ui.wds.components.button.WDSButton
+            android:id="0x7f0b1042"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0x7f070cea"
+            android:text="0x7f12430e"
+            android:layout_marginStart="0x7f070ce7"
+            app:NOT_FOUND_0x9="0"
+            app:NOT_FOUND_0xa="0x7f0806e3"
+            app:NOT_FOUND_0x10="small"/>
+    </LinearLayout>
+</LinearLayout>

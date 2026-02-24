@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.whatsapp.ui.coreui.KeyboardPopupLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="0x7f0b2677"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:id="0x7f0b2675"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <com.whatsapp.emoji.search.EmojiSearchContainer
+        android:id="0x7f0b2676"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"/>
+</com.whatsapp.ui.coreui.KeyboardPopupLayout>

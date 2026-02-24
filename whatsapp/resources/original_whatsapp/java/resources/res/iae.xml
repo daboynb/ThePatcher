@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.whatsapp.ui.coreui.base.TextEmojiLabel xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textAppearance="0x7f1505a7"
+    android:gravity="center_vertical"
+    android:id="0x7f0b2ae9"
+    android:background="0x7f0809a6"
+    android:paddingLeft="0x7f070c0d"
+    android:paddingTop="0x7f070c0e"
+    android:paddingRight="0x7f070c0d"
+    android:paddingBottom="0x7f070c0e"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:maxWidth="0x7f070c0f"
+    android:layout_weight="1"/>

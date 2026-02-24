@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.whatsapp.ui.wds.components.button.WDSButton
+        android:textColor="?unknown_attr_ref: 7f040a2f"
+        android:id="0x7f0b0693"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="0x7f150555"/>
+    <ProgressBar
+        android:id="0x7f0b17b7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="0x7f070ce7"
+        android:layout_alignLeft="0x7f0b0693"
+        android:layout_alignTop="0x7f0b0693"
+        android:layout_alignRight="0x7f0b0693"
+        android:layout_alignBottom="0x7f0b0693"
+        android:layout_centerInParent="true"/>
+</merge>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.whatsapp.ui.coreui.BoundedLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:whatsapp="http://schemas.android.com/apk/res-auto"
+    android:id="0x7f0b0aad"
+    android:paddingBottom="0x7f071030"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.whatsapp.conversation.ui.ConversationAttachmentContentView
+        android:id="0x7f0b0aed"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</com.whatsapp.ui.coreui.BoundedLinearLayout>

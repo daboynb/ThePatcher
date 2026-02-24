@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="0x7f0b12d0"
+        android:background="?unknown_attr_ref: 7f04076d"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="0x7f070450">
+        <com.whatsapp.ui.coreui.base.WaImageView
+            android:layout_gravity="center"
+            android:id="0x7f0b12ca"
+            android:background="0x7f0802c0"
+            android:layout_width="0x7f071011"
+            android:layout_height="0x7f071011"
+            android:layout_marginLeft="0x7f070ce8"
+            android:scaleType="center"
+            android:cropToPadding="false"
+            app:NOT_FOUND_0x13="0x7f0806a4"
+            app:NOT_FOUND_0x14="?unknown_attr_ref: 7f0403da"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="0x7f0b12c4"
+            android:paddingLeft="0x7f070ce8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="0x7f07064c"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1">
+            <com.whatsapp.ui.coreui.base.WaTextView
+                android:layout_gravity="left"
+                android:id="0x7f0b12c6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0x7f123e8e"
+                style="0x7f150289"/>
+            <ProgressBar
+                android:layout_gravity="center_vertical"
+                android:id="0x7f0b12cd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:progressTint="?unknown_attr_ref: 7f040573"
+                android:indeterminateTint="?unknown_attr_ref: 7f040573"
+                android:indeterminateTintMode="src_atop"
+                style="?android:attr/progressBarStyleHorizontal"/>
+            <com.whatsapp.ui.coreui.base.WaTextView
+                android:layout_gravity="center"
+                android:id="0x7f0b12c5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0x7f123e8d"
+                style="0x7f150285"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

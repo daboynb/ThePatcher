@@ -1,0 +1,10 @@
+package p000X;
+
+/* renamed from: X.alA, reason: case insensitive filesystem */
+/* loaded from: classes17.dex */
+public abstract class AbstractC88722alA {
+    public static String A00(Integer num) {
+        int intValue = num.intValue();
+        return intValue != 0 ? intValue != 1 ? intValue != 2 ? "Animation" : "Text" : "ImageText" : "Image";
+    }
+}

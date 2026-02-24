@@ -1,0 +1,387 @@
+.class public Lcom/facebook/tigon/tigonhuc/HucClient;
+.super Ljava/lang/Object;
+.source ""
+
+
+# static fields
+.field public static final BODY_UPLOAD_TIMEOUT_SECONDS:I = 0x78
+
+.field public static final Companion:LX/2wc;
+
+.field public static final DEFAULT_CONNECT_TIMEOUT_MILLISECONDS:I = 0x2710
+
+.field public static final DEFAULT_READ_TIMEOUT_MILLISECONDS:I = 0x7530
+
+
+# instance fields
+.field public final certificatePinner:LX/Xhm;
+
+.field public final executor:Ljava/util/concurrent/ExecutorService;
+
+.field public final hostnameVerifier:Ljavax/net/ssl/HostnameVerifier;
+
+.field public final sslSocketFactory:Ljavax/net/ssl/SSLSocketFactory;
+
+
+# direct methods
+.method public static constructor <clinit>()V
+    .locals 1
+
+    .line 0
+    new-instance v0, LX/2wc;
+
+    .line 1
+    .line 2
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    .line 3
+    .line 4
+    .line 5
+    sput-object v0, Lcom/facebook/tigon/tigonhuc/HucClient;->Companion:LX/2wc;
+
+    .line 6
+    .line 7
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/util/concurrent/ExecutorService;Ljavax/net/ssl/SSLSocketFactory;LX/Xhm;)V
+    .locals 1
+
+    .line 268435456
+    const/4 v0, 0x0
+
+    .line 268435457
+    invoke-static {p1, v0}, LX/D1F;->A12(Ljava/lang/Object;I)V
+
+    .line 268435458
+    .line 268435459
+    .line 268435460
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 268435461
+    .line 268435462
+    .line 268435463
+    iput-object p1, p0, Lcom/facebook/tigon/tigonhuc/HucClient;->executor:Ljava/util/concurrent/ExecutorService;
+
+    .line 268435464
+    .line 268435465
+    iput-object p2, p0, Lcom/facebook/tigon/tigonhuc/HucClient;->sslSocketFactory:Ljavax/net/ssl/SSLSocketFactory;
+
+    .line 268435466
+    .line 268435467
+    iput-object p3, p0, Lcom/facebook/tigon/tigonhuc/HucClient;->certificatePinner:LX/Xhm;
+
+    .line 268435468
+    .line 268435469
+    new-instance v0, LX/2wd;
+
+    .line 268435470
+    .line 268435471
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    .line 268435472
+    .line 268435473
+    .line 268435474
+    iput-object v0, p0, Lcom/facebook/tigon/tigonhuc/HucClient;->hostnameVerifier:Ljavax/net/ssl/HostnameVerifier;
+
+    .line 268435475
+    .line 268435476
+    return-void
+    .line 268435477
+    .line 268435478
+    .line 268435479
+    .line 268435480
+    .line 268435481
+    .line 268435482
+    .line 268435483
+    .line 268435484
+    .line 268435485
+    .line 268435486
+    .line 268435487
+    .line 268435488
+    .line 268435489
+    .line 268435490
+    .line 268435491
+    .line 268435492
+    .line 268435493
+    .line 268435494
+    .line 268435495
+    .line 268435496
+    .line 268435497
+    .line 268435498
+    .line 268435499
+    .line 268435500
+    .line 268435501
+    .line 268435502
+    .line 268435503
+    .line 268435504
+    .line 268435505
+    .line 268435506
+    .line 268435507
+    .line 268435508
+    .line 268435509
+    .line 268435510
+    .line 268435511
+    .line 268435512
+    .line 268435513
+    .line 268435514
+    .line 268435515
+    .line 268435516
+    .line 268435517
+    .line 268435518
+    .line 268435519
+    .line 268435520
+    .line 268435521
+    .line 268435522
+    .line 268435523
+    .line 268435524
+    .line 268435525
+    .line 268435526
+    .line 268435527
+    .line 268435528
+    .line 268435529
+    .line 268435530
+    .line 268435531
+    .line 268435532
+    .line 268435533
+    .line 268435534
+    .line 268435535
+    .line 268435536
+    .line 268435537
+    .line 268435538
+    .line 268435539
+    .line 268435540
+    .line 268435541
+    .line 268435542
+    .line 268435543
+    .line 268435544
+    .line 268435545
+    .line 268435546
+    .line 268435547
+    .line 268435548
+    .line 268435549
+    .line 268435550
+    .line 268435551
+    .line 268435552
+    .line 268435553
+    .line 268435554
+    .line 268435555
+    .line 268435556
+    .line 268435557
+    .line 268435558
+    .line 268435559
+    .line 268435560
+    .line 268435561
+    .line 268435562
+    .line 268435563
+    .line 268435564
+    .line 268435565
+    .line 268435566
+    .line 268435567
+    .line 268435568
+    .line 268435569
+    .line 268435570
+    .line 268435571
+    .line 268435572
+    .line 268435573
+    .line 268435574
+    .line 268435575
+    .line 268435576
+    .line 268435577
+    .line 268435578
+    .line 268435579
+    .line 268435580
+    .line 268435581
+    .line 268435582
+    .line 268435583
+    .line 268435584
+    .line 268435585
+    .line 268435586
+    .line 268435587
+    .line 268435588
+    .line 268435589
+    .line 268435590
+    .line 268435591
+    .line 268435592
+    .line 268435593
+    .line 268435594
+    .line 268435595
+    .line 268435596
+    .line 268435597
+    .line 268435598
+    .line 268435599
+    .line 268435600
+    .line 268435601
+    .line 268435602
+    .line 268435603
+    .line 268435604
+    .line 268435605
+    .line 268435606
+    .line 268435607
+    .line 268435608
+    .line 268435609
+    .line 268435610
+    .line 268435611
+    .line 268435612
+    .line 268435613
+    .line 268435614
+    .line 268435615
+    .line 268435616
+    .line 268435617
+    .line 268435618
+    .line 268435619
+    .line 268435620
+    .line 268435621
+    .line 268435622
+    .line 268435623
+    .line 268435624
+    .line 268435625
+.end method
+
+.method public synthetic constructor <init>(Ljava/util/concurrent/ExecutorService;Ljavax/net/ssl/SSLSocketFactory;LX/Xhm;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+    .locals 2
+
+    .line 0
+    and-int/lit8 v0, p4, 0x2
+
+    .line 1
+    .line 2
+    const/4 v1, 0x0
+
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    move-object p2, v1
+
+    .line 6
+    :cond_0
+    and-int/lit8 v0, p4, 0x4
+
+    .line 7
+    .line 8
+    if-eqz v0, :cond_1
+
+    .line 9
+    .line 10
+    move-object p3, v1
+
+    .line 11
+    :cond_1
+    invoke-direct {p0, p1, p2, p3}, Lcom/facebook/tigon/tigonhuc/HucClient;-><init>(Ljava/util/concurrent/ExecutorService;Ljavax/net/ssl/SSLSocketFactory;LX/Xhm;)V
+
+    .line 12
+    .line 13
+    .line 14
+    return-void
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+.end method
+
+.method public static final synthetic access$getCertificatePinner$p(Lcom/facebook/tigon/tigonhuc/HucClient;)LX/Xhm;
+    .locals 0
+
+    .line 0
+    iget-object p0, p0, Lcom/facebook/tigon/tigonhuc/HucClient;->certificatePinner:LX/Xhm;
+
+    .line 1
+    .line 2
+    return-object p0
+.end method
+
+.method public static final synthetic access$getHostnameVerifier$p(Lcom/facebook/tigon/tigonhuc/HucClient;)Ljavax/net/ssl/HostnameVerifier;
+    .locals 0
+
+    .line 0
+    iget-object p0, p0, Lcom/facebook/tigon/tigonhuc/HucClient;->hostnameVerifier:Ljavax/net/ssl/HostnameVerifier;
+
+    .line 1
+    .line 2
+    return-object p0
+.end method
+
+.method public static final synthetic access$getSslSocketFactory$p(Lcom/facebook/tigon/tigonhuc/HucClient;)Ljavax/net/ssl/SSLSocketFactory;
+    .locals 0
+
+    .line 0
+    iget-object p0, p0, Lcom/facebook/tigon/tigonhuc/HucClient;->sslSocketFactory:Ljavax/net/ssl/SSLSocketFactory;
+
+    .line 1
+    .line 2
+    return-object p0
+.end method
+
+
+# virtual methods
+.method public startRequest([BILcom/facebook/tigon/tigonhuc/TigonHucBodyProvider;Lcom/facebook/tigon/tigonhuc/TigonHucCallbackForwarder;)Lcom/facebook/tigon/tigonhuc/HucRequestToken;
+    .locals 2
+
+    .line 0
+    invoke-static {p1}, LX/D1F;->A0y(Ljava/lang/Object;)V
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-static {p4}, LX/D1F;->A0r(Ljava/lang/Object;)V
+
+    .line 4
+    .line 5
+    .line 6
+    sget-object v0, LX/3sw;->A00:LX/3tb;
+
+    .line 7
+    .line 8
+    invoke-virtual {v0, p1, p2}, LX/3tb;->A06([BI)Lcom/facebook/tigon/iface/TigonRequest;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object v0
+
+    .line 12
+    new-instance v1, LX/Vjl;
+
+    .line 13
+    .line 14
+    invoke-direct {v1, v0, p0, p3, p4}, LX/Vjl;-><init>(Lcom/facebook/tigon/iface/TigonRequest;Lcom/facebook/tigon/tigonhuc/HucClient;Lcom/facebook/tigon/tigonhuc/TigonHucBodyProvider;Lcom/facebook/tigon/tigonhuc/TigonHucCallbackForwarder;)V
+
+    .line 15
+    .line 16
+    .line 17
+    iget-object v0, p0, Lcom/facebook/tigon/tigonhuc/HucClient;->executor:Ljava/util/concurrent/ExecutorService;
+
+    .line 18
+    .line 19
+    invoke-interface {v0, v1}, Ljava/util/concurrent/ExecutorService;->submit(Ljava/lang/Runnable;)Ljava/util/concurrent/Future;
+
+    .line 20
+    .line 21
+    .line 22
+    move-result-object v1
+
+    .line 23
+    new-instance v0, Lcom/facebook/tigon/tigonhuc/HucRequestToken;
+
+    .line 24
+    .line 25
+    invoke-direct {v0, v1}, Lcom/facebook/tigon/tigonhuc/HucRequestToken;-><init>(Ljava/util/concurrent/Future;)V
+
+    .line 26
+    .line 27
+    .line 28
+    return-object v0
+    .line 29
+.end method

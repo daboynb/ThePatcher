@@ -1,0 +1,75 @@
+package p000X;
+
+import java.io.Serializable;
+
+/* renamed from: X.JDv, reason: case insensitive filesystem */
+/* loaded from: classes8.dex */
+public class C42718JDv implements Serializable {
+    public static final long serialVersionUID = 1876547537090411602L;
+    public final boolean enableVideoProcessorManager = false;
+    public final boolean useUpgradedDashManifestProcessing = false;
+    public final boolean useLegacyLiveWindowCalculation = false;
+    public final boolean useLiveConfigurationTargetOffset = false;
+    public final boolean useLivePresentationOffset = false;
+    public final boolean enableCopyDashRepresentationHolder = false;
+    public final boolean enableMediaCodecRendererUpgrade = false;
+    public final boolean enableVideoMixedDecoderAdaptiveness = false;
+    public final boolean enableVideoMixedDecoderAdaptivenessForMcm = false;
+    public final boolean enableAudioMixedDecoderAdaptiveness = false;
+    public final boolean enableAudioMixedDecoderAdaptivenessForMcm = false;
+    public final boolean skipChangeFrameRateStrategy = false;
+    public final boolean enableMediaCodecSupportVerifyFormats = false;
+    public final boolean enableSetAv1InputMaxSize = true;
+    public final boolean ignoreAudioDecoderMaxInputSize = false;
+    public final boolean enableAudioEncoderPaddingCheck = false;
+    public final boolean disableAudioEncoderOutputDelayPadding = false;
+    public final boolean enableFrameManagerReleaseOnSurfaceDestroy = false;
+    public final boolean enableFrameManagerReleaseOnRendererDisable = true;
+    public final int frameManagerFrameReleaseUpperThreshold = -1;
+    public final int frameManagerFrameReleaseLowerThreshold = -1;
+    public final boolean enableAvoidNullDrmInitData = true;
+    public final boolean enableExoPlayerV2 = false;
+    public final boolean enableDrmSessionStore = false;
+    public final int exoplayerPollingIntervalMs = 10;
+    public final boolean enableFastVideoEffectsEnabling = false;
+    public final int videoWidthToEnableSREffects = -1;
+    public final boolean disableExoImplBufferingCheck = false;
+    public final boolean enableExoCustomErrorHandling = false;
+    public final boolean disableVerifyApplicationThread = false;
+    public final long initialRendererOffsetPositionUs = -1;
+    public final boolean enableCustomBufferDurationUs = false;
+    public final int microStallThresholdMsToUseMinBuffer = 0;
+    public final boolean enableChunkSourceExceptionLogging = true;
+    public final boolean enableVerifyApplicationThreadStackTraceLogging = false;
+    public final boolean enableSeekTimelineResync = false;
+    public final boolean enableSeekFailSafeCurrentPositionUs = false;
+    public final int threadSleepTimeMsForDecoderInitFailure = -1;
+    public final boolean disableEventQueueing = false;
+    public final boolean enableCodecReInitUponSetSurfaceFailure = false;
+    public final boolean enableAudioFocusManagerModularization = false;
+    public final boolean enableStreamVolumeManagerNoopModularization = false;
+    public final boolean enableWakeLockManagerNoopModularization = false;
+    public final boolean enableWifiLockManagerNoopModularization = false;
+    public final boolean disablePlayerId = false;
+    public final boolean disableAudioSessionId = false;
+    public final boolean enableAbsoluteSeek = false;
+    public final boolean enableOnCuesMigration = false;
+    public final boolean reduceRetryBeforePlay = false;
+    public final boolean allowKeepLoadingOnSeek = false;
+    public final boolean useLazyMediaSourcePreparation = false;
+    public final boolean mediaCodecAlwaysReleaseOnDisable = false;
+    public final boolean quickPlayerPrepare = false;
+    public final boolean maskTimelineOldContentPositionFix = false;
+    public final boolean skipBufferDurationMasking = false;
+    public final boolean disableExoLiveSpeedPlaybackControl = false;
+    public final boolean alignTrackSelectionPlaybackSpeedUpdate = false;
+    public final int maximumBufferAheadPeriods = 100;
+    public final boolean progressiveBufferDurationPrepareFix = false;
+    public final boolean ignoreReleaseTimeoutException = false;
+    public final boolean delayStartedPlayingCallback = false;
+    public final boolean disableNonMediaClockPlaybackSpeedUpdates = false;
+    public final boolean enablePlaybackSpeedLoggingFix = false;
+    public final boolean handleMinLoadPositionEmptyMediaChunk = false;
+    public final boolean handleOutdatedMediaPeriodIdFix = false;
+    public final boolean retryAudioTrackWithMinBufferRequired = false;
+}

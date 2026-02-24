@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.whatsapp.ui.wds.components.radiobutton.WDSRadioButton
+        android:textColor="?unknown_attr_ref: 7f040a47"
+        android:id="0x7f0b0d2c"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="0x7f123e17"
+        android:singleLine="true"/>
+    <com.whatsapp.ui.wds.components.radiobutton.WDSRadioButton
+        android:textColor="?unknown_attr_ref: 7f040a47"
+        android:id="0x7f0b0d31"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0x7f123e18"
+        android:singleLine="true"/>
+</RadioGroup>

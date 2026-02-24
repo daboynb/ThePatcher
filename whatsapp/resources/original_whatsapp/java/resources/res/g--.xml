@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.facebook.shimmer.ShimmerFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="0x7f1502dd">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="0x7f0b1773"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <View
+            android:id="0x7f0b0da2"
+            android:background="?unknown_attr_ref: 7f0402a8"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="0x7f07102e"/>
+        <include
+            android:id="0x7f0b0066"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            layout="0x7f0e08cd"/>
+        <View
+            android:id="0x7f0b0da5"
+            android:background="?unknown_attr_ref: 7f0402a8"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="0x7f07102e"/>
+        <include
+            android:id="0x7f0b0067"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            layout="0x7f0e08cd"/>
+        <View
+            android:id="0x7f0b0da6"
+            android:background="?unknown_attr_ref: 7f0402a8"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="0x7f07102e"/>
+    </LinearLayout>
+</com.facebook.shimmer.ShimmerFrameLayout>

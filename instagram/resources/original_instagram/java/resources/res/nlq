@@ -1,0 +1,1 @@
+(function(){return n();function n(){const n=document.title,e=document.body.innerText,t=1e3,u=undefined,i=undefined;return[n.substring(0,t),e.substring(0,t)]}})();

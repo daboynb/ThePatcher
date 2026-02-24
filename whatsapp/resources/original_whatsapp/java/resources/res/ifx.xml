@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.whatsapp.ui.coreui.WaEditText xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textColor="?unknown_attr_ref: 7f04066e"
+    android:id="0x7f0b16a1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="0x7f121fc2"
+    android:inputType="text"
+    android:imeOptions="actionDone"
+    android:textAlignment="viewStart"
+    style="0x7f1503fa"/>

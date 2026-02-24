@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.whatsapp.ui.coreui.components.MainChildCoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="0x7f0b0abc"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:NOT_FOUND_0x5="0x7f0b2a2b">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="0x7f0b2a2b"
+        android:background="?unknown_attr_ref: 7f040a59"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.whatsapp.ui.wds.components.topbar.WDSToolbar
+            android:id="0x7f0b2c21"
+            style="0x7f150520"/>
+        <com.google.android.material.tabs.TabLayout
+            android:id="0x7f0b29e5"
+            android:background="?unknown_attr_ref: 7f0405d7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:NOT_FOUND_0x6="0x7f1503c1"/>
+        <androidx.viewpager.widget.ViewPager
+            android:id="0x7f0b29e3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+</com.whatsapp.ui.coreui.components.MainChildCoordinatorLayout>

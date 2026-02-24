@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:layout_width="wrap_content"
+    android:layout_height="48dp">
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="0x7f0b078c"
+        android:background="?unknown_attr_ref: 7f040a5b"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        app:NOT_FOUND_0xf="0"
+        app:NOT_FOUND_0x10="0"
+        app:NOT_FOUND_0x13="0"
+        app:NOT_FOUND_0x14="0"
+        app:NOT_FOUND_0x15="0x7f15033e"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="0x7f0b2511"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:minWidth="56dp"
+        android:layout_marginStart="0x7f071035"
+        android:layout_marginEnd="0x7f071035"
+        app:NOT_FOUND_0xf="0"
+        app:NOT_FOUND_0x10="0"
+        app:NOT_FOUND_0x13="0"
+        app:NOT_FOUND_0x14="0"/>
+    <com.whatsapp.ui.coreui.base.WaTextView
+        android:textSize="10sp"
+        android:textColor="0x7f0609be"
+        android:id="0x7f0b0b96"
+        android:background="0x7f080a02"
+        android:paddingLeft="0x7f070cec"
+        android:paddingRight="0x7f070cec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0x7f070cec"
+        android:layout_marginEnd="0x7f070cf0"
+        app:NOT_FOUND_0xf="0"
+        app:NOT_FOUND_0x11="0x7f0b1393"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:orientation="vertical"
+        android:id="0x7f0b1393"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:NOT_FOUND_0x12="52dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="1">
+    <com.whatsapp.ui.coreui.base.WaTextView
+        android:textSize="0x7f070fb6"
+        android:textColor="0x7f060383"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="0x7f0b2897"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adopt a new super cool squid"
+        android:fontFamily="0x7f090005"/>
+    <com.whatsapp.ui.coreui.base.WaTextView
+        android:textSize="0x7f070fb6"
+        android:textStyle="bold"
+        android:textColor="0x7f06092f"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="0x7f0b2895"
+        android:paddingTop="0x7f071030"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click here"
+        android:fontFamily="0x7f090005"/>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.whatsapp.ui.coreui.SectionHeaderView
+        android:id="0x7f0b158b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:NOT_FOUND_0x5="0x7f1220ac"
+        style="0x7f1502be"/>
+    <com.whatsapp.chatinfo.newsletter.insights.view.InsightsSectionView
+        android:id="0x7f0b158c"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="0x7f080796"
+        android:showDividers="middle"/>
+</merge>

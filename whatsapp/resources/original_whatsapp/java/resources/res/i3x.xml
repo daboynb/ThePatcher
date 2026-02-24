@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:id="0x7f0b3060"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <ProgressBar
+        android:id="0x7f0b21bc"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:progressTint="0x7f060930"
+        android:progressBackgroundTint="0x7f060900"
+        android:indeterminateTintMode="src_atop"
+        style="?android:attr/progressBarStyleHorizontal"/>
+    <ViewStub
+        android:id="0x7f0b3063"
+        android:layout="0x7f0e12ef"
+        android:inflatedId="0x7f0b3062"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</FrameLayout>

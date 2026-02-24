@@ -1,0 +1,1 @@
+(function(){return t();function t(){const t=document.querySelectorAll("img"),n={};for(let e=0;e<t.length;e++){const r=t.item(e),i=undefined;n[r.src]={width:r.naturalWidth,height:r.naturalHeight}}return n}})();

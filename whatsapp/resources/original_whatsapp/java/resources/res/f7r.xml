@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView
+        android:orientation="vertical"
+        android:id="0x7f0b07c9"
+        android:background="?unknown_attr_ref: 7f04012a"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <FrameLayout
+        android:layout_gravity="top"
+        android:id="0x7f0b2c29"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.whatsapp.ui.wds.components.topbar.WDSToolbar
+            android:id="0x7f0b07cb"
+            android:background="?unknown_attr_ref: 7f040926"
+            android:layout_width="match_parent"
+            android:layout_height="0x7f070048"
+            app:NOT_FOUND_0x7="0x7f150522"
+            app:NOT_FOUND_0x8="0x7f1501d5"/>
+    </FrameLayout>
+    <View
+        android:layout_gravity="top"
+        android:id="0x7f0b2cca"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:transitionName="0x7f1242df"/>
+    <View
+        android:layout_gravity="bottom"
+        android:id="0x7f0b2cc9"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:transitionName="0x7f1242de"/>
+</FrameLayout>

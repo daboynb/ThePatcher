@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.whatsapp.ui.coreui.base.WaImageButton xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="0x7f0b1b1d"
+    android:background="0x7f0808b3"
+    android:padding="0x7f070997"
+    android:layout_width="0x7f070995"
+    android:layout_height="0x7f070995"
+    android:layout_marginLeft="0x7f071030"
+    android:layout_marginTop="0x7f071030"
+    android:layout_marginRight="0x7f071030"
+    android:layout_marginBottom="0x7f071030"
+    android:contentDescription="0x7f121f07"/>

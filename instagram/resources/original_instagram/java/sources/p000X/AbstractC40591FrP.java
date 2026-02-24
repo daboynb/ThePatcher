@@ -1,0 +1,103 @@
+package p000X;
+
+import com.google.android.gms.common.Feature;
+
+/* renamed from: X.FrP, reason: case insensitive filesystem */
+/* loaded from: classes4.dex */
+public abstract class AbstractC40591FrP {
+    public static final Feature A00;
+    public static final Feature A01;
+    public static final Feature A02;
+    public static final Feature A03;
+    public static final Feature A04;
+    public static final Feature A05;
+    public static final Feature A06;
+    public static final Feature A07;
+    public static final Feature A08;
+    public static final Feature A09;
+    public static final Feature A0A;
+    public static final Feature A0B;
+    public static final Feature A0C;
+    public static final Feature A0D;
+    public static final Feature A0E;
+    public static final Feature A0F;
+    public static final Feature A0G;
+    public static final Feature A0H;
+    public static final Feature A0I;
+    public static final Feature A0J;
+    public static final Feature A0K;
+    public static final Feature A0L;
+    public static final Feature A0M;
+    public static final Feature A0N;
+    public static final Feature A0O;
+    public static final Feature A0P;
+    public static final Feature A0Q;
+    public static final Feature A0R;
+    public static final Feature A0S;
+    public static final Feature[] A0T;
+
+    static {
+        Feature feature = new Feature("cancel_target_direct_transfer", 1L);
+        A03 = feature;
+        Feature feature2 = new Feature("delete_credential", 1L);
+        A04 = feature2;
+        Feature feature3 = new Feature("delete_device_public_key", 1L);
+        A05 = feature3;
+        Feature feature4 = new Feature("get_or_generate_device_public_key", 1L);
+        A06 = feature4;
+        Feature feature5 = new Feature("get_passkeys", 1L);
+        A07 = feature5;
+        Feature feature6 = new Feature("update_passkey", 1L);
+        A08 = feature6;
+        Feature feature7 = new Feature("is_user_verifying_platform_authenticator_available_for_credential", 1L);
+        A09 = feature7;
+        Feature feature8 = new Feature("is_user_verifying_platform_authenticator_available", 1L);
+        A0A = feature8;
+        Feature feature9 = new Feature("privileged_api_list_credentials", 2L);
+        A0B = feature9;
+        Feature feature10 = new Feature("start_target_direct_transfer", 1L);
+        A0C = feature10;
+        Feature feature11 = new Feature("first_party_api_get_link_info", 1L);
+        A0D = feature11;
+        Feature feature12 = new Feature("zero_party_api_register", 3L);
+        A0E = feature12;
+        Feature feature13 = new Feature("zero_party_api_sign", 3L);
+        A0F = feature13;
+        Feature feature14 = new Feature("zero_party_api_list_discoverable_credentials", 2L);
+        A0G = feature14;
+        Feature feature15 = new Feature("zero_party_api_authenticate_passkey", 3L);
+        A0H = feature15;
+        Feature feature16 = new Feature("zero_party_api_register_passkey", 1L);
+        A0I = feature16;
+        Feature feature17 = new Feature("zero_party_api_register_passkey_with_sync_account", 1L);
+        A0J = feature17;
+        Feature feature18 = new Feature("zero_party_api_get_hybrid_client_registration_pending_intent", 1L);
+        A0K = feature18;
+        Feature feature19 = new Feature("zero_party_api_get_hybrid_client_sign_pending_intent", 1L);
+        A0L = feature19;
+        Feature feature20 = new Feature("get_browser_hybrid_client_sign_pending_intent", 1L);
+        A0M = feature20;
+        Feature feature21 = new Feature("get_browser_hybrid_client_registration_pending_intent", 1L);
+        A0N = feature21;
+        Feature feature22 = new Feature("privileged_authenticate_passkey", 2L);
+        A0O = feature22;
+        Feature feature23 = new Feature("privileged_register_passkey_with_sync_account", 1L);
+        A0P = feature23;
+        Feature feature24 = new Feature("zero_party_api_get_privileged_hybrid_client_registration_pending_intent", 1L);
+        A0Q = feature24;
+        Feature feature25 = new Feature("zero_party_api_get_privileged_hybrid_client_sign_pending_intent", 1L);
+        A0R = feature25;
+        Feature feature26 = new Feature("zero_party_api_get_fido_security_key_only_sign_pending_intent", 1L);
+        A0S = feature26;
+        Feature feature27 = new Feature("zero_party_api_get_fido_security_key_only_registration_pending_intent", 1L);
+        A00 = feature27;
+        Feature feature28 = new Feature("zero_party_api_get_privileged_fido_security_key_only_sign_pending_intent", 1L);
+        A01 = feature28;
+        Feature feature29 = new Feature("zero_party_api_get_privileged_fido_security_key_only_registration_pending_intent", 1L);
+        A02 = feature29;
+        Feature[] featureArr = new Feature[29];
+        System.arraycopy(new Feature[]{feature, feature2, feature3, feature4, feature5, feature6, feature7, feature8, feature9, feature10, feature11, feature12, feature13, feature14, feature15, feature16, feature17, feature18, feature19, feature20, feature21, feature22, feature23, feature24, feature25, feature26, feature27}, 0, featureArr, 0, 27);
+        System.arraycopy(new Feature[]{feature28, feature29}, 0, featureArr, 27, 2);
+        A0T = featureArr;
+    }
+}

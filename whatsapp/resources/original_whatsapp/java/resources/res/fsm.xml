@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="end|bottom"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:orientation="vertical"
+        android:padding="0x7f07102f"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.whatsapp.ui.coreui.base.WaTextView
+            android:textSize="20sp"
+            android:gravity="left"
+            android:id="0x7f0b0d3f"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0x7f12294d"
+            app:NOT_FOUND_0xb="500"
+            app:NOT_FOUND_0xd="0"
+            app:NOT_FOUND_0xf="0"
+            style="0x7f1503c7"/>
+        <com.whatsapp.ui.coreui.base.TextEmojiLabel
+            android:textSize="0x7f070fb6"
+            android:textColor="?unknown_attr_ref: 7f040a46"
+            android:gravity="left"
+            android:id="0x7f0b0d38"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0x7f07102e"
+            android:text="0x7f12294c"
+            android:lineSpacingExtra="4dp"
+            app:NOT_FOUND_0xe="0x7f0b0d3f"/>
+        <com.whatsapp.ui.wds.components.button.WDSButton
+            android:id="0x7f0b237c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:text="0x7f122b83"
+            app:NOT_FOUND_0xc="0x7f0b0d38"
+            app:NOT_FOUND_0xe="0x7f0b0d38"
+            style="0x7f150558"/>
+        <com.whatsapp.ui.wds.components.button.WDSButton
+            android:id="0x7f0b17f9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0x7f121c06"
+            app:NOT_FOUND_0xc="0x7f0b237c"
+            app:NOT_FOUND_0xe="0x7f0b237c"
+            style="0x7f150558"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.whatsapp.media.ui.MediaCard xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="0x7f0b2163"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:NOT_FOUND_0x3="?unknown_attr_ref: 7f040a59"
+    app:NOT_FOUND_0x4="0x7f1207ef"
+    app:NOT_FOUND_0x5="0x7f1207ee"
+    style="0x7f150256"/>

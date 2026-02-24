@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:id="0x7f0b254e"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="0x7f07102c"
+        android:layout_weight="1"
+        app:NOT_FOUND_0xf="0x7f0b11d7"
+        app:NOT_FOUND_0x10="0"
+        app:NOT_FOUND_0x11="0"
+        app:NOT_FOUND_0x12="0">
+        <LinearLayout
+            android:orientation="vertical"
+            android:paddingTop="30dp"
+            android:paddingBottom="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="0x7f070b5e"
+            android:paddingEnd="0x7f070b5e">
+            <com.whatsapp.ui.coreui.base.WaImageView
+                android:layout_gravity="center"
+                android:layout_width="152dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="0x7f070b5e"
+                app:NOT_FOUND_0x13="0x7f0803a2"/>
+            <com.whatsapp.ui.coreui.base.WaTextView
+                android:id="0x7f0b1422"
+                android:paddingBottom="0x7f070b5d"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0x7f1218b6"
+                android:textAlignment="center"
+                app:NOT_FOUND_0x14="3"
+                style="0x7f1505ab"/>
+            <com.whatsapp.ui.coreui.base.WaTextView
+                android:textColor="?unknown_attr_ref: 7f040a46"
+                android:id="0x7f0b141f"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0x7f1218b2"
+                android:textAlignment="center"
+                style="0x7f1503fb"/>
+        </LinearLayout>
+    </ScrollView>
+    <include
+        android:id="0x7f0b11d7"
+        layout="0x7f0e033f"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

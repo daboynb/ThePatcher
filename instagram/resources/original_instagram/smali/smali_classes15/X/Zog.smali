@@ -1,0 +1,46 @@
+.class public final LX/Zog;
+.super Ljava/lang/Object;
+.source ""
+
+# interfaces
+.implements LX/03A;
+
+
+# instance fields
+.field public A00:I
+
+
+# virtual methods
+.method public final bridge synthetic DXW(Ljava/lang/Object;)Z
+    .locals 1
+
+    invoke-static {p0, p1}, LX/YOc;->A01(LX/03A;Ljava/lang/Object;)Z
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public final DnV(LX/02Z;J)LX/03B;
+    .locals 2
+
+    invoke-static {p1}, LX/D1F;->A0y(Ljava/lang/Object;)V
+
+    sget-object v0, LX/R9G;->A06:LX/03J;
+
+    invoke-static {p1, v0}, LX/BTI;->A0L(LX/02Z;LX/03J;)Landroid/view/View;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/instagram/ui/widget/segmentedprogressbar/SegmentedProgressBar;
+
+    iget v0, p0, LX/Zog;->A00:I
+
+    invoke-virtual {v1, v0}, Lcom/instagram/ui/widget/segmentedprogressbar/SegmentedProgressBar;->setSegments(I)V
+
+    invoke-static {v1, p2, p3}, LX/BVh;->A0M(Landroid/view/View;J)LX/03B;
+
+    move-result-object v0
+
+    return-object v0
+.end method

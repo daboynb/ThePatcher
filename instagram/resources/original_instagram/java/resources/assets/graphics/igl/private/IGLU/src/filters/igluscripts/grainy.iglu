@@ -1,0 +1,544 @@
+[Filter Grainy]
+# replicate the grainy filter in IGLUScript
+
+[Init]
+fun init(Filter filter)
+{
+    # list the passes in order you want them evaluated
+    filter.passes = {{
+      name = 'noise,
+      inputs = {'default},
+      uniforms = {
+        strength = 1.0,
+        noiseSize = {0.0, 0.0},
+        seed = 0.0,
+        scale = 1.0,
+        time = 0.0,
+        framerate = 8.0,
+      },
+      glslShader  = glslNoise,
+      metalShader = metalNoise,
+    },{
+      name = 'blur,
+      inputs = {'noise},
+      uniforms = {
+        strength = 1.0,
+        blurAmt = 0.2,
+      },
+      glslShader  = glslBlur,
+      metalShader = metalBlur,
+    },{
+      name = 'final,
+      inputs = {'default, 'blur},
+      uniforms = {
+          strength = 1.0,
+          grainAmt = 0.2,
+          grainScale = 6.0,
+          grainContrast = -0.24,
+          grainBrightness = 0.0,
+          grainSaturation = 0.33,
+          brightness = 0.0,
+          contrast = 0.1,
+          dustAmt = 0.28,
+          sourceBlur = 0.2,
+          uInputImageSize = {0.0,0.0}
+      },
+      glslShader  = glslFinal,
+      metalShader = metalFinal,
+    }};
+}
+
+[PreRender]
+fun preRender(Filter filter){
+
+  vec2 size1K = {1024.0,1024.0};
+  setTextureSize('noise,size1K);
+  setShaderUniform('noise,'noiseSize, size1K);
+
+  f32 time = getParameterFloat('time_sec);
+  time = getLocalTime(); # use above in production, not this line
+  setShaderUniform('noise,'time, time);
+
+  vec2 defSize = getTextureSize('default);
+  f32 strength = getParameterFloat('strength);
+
+  setShaderUniform('noise,'strength, strength);
+  setShaderUniform('blur,'strength, strength);
+
+
+  setShaderUniform('final,'grainAmt, 0.2 * strength);
+  setShaderUniform('final,'brightness, 0.00 * strength);
+  setShaderUniform('final,'contrast, 0.1 * strength);
+  setShaderUniform('final,'sourceBlur, 0.2 * strength);
+  setShaderUniform('final,'strength, strength);
+  setShaderUniform('final,'uInputImageSize, defSize);
+}
+
+
+#### GLSL shaders ####
+string glslNoise = "
+      precision highp float;
+      BaseUniformsOpenGL;
+      varying vec2 textureCoordinate;
+
+      uniform vec2 noiseSize;
+      uniform float seed;
+      uniform float scale;
+      uniform float time;
+      uniform float framerate;
+
+      float rand(vec2 p) {
+        vec3 p3 = fract(vec3(p.xyx) * .1031);
+        p3 += dot(p3, p3.yzx + 33.33);
+        return fract((p3.x + p3.y) * p3.z);
+      }
+
+      void main() {
+        float scl = mix(0.5, 2.0, scale);
+        vec2 uv = textureCoordinate * scl * noiseSize + seed;
+        float t = floor(time * framerate);
+        float r = rand(floor(uv) + t);
+        float g = rand(floor(uv + noiseSize) + t);
+        float b = rand(floor(uv + noiseSize * 2.0) + t);
+        gl_FragColor = vec4(r, g, b, 1.0);
+      }
+";
+
+string glslBlur = "
+    precision highp float;
+    BaseUniformsOpenGL;
+
+    varying vec2 textureCoordinate;
+    uniform float blurAmt;
+
+    void main() {
+      vec2 uv = textureCoordinate;
+      vec2 texel = 1.25 * blurAmt / vec2(1024.0);
+
+      vec4 sum = vec4(0.0);
+      sum += texture2D(s_texture, uv + vec2(-texel.x, -texel.y));
+      sum += texture2D(s_texture, uv + vec2(0.0, -texel.y));
+      sum += texture2D(s_texture, uv + vec2(texel.x, -texel.y));
+      sum += texture2D(s_texture, uv + vec2(-texel.x, 0.0));
+
+      sum += texture2D(s_texture, uv);
+
+      sum += texture2D(s_texture, uv + vec2(texel.x, 0.0));
+      sum += texture2D(s_texture, uv + vec2(-texel.x, texel.y));
+      sum += texture2D(s_texture, uv + vec2(0.0, texel.y));
+      sum += texture2D(s_texture, uv + vec2(texel.x, texel.y));
+      sum /= 9.0;
+
+      gl_FragColor = sum;
+    }
+";
+
+
+string glslFinal = "
+
+    uniform sampler2D auxSampler0; // or here?
+    uniform sampler2D auxSampler1;
+
+
+    varying vec2 textureCoordinate;
+    varying vec2 sourceTextureCoordinate;
+
+    uniform vec2 uInputImageSize;
+    uniform float grainAmt;
+    uniform float brightness;
+    uniform float contrast;
+    uniform float dustAmt;
+    uniform float grainContrast;
+    uniform float grainScale;
+    uniform float grainBrightness;
+    uniform float grainSaturation;
+    uniform float sourceBlur;
+
+    BaseUniformsOpenGL; // overall filter strength
+
+    vec2 mirror(vec2 v) {
+      vec2 m = mod(v, 2.0);
+      return mix(m, 2.0 - m, step(1.0, m));
+    }
+
+    float luma(vec3 color) { return dot(color, vec3(0.299, 0.587, 0.114)); }
+
+    float gammaCorrect(float color, float gamma) { return pow(color, float(1.0 / gamma)); }
+
+    float levelRange(float color, float minInput, float maxInput) {
+      return min(max(color - float(minInput), float(0.0)) / (float(maxInput) - float(minInput)),
+                  float(1.0));
+    }
+
+    float levels(float color, float minInput, float gamma, float maxInput) {
+      return gammaCorrect(levelRange(color, minInput, maxInput), gamma);
+    }
+
+    vec3 gammaCorrect(vec3 color, float gamma) { return pow(color, vec3(1.0 / gamma)); }
+
+    vec3 levelRange(vec3 color, float minInput, float maxInput) {
+      return min(max(color - vec3(minInput), vec3(0.0)) / (vec3(maxInput) - vec3(minInput)),
+                  vec3(1.0));
+    }
+
+    vec3 levels(vec3 color, float minInput, float gamma, float maxInput) {
+      return gammaCorrect(levelRange(color, minInput, maxInput), gamma);
+    }
+
+    vec4 linearScale(sampler2D tex, vec2 uv, float scaleFactor) {
+      float invScaleFactor = 1.0 / scaleFactor;
+      vec2 g = floor(uv * scaleFactor) * invScaleFactor;
+      vec2 p = fract(uv * scaleFactor);
+
+      vec4 c = texture2D(tex, mirror(g));
+      vec4 c2 = texture2D(tex, mirror(g + vec2(invScaleFactor, 0.0)));
+      vec4 c3 = texture2D(tex, mirror(g + vec2(invScaleFactor, invScaleFactor)));
+      vec4 c4 = texture2D(tex, mirror(g + vec2(0.0, invScaleFactor)));
+
+      vec4 color = mix(mix(c, c2, p.x), mix(c4, c3, p.x), p.y);
+      return color;
+    }
+
+    vec3 brightnessContrast(vec3 value, float brightness, float contrast) {
+      return (value - 0.5 + brightness) * (1.0 + contrast) + 0.5;
+    }
+
+    float brightnessContrast(float value, float brightness, float contrast) {
+      return (value - 0.5 + brightness) * (1.0 + contrast) + 0.5;
+    }
+
+    vec3 saturation(vec3 color, float amount) {
+      return mix(vec3(dot(vec3(0.299, 0.587, 0.114), color)), color, amount);
+    }
+
+    void main() {
+
+      vec2 aspect = vec2(1.0, uInputImageSize.y / uInputImageSize.x);
+      vec2 texel = 1.0 / (aspect * 675.0);
+      vec2 uv = sourceTextureCoordinate * aspect.y;
+
+      // create dust
+      vec4 dustXS = linearScale(auxSampler1, uv, 300.0);
+      vec4 dustS = linearScale(auxSampler1, uv, 250.0);
+      vec4 dustM = linearScale(auxSampler1, uv, 200.0);
+      vec4 dustL = linearScale(auxSampler1, uv, 100.0);
+
+      float cut = 1.0 - dustAmt;
+      dustXS = smoothstep(cut, 1.0, dustXS) * 2.0;
+      dustS = smoothstep(cut, 1.0, dustS) * 0.8;
+      dustM = smoothstep(cut, 1.0, dustM) * 0.7;
+      dustL = smoothstep(cut, 1.0, dustL) * 0.5;
+
+      float dust = dustXS.r + dustS.r + dustM.r + dustL.r;
+      dust /= 4.0;
+
+      // sample grain
+      vec4 scaleXS = texture2D(auxSampler1, fract(uv * grainScale));
+      vec4 scaleS  = texture2D(auxSampler1, fract(vec2(1.0 - uv.x, uv.y) * 0.9 * grainScale));
+      vec4 scaleM  = texture2D(auxSampler1, fract(vec2(uv.x, 1.0 - uv.y) * 0.8 * grainScale));
+      vec4 scaleL  = texture2D(auxSampler1, fract(vec2(1.0 - uv) * 0.7 * grainScale));
+
+      vec4 grain = scaleXS * 3.0 + scaleS * 0.6 + scaleM * 0.3 + scaleL * 0.1;
+      grain /= 4.0;
+      grain = smoothstep(0.0, 1.0, grain);
+      grain.rgb = brightnessContrast(grain.rgb, grainBrightness, grainContrast);
+      grain = mix(grain, smoothstep(0.0, 1.0, grain), 0.9);
+      grain = grain * 2.0 - 1.0;
+
+      // increase grain saturation
+      grain.rgb = saturation(grain.rgb, grainSaturation) * 0.9;
+
+      // sample color
+      vec2 st = sourceTextureCoordinate;
+      vec4 color = sampleInput(st);
+
+      // add a slight blur
+      float blurAmt = 1.5;
+      vec4 blurColor = color;
+      blurColor += sampleInput(st + vec2(texel.x, 0.0) * blurAmt);
+      blurColor += sampleInput(st - vec2(texel.x, 0.0) * blurAmt);
+      blurColor += sampleInput(st + vec2(0.0, texel.y) * blurAmt);
+      blurColor += sampleInput(st - vec2(0.0, texel.y) * blurAmt);
+      blurColor /= 5.0;
+      color.rgb = mix(color.rgb, blurColor.rgb, sourceBlur);
+
+      // add grain
+      color.rgb += grain.rgb * grainAmt;
+
+      // adjust levels
+      float l = luma(color.rgb);
+      color.rgb = levels(color.rgb, 0.0, 1.0, 1.0 + 0.1 * strength);
+
+      // warm the mids
+      float b = color.b;
+      color.r += smoothstep(0.6, 0.0, b) * smoothstep(0.3, 0.35, b) * 0.1 * strength;
+      color.b -= smoothstep(0.6, 0.0, b) * smoothstep(0.3, 0.35, b) * 0.1 * strength;
+
+      // brighten the shadows
+      color.rgb += 0.05 * smoothstep(0.5, 0.0, l) * strength;
+      color.rgb = brightnessContrast(color.rgb, brightness, contrast);
+
+      // crush the highlights
+      color.rgb -= 0.05 * smoothstep(0.75, 1.0, l) * strength;
+      color.r += strength * 0.05 * smoothstep(0.5, 1.0, l);
+
+      // add dust
+      float alpha = color.a;
+      color += strength * dust;
+      color.a = alpha;
+
+      gl_FragColor = toOutputFormat(color);
+    }
+";
+
+
+#### Metal shaders ####
+
+string metalNoise = "
+      using namespace metal;
+
+      struct fragmentOut { float4 _gl_FragColor [[color(0)]]; };
+
+      struct fragmentIn { float2 textureCoordinate [[user(locn0)]]; };
+
+      typedef struct {
+        BaseUniformsMetal;
+        float2 noiseSize;
+        float seed;
+        float scale;
+        float time;
+        float framerate;
+      } Uniforms;
+
+      float rand(float2 p) {
+        float3 p3 = fract(float3(p.xyx) * .1031);
+        p3 += dot(p3, p3.yzx + 33.33);
+        return fract((p3.x + p3.y) * p3.z);
+      }
+
+      fragment fragmentOut fragmentShader(fragmentIn in [[stage_in]],
+                                          constant Uniforms & uniforms [[buffer(1)]],
+                                          DefaultInputs defaultInputs) {
+        fragmentOut out = {};
+
+        float scl = mix(0.5, 2.0, uniforms.scale);
+        float2 uv = in.textureCoordinate * scl * uniforms.noiseSize + uniforms.seed;
+
+        float t = floor(uniforms.time * uniforms.framerate);
+        float r = rand(floor(uv) + t);
+        float g = rand(floor(uv + uniforms.noiseSize) + t);
+        float b = rand(floor(uv + uniforms.noiseSize * 2.0) + t);
+
+        out._gl_FragColor = float4(r, g, b, 1.0);
+
+        return out;
+      }
+";
+
+string metalBlur = "
+      using namespace metal;
+
+      struct fragmentOut { float4 _gl_FragColor [[color(0)]]; };
+
+      struct fragmentIn { float2 textureCoordinate [[user(locn0)]]; };
+
+      typedef struct {
+        BaseUniformsMetal;
+        float blurAmt;
+      } Uniforms;
+
+      fragment fragmentOut fragmentShader(fragmentIn in [[stage_in]],
+                                          constant Uniforms & uniforms [[buffer(1)]],
+                                          DefaultInputs defaultInputs) {
+        fragmentOut out = {};
+
+        float2 uv = in.textureCoordinate;
+        float2 texel = 1.25 * uniforms.blurAmt / float2(1024.0, 1024.0);
+
+        float4 sum = float4(0.0);
+        sum += sampleInput(defaultInputs, uv + float2(-texel.x, -texel.y));
+        sum += sampleInput(defaultInputs, uv + float2(0.0, -texel.y));
+        sum += sampleInput(defaultInputs, uv + float2(texel.x, -texel.y));
+        sum += sampleInput(defaultInputs, uv + float2(-texel.x, 0.0));
+        sum += sampleInput(defaultInputs, uv);
+        sum += sampleInput(defaultInputs, uv + float2(texel.x, 0.0));
+        sum += sampleInput(defaultInputs, uv + float2(-texel.x, texel.y));
+        sum += sampleInput(defaultInputs, uv + float2(0.0, texel.y));
+        sum += sampleInput(defaultInputs, uv + float2(texel.x, texel.y));
+
+        sum /= 9.0;
+
+        out._gl_FragColor = sum;
+        return out;
+      }
+";
+
+string metalFinal = "
+      using namespace metal;
+
+      struct fragmentOut { float4 _gl_FragColor [[color(0)]]; };
+
+      struct fragmentIn { float2 sourceTextureCoordinate [[user(locn1)]]; };
+
+      typedef struct {
+        BaseUniformsMetal;
+        float grainAmt;
+        float grainScale;
+        float grainContrast;
+        float grainBrightness;
+        float grainSaturation;
+        float brightness;
+        float contrast;
+        float dustAmt;
+        float sourceBlur;
+        float2 uInputImageSize;
+      } Uniforms;
+      float2 mod(float2 x, float2 y) { return x - y * floor(x / y); }
+
+      float2 mirror(float2 v) {
+        float2 m = mod(v, 2.0);
+        return min(m, 2.0 - m);
+      }
+
+      float luma(float3 color) { return dot(color, float3(0.299, 0.587, 0.114)); }
+
+      float gammaCorrect(float color, float gamma) { return pow(color, float(1.0 / gamma)); }
+
+      float levelRange(float color, float minInput, float maxInput) {
+        return min(max(color - float(minInput), float(0.0)) / (float(maxInput) - float(minInput)),
+                   float(1.0));
+      }
+
+      float levels(float color, float minInput, float gamma, float maxInput) {
+        return gammaCorrect(levelRange(color, minInput, maxInput), gamma);
+      }
+
+      float3 gammaCorrect(float3 color, float gamma) { return pow(color, float3(1.0 / gamma)); }
+
+      float3 levelRange(float3 color, float minInput, float maxInput) {
+        return min(
+            max(color - float3(minInput), float3(0.0)) / (float3(maxInput) - float3(minInput)),
+            float3(1.0));
+      }
+
+      float3 levels(float3 color, float minInput, float gamma, float maxInput) {
+        return gammaCorrect(levelRange(color, minInput, maxInput), gamma);
+      }
+
+      float4 linearScale(const thread texture2d<float> tex,
+                         const thread sampler texSampler,
+                         float2 uv,
+                         float scaleFactor) {
+        float invScaleFactor = 1.0 / scaleFactor;
+        float2 g = floor(uv * scaleFactor) * invScaleFactor;
+        float2 p = fract(uv * scaleFactor);
+
+        float4 c = tex.sample(texSampler, mirror(g));
+        float4 c2 = tex.sample(texSampler, mirror(g + float2(invScaleFactor, 0.0)));
+        float4 c3 = tex.sample(texSampler, mirror(g + float2(invScaleFactor, invScaleFactor)));
+        float4 c4 = tex.sample(texSampler, mirror(g + float2(0.0, invScaleFactor)));
+
+        float4 color = mix(mix(c, c2, p.x), mix(c4, c3, p.x), p.y);
+        return color;
+      }
+
+      float3 brightnessContrast(float3 value, float brightness, float contrast) {
+        return (value - 0.5 + brightness) * (1.0 + contrast) + 0.5;
+      }
+
+      float brightnessContrast(float value, float brightness, float contrast) {
+        return (value - 0.5 + brightness) * (1.0 + contrast) + 0.5;
+      }
+
+      float3 saturation(float3 color, float amount) {
+        return mix(float3(dot(float3(0.299, 0.587, 0.114), color)), color, amount);
+      }
+
+      fragment fragmentOut fragmentShader(fragmentIn in [[stage_in]],
+                                          constant Uniforms & uniforms [[buffer(1)]],
+                                          DefaultInputs defaultInputs,
+                                          texture2d<float> tex1,
+                                          sampler tex1Smplr) {
+        fragmentOut out = {};
+
+        float2 aspect = float2(1.0, uniforms.uInputImageSize.y / uniforms.uInputImageSize.x);
+        float2 texel = 1.0 / (aspect * 675.0);
+        float2 uv = in.sourceTextureCoordinate * aspect;
+
+        // create dust
+        float4 dustXS = linearScale(tex1, tex1Smplr, uv, 300.0);
+        float4 dustS = linearScale(tex1, tex1Smplr, uv, 250.0);
+        float4 dustM = linearScale(tex1, tex1Smplr, uv, 200.0);
+        float4 dustL = linearScale(tex1, tex1Smplr, uv, 100.0);
+
+        float cut = 1.0 - uniforms.dustAmt;
+        dustXS = smoothstep(cut, 1.0, dustXS) * 2.0;
+        dustS = smoothstep(cut, 1.0, dustS) * 0.8;
+        dustM = smoothstep(cut, 1.0, dustM) * 0.7;
+        dustL = smoothstep(cut, 1.0, dustL) * 0.5;
+
+        float dust = dustXS.r + dustS.r + dustM.r + dustL.r;
+        dust /= 4.0;
+
+        // sample grain
+        float4 scaleXS = tex1.sample(tex1Smplr, fract(uv * uniforms.grainScale));
+        float4 scaleS =
+            tex1.sample(tex1Smplr, fract(float2(1.0 - uv.x, uv.y) * 0.9 * uniforms.grainScale));
+        float4 scaleM =
+            tex1.sample(tex1Smplr, fract(float2(uv.x, 1.0 - uv.y) * 0.8 * uniforms.grainScale));
+        float4 scaleL = tex1.sample(tex1Smplr, fract(float2(1.0 - uv) * 0.7 * uniforms.grainScale));
+
+        float4 grain = scaleXS * 3.0 + scaleS * 0.6 + scaleM * 0.3 + scaleL * 0.1;
+        grain /= 4.0;
+        grain = smoothstep(0.0, 1.0, grain);
+        grain.rgb = brightnessContrast(grain.rgb, uniforms.grainBrightness, uniforms.grainContrast);
+        grain = mix(grain, smoothstep(0.0, 1.0, grain), 0.9);
+        grain = grain * 2.0 - 1.0;
+
+        // increase grain saturation
+        grain.rgb = saturation(grain.rgb, uniforms.grainSaturation) * 0.9;
+
+        // sample color
+        float2 st = in.sourceTextureCoordinate;
+        float4 color = sampleInput(defaultInputs, st);
+
+        // add a slight blur
+        float blurAmt = 1.5;
+        float4 blurColor = color;
+        blurColor += sampleInput(defaultInputs, st + float2(texel.x, 0.0) * blurAmt);
+        blurColor += sampleInput(defaultInputs, st - float2(texel.x, 0.0) * blurAmt);
+        blurColor += sampleInput(defaultInputs, st + float2(0.0, texel.y) * blurAmt);
+        blurColor += sampleInput(defaultInputs, st - float2(0.0, texel.y) * blurAmt);
+        blurColor /= 5.0;
+
+        // mix with blur
+        color.rgb = mix(color.rgb, blurColor.rgb, uniforms.sourceBlur);
+
+        // add noise
+        color.rgb += grain.rgb * uniforms.grainAmt;
+
+        float l = luma(color.rgb);
+        color.rgb = levels(color.rgb, 0.0, 1.0, 1.0 + 0.1 * uniforms.strength);
+
+        // warm the mids
+        float b = color.b;
+        color.r += smoothstep(0.6, 0.0, b) * smoothstep(0.3, 0.35, b) * 0.1 * uniforms.strength;
+        color.b -= smoothstep(0.6, 0.0, b) * smoothstep(0.3, 0.35, b) * 0.1 * uniforms.strength;
+
+        // brighten the shadows
+        color.rgb += 0.05 * smoothstep(0.5, 0.0, l) * uniforms.strength;
+        color.rgb = brightnessContrast(color.rgb, uniforms.brightness, uniforms.contrast);
+
+        // crush the highlights
+        color.rgb -= 0.05 * smoothstep(0.75, 1.0, l) * uniforms.strength;
+        color.r += uniforms.strength * 0.05 * smoothstep(0.5, 1.0, l);
+
+        // add dust
+        float alpha = color.a;
+        color += uniforms.strength * dust;
+        color.a = alpha;
+
+        out._gl_FragColor = toOutputFormat(color);
+        return out;
+      }
+";

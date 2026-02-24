@@ -1,0 +1,12 @@
+package com.facebook.common.classmarkers;
+
+import com.facebook.common.dextricks.classtracing.logger.ClassTracingLogger;
+
+/* loaded from: classes18.dex */
+public class IsUnifiedTTRCColdStartRun {
+    public static final int BETAMAP_MARKER_VALUE = 11;
+
+    static {
+        ClassTracingLogger.A03(11);
+    }
+}

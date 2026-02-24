@@ -1,0 +1,69 @@
+.class public final LX/aaG;
+.super Ljava/lang/Object;
+.source ""
+
+# interfaces
+.implements LX/Dol;
+
+
+# instance fields
+.field public final synthetic A00:LX/4vm;
+
+.field public final synthetic A01:LX/QZ7;
+
+
+# direct methods
+.method public constructor <init>(LX/4vm;LX/QZ7;)V
+    .locals 0
+
+    iput-object p2, p0, LX/aaG;->A01:LX/QZ7;
+
+    iput-object p1, p0, LX/aaG;->A00:LX/4vm;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final EqV()V
+    .locals 4
+
+    iget-object v3, p0, LX/aaG;->A01:LX/QZ7;
+
+    iget-object v0, v3, LX/QZ7;->A02:LX/5Sl;
+
+    iget-object v2, v0, LX/5Sl;->A0B:LX/3vR;
+
+    if-eqz v2, :cond_0
+
+    iget-object v1, p0, LX/aaG;->A00:LX/4vm;
+
+    iget-object v0, v3, LX/QZ7;->A06:LX/eAN;
+
+    invoke-interface {v0}, LX/dA2;->Cx1()LX/dhy;
+
+    move-result-object v0
+
+    invoke-interface {v0, v1, v2}, LX/dhy;->EIU(LX/4vm;LX/3vR;)V
+
+    :cond_0
+    return-void
+.end method
+
+.method public final GCV()Z
+    .locals 2
+
+    iget-object v0, p0, LX/aaG;->A01:LX/QZ7;
+
+    iget-object v1, v0, LX/QZ7;->A04:Lcom/instagram/common/session/UserSession;
+
+    iget-object v0, p0, LX/aaG;->A00:LX/4vm;
+
+    invoke-static {v1, v0}, LX/4dJ;->A0A(Lcom/instagram/common/session/UserSession;LX/4vm;)Z
+
+    move-result v0
+
+    return v0
+.end method

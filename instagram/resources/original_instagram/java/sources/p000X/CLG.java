@@ -1,0 +1,13 @@
+package p000X;
+
+/* loaded from: classes11.dex */
+public final class CLG extends AbstractC15960em {
+    public final AbstractC17890ht A00;
+    public final C17910hv A01;
+
+    public CLG() {
+        C17910hv c17910hv = new C17910hv();
+        this.A01 = c17910hv;
+        this.A00 = c17910hv;
+    }
+}

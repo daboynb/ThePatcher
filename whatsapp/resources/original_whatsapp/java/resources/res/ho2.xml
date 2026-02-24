@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.whatsapp.ui.wds.components.list.listitem.WDSListItem xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="0x7f0b1ac1"
+    android:paddingTop="0x7f07102e"
+    android:paddingBottom="0x7f07102e"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:NOT_FOUND_0x5="2"
+    app:NOT_FOUND_0x6="0"
+    app:NOT_FOUND_0x7="0x7f0804d7"
+    app:NOT_FOUND_0x8="2"/>

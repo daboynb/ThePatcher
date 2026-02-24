@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="0x7f0b2f6e"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.whatsapp.ui.wds.components.topbar.WDSToolbar
+        android:id="0x7f0b2f6f"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentInsetLeft="0dp"
+        app:NOT_FOUND_0xa="0dp"
+        app:NOT_FOUND_0xb="0dp"/>
+    <LinearLayout
+        android:id="0x7f0b04a6"
+        android:background="?unknown_attr_ref: 7f0400ba"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="0x7f0b2f6f">
+        <FrameLayout
+            android:id="0x7f0b04b0"
+            android:background="@android:color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ProgressBar
+                android:layout_gravity="center"
+                android:id="0x7f0b04b7"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <ViewStub
+                android:id="0x7f0b03ac"
+                android:inflatedId="0x7f0b03ab"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:NOT_FOUND_0xc="0"
+                app:NOT_FOUND_0xd="0"
+                app:NOT_FOUND_0xe="0"
+                app:NOT_FOUND_0xf="0"
+                app:NOT_FOUND_0x10="0"
+                app:NOT_FOUND_0x11="2"/>
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>

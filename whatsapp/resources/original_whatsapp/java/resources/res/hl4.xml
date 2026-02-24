@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="0x7f08080f"
+    android:padding="0x7f070ce8"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:NOT_FOUND_0x8="0x7f0b0352"
+    app:NOT_FOUND_0x9="0">
+    <ViewStub
+        android:id="0x7f0b0cee"
+        android:layout="0x7f0e0a93"
+        android:inflatedId="0x7f0b0cee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <ViewStub
+        android:id="0x7f0b1945"
+        android:layout="0x7f0e0a90"
+        android:inflatedId="0x7f0b1945"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <ViewStub
+        android:id="0x7f0b1944"
+        android:layout="0x7f0e0a8f"
+        android:inflatedId="0x7f0b1944"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

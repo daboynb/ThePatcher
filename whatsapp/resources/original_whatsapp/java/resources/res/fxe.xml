@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.whatsapp.ui.wds.components.topbar.WDSToolbar
+        android:id="0x7f0b2c21"
+        android:background="?unknown_attr_ref: 7f040926"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="?unknown_attr_ref: 7f04002f"
+        style="0x7f150520">
+        <ViewStub
+            android:id="0x7f0b2c30"
+            android:layout="0x7f0e0f87"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.whatsapp.ui.wds.components.topbar.WDSToolbar>
+    <ScrollView
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="0x7f0b0107"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ViewStub
+                android:id="0x7f0b2494"
+                android:layout="0x7f0e0c42"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <ViewStub
+                android:id="0x7f0b012e"
+                android:layout="0x7f0e0c42"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <include layout="0x7f0e0f86"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

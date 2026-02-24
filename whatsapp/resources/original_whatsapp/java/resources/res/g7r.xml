@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.whatsapp.ui.coreui.InfoCard xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="0x7f0b1372"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="0x7f150256">
+    <include
+        android:id="0x7f0b1371"
+        android:background="?unknown_attr_ref: 7f040a59"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="0x7f0e1028"/>
+</com.whatsapp.ui.coreui.InfoCard>

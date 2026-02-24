@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="0x7f0b1cd9"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:background="0x7f0809ad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:NOT_FOUND_0x4="0"
+        app:NOT_FOUND_0x5="0"
+        app:NOT_FOUND_0x6="0"
+        app:NOT_FOUND_0x7="0">
+        <include layout="0x7f0e0903"/>
+    </LinearLayout>
+</FrameLayout>

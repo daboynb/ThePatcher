@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="start|bottom"
+    android:layout_gravity="start|top"
+    android:id="0x7f0b1b12"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:NOT_FOUND_0x5="0x7f070932"
+    style="?unknown_attr_ref: 7f04053d"/>

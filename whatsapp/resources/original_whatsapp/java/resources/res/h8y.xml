@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="0.7">
+    <com.whatsapp.status.question.shape.StatusQuestionAnswerShapeView
+        android:id="0x7f0b02b1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        app:NOT_FOUND_0x9="0x7f0b21d5"
+        app:NOT_FOUND_0xa="0"
+        app:NOT_FOUND_0xb="0"
+        app:NOT_FOUND_0xd="0"/>
+    <com.whatsapp.ui.coreui.base.WaTextView
+        android:textColor="0x7f060904"
+        android:gravity="center"
+        android:id="0x7f0b21d5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="0x7f070cea"
+        android:text="0x7f122a35"
+        app:NOT_FOUND_0xa="0"
+        app:NOT_FOUND_0xb="0"
+        app:NOT_FOUND_0xc="0x7f0b02b1"
+        app:NOT_FOUND_0xe="6"
+        style="0x7f1505a6"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

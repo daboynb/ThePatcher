@@ -1,0 +1,18 @@
+package p000X;
+
+/* loaded from: classes8.dex */
+public final class HD4 extends HDI implements InterfaceC43700Jnd {
+    public HD4() {
+        super(C38380HDp.DEFAULT_INSTANCE);
+    }
+
+    @Override // p000X.J6G
+    public /* bridge */ /* synthetic */ InterfaceC44351K0t A01() {
+        return super.A03();
+    }
+
+    @Override // p000X.J6G
+    public /* bridge */ /* synthetic */ Object clone() {
+        return super.A02();
+    }
+}

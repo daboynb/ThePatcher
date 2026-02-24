@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <GridLayout
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rowCount="2"
+        android:columnCount="4">
+        <com.whatsapp.ui.coreui.base.WaTextView
+            android:id="0x7f0b15b9"
+            style="0x7f150269"/>
+        <com.whatsapp.ui.coreui.base.WaTextView
+            android:id="0x7f0b15ba"
+            style="0x7f150269"/>
+        <com.whatsapp.ui.coreui.base.WaTextView
+            android:id="0x7f0b15bb"
+            style="0x7f150269"/>
+        <com.whatsapp.ui.coreui.base.WaTextView
+            android:id="0x7f0b15bc"
+            style="0x7f150269"/>
+        <com.whatsapp.ui.coreui.base.WaTextView
+            android:id="0x7f0b15bd"
+            style="0x7f150269"/>
+        <com.whatsapp.ui.coreui.base.WaTextView
+            android:id="0x7f0b15be"
+            style="0x7f150269"/>
+        <com.whatsapp.ui.coreui.base.WaTextView
+            android:id="0x7f0b15bf"
+            style="0x7f150269"/>
+        <com.whatsapp.ui.coreui.base.WaTextView
+            android:id="0x7f0b15c0"
+            style="0x7f150269"/>
+    </GridLayout>
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="0x7f0b0aa5"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.whatsapp.ui.wds.components.topbar.WDSToolbar
+        android:id="0x7f0b2f8a"
+        android:background="?unknown_attr_ref: 7f040926"
+        android:layout_width="0dp"
+        android:layout_height="0x7f070048"
+        app:NOT_FOUND_0x7="0x7f0b07e5"
+        app:NOT_FOUND_0x8="0"
+        app:NOT_FOUND_0x9="0"
+        app:NOT_FOUND_0xb="0"
+        app:NOT_FOUND_0xc="0x7f1501d5"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="0x7f0b07e5"
+        android:padding="0x7f070125"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:NOT_FOUND_0x6="0"
+        app:NOT_FOUND_0x8="0"
+        app:NOT_FOUND_0x9="0"
+        app:NOT_FOUND_0xa="0x7f0b2f8a"
+        style="0x7f1501a2"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

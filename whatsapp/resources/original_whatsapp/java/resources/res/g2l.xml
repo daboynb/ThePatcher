@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="0x7f0b0655"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.recyclerview.widget.RecyclerView
+        android:orientation="vertical"
+        android:id="0x7f0b25a6"
+        android:clipToPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <com.google.android.material.chip.Chip
+        android:textColor="?unknown_attr_ref: 7f040a2f"
+        android:id="0x7f0b2d7e"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0x7f0704c1"
+        android:text="0x7f123d6d"
+        android:layout_centerHorizontal="true"
+        app:NOT_FOUND_0xa="0x7f0704b3"
+        app:NOT_FOUND_0xb="0x7f080640"
+        app:NOT_FOUND_0xc="0x7f0704b3"/>
+</RelativeLayout>

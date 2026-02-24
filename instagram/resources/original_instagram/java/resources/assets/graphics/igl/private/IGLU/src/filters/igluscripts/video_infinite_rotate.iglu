@@ -1,0 +1,147 @@
+[Filter IgluscriptVideoInfiniteRotateFilter]
+[BehaviorType static]
+
+
+
+[Init]
+fun init(Filter filter) {
+  filter.passes = {{
+      name = 'infinite_rotate, inputs = {'default},
+      uniforms = {
+        inputSize = {1080.0, 1920.0},
+        zoomSpeed = 0.3,
+        rotSpeed = 0.85,
+        rotStart = -0.25,
+      },
+      glslShader = glsl, metalShader = metal
+    }};
+}
+
+[PreRender]
+fun preRender(Filter filter) {
+  # Get behavior parameters from parameter map (set by JNI/keyframe system)
+  f32 progressValue = getParameterFloat('progress);
+  
+  # Apply to shader uniform
+  setShaderUniform('infinite_rotate, 'progress, progressValue);
+}
+
+string glsl = "precision highp float;
+
+varying vec2 textureCoordinate;
+varying vec2 sourceTextureCoordinate;
+
+BaseUniformsOpenGL;
+
+uniform float time_sec;
+uniform vec2 inputSize;
+uniform float zoomSpeed;
+uniform float rotSpeed;
+uniform float rotStart;
+
+void main() {
+
+  vec2 uv = sourceTextureCoordinate;
+  vec2 ratio = inputSize.xy / inputSize.y;
+  vec2 center = vec2(0.75,0.25);
+  vec4 color = vec4(0.0);
+
+  float t = time_sec * zoomSpeed;
+  float cycle = floor(t / 0.5);
+
+  for (int i = 3; i >= 0; --i){
+    float spawnIndex = cycle - float(i);
+    float age = t - spawnIndex * 0.5;
+    vec2 c = center + age * vec2(-0.25, 0.25);
+    float alive = step(0.0, age) * step(age, 2.0);
+
+    float scale = 2.25 * age + 1e-3;
+    float invScale = 1.0/scale;
+
+    float angle = rotStart - age * (rotSpeed * 3.14159265);
+    float cs = cos(angle);
+    float sn = sin(angle);
+
+
+    vec2 dUV = (uv - c) * ratio;
+    vec2 scaled = dUV / scale;
+    vec2 rotUV = vec2(scaled.x * cs - scaled.y * sn, scaled.x * sn + scaled.y * cs);
+
+
+
+    vec2 zUV = rotUV / ratio + c;
+
+    float inX = step(0.0, zUV.x) * step(zUV.x, 1.0);
+    float inY = step(0.0, zUV.y) * step(zUV.y, 1.0);
+    float mask = alive * inX * inY;
+
+    vec4 sampleCol = sampleInput(zUV);
+    color = color * (1.0 - mask) + sampleCol * mask;
+  }
+
+
+
+  gl_FragColor = toOutputFormat(color);
+
+}
+";
+
+string metal = "using namespace metal;
+struct fragmentIn { float2 textureCoordinate [[user(locn0)]]; float2 sourceTextureCoordinate [[user(locn1)]]; };
+struct fragmentOut { float4 _gl_FragColor [[color(0)]]; };
+typedef struct {
+  float4x4 content_transform;
+  float4x4 texture_transform;
+  float time_sec;
+  float2 input_size;
+  float zoomSpeed;
+  float rotSpeed;
+  float rotStart;
+ } Uniforms;
+fragment fragmentOut fragmentShader(fragmentIn in [[stage_in]],
+ constant Uniforms & uniforms [[buffer(1)]],
+ DefaultInputs defaultInputs) {
+
+  float2 uv = in.sourceTextureCoordinate;
+  float2 ratio = uniforms.input_size.xy / uniforms.input_size.y;
+  float2 center = float2(0.75,0.25);
+  float4 color = float4(0.0);
+
+  float t = uniforms.time_sec * uniforms.zoomSpeed;
+  float cycle = floor(t / 0.5);
+
+  for (int i = 3; i >= 0; --i){
+    float spawnIndex = cycle - float(i);
+    float age = t - spawnIndex * 0.5;
+    float2 c = center + age * float2(-0.25, 0.25);
+    float alive = step(0.0, age) * step(age, 2.0);
+
+    float scale = 2.25 * age + 1e-3;
+    float invScale = 1.0/scale;
+
+    float angle = uniforms.rotStart + age * (uniforms.rotSpeed * 3.14159265);
+    float cs = cos(angle);
+    float sn = sin(angle);
+
+
+    float2 dUV = (uv - c) * ratio;
+    float2 scaled = dUV / scale;
+    float2 rotUV = float2(scaled.x * cs - scaled.y * sn, scaled.x * sn + scaled.y * cs);
+
+
+
+    float2 zUV = rotUV / ratio + c;
+
+    float inX = step(0.0, zUV.x) * step(zUV.x, 1.0);
+    float inY = step(0.0, zUV.y) * step(zUV.y, 1.0);
+    float mask = alive * inX * inY;
+
+    float4 sampleCol = sampleInput(defaultInputs, zUV);
+    color = color * (1.0 - mask) + sampleCol * mask;
+  }
+
+
+
+  return {toOutputFormat(color)};
+}
+";

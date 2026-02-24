@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.whatsapp.ui.wds.components.textlayout.WDSTextLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:id="0x7f0b295c"
+    android:paddingTop="0x7f07064c"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="center"
+    app:NOT_FOUND_0x8="0"
+    app:NOT_FOUND_0x9="0x7f080d2f"
+    app:NOT_FOUND_0xa="1"/>

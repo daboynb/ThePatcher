@@ -1,0 +1,32 @@
+package p000X;
+
+/* renamed from: X.Drp, reason: case insensitive filesystem */
+/* loaded from: classes4.dex */
+public enum EnumC35525Drp implements InterfaceC26580vu {
+    ELIGIBLE("ELIGIBLE"),
+    INELIGIBLE_AUDIO_QUALITY("INELIGIBLE_AUDIO_QUALITY"),
+    INELIGIBLE_LICENSED_MUSIC("INELIGIBLE_LICENSED_MUSIC"),
+    INELIGIBLE_LICENSED_MUSIC_MULTI_TRACK("INELIGIBLE_LICENSED_MUSIC_MULTI_TRACK"),
+    INELIGIBLE_LICENSED_MUSIC_NO_AUDIO("INELIGIBLE_LICENSED_MUSIC_NO_AUDIO"),
+    INELIGIBLE_LICENSED_MUSIC_UNSUPPORTED_AUDIO_TYPE("INELIGIBLE_LICENSED_MUSIC_UNSUPPORTED_AUDIO_TYPE"),
+    INELIGIBLE_NO_AUDIO("INELIGIBLE_NO_AUDIO"),
+    /* JADX INFO: Fake field, exist only in values array */
+    INELIGIBLE_NOT_SUPPORTED_LANGUAGE("INELIGIBLE_NOT_SUPPORTED_LANGUAGE"),
+    INELIGIBLE_OTHER("INELIGIBLE_OTHER"),
+    INELIGIBLE_OVER_90S("INELIGIBLE_OVER_90S"),
+    /* JADX INFO: Fake field, exist only in values array */
+    INELIGIBLE_SHORT_DURATION("INELIGIBLE_SHORT_DURATION"),
+    INELIGIBLE_TEXT_TO_SPEECH("INELIGIBLE_TEXT_TO_SPEECH"),
+    INELIGIBLE_VOICEOVER("INELIGIBLE_VOICEOVER");
+
+    public final String A00;
+
+    EnumC35525Drp(String str) {
+        this.A00 = str;
+    }
+
+    @Override // p000X.InterfaceC26580vu
+    public final /* bridge */ /* synthetic */ Object getValue() {
+        return this.A00;
+    }
+}

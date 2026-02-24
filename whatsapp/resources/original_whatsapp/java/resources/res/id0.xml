@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        android:id="0x7f0b2697"
+        android:background="?unknown_attr_ref: 7f040a59"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <View
+            android:id="0x7f0b2699"
+            style="0x7f150356"/>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0x7f070c76"
+            android:layout_marginRight="0x7f070c76">
+            <com.whatsapp.ui.coreui.base.WaTextView
+                android:textSize="0x7f070fb6"
+                android:id="0x7f0b269e"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0x7f070c75"
+                android:text="0x7f12098f"
+                android:lineSpacingMultiplier="1.43"
+                app:NOT_FOUND_0x15="0"
+                app:NOT_FOUND_0x17="0"
+                app:NOT_FOUND_0x19="6"/>
+            <com.whatsapp.ui.coreui.base.WaTextView
+                android:textSize="0x7f070fb6"
+                android:textColor="0x7f060922"
+                android:id="0x7f0b269d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingMultiplier="1.43"
+                app:NOT_FOUND_0x13="0x7f0b269e"
+                app:NOT_FOUND_0x14="0"
+                app:NOT_FOUND_0x19="6"/>
+            <com.whatsapp.ui.coreui.base.WaTextView
+                android:textSize="0x7f070fb0"
+                android:textColor="?unknown_attr_ref: 7f04066e"
+                android:id="0x7f0b269b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0x7f070c77"
+                android:text="0x7f12347b"
+                android:lineSpacingMultiplier="1.5"
+                android:fontFamily="?unknown_attr_ref: 7f0403b8"
+                app:NOT_FOUND_0x15="0"
+                app:NOT_FOUND_0x16="0x7f0b269e"
+                app:NOT_FOUND_0x18="0x7f070c75"
+                app:NOT_FOUND_0x19="4"/>
+            <com.whatsapp.ui.coreui.base.WaTextView
+                android:textSize="0x7f070fb0"
+                android:textColor="?unknown_attr_ref: 7f04066e"
+                android:id="0x7f0b269a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingMultiplier="1.5"
+                app:NOT_FOUND_0x13="0x7f0b269b"
+                app:NOT_FOUND_0x14="0"
+                app:NOT_FOUND_0x19="4"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <com.whatsapp.ui.coreui.base.WaTextView
+            android:textSize="0x7f070fbc"
+            android:gravity="start"
+            android:id="0x7f0b269c"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0x7f070c76"
+            android:layout_marginTop="0x7f070c77"
+            android:layout_marginRight="0x7f070c76"
+            android:text="0x7f122e24"
+            android:fontFamily="?unknown_attr_ref: 7f0403b6"
+            android:textAlignment="viewStart"
+            app:NOT_FOUND_0x19="8"/>
+        <com.whatsapp.ui.wds.components.button.WDSButton
+            android:layout_gravity="center_horizontal"
+            android:id="0x7f0b2698"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="0x7f070c73"
+            android:layout_marginTop="0x7f070c74"
+            android:layout_marginRight="0x7f070c73"
+            android:layout_marginBottom="0x7f070c74"
+            android:text="0x7f122e23"
+            style="0x7f150555"/>
+    </LinearLayout>
+</merge>

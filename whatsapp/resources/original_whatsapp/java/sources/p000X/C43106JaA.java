@@ -1,0 +1,20 @@
+package p000X;
+
+import android.graphics.Matrix;
+
+/* renamed from: X.JaA, reason: case insensitive filesystem */
+/* loaded from: classes8.dex */
+public final class C43106JaA extends AbstractC033004y implements InterfaceC023900h {
+    public static final C43106JaA A00 = new C43106JaA();
+
+    public C43106JaA() {
+        super(0);
+    }
+
+    @Override // p000X.InterfaceC023900h
+    public /* bridge */ /* synthetic */ Object invoke() {
+        Matrix A0C = AbstractC127835iq.A0C();
+        A0C.setValues(new float[]{-1.0f, 0.0f, 0.0f, 0.0f, 1.0f, 0.0f, 0.0f, 0.0f, 1.0f});
+        return A0C;
+    }
+}

@@ -1,0 +1,350 @@
+.class public final enum LX/NVI;
+.super Ljava/lang/Enum;
+.source ""
+
+# interfaces
+.implements LX/0vu;
+
+
+# static fields
+.field public static final synthetic A01:[LX/NVI;
+
+.field public static final enum A02:LX/NVI;
+
+.field public static final enum A03:LX/NVI;
+
+.field public static final enum A04:LX/NVI;
+
+.field public static final enum A05:LX/NVI;
+
+.field public static final enum A06:LX/NVI;
+
+.field public static final enum A07:LX/NVI;
+
+.field public static final enum A08:LX/NVI;
+
+.field public static final enum A09:LX/NVI;
+
+.field public static final enum A0A:LX/NVI;
+
+.field public static final enum A0B:LX/NVI;
+
+.field public static final enum A0C:LX/NVI;
+
+.field public static final enum A0D:LX/NVI;
+
+
+# instance fields
+.field public final A00:Ljava/lang/String;
+
+
+# direct methods
+.method public static constructor <clinit>()V
+    .locals 36
+
+    const-string v3, "idv_introduction"
+
+    const-string v2, "IDV_INTRODUCTION"
+
+    const/4 v1, 0x0
+
+    new-instance v20, LX/NVI;
+
+    move-object/from16 v0, v20
+
+    invoke-direct {v0, v2, v1, v3}, LX/NVI;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+
+    const-string v2, "idv_document_type"
+
+    const-string v1, "IDV_DOCUMENT_TYPE"
+
+    const/4 v0, 0x1
+
+    new-instance v11, LX/NVI;
+
+    invoke-direct {v11, v1, v0, v2}, LX/NVI;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+
+    sput-object v11, LX/NVI;->A03:LX/NVI;
+
+    const-string v2, "idv_group_one"
+
+    const-string v1, "IDV_GROUP_ONE"
+
+    const/4 v0, 0x2
+
+    new-instance v10, LX/NVI;
+
+    invoke-direct {v10, v1, v0, v2}, LX/NVI;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+
+    sput-object v10, LX/NVI;->A04:LX/NVI;
+
+    const-string v2, "idv_group_two"
+
+    const-string v1, "IDV_GROUP_TWO"
+
+    const/4 v0, 0x3
+
+    new-instance v9, LX/NVI;
+
+    invoke-direct {v9, v1, v0, v2}, LX/NVI;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+
+    sput-object v9, LX/NVI;->A05:LX/NVI;
+
+    const-string v2, "idv_id_smart_capture"
+
+    const-string v1, "IDV_ID_SMART_CAPTURE"
+
+    const/4 v0, 0x4
+
+    new-instance v8, LX/NVI;
+
+    invoke-direct {v8, v1, v0, v2}, LX/NVI;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+
+    sput-object v8, LX/NVI;->A07:LX/NVI;
+
+    const-string v2, "idv_id_confirmation"
+
+    const-string v1, "IDV_ID_CONFIRMATION"
+
+    const/4 v0, 0x5
+
+    new-instance v7, LX/NVI;
+
+    invoke-direct {v7, v1, v0, v2}, LX/NVI;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+
+    sput-object v7, LX/NVI;->A06:LX/NVI;
+
+    const-string v2, "idv_selfie_smart_capture"
+
+    const-string v1, "IDV_SELFIE_SMART_CAPTURE"
+
+    const/4 v0, 0x6
+
+    new-instance v6, LX/NVI;
+
+    invoke-direct {v6, v1, v0, v2}, LX/NVI;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+
+    sput-object v6, LX/NVI;->A09:LX/NVI;
+
+    const-string v2, "idv_selfie_confirmation"
+
+    const-string v1, "IDV_SELFIE_CONFIRMATION"
+
+    const/4 v0, 0x7
+
+    new-instance v5, LX/NVI;
+
+    invoke-direct {v5, v1, v0, v2}, LX/NVI;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+
+    sput-object v5, LX/NVI;->A08:LX/NVI;
+
+    const-string v3, "idv_conclusion"
+
+    const-string v2, "IDV_CONCLUSION"
+
+    const/16 v1, 0x8
+
+    new-instance v19, LX/NVI;
+
+    move-object/from16 v0, v19
+
+    invoke-direct {v0, v2, v1, v3}, LX/NVI;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+
+    const-string v3, "idv_failure"
+
+    const-string v2, "IDV_FAILURE"
+
+    const/16 v1, 0x9
+
+    new-instance v18, LX/NVI;
+
+    move-object/from16 v0, v18
+
+    invoke-direct {v0, v2, v1, v3}, LX/NVI;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+
+    const-string v3, "about_this_account"
+
+    const-string v2, "ABOUT_THIS_ACCOUNT"
+
+    const/16 v1, 0xa
+
+    new-instance v17, LX/NVI;
+
+    move-object/from16 v0, v17
+
+    invoke-direct {v0, v2, v1, v3}, LX/NVI;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+
+    const-string v2, "feed"
+
+    const-string v1, "FEED"
+
+    const/16 v0, 0xb
+
+    new-instance v14, LX/NVI;
+
+    invoke-direct {v14, v1, v0, v2}, LX/NVI;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+
+    sput-object v14, LX/NVI;->A02:LX/NVI;
+
+    const-string v2, "profile"
+
+    const-string v1, "PROFILE"
+
+    const/16 v0, 0xc
+
+    new-instance v13, LX/NVI;
+
+    invoke-direct {v13, v1, v0, v2}, LX/NVI;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+
+    sput-object v13, LX/NVI;->A0B:LX/NVI;
+
+    const-string v2, "pbia_proxy_profile"
+
+    const-string v1, "PBIA_PROXY_PROFILE"
+
+    const/16 v0, 0xd
+
+    new-instance v12, LX/NVI;
+
+    invoke-direct {v12, v1, v0, v2}, LX/NVI;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+
+    sput-object v12, LX/NVI;->A0A:LX/NVI;
+
+    const-string v3, "transparency_bottomsheet"
+
+    const-string v2, "TRANSPARENCY_BOTTOMSHEET"
+
+    const/16 v1, 0xe
+
+    new-instance v16, LX/NVI;
+
+    move-object/from16 v0, v16
+
+    invoke-direct {v0, v2, v1, v3}, LX/NVI;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+
+    const-string v2, "siep_bottomsheet"
+
+    const-string v1, "SIEP_BOTTOMSHEET"
+
+    const/16 v0, 0xf
+
+    new-instance v15, LX/NVI;
+
+    invoke-direct {v15, v1, v0, v2}, LX/NVI;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+
+    const-string v2, "stories"
+
+    const-string v1, "STORIES"
+
+    const/16 v0, 0x10
+
+    new-instance v4, LX/NVI;
+
+    invoke-direct {v4, v1, v0, v2}, LX/NVI;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+
+    sput-object v4, LX/NVI;->A0D:LX/NVI;
+
+    const-string v3, "reels"
+
+    const-string v2, "REELS"
+
+    const/16 v1, 0x11
+
+    new-instance v0, LX/NVI;
+
+    invoke-direct {v0, v2, v1, v3}, LX/NVI;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+
+    sput-object v0, LX/NVI;->A0C:LX/NVI;
+
+    move-object/from16 v31, v12
+
+    move-object/from16 v32, v16
+
+    move-object/from16 v33, v15
+
+    move-object/from16 v34, v4
+
+    move-object/from16 v35, v0
+
+    move-object/from16 v26, v19
+
+    move-object/from16 v27, v18
+
+    move-object/from16 v28, v17
+
+    move-object/from16 v29, v14
+
+    move-object/from16 v30, v13
+
+    move-object/from16 v21, v9
+
+    move-object/from16 v22, v8
+
+    move-object/from16 v23, v7
+
+    move-object/from16 v24, v6
+
+    move-object/from16 v25, v5
+
+    move-object/from16 v18, v20
+
+    move-object/from16 v19, v11
+
+    move-object/from16 v20, v10
+
+    filled-new-array/range {v18 .. v35}, [LX/NVI;
+
+    move-result-object v0
+
+    sput-object v0, LX/NVI;->A01:[LX/NVI;
+
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/String;ILjava/lang/String;)V
+    .locals 0
+
+    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
+    iput-object p3, p0, LX/NVI;->A00:Ljava/lang/String;
+
+    return-void
+.end method
+
+.method public static valueOf(Ljava/lang/String;)LX/NVI;
+    .locals 1
+
+    const-class v0, LX/NVI;
+
+    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+
+    move-result-object v0
+
+    check-cast v0, LX/NVI;
+
+    return-object v0
+.end method
+
+.method public static values()[LX/NVI;
+    .locals 1
+
+    sget-object v0, LX/NVI;->A01:[LX/NVI;
+
+    invoke-virtual {v0}, [Ljava/lang/Object;->clone()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, [LX/NVI;
+
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public final bridge synthetic getValue()Ljava/lang/Object;
+    .locals 1
+
+    iget-object v0, p0, LX/NVI;->A00:Ljava/lang/String;
+
+    return-object v0
+.end method

@@ -1,0 +1,211 @@
+package p000X;
+
+import kotlin.enums.EnumEntries;
+
+/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
+/* renamed from: X.JhG, reason: case insensitive filesystem */
+/* loaded from: classes6.dex */
+public final class EnumC50132JhG {
+    public static final /* synthetic */ EnumEntries A01;
+    public static final /* synthetic */ EnumC50132JhG[] A02;
+    public static final EnumC50132JhG A03;
+    public static final EnumC50132JhG A04;
+    public static final EnumC50132JhG A05;
+    public static final EnumC50132JhG A06;
+    public static final EnumC50132JhG A07;
+    public static final EnumC50132JhG A08;
+    public static final EnumC50132JhG A09;
+    public static final EnumC50132JhG A0A;
+    public static final EnumC50132JhG A0B;
+    public static final EnumC50132JhG A0C;
+    public static final EnumC50132JhG A0D;
+    public static final EnumC50132JhG A0E;
+    public static final EnumC50132JhG A0F;
+    public static final EnumC50132JhG A0G;
+    public static final EnumC50132JhG A0H;
+    public static final EnumC50132JhG A0I;
+    public static final EnumC50132JhG A0J;
+    public static final EnumC50132JhG A0K;
+    public static final EnumC50132JhG A0L;
+    public static final EnumC50132JhG A0M;
+    public static final EnumC50132JhG A0N;
+    public static final EnumC50132JhG A0O;
+    public static final EnumC50132JhG A0P;
+    public static final EnumC50132JhG A0Q;
+    public static final EnumC50132JhG A0R;
+    public static final EnumC50132JhG A0S;
+    public static final EnumC50132JhG A0T;
+    public static final EnumC50132JhG A0U;
+    public static final EnumC50132JhG A0V;
+    public static final EnumC50132JhG A0W;
+    public static final EnumC50132JhG A0X;
+    public static final EnumC50132JhG A0Y;
+    public static final EnumC50132JhG A0Z;
+    public static final EnumC50132JhG A0a;
+    public static final EnumC50132JhG A0b;
+    public static final EnumC50132JhG A0c;
+    public static final EnumC50132JhG A0d;
+    public static final EnumC50132JhG A0e;
+    public static final EnumC50132JhG A0f;
+    public static final EnumC50132JhG A0g;
+    public static final EnumC50132JhG A0h;
+    public static final EnumC50132JhG A0i;
+    public static final EnumC50132JhG A0j;
+    public static final EnumC50132JhG A0k;
+    public static final EnumC50132JhG A0l;
+    public static final EnumC50132JhG A0m;
+    public static final EnumC50132JhG A0n;
+    public static final EnumC50132JhG A0o;
+    public static final EnumC50132JhG A0p;
+    public static final EnumC50132JhG A0q;
+    public static final EnumC50132JhG A0r;
+    public static final EnumC50132JhG A0s;
+    public static final EnumC50132JhG A0t;
+    public static final EnumC50132JhG A0u;
+    public static final EnumC50132JhG A0v;
+    public static final EnumC50132JhG A0w;
+    public static final EnumC50132JhG A0x;
+    public final String A00;
+
+    static {
+        EnumC50132JhG enumC50132JhG = new EnumC50132JhG("UNSET_OR_UNRECOGNIZED_ENUM_VALUE", 0, "UNSET_OR_UNRECOGNIZED_ENUM_VALUE");
+        A0x = enumC50132JhG;
+        EnumC50132JhG enumC50132JhG2 = new EnumC50132JhG("ELIGIBLE", 1, "ELIGIBLE");
+        A03 = enumC50132JhG2;
+        EnumC50132JhG enumC50132JhG3 = new EnumC50132JhG("ERROR_INITIATOR_AC_CHANGED_DURING_LINKING", 2, "ERROR_INITIATOR_AC_CHANGED_DURING_LINKING");
+        A04 = enumC50132JhG3;
+        EnumC50132JhG enumC50132JhG4 = new EnumC50132JhG("ERROR_INVOLVE_THREADS_NOT_ELIGIBLE_FOR_AUTO_MIGRATION", 3, "ERROR_INVOLVE_THREADS_NOT_ELIGIBLE_FOR_AUTO_MIGRATION");
+        A05 = enumC50132JhG4;
+        EnumC50132JhG enumC50132JhG5 = new EnumC50132JhG("ERROR_LINK_ACCOUNT_ALREADY_LINKED_TO_OTHERS", 4, "ERROR_LINK_ACCOUNT_ALREADY_LINKED_TO_OTHERS");
+        A06 = enumC50132JhG5;
+        EnumC50132JhG enumC50132JhG6 = new EnumC50132JhG("ERROR_LINK_ACCOUNT_LIMIT_EXCEEDED", 5, "ERROR_LINK_ACCOUNT_LIMIT_EXCEEDED");
+        A07 = enumC50132JhG6;
+        EnumC50132JhG enumC50132JhG7 = new EnumC50132JhG("ERROR_LINK_AC_CHAINING_VIA_IGPC", 6, "ERROR_LINK_AC_CHAINING_VIA_IGPC");
+        A08 = enumC50132JhG7;
+        EnumC50132JhG enumC50132JhG8 = new EnumC50132JhG("ERROR_LINK_AGE_CONFLICT_ACCOUNT", 7, "ERROR_LINK_AGE_CONFLICT_ACCOUNT");
+        A09 = enumC50132JhG8;
+        EnumC50132JhG enumC50132JhG9 = new EnumC50132JhG("ERROR_LINK_ALREADY_LINKED_TO_INITIATOR", 8, "ERROR_LINK_ALREADY_LINKED_TO_INITIATOR");
+        A0A = enumC50132JhG9;
+        EnumC50132JhG enumC50132JhG10 = new EnumC50132JhG("ERROR_LINK_BACKWARD_INCOMPATIBLE", 9, "ERROR_LINK_BACKWARD_INCOMPATIBLE");
+        A0B = enumC50132JhG10;
+        EnumC50132JhG enumC50132JhG11 = new EnumC50132JhG("ERROR_LINK_CDS_BACKWARD_INCOMPATIBLE", 10, "ERROR_LINK_CDS_BACKWARD_INCOMPATIBLE");
+        A0C = enumC50132JhG11;
+        EnumC50132JhG enumC50132JhG12 = new EnumC50132JhG("ERROR_LINK_COMBINE_ACS", 11, "ERROR_LINK_COMBINE_ACS");
+        A0D = enumC50132JhG12;
+        EnumC50132JhG enumC50132JhG13 = new EnumC50132JhG("ERROR_LINK_DEACTIVATED_FB_ACCOUNT", 12, "ERROR_LINK_DEACTIVATED_FB_ACCOUNT");
+        A0E = enumC50132JhG13;
+        EnumC50132JhG enumC50132JhG14 = new EnumC50132JhG("ERROR_LINK_DEACTIVATED_FRL_ACCOUNT", 13, "ERROR_LINK_DEACTIVATED_FRL_ACCOUNT");
+        A0F = enumC50132JhG14;
+        EnumC50132JhG enumC50132JhG15 = new EnumC50132JhG("ERROR_LINK_DEACTIVATED_TH_ACCOUNT", 14, "ERROR_LINK_DEACTIVATED_TH_ACCOUNT");
+        A0G = enumC50132JhG15;
+        EnumC50132JhG enumC50132JhG16 = new EnumC50132JhG("ERROR_LINK_DISABLED_FB_ACCOUNT", 15, "ERROR_LINK_DISABLED_FB_ACCOUNT");
+        A0H = enumC50132JhG16;
+        EnumC50132JhG enumC50132JhG17 = new EnumC50132JhG("ERROR_LINK_DISABLED_IG_ACCOUNT", 16, "ERROR_LINK_DISABLED_IG_ACCOUNT");
+        A0I = enumC50132JhG17;
+        EnumC50132JhG enumC50132JhG18 = new EnumC50132JhG("ERROR_LINK_FB_ACCOUNT_ALREADY_LINKED_TO_OTHERS", 17, "ERROR_LINK_FB_ACCOUNT_ALREADY_LINKED_TO_OTHERS");
+        A0J = enumC50132JhG18;
+        EnumC50132JhG enumC50132JhG19 = new EnumC50132JhG("ERROR_LINK_FB_TARGET_ACCOUNT_FROM_THREADS", 18, "ERROR_LINK_FB_TARGET_ACCOUNT_FROM_THREADS");
+        A0K = enumC50132JhG19;
+        EnumC50132JhG enumC50132JhG20 = new EnumC50132JhG("ERROR_LINK_FRL_TARGET_ACCOUNT", 19, "ERROR_LINK_FRL_TARGET_ACCOUNT");
+        A0L = enumC50132JhG20;
+        EnumC50132JhG enumC50132JhG21 = new EnumC50132JhG("ERROR_LINK_IG_ACCOUNT_ALREADY_LINKED_TO_OTHERS", 20, "ERROR_LINK_IG_ACCOUNT_ALREADY_LINKED_TO_OTHERS");
+        A0M = enumC50132JhG21;
+        EnumC50132JhG enumC50132JhG22 = new EnumC50132JhG("ERROR_LINK_IG_ACCOUNT_LIMIT_EXCEEDED", 21, "ERROR_LINK_IG_ACCOUNT_LIMIT_EXCEEDED");
+        A0N = enumC50132JhG22;
+        EnumC50132JhG enumC50132JhG23 = new EnumC50132JhG("ERROR_LINK_IG_AGE_CONFLICT_ACCOUNT", 22, "ERROR_LINK_IG_AGE_CONFLICT_ACCOUNT");
+        A0O = enumC50132JhG23;
+        EnumC50132JhG enumC50132JhG24 = new EnumC50132JhG("ERROR_LINK_MAX_ACCOUNT_LIMIT", 23, "ERROR_LINK_MAX_ACCOUNT_LIMIT");
+        A0P = enumC50132JhG24;
+        EnumC50132JhG enumC50132JhG25 = new EnumC50132JhG("ERROR_LINK_MESSENGER_ONLY_ACCOUNT", 24, "ERROR_LINK_MESSENGER_ONLY_ACCOUNT");
+        A0Q = enumC50132JhG25;
+        EnumC50132JhG enumC50132JhG26 = new EnumC50132JhG("ERROR_LINK_MIXED_TEST_NON_TEST", 25, "ERROR_LINK_MIXED_TEST_NON_TEST");
+        A0R = enumC50132JhG26;
+        EnumC50132JhG enumC50132JhG27 = new EnumC50132JhG("ERROR_LINK_MSPLIT_ACCOUNT", 26, "ERROR_LINK_MSPLIT_ACCOUNT");
+        A0S = enumC50132JhG27;
+        EnumC50132JhG enumC50132JhG28 = new EnumC50132JhG("ERROR_LINK_MULTIPLE_FB_ACCOUNTS", 27, "ERROR_LINK_MULTIPLE_FB_ACCOUNTS");
+        A0T = enumC50132JhG28;
+        EnumC50132JhG enumC50132JhG29 = new EnumC50132JhG("ERROR_LINK_MULTIPLE_FRL_ACCOUNTS", 28, "ERROR_LINK_MULTIPLE_FRL_ACCOUNTS");
+        A0U = enumC50132JhG29;
+        EnumC50132JhG enumC50132JhG30 = new EnumC50132JhG("ERROR_LINK_MULTIPLE_IG_ACCOUNTS", 29, "ERROR_LINK_MULTIPLE_IG_ACCOUNTS");
+        A0V = enumC50132JhG30;
+        EnumC50132JhG enumC50132JhG31 = new EnumC50132JhG("ERROR_LINK_MULTIPLE_PARENTS_IG_ACCOUNT", 30, "ERROR_LINK_MULTIPLE_PARENTS_IG_ACCOUNT");
+        A0W = enumC50132JhG31;
+        EnumC50132JhG enumC50132JhG32 = new EnumC50132JhG("ERROR_LINK_MULTIPLE_TARGETS_IN_SAME_ACCOUNT", 31, "ERROR_LINK_MULTIPLE_TARGETS_IN_SAME_ACCOUNT");
+        A0X = enumC50132JhG32;
+        EnumC50132JhG enumC50132JhG33 = new EnumC50132JhG("ERROR_LINK_MULTIPLE_WA_ACCOUNTS", 32, "ERROR_LINK_MULTIPLE_WA_ACCOUNTS");
+        A0Y = enumC50132JhG33;
+        EnumC50132JhG enumC50132JhG34 = new EnumC50132JhG("ERROR_LINK_PRESIMILE_MIGRATED_ACCOUNTS", 33, "ERROR_LINK_PRESIMILE_MIGRATED_ACCOUNTS");
+        A0Z = enumC50132JhG34;
+        EnumC50132JhG enumC50132JhG35 = new EnumC50132JhG("ERROR_LINK_RESTRICTED_FB_ACCOUNT", 34, "ERROR_LINK_RESTRICTED_FB_ACCOUNT");
+        A0a = enumC50132JhG35;
+        EnumC50132JhG enumC50132JhG36 = new EnumC50132JhG("ERROR_LINK_RESTRICTED_FRL_ACCOUNT", 35, "ERROR_LINK_RESTRICTED_FRL_ACCOUNT");
+        A0b = enumC50132JhG36;
+        EnumC50132JhG enumC50132JhG37 = new EnumC50132JhG("ERROR_LINK_RESTRICTED_IG_ACCOUNT", 36, "ERROR_LINK_RESTRICTED_IG_ACCOUNT");
+        A0c = enumC50132JhG37;
+        EnumC50132JhG enumC50132JhG38 = new EnumC50132JhG("ERROR_LINK_RESTRICTED_QUICKSTART_ACCOUNT", 37, "ERROR_LINK_RESTRICTED_QUICKSTART_ACCOUNT");
+        A0d = enumC50132JhG38;
+        EnumC50132JhG enumC50132JhG39 = new EnumC50132JhG("ERROR_LINK_RESTRICTED_TH_ACCOUNT", 38, "ERROR_LINK_RESTRICTED_TH_ACCOUNT");
+        A0e = enumC50132JhG39;
+        EnumC50132JhG enumC50132JhG40 = new EnumC50132JhG("ERROR_LINK_SAME_ACCOUNT", 39, "ERROR_LINK_SAME_ACCOUNT");
+        A0f = enumC50132JhG40;
+        EnumC50132JhG enumC50132JhG41 = new EnumC50132JhG("ERROR_LINK_STEAL_FROM_MANI_ACS", 40, "ERROR_LINK_STEAL_FROM_MANI_ACS");
+        A0g = enumC50132JhG41;
+        EnumC50132JhG enumC50132JhG42 = new EnumC50132JhG("ERROR_LINK_TARGET_IG_AI_ACCOUNT", 41, "ERROR_LINK_TARGET_IG_AI_ACCOUNT");
+        A0h = enumC50132JhG42;
+        EnumC50132JhG enumC50132JhG43 = new EnumC50132JhG("ERROR_LINK_TARGET_UNMIGRATED_THREADS_ACCOUNT", 42, "ERROR_LINK_TARGET_UNMIGRATED_THREADS_ACCOUNT");
+        A0i = enumC50132JhG43;
+        EnumC50132JhG enumC50132JhG44 = new EnumC50132JhG("ERROR_LINK_THREADS_AC_UNSUPPORTED_MIXED_STATES", 43, "ERROR_LINK_THREADS_AC_UNSUPPORTED_MIXED_STATES");
+        A0j = enumC50132JhG44;
+        EnumC50132JhG enumC50132JhG45 = new EnumC50132JhG("ERROR_LINK_THREADS_TARGET_ACCOUNT", 44, "ERROR_LINK_THREADS_TARGET_ACCOUNT");
+        A0k = enumC50132JhG45;
+        EnumC50132JhG enumC50132JhG46 = new EnumC50132JhG("ERROR_LINK_TH_ACCOUNT_LIMIT_EXCEEDED", 45, "ERROR_LINK_TH_ACCOUNT_LIMIT_EXCEEDED");
+        A0l = enumC50132JhG46;
+        EnumC50132JhG enumC50132JhG47 = new EnumC50132JhG("ERROR_LINK_UNCONFIRMED_FB_ACCOUNT", 46, "ERROR_LINK_UNCONFIRMED_FB_ACCOUNT");
+        A0m = enumC50132JhG47;
+        EnumC50132JhG enumC50132JhG48 = new EnumC50132JhG("ERROR_LINK_UNCONFIRMED_FRL_ACCOUNT", 47, "ERROR_LINK_UNCONFIRMED_FRL_ACCOUNT");
+        A0n = enumC50132JhG48;
+        EnumC50132JhG enumC50132JhG49 = new EnumC50132JhG("ERROR_LINK_UNCONFIRMED_IG_ACCOUNT", 48, "ERROR_LINK_UNCONFIRMED_IG_ACCOUNT");
+        A0o = enumC50132JhG49;
+        EnumC50132JhG enumC50132JhG50 = new EnumC50132JhG("ERROR_LINK_UNCONFIRMED_TH_ACCOUNT", 49, "ERROR_LINK_UNCONFIRMED_TH_ACCOUNT");
+        A0p = enumC50132JhG50;
+        EnumC50132JhG enumC50132JhG51 = new EnumC50132JhG("ERROR_LINK_UNSTATED_AGE_IG_ACCOUNT", 50, "ERROR_LINK_UNSTATED_AGE_IG_ACCOUNT");
+        A0q = enumC50132JhG51;
+        EnumC50132JhG enumC50132JhG52 = new EnumC50132JhG("ERROR_LINK_UNSUPPORTED_FXCAL_TYPE", 51, "ERROR_LINK_UNSUPPORTED_FXCAL_TYPE");
+        A0r = enumC50132JhG52;
+        EnumC50132JhG enumC50132JhG53 = new EnumC50132JhG("ERROR_LINK_WAFFLE_AGE_RESTRICTION", 52, "ERROR_LINK_WAFFLE_AGE_RESTRICTION");
+        A0s = enumC50132JhG53;
+        EnumC50132JhG enumC50132JhG54 = new EnumC50132JhG("ERROR_LINK_WAFFLE_UNRELEASED_COUNTRY", 53, "ERROR_LINK_WAFFLE_UNRELEASED_COUNTRY");
+        A0t = enumC50132JhG54;
+        EnumC50132JhG enumC50132JhG55 = new EnumC50132JhG("ERROR_LINK_WA_IN_FOA_NTA", 54, "ERROR_LINK_WA_IN_FOA_NTA");
+        A0u = enumC50132JhG55;
+        EnumC50132JhG enumC50132JhG56 = new EnumC50132JhG("ERROR_LINK_WA_TARGET_ACCOUNT_FROM_FOA", 55, "ERROR_LINK_WA_TARGET_ACCOUNT_FROM_FOA");
+        A0v = enumC50132JhG56;
+        EnumC50132JhG enumC50132JhG57 = new EnumC50132JhG("ERROR_TARGET_ACCOUNT_IN_HOLDOUT", 56, "ERROR_TARGET_ACCOUNT_IN_HOLDOUT");
+        A0w = enumC50132JhG57;
+        EnumC50132JhG enumC50132JhG58 = new EnumC50132JhG("ERROR_UNCONFIRMED", 57, "ERROR_UNCONFIRMED");
+        EnumC50132JhG[] enumC50132JhGArr = new EnumC50132JhG[58];
+        System.arraycopy(new EnumC50132JhG[]{enumC50132JhG, enumC50132JhG2, enumC50132JhG3, enumC50132JhG4, enumC50132JhG5, enumC50132JhG6, enumC50132JhG7, enumC50132JhG8, enumC50132JhG9, enumC50132JhG10, enumC50132JhG11, enumC50132JhG12, enumC50132JhG13, enumC50132JhG14, enumC50132JhG15, enumC50132JhG16, enumC50132JhG17, enumC50132JhG18, enumC50132JhG19, enumC50132JhG20, enumC50132JhG21, enumC50132JhG22, enumC50132JhG23, enumC50132JhG24, enumC50132JhG25, enumC50132JhG26, enumC50132JhG27}, 0, enumC50132JhGArr, 0, 27);
+        System.arraycopy(new EnumC50132JhG[]{enumC50132JhG28, enumC50132JhG29, enumC50132JhG30, enumC50132JhG31, enumC50132JhG32, enumC50132JhG33, enumC50132JhG34, enumC50132JhG35, enumC50132JhG36, enumC50132JhG37, enumC50132JhG38, enumC50132JhG39, enumC50132JhG40, enumC50132JhG41, enumC50132JhG42, enumC50132JhG43, enumC50132JhG44, enumC50132JhG45, enumC50132JhG46, enumC50132JhG47, enumC50132JhG48, enumC50132JhG49, enumC50132JhG50, enumC50132JhG51, enumC50132JhG52, enumC50132JhG53, enumC50132JhG54}, 0, enumC50132JhGArr, 27, 27);
+        System.arraycopy(new EnumC50132JhG[]{enumC50132JhG55, enumC50132JhG56, enumC50132JhG57, enumC50132JhG58}, 0, enumC50132JhGArr, 54, 4);
+        A02 = enumC50132JhGArr;
+        A01 = C22T.A00(enumC50132JhGArr);
+    }
+
+    public EnumC50132JhG(String str, int i, String str2) {
+        this.A00 = str2;
+    }
+
+    public static EnumC50132JhG valueOf(String str) {
+        return (EnumC50132JhG) Enum.valueOf(EnumC50132JhG.class, str);
+    }
+
+    public static EnumC50132JhG[] values() {
+        return (EnumC50132JhG[]) A02.clone();
+    }
+
+    @Override // java.lang.Enum
+    public final String toString() {
+        return this.A00;
+    }
+}

@@ -1,0 +1,110 @@
+package p000X;
+
+/* loaded from: classes18.dex */
+public abstract class Yr8 {
+    public static final XJ0 A00(Integer num) {
+        switch (num.intValue()) {
+            case 0:
+                return XJ0.A04;
+            case 1:
+            case 2:
+                return XJ0.A05;
+            case 3:
+                return XJ0.A06;
+            case 4:
+                return XJ0.A07;
+            case 5:
+                return XJ0.A0B;
+            case 6:
+                return XJ0.A0C;
+            case 7:
+                return XJ0.A0D;
+            case 8:
+                return XJ0.A0P;
+            case 9:
+                return XJ0.A0O;
+            case 10:
+                return XJ0.A0Q;
+            case 11:
+                return XJ0.A0N;
+            case 12:
+                return XJ0.A0A;
+            case 13:
+                return XJ0.A0E;
+            case 14:
+                return XJ0.A0F;
+            case 15:
+                return XJ0.A0V;
+            case 16:
+                return XJ0.A08;
+            case 17:
+                return XJ0.A09;
+            case 18:
+                return XJ0.A0G;
+            case 19:
+                return XJ0.A0H;
+            case 20:
+                return XJ0.A0I;
+            case 21:
+                return XJ0.A0J;
+            case 22:
+                return XJ0.A0L;
+            case 23:
+                return XJ0.A0T;
+            case 24:
+                return XJ0.A0U;
+            case 25:
+                return XJ0.A0W;
+            case 26:
+                return XJ0.A0X;
+            case 27:
+                return XJ0.A0Z;
+            case 28:
+                return XJ0.A0Y;
+            case 29:
+                return XJ0.A0a;
+            case 30:
+                return XJ0.A0b;
+            case 31:
+                return XJ0.A0c;
+            case 32:
+                return XJ0.A0d;
+            case 33:
+                return XJ0.A0e;
+            case 34:
+                return XJ0.A0f;
+            case 35:
+            case 36:
+            case 44:
+                return XJ0.A0n;
+            case 37:
+                return XJ0.A0K;
+            case 38:
+                return XJ0.A0m;
+            case 39:
+                return XJ0.A0g;
+            case 40:
+                return XJ0.A0h;
+            case 41:
+                return XJ0.A0i;
+            case 42:
+                return XJ0.A0j;
+            case 43:
+                return XJ0.A0k;
+            case 45:
+                return XJ0.A0M;
+            case 46:
+                return XJ0.A0R;
+            case 47:
+                return XJ0.A0S;
+            case 48:
+                return XJ0.A02;
+            case 49:
+                return XJ0.A03;
+            case 50:
+                return XJ0.A0l;
+            default:
+                throw AnonymousClass021.A10();
+        }
+    }
+}

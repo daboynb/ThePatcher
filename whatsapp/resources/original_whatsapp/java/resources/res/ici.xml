@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:whatsapp="http://schemas.android.com/apk/res-auto"
+    android:id="0x7f0b24fa"
+    android:background="?unknown_attr_ref: 7f04076d"
+    android:paddingTop="14dp"
+    android:paddingBottom="14dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.whatsapp.ui.wds.components.profilephoto.WDSProfilePhoto
+        android:id="0x7f0b1fe4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:scaleType="fitCenter"
+        android:layout_centerVertical="true"
+        whatsapp:NOT_FOUND_0x18="3"/>
+    <com.whatsapp.ui.wds.components.button.WDSButton
+        android:id="0x7f0b00b8"
+        android:clickable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0x7f121aab"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        whatsapp:NOT_FOUND_0x17="0"
+        whatsapp:NOT_FOUND_0x19="3"
+        whatsapp:NOT_FOUND_0x1a="normal"/>
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="0x7f0b00b8"
+        android:layout_toRightOf="0x7f0b1fe4"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp">
+        <com.whatsapp.ui.coreui.base.TextEmojiLabel
+            android:id="0x7f0b1b8e"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="0x7f150289"/>
+        <com.whatsapp.ui.coreui.base.TextEmojiLabel
+            android:textStyle="normal"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:layout_gravity="left"
+            android:id="0x7f0b2a70"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:singleLine="true"
+            style="0x7f150285"/>
+    </LinearLayout>
+</RelativeLayout>

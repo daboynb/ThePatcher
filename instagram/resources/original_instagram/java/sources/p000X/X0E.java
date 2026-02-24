@@ -1,0 +1,11 @@
+package p000X;
+
+/* loaded from: classes16.dex */
+public final class X0E {
+    public float A00;
+    public float A01;
+    public float A02;
+    public float A03;
+    public float A04;
+    public float A05;
+}

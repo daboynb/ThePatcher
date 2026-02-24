@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="0x7f0b188c"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <androidx.constraintlayout.helper.widget.Flow
+        android:orientation="vertical"
+        android:id="0x7f0b1882"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:NOT_FOUND_0x6="material_clock_display,material_clock_period_toggle"
+        app:NOT_FOUND_0x7="0x7f070879"
+        app:NOT_FOUND_0x8="0"
+        app:NOT_FOUND_0xa="0"
+        app:NOT_FOUND_0xb="0"/>
+    <include
+        android:id="0x7f0b1881"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="0x7f0e0a28"/>
+    <include
+        android:id="0x7f0b1888"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        layout="0x7f0e0a2b"/>
+    <com.google.android.material.timepicker.ClockFaceView
+        android:id="0x7f0b1883"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0x7f0702a5"
+        app:NOT_FOUND_0x9="0x7f0b1882"
+        app:NOT_FOUND_0xb="0"/>
+</merge>

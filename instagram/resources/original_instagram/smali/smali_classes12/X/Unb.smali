@@ -1,0 +1,36 @@
+.class public final LX/Unb;
+.super Ljava/lang/Object;
+.source ""
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# instance fields
+.field public final synthetic A00:LX/IS3;
+
+
+# direct methods
+.method public constructor <init>(LX/IS3;)V
+    .locals 0
+
+    iput-object p1, p0, LX/Unb;->A00:LX/IS3;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final run()V
+    .locals 1
+
+    iget-object v0, p0, LX/Unb;->A00:LX/IS3;
+
+    iget-object v0, v0, LX/IS3;->A07:Landroid/widget/ProgressBar;
+
+    invoke-static {v0}, LX/22X;->A15(Landroid/view/View;)V
+
+    return-void
+.end method

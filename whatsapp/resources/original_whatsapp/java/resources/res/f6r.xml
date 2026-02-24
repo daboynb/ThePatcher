@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <View
+        android:id="0x7f0b1756"
+        style="0x7f150282"/>
+    <com.whatsapp.ui.coreui.InfoCard
+        android:id="0x7f0b16d6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:NOT_FOUND_0x5="?unknown_attr_ref: 7f040a59"
+        style="0x7f150256">
+        <com.whatsapp.ui.coreui.ListItemWithLeftIcon
+            android:id="0x7f0b1757"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:NOT_FOUND_0x6="0x7f080c07"
+            app:NOT_FOUND_0x8="0x7f1201f3"/>
+        <com.whatsapp.ui.coreui.ListItemWithLeftIcon
+            android:id="0x7f0b1084"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:NOT_FOUND_0x6="0x7f0804a1"
+            app:NOT_FOUND_0x7="?unknown_attr_ref: 7f040a4f"
+            app:NOT_FOUND_0x8="0x7f120fcd"
+            app:NOT_FOUND_0x9="?unknown_attr_ref: 7f040a4f"/>
+    </com.whatsapp.ui.coreui.InfoCard>
+</LinearLayout>

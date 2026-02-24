@@ -1,0 +1,10 @@
+*.apk
+*.xapk
+*.apkm
+*.jadx
+temp/
+build/
+logs.txt
+deploy.sh
+.gradle/
+local.properties

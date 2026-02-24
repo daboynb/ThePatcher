@@ -1,0 +1,89 @@
+.class public final LX/2fu;
+.super Ljava/lang/Object;
+.source ""
+
+
+# instance fields
+.field public final A00:LX/05V;
+
+.field public final A01:LX/05V;
+
+.field public final A02:LX/05V;
+
+.field public final A03:LX/00j;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 2
+
+    .line 0
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 1
+    .line 2
+    .line 3
+    invoke-static {}, LX/1ab;->A0P()LX/05V;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    iput-object v0, p0, LX/2fu;->A02:LX/05V;
+
+    .line 8
+    .line 9
+    invoke-static {}, LX/1ah;->A0M()LX/05V;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object v0
+
+    .line 13
+    iput-object v0, p0, LX/2fu;->A00:LX/05V;
+
+    .line 14
+    .line 15
+    const/16 v0, 0x4449
+
+    .line 16
+    .line 17
+    invoke-static {v0}, LX/07g;->A00(I)LX/05V;
+
+    .line 18
+    .line 19
+    .line 20
+    move-result-object v0
+
+    .line 21
+    iput-object v0, p0, LX/2fu;->A01:LX/05V;
+
+    .line 22
+    .line 23
+    sget-object v1, LX/IO7;->A0C:Ljava/lang/Integer;
+
+    .line 24
+    .line 25
+    const/16 v0, 0x13
+
+    .line 26
+    .line 27
+    invoke-static {v1, v0}, LX/3Mu;->A00(Ljava/lang/Integer;I)LX/00j;
+
+    .line 28
+    .line 29
+    .line 30
+    move-result-object v0
+
+    .line 31
+    iput-object v0, p0, LX/2fu;->A03:LX/00j;
+
+    .line 32
+    .line 33
+    return-void
+    .line 34
+    .line 35
+.end method

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+    <com.google.android.material.navigationrail.NavigationRailView
+        android:id="0x7f0b1ba0"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:NOT_FOUND_0x5="0x7f0e084d"
+        app:NOT_FOUND_0x6="2"
+        app:NOT_FOUND_0x7="17"
+        style="0x7f1505cd"/>
+    <View
+        android:background="?unknown_attr_ref: 7f0405c8"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"/>
+</LinearLayout>

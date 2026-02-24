@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.facebook.shimmer.ShimmerFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="0x7f15012c">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:orientation="vertical"
+        android:id="0x7f0b27b9"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</com.facebook.shimmer.ShimmerFrameLayout>

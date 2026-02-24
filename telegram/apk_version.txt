@@ -1,0 +1,1 @@
+Telegram: v12.4.3 (versionCode 65279)

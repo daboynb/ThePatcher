@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:whatsapp="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.whatsapp.qrcode.QrScannerView
+        android:id="0x7f0b221b"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"/>
+    <com.whatsapp.qrcode.QrScannerOverlay
+        android:id="0x7f0b1dc0"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        whatsapp:NOT_FOUND_0x5="1"/>
+</RelativeLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.facebook.smartcapture.components.DottedAlignmentView
+        android:id="0x7f0b0e0a"
+        android:visibility="gone"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0"/>
+    <com.facebook.smartcapture.components.DarkenedFrameView
+        android:id="0x7f0b0c12"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <ImageView
+        android:id="0x7f0b1658"
+        android:src="0x7f08025d"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        style="0x7f1501ac"/>
+    <ImageView
+        android:id="0x7f0b1659"
+        android:src="0x7f08025d"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:rotation="90"
+        style="0x7f1501ac"/>
+    <ImageView
+        android:id="0x7f0b1656"
+        android:src="0x7f08025d"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:rotation="270"
+        style="0x7f1501ac"/>
+    <ImageView
+        android:id="0x7f0b1657"
+        android:src="0x7f08025d"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:rotation="180"
+        style="0x7f1501ac"/>
+    <TextView
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="?unknown_attr_ref: 7f04070a"
+        android:gravity="center"
+        android:id="0x7f0b2d06"
+        android:padding="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:shadowColor="?unknown_attr_ref: 7f040713"
+        android:shadowRadius="15"
+        android:drawablePadding="8dp"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

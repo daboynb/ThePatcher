@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.whatsapp.chat.info.views.EncryptionInfoView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textSize="0x7f070759"
+    android:textColor="?unknown_attr_ref: 7f040a46"
+    android:gravity="start"
+    android:id="0x7f0b0f92"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAlignment="viewStart"/>

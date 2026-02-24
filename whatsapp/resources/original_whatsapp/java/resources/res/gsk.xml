@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub
+        android:id="0x7f0b0bd9"
+        android:visibility="gone"
+        android:layout="0x7f0e05de"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-12dp"
+        android:layout_below="0x7f0b0aa5"/>
+    <ViewStub
+        android:id="0x7f0b0bd7"
+        android:layout="0x7f0e1105"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="0x7f0b0aa5"/>
+    <ViewStub
+        android:id="0x7f0b0bd8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0x7f07037c"
+        android:layout_marginBottom="8dp"
+        android:layout_below="0x7f0b0aa5"/>
+</merge>

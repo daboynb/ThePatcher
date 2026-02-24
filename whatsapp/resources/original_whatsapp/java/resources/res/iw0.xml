@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.whatsapp.ui.coreui.base.WaImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="center_vertical"
+    android:id="0x7f0b2911"
+    android:layout_width="0x7f070fdf"
+    android:layout_height="0x7f070fdf"
+    android:layout_marginRight="0x7f071017"
+    android:scaleType="fitCenter"/>

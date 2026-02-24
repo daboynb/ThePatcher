@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.whatsapp.conversation.ConversationRowFooterContainer xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.whatsapp.ui.coreui.base.WaTextView
+        android:textSize="0x7f070fbc"
+        android:textColor="?unknown_attr_ref: 7f040a46"
+        android:id="0x7f0b1685"
+        android:paddingLeft="46dp"
+        android:paddingBottom="0x7f071030"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="0x7f121a9b"
+        android:translationY="-8dp"
+        app:NOT_FOUND_0x9="8"/>
+</com.whatsapp.conversation.ConversationRowFooterContainer>

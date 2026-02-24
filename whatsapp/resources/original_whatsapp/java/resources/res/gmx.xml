@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="0x7f0b0aad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minWidth="0x7f0703d9">
+        <include layout="0x7f0e0527"/>
+        <include layout="0x7f0e054e"/>
+        <include layout="0x7f0e0588"/>
+        <include layout="0x7f0e10a7"/>
+        <com.whatsapp.conversation.ui.conversationrow.businessmessaging.interactive.InteractiveMessageView
+            android:orientation="vertical"
+            android:id="0x7f0b15d0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minWidth="0x7f0703d9"/>
+        <LinearLayout
+            android:gravity="end|center_vertical"
+            android:layout_gravity="bottom|right"
+            android:orientation="horizontal"
+            android:id="0x7f0b0c41"
+            android:paddingLeft="0x7f071031"
+            android:paddingRight="0x7f071031"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.whatsapp.ui.coreui.base.WaTextView
+                android:id="0x7f0b0c28"
+                android:paddingBottom="0x7f071035"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="0x7f150567"/>
+        </LinearLayout>
+        <View
+            android:id="0x7f0b0673"
+            style="0x7f150356"/>
+        <com.whatsapp.conversation.ui.conversationrow.businessmessaging.interactive.components.InteractiveMessageButton
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:id="0x7f0b0661"
+            android:focusable="true"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</merge>

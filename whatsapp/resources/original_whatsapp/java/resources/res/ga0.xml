@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingTop="0x7f070ce7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.whatsapp.ui.wds.components.list.header.WDSSectionHeader
+            android:id="0x7f0b2321"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="0x7f070cea"/>
+        <com.whatsapp.settings.SettingsRowPrivacyLinearLayout
+            android:orientation="horizontal"
+            android:id="0x7f0b1fc3"
+            android:paddingTop="0x7f070cea"
+            android:paddingBottom="0x7f070cea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="0x7f070cee"
+            android:paddingEnd="0x7f070cea"
+            style="?unknown_attr_ref: 7f0407ac">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingEnd="0x7f070cea">
+                <com.whatsapp.ui.coreui.base.WaTextView
+                    android:ellipsize="none"
+                    android:id="0x7f0b1fc5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0x7f120a51"
+                    android:maxLines="@null"
+                    android:singleLine="false"
+                    style="?unknown_attr_ref: 7f0407b5"/>
+                <com.whatsapp.ui.coreui.base.TextEmojiLabel
+                    android:id="0x7f0b1fc2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0x7f070cf0"
+                    style="?unknown_attr_ref: 7f0407b1"/>
+            </LinearLayout>
+            <com.whatsapp.ui.wds.components.toggle.WDSSwitch
+                android:id="0x7f0b1fc4"
+                android:focusable="false"
+                android:clickable="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </com.whatsapp.settings.SettingsRowPrivacyLinearLayout>
+    </LinearLayout>
+</ScrollView>

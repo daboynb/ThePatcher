@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="0x7f0b1829"
+    android:clipChildren="false"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ViewStub
+        android:id="0x7f0b0b27"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:NOT_FOUND_0x1a="true"/>
+    <include layout="0x7f0e054e"/>
+    <include layout="0x7f0e0588"/>
+    <RelativeLayout
+        android:paddingLeft="0x7f071039"
+        android:clipChildren="false"
+        android:layout_width="match_parent"
+        android:layout_height="62dp">
+        <com.whatsapp.search.audio.views.itemviews.VoiceNoteProfileAvatarView
+            android:id="0x7f0b0b39"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            app:NOT_FOUND_0x11="0x7f080879"
+            app:NOT_FOUND_0x12="?unknown_attr_ref: 7f040a3b"
+            app:NOT_FOUND_0x13="38dp"
+            app:NOT_FOUND_0x15="0x7f071035"
+            app:NOT_FOUND_0x16="0x7f071035"
+            app:NOT_FOUND_0x17="48dp"/>
+        <com.whatsapp.search.audio.views.itemviews.AudioPlayerView
+            android:id="0x7f0b0b08"
+            android:paddingBottom="0x7f071030"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="0x7f071030"
+            android:layout_toRightOf="0x7f0b0b39"
+            android:layout_centerVertical="true"
+            app:NOT_FOUND_0x14="54dp"
+            app:NOT_FOUND_0x18="44dp"
+            app:NOT_FOUND_0x19="8dp"/>
+        <com.whatsapp.conversation.ui.AudioPlayerMetadataView
+            android:paddingLeft="54dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="0x7f0b0b08"
+            android:layout_alignRight="0x7f0b0b08"
+            android:layout_alignParentBottom="true"
+            app:NOT_FOUND_0x10="7dp"/>
+    </RelativeLayout>
+    <ViewStub
+        android:id="0x7f0b0323"
+        android:layout="0x7f0e0483"
+        android:inflatedId="0x7f0b0323"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <ViewStub
+        android:id="0x7f0b0321"
+        android:layout="0x7f0e0482"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <ViewStub
+        android:id="0x7f0b0bdd"
+        android:layout="0x7f0e04b7"
+        android:inflatedId="0x7f0b0bdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

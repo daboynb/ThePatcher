@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.facebook.shimmer.ShimmerFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="0x7f0b1d74"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="0x7f0b1d6e"
+        android:background="?unknown_attr_ref: 7f040a5a"
+        android:paddingLeft="0x7f070b5d"
+        android:paddingRight="0x7f070b5d"
+        android:paddingBottom="0x7f070b62"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView
+            android:id="0x7f0b164e"
+            android:layout_width="0x7f070a6d"
+            android:layout_height="0x7f070a6d"
+            android:layout_marginTop="0x7f070b62"
+            android:layout_marginBottom="0x7f070b62"
+            app:NOT_FOUND_0xb="?unknown_attr_ref: 7f040a5c"
+            app:NOT_FOUND_0xc="0x7f070a69"
+            app:NOT_FOUND_0xd="0dp"
+            app:NOT_FOUND_0x10="0"
+            app:NOT_FOUND_0x12="0"/>
+        <View
+            android:layout_gravity="center"
+            android:id="0x7f0b1650"
+            android:background="0x7f08026b"
+            android:layout_width="0dp"
+            android:layout_height="22dp"
+            android:layout_marginLeft="0x7f070a5b"
+            android:layout_marginTop="0x7f070a5b"
+            app:NOT_FOUND_0xe="0"
+            app:NOT_FOUND_0xf="0x7f0b164e"
+            app:NOT_FOUND_0x12="0"
+            app:NOT_FOUND_0x13="0dp"/>
+        <View
+            android:layout_gravity="center"
+            android:id="0x7f0b1647"
+            android:background="0x7f08026b"
+            android:layout_width="80dp"
+            android:layout_height="16dp"
+            android:layout_marginLeft="0x7f070a5b"
+            android:layout_marginTop="0x7f071035"
+            app:NOT_FOUND_0xf="0x7f0b164e"
+            app:NOT_FOUND_0x11="0x7f0b1650"
+            app:NOT_FOUND_0x13="0dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.facebook.shimmer.ShimmerFrameLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:paddingTop="0x7f070ce7"
+    android:paddingBottom="0x7f070ce7"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="0x7f070cea"
+    android:paddingEnd="0x7f070cea">
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="0x7f0b2b90"
+        android:layout_width="0x7f0705f7"
+        android:layout_height="0x7f0705f7"
+        app:NOT_FOUND_0x12="0"
+        app:NOT_FOUND_0x16="0"
+        app:NOT_FOUND_0x17="0"
+        app:NOT_FOUND_0x18="0x7f1501f1"/>
+    <androidx.constraintlayout.widget.Barrier
+        android:id="0x7f0b03f6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:NOT_FOUND_0x10="5"
+        app:NOT_FOUND_0x11="checkmark,arrow_right"/>
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:id="0x7f0b0aad"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingStart="0x7f070ce8"
+        android:paddingEnd="0x7f070ce8"
+        app:NOT_FOUND_0x12="0x7f0b2b90"
+        app:NOT_FOUND_0x14="0x7f0b03f6"
+        app:NOT_FOUND_0x15="0x7f0b2b90"
+        app:NOT_FOUND_0x17="0x7f0b2b90">
+        <com.whatsapp.ui.coreui.base.WaTextView
+            android:textSize="?unknown_attr_ref: 7f0409f5"
+            android:textColor="?unknown_attr_ref: 7f040a47"
+            android:layout_gravity="start"
+            android:id="0x7f0b2be5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:textAlignment="viewStart"/>
+        <com.whatsapp.ui.coreui.base.WaTextView
+            android:textSize="?unknown_attr_ref: 7f040a01"
+            android:textColor="?unknown_attr_ref: 7f040a46"
+            android:layout_gravity="start"
+            android:id="0x7f0b0b95"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="viewStart"/>
+    </LinearLayout>
+    <ViewStub
+        android:id="0x7f0b02e6"
+        android:layout="0x7f0e07ad"
+        android:inflatedId="0x7f0b02e6"
+        android:layout_width="0x7f070fdb"
+        android:layout_height="0x7f070fdb"
+        app:NOT_FOUND_0x12="0x7f0b2b90"
+        app:NOT_FOUND_0x13="0"
+        app:NOT_FOUND_0x17="0x7f0b2b90"/>
+    <ViewStub
+        android:id="0x7f0b08b7"
+        android:layout="0x7f0e07ae"
+        android:inflatedId="0x7f0b08b7"
+        android:layout_width="0x7f070fdb"
+        android:layout_height="0x7f070fdb"
+        app:NOT_FOUND_0x12="0x7f0b2b90"
+        app:NOT_FOUND_0x13="0"
+        app:NOT_FOUND_0x17="0x7f0b2b90"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

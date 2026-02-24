@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="0x7f0b1dfb"
+    android:paddingTop="0x7f071039"
+    android:paddingBottom="0x7f071039"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="0x7f07102e"
+    android:paddingEnd="0x7f07102e">
+    <com.whatsapp.ui.coreui.base.WaTextView
+        android:textColor="?unknown_attr_ref: 7f040a46"
+        android:gravity="center"
+        android:id="0x7f0b1df9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0x7f124159"
+        android:contentDescription="0x7f124159"
+        app:NOT_FOUND_0x12="6"/>
+    <com.whatsapp.ui.wds.components.button.WDSButtonGroup
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:id="0x7f0b1df6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0x7f071039">
+        <com.whatsapp.ui.wds.components.button.WDSButton
+            android:id="0x7f0b1de6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0x7f1240e8"
+            android:fontFamily="?unknown_attr_ref: 7f0403b8"
+            app:NOT_FOUND_0xf="1"
+            app:NOT_FOUND_0x10="0x7f080cd0"
+            app:NOT_FOUND_0x11="2"/>
+        <com.whatsapp.ui.wds.components.button.WDSButton
+            android:id="0x7f0b1dda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0x7f1240c5"
+            android:fontFamily="?unknown_attr_ref: 7f0403b8"
+            app:NOT_FOUND_0x10="0x7f0805f2"
+            app:NOT_FOUND_0x11="2"/>
+    </com.whatsapp.ui.wds.components.button.WDSButtonGroup>
+</LinearLayout>

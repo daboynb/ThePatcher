@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.whatsapp.ui.wds.components.topbar.WDSToolbar
+        android:theme="0x7f1501d5"
+        android:id="0x7f0b2c21"
+        android:background="?unknown_attr_ref: 7f040926"
+        android:layout_width="match_parent"
+        android:layout_height="0x7f070048"/>
+    <FrameLayout
+        android:id="0x7f0b2129"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

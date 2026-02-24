@@ -1,0 +1,7 @@
+package p000X;
+
+/* renamed from: X.7IS, reason: invalid class name */
+/* loaded from: classes6.dex */
+public final class C7IS implements InterfaceC83386YOz {
+    public static final C7IS A00 = new C7IS();
+}

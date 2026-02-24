@@ -1,0 +1,52 @@
+.class public final LX/EiI;
+.super LX/B8m;
+.source ""
+
+# interfaces
+.implements LX/Hjl;
+
+
+# instance fields
+.field public A00:I
+
+.field public A01:Ljava/lang/String;
+
+.field public A02:Ljava/lang/String;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, LX/B8m;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final A03()Ljava/lang/String;
+    .locals 1
+
+    const/16 v0, 0xa25
+
+    invoke-static {v0}, LX/000;->A00(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final Czu()Lcom/instagram/model/direct/DirectThreadKey;
+    .locals 3
+
+    iget-object v2, p0, LX/EiI;->A02:Ljava/lang/String;
+
+    const/4 v1, 0x0
+
+    new-instance v0, Lcom/instagram/model/direct/DirectThreadKey;
+
+    invoke-direct {v0, v2, v1}, Lcom/instagram/model/direct/DirectThreadKey;-><init>(Ljava/lang/String;Ljava/util/List;)V
+
+    return-object v0
+.end method

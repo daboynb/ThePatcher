@@ -1,0 +1,469 @@
+.class public final LX/aae;
+.super Ljava/lang/Object;
+.source ""
+
+# interfaces
+.implements LX/Oll;
+
+
+# instance fields
+.field public A00:LX/0AE;
+
+.field public A01:LX/Jog;
+
+
+# virtual methods
+.method public final synthetic ACx()Z
+    .locals 1
+
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method public final synthetic ACy()Z
+    .locals 1
+
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method public final synthetic AD0()Z
+    .locals 1
+
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method public final synthetic AD3()Z
+    .locals 1
+
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method public final synthetic AFF()Z
+    .locals 1
+
+    const/4 v0, 0x1
+
+    return v0
+.end method
+
+.method public final synthetic AGa()Ljava/lang/String;
+    .locals 1
+
+    const-string v0, "cross"
+
+    return-object v0
+.end method
+
+.method public final synthetic Akz()Z
+    .locals 1
+
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method public final Al0()Z
+    .locals 1
+
+    const/4 v0, 0x1
+
+    return v0
+.end method
+
+.method public final synthetic Am6()Z
+    .locals 1
+
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method public final AmA()Z
+    .locals 3
+
+    iget-object v2, p0, LX/aae;->A00:LX/0AE;
+
+    invoke-static {v2}, LX/D1F;->A0y(Ljava/lang/Object;)V
+
+    const-wide v0, 0x8112b00008686bL
+
+    invoke-static {v2, v0, v1}, LX/011;->A0z(Ljava/lang/Object;J)Z
+
+    move-result v0
+
+    xor-int/lit8 v0, v0, 0x1
+
+    return v0
+.end method
+
+.method public final synthetic Ap7()Z
+    .locals 1
+
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method public final synthetic ApA()Z
+    .locals 1
+
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method public final synthetic ApH()Z
+    .locals 1
+
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method public final ApJ()Z
+    .locals 4
+
+    iget-object v3, p0, LX/aae;->A00:LX/0AE;
+
+    invoke-static {v3}, LX/D1F;->A0y(Ljava/lang/Object;)V
+
+    sget-object v2, LX/0A3;->A07:LX/0A3;
+
+    const-wide v0, 0x810b7b000349bbL
+
+    invoke-static {v2, v3, v0, v1}, LX/011;->A0x(LX/0A3;Ljava/lang/Object;J)Z
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public final synthetic ApM()Z
+    .locals 1
+
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method public final synthetic ApO()Z
+    .locals 1
+
+    const/4 v0, 0x1
+
+    return v0
+.end method
+
+.method public final ApV()Z
+    .locals 3
+
+    iget-object v2, p0, LX/aae;->A00:LX/0AE;
+
+    invoke-static {v2}, LX/D1F;->A0y(Ljava/lang/Object;)V
+
+    const-wide v0, 0x8112b000026866L
+
+    invoke-static {v2, v0, v1}, LX/011;->A0z(Ljava/lang/Object;J)Z
+
+    move-result v0
+
+    xor-int/lit8 v0, v0, 0x1
+
+    return v0
+.end method
+
+.method public final BJs()Ljava/lang/Float;
+    .locals 1
+
+    const v0, 0x3e0f5c29    # 0.14f
+
+    invoke-static {v0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final synthetic BJu()Ljava/lang/Boolean;
+    .locals 1
+
+    invoke-static {}, LX/132;->A0e()Ljava/lang/Boolean;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final BXv()D
+    .locals 2
+
+    const-wide v0, 0x3fd3333333333333L    # 0.3
+
+    return-wide v0
+.end method
+
+.method public final Bhl()F
+    .locals 3
+
+    iget-object v2, p0, LX/aae;->A00:LX/0AE;
+
+    invoke-static {v2}, LX/D1F;->A0y(Ljava/lang/Object;)V
+
+    const-wide v0, 0x8412b00003041dL
+
+    invoke-static {v2, v0, v1}, LX/021;->A00(Ljava/lang/Object;J)F
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public final synthetic Bhm()F
+    .locals 1
+
+    const v0, 0x3ee66666    # 0.45f
+
+    return v0
+.end method
+
+.method public final C8Q()Ljava/lang/String;
+    .locals 1
+
+    const-string v0, "dismiss_only_browser"
+
+    return-object v0
+.end method
+
+.method public final C8R()Ljava/lang/String;
+    .locals 2
+
+    iget-object v0, p0, LX/aae;->A01:LX/Jog;
+
+    invoke-virtual {v0}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/4 v0, 0x3
+
+    if-eq v1, v0, :cond_0
+
+    const/4 v0, 0x4
+
+    if-eq v1, v0, :cond_0
+
+    const-string v0, "expand_browser"
+
+    return-object v0
+
+    :cond_0
+    const-string v0, "expand_or_chain"
+
+    return-object v0
+.end method
+
+.method public final synthetic CAz()F
+    .locals 1
+
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method public final CwX()D
+    .locals 2
+
+    const-wide/high16 v0, 0x4069000000000000L    # 200.0
+
+    return-wide v0
+.end method
+
+.method public final CwY()F
+    .locals 1
+
+    const/high16 v0, 0x44e10000    # 1800.0f
+
+    return v0
+.end method
+
+.method public final synthetic DO7()LX/NUS;
+    .locals 1
+
+    sget-object v0, LX/NUS;->A08:LX/NUS;
+
+    return-object v0
+.end method
+
+.method public final synthetic DTQ()Z
+    .locals 1
+
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method public final synthetic DYW()Z
+    .locals 1
+
+    const/4 v0, 0x1
+
+    return v0
+.end method
+
+.method public final DYo()Z
+    .locals 3
+
+    iget-object v2, p0, LX/aae;->A00:LX/0AE;
+
+    invoke-static {v2}, LX/D1F;->A0y(Ljava/lang/Object;)V
+
+    const-wide v0, 0x8112b00009686cL
+
+    invoke-static {v2, v0, v1}, LX/011;->A0z(Ljava/lang/Object;J)Z
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public final synthetic DYp()Z
+    .locals 1
+
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method public final synthetic DmD()Z
+    .locals 1
+
+    const/4 v0, 0x1
+
+    return v0
+.end method
+
+.method public final DwB()D
+    .locals 2
+
+    const-wide/high16 v0, 0x3fe0000000000000L    # 0.5
+
+    return-wide v0
+.end method
+
+.method public final E0U()F
+    .locals 1
+
+    const v0, 0x3ee66666    # 0.45f
+
+    return v0
+.end method
+
+.method public final E0f()J
+    .locals 2
+
+    const-wide/16 v0, 0x2710
+
+    return-wide v0
+.end method
+
+.method public final synthetic FdA()Z
+    .locals 1
+
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method public final synthetic FiY()Z
+    .locals 1
+
+    const/4 v0, 0x1
+
+    return v0
+.end method
+
+.method public final Fle()Ljava/lang/String;
+    .locals 1
+
+    const-string v0, "WATCH_AND_BROWSE"
+
+    return-object v0
+.end method
+
+.method public final GBs()Z
+    .locals 3
+
+    iget-object v2, p0, LX/aae;->A00:LX/0AE;
+
+    invoke-static {v2}, LX/D1F;->A0y(Ljava/lang/Object;)V
+
+    const-wide v0, 0x8112b000026866L
+
+    invoke-static {v2, v0, v1}, LX/011;->A0z(Ljava/lang/Object;J)Z
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public final GBz()Z
+    .locals 1
+
+    const/4 v0, 0x1
+
+    return v0
+.end method
+
+.method public final synthetic GCE()Z
+    .locals 1
+
+    const/4 v0, 0x1
+
+    return v0
+.end method
+
+.method public final synthetic GCn()Z
+    .locals 1
+
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method public final synthetic GDW()Z
+    .locals 1
+
+    const/4 v0, 0x1
+
+    return v0
+.end method
+
+.method public final synthetic GDo()Z
+    .locals 1
+
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method public final synthetic GLC()Ljava/lang/String;
+    .locals 1
+
+    const/4 v0, 0x0
+
+    return-object v0
+.end method
+
+.method public final GTR()Z
+    .locals 1
+
+    const/4 v0, 0x1
+
+    return v0
+.end method

@@ -1,0 +1,313 @@
+{
+  "name": "Swerve (S Move)",
+  "type": "fixed-intro",
+  "duration": 0.6667,
+  "passes": [
+    {
+      "name": "s move",
+      "inputs": [
+        "default"
+      ],
+      "glsl": "
+varying vec2 sourceTextureCoordinate;
+
+uniform vec2 inputSize;
+uniform float progress;
+
+const vec2 K0 = vec2(916.0 / 720.0, 1628.0 / 1280.0);
+const vec2 K1 = vec2(334.6 / 720.0, 1317.8 / 1280.0);
+const vec2 K2 = vec2(61.5 / 720.0, 1037.6 / 1280.0);
+const vec2 K3 = vec2(64.1 / 720.0, 902.0 / 1280.0);
+const vec2 K4 = vec2(286.7 / 720.0, 671.8 / 1280.0);
+const vec2 K5 = vec2(360.0 / 720.0, 640.0 / 1280.0);
+const vec2 K6 = vec2(360.0 / 720.0, 640.0 / 1280.0);
+
+const float T0 = 0.0;
+const float T1 = 3.0 / 90.0;
+const float T2 = 7.0 / 90.0;
+const float T3 = 10.0 / 90.0;
+const float T4 = 16.0 / 90.0;
+const float T5 = 20.0 / 90.0;
+const float T6 = 1.0;
+
+const float TS0 = 0.0;
+const float TS1 = 7.0 / 90.0;
+const float TS2 = 20.0 / 90.0;
+
+const float S0 = 2.86;
+const float S1 = 2.018;
+const float S2 = 1.0;
+
+const float R0 = -4.0;
+const float R1 = 13.6;
+const float R2 = 0.0;
+
+vec2 mirrorUv(vec2 v) {
+  vec2 m = mod(v, 2.0);
+  return mix(m, 2.0 - m, step(1.0, m));
+}
+
+float easeInOutCubic(float t){
+  return t < 0.5
+  ? 4.0 * t * t * t
+  : 1.0 - pow(-2.0 * t + 2.0, 3.0) / 2.0;
+}
+
+vec2 pickKey(int i){
+  if ( i < 0) return K0;
+  else if (i == 1) return K1;
+  else if (i == 2) return K2;
+  else if (i == 3) return K3;
+  else if (i == 4) return K4;
+  else if (i == 5) return K5;
+  else return K6;
+}
+
+vec2 catmullRom(vec2 p0, vec2 p1, vec2 p2, vec2 p3, float t){
+  float t2 = t * t, t3 = t2 * t;
+  return 0.5 * ((2.0 * p1)
+  + (-p0 + p2) * t
+  + (2.0 * p0 - 5.0 * p1 + 4.0 * p2 - p3) * t2
+  + (-p0 + 3.0 * p1 - 3.0 * p2 + p3) * t3);
+}
+
+void main() {
+
+  vec2 uv = sourceTextureCoordinate;
+
+  // IGLU: OpenGL flip y
+  uv.y = 1.0 - uv.y;
+
+  vec2 ratio = vec2(inputSize.xy / inputSize.y);
+  float p = progress * .2222222;
+
+  float scaleVal;
+  float rotDeg;
+
+  int idx;
+  float localT;
+
+  vec2 targetUV;
+
+  if (p < T1) {idx = 0; localT = (p -T0) / (T1 - T0);}
+  else if (p < T2) {idx = 1; localT = (p -T1) / (T2 - T1);}
+  else if (p < T3) {idx = 2; localT = (p -T2) / (T3 - T2);}
+  else if (p < T4) {idx = 3; localT = (p -T3) / (T4 - T3);}
+  else if (p < T5) {idx = 4; localT = (p -T4) / (T5 - T4);}
+  else {idx = 5; localT = (p -T5) / (T6 - T5);}
+
+  if (idx == 0){
+   targetUV = mix(K0, K1, localT);
+  } else {
+    int i0 = (idx > 0) ? idx - 1 : 0;
+    int i1 = idx;
+    int i2 = idx + 1;
+    int i3 = (idx + 2 <= 6) ? idx + 2 : 6;
+
+    vec2 P0 = pickKey(i0);
+    vec2 P1 = pickKey(i1);
+    vec2 P2 = pickKey(i2);
+    vec2 P3 = pickKey(i3);
+
+    targetUV = catmullRom(P0, P1, P2, P3, localT);
+  }
+
+  if (p < TS1){
+    float t = smoothstep(0.0,(TS1 - TS0),(p - TS0));
+    rotDeg = mix(R0, R1, t);
+  } else if (p < TS2){
+    float t = easeInOutCubic((p - TS1) / (TS2 - TS1));
+    rotDeg = mix(R1, R2, t);
+  } else {
+    scaleVal = S2;
+    rotDeg = R2;
+  }
+
+  if (p < TS2){
+    float t = smoothstep(0.0,TS2,p);
+    scaleVal = mix(S0, S2, t);
+  }
+
+  vec2 offset = targetUV - vec2(0.5);
+
+  float a = radians(rotDeg);
+  float c = cos(a);
+  float ss = sin(a);
+  mat2 rot2d = mat2(c, -ss, ss, c);
+
+  uv = uv - vec2(0.5);
+  uv *= ratio;
+
+  uv = rot2d * uv;
+  uv/= ratio;
+  uv -= offset;
+  uv /= scaleVal;
+  uv += vec2(0.5);
+
+  uv = mirrorUv(uv);
+
+  // IGLU: OpenGL flip y
+  uv.y = 1.0 - uv.y;
+
+  vec4 color = sampleInput(uv);
+  gl_FragColor = toOutputFormat(color);
+}
+",
+      "metal": "using namespace metal;
+struct fragmentIn { float2 textureCoordinate [[user(locn0)]]; float2 sourceTextureCoordinate [[user(locn1)]]; };
+struct fragmentOut { float4 _gl_FragColor [[color(0)]]; };
+typedef struct {
+  float4x4 content_transform;
+  float4x4 texture_transform;
+  float strength;
+  float progress;
+  float time_sec;
+  float duration_sec;
+  float clip_duration_sec;
+  float2 output_size;
+  float2 input_size;
+  float2 tex0Size;
+ } Uniforms;
+
+    float mod(float x, float y) { return x - y * floor(x / y); }
+    float2 mod(float2 x, float2 y) { return x - y * floor(x / y); }
+    float3 mod(float3 x, float3 y) { return x - y * floor(x / y); }
+    float4 mod(float4 x, float4 y) { return x - y * floor(x / y); }
+constant float2 K0 = float2(916.0 / 720.0, 1628.0 / 1280.0);
+constant float2 K1 = float2(334.6 / 720.0, 1317.8 / 1280.0);
+constant float2 K2 = float2(61.5 / 720.0, 1037.6 / 1280.0);
+constant float2 K3 = float2(64.1 / 720.0, 902.0 / 1280.0);
+constant float2 K4 = float2(286.7 / 720.0, 671.8 / 1280.0);
+constant float2 K5 = float2(360.0 / 720.0, 640.0 / 1280.0);
+constant float2 K6 = float2(360.0 / 720.0, 640.0 / 1280.0);
+
+constant float T0 = 0.0;
+constant float T1 = 3.0 / 90.0;
+constant float T2 = 7.0 / 90.0;
+constant float T3 = 10.0 / 90.0;
+constant float T4 = 16.0 / 90.0;
+constant float T5 = 20.0 / 90.0;
+constant float T6 = 1.0;
+
+constant float TS0 = 0.0;
+constant float TS1 = 7.0 / 90.0;
+constant float TS2 = 20.0 / 90.0;
+
+constant float S0 = 2.86;
+constant float S1 = 2.018;
+constant float S2 = 1.0;
+
+constant float R0 = -4.0;
+constant float R1 = 13.6;
+constant float R2 = 0.0;
+
+float2 mirrorUv(float2 v) {
+  float2 m = mod(v, 2.0);
+  return mix(m, 2.0 - m, step(1.0, m));
+}
+
+float easeInOutCubic(float t){
+  return t < 0.5
+  ? 4.0 * t * t * t
+  : 1.0 - pow(-2.0 * t + 2.0, 3.0) / 2.0;
+}
+
+float2 pickKey(int i){
+  if ( i < 0) return K0;
+  else if (i == 1) return K1;
+  else if (i == 2) return K2;
+  else if (i == 3) return K3;
+  else if (i == 4) return K4;
+  else if (i == 5) return K5;
+  else return K6;
+}
+
+float2 catmullRom(float2 p0, float2 p1, float2 p2, float2 p3, float t){
+  float t2 = t * t, t3 = t2 * t;
+  return 0.5 * ((2.0 * p1)
+  + (-p0 + p2) * t
+  + (2.0 * p0 - 5.0 * p1 + 4.0 * p2 - p3) * t2
+  + (-p0 + 3.0 * p1 - 3.0 * p2 + p3) * t3);
+}
+
+fragment fragmentOut fragmentShader(fragmentIn in [[stage_in]],
+ constant Uniforms & uniforms [[buffer(1)]],
+ DefaultInputs defaultInputs) {
+
+  float2 uv = in.sourceTextureCoordinate;
+  float2 ratio = float2(uniforms.input_size.xy / uniforms.input_size.y);
+  float p = uniforms.progress * .2222222;
+
+  float scaleVal;
+  float rotDeg;
+
+  int idx;
+  float localT;
+
+  float2 targetUV;
+
+  if (p < T1) {idx = 0; localT = (p -T0) / (T1 - T0);}
+  else if (p < T2) {idx = 1; localT = (p -T1) / (T2 - T1);}
+  else if (p < T3) {idx = 2; localT = (p -T2) / (T3 - T2);}
+  else if (p < T4) {idx = 3; localT = (p -T3) / (T4 - T3);}
+  else if (p < T5) {idx = 4; localT = (p -T4) / (T5 - T4);}
+  else {idx = 5; localT = (p -T5) / (T6 - T5);}
+
+  if (idx == 0){
+   targetUV = mix(K0, K1, localT);
+  } else {
+    int i0 = (idx > 0) ? idx - 1 : 0;
+    int i1 = idx;
+    int i2 = idx + 1;
+    int i3 = (idx + 2 <= 6) ? idx + 2 : 6;
+
+    float2 P0 = pickKey(i0);
+    float2 P1 = pickKey(i1);
+    float2 P2 = pickKey(i2);
+    float2 P3 = pickKey(i3);
+
+    targetUV = catmullRom(P0, P1, P2, P3, localT);
+  }
+
+  if (p < TS1){
+    float t = smoothstep(0.0,(TS1 - TS0),(p - TS0));
+    rotDeg = mix(R0, R1, t);
+  } else if (p < TS2){
+    float t = easeInOutCubic((p - TS1) / (TS2 - TS1));
+    rotDeg = mix(R1, R2, t);
+  } else {
+    scaleVal = S2;
+    rotDeg = R2;
+  }
+
+  if (p < TS2){
+    float t = smoothstep(0.0,TS2,p);
+    scaleVal = mix(S0, S2, t);
+  }
+
+  float2 offset = targetUV - float2(0.5);
+
+  float a = (rotDeg * M_PI_F / 180.0);
+  float c = cos(a);
+  float ss = sin(a);
+  float2x2 rot2d = float2x2(c, -ss, ss, c);
+
+  uv = uv - float2(0.5);
+  uv *= ratio;
+
+  uv = rot2d * uv;
+  uv/= ratio;
+  uv -= offset;
+  uv /= scaleVal;
+  uv += float2(0.5);
+
+  uv = mirrorUv(uv);
+
+  float4 color = sampleInput(defaultInputs, uv);
+  return {toOutputFormat(color)};
+}
+",
+      "uniforms": {}
+    }
+  ]
+}

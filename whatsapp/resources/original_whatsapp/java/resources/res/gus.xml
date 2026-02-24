@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingTop="0x7f0702df"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="0x7f0702df"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.whatsapp.ui.coreui.base.WaImageView
+            android:padding="0x7f0702e1"
+            android:layout_width="0x7f0702e0"
+            android:layout_height="0x7f0702e0"
+            android:layout_marginRight="0x7f0702e1"
+            android:layout_marginEnd="0x7f0702e1"
+            app:NOT_FOUND_0xc="0x7f0805d2"
+            app:NOT_FOUND_0xd="?unknown_attr_ref: 7f040a29"/>
+        <com.whatsapp.ui.coreui.base.TextEmojiLabel
+            android:id="0x7f0b171e"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <View
+        android:layout_marginLeft="0x7f0702e1"
+        android:layout_marginRight="0x7f0702e1"
+        android:layout_marginStart="0x7f0702e1"
+        android:layout_marginEnd="0x7f0702e1"
+        style="0x7f150356"/>
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="0x7f0702df"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.whatsapp.ui.coreui.base.WaImageView
+            android:padding="0x7f0702e1"
+            android:layout_width="0x7f0702e0"
+            android:layout_height="0x7f0702e0"
+            android:layout_marginRight="0x7f0702e1"
+            android:layout_marginEnd="0x7f0702e1"
+            app:NOT_FOUND_0xc="0x7f08050b"
+            app:NOT_FOUND_0xd="?unknown_attr_ref: 7f040a29"/>
+        <com.whatsapp.ui.coreui.base.TextEmojiLabel
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0x7f121b23"/>
+    </LinearLayout>
+</LinearLayout>

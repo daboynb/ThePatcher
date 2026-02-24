@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:height="20dp"
+    android:width="20dp"
+    android:viewportWidth="20"
+    android:viewportHeight="20">
+    <group android:name="_R_G">
+        <group
+            android:name="_R_G_L_2_G"
+            android:pivotX="6.5"
+            android:pivotY="5.25"
+            android:scaleX="0.97"
+            android:scaleY="0.97"
+            android:translateX="0.75"
+            android:translateY="4.75">
+            <group
+                android:name="_R_G_L_2_G_D_0_P_0_G_0_T_0"
+                android:translateX="6.5"
+                android:translateY="5.25">
+                <path
+                    android:name="_R_G_L_2_G_D_0_P_0"
+                    android:fillColor="0x7f06013f"
+                    android:pathData=" M-5.31 5 C-5.56,5 -5.78,4.91 -5.97,4.72 C-6.16,4.53 -6.25,4.31 -6.25,4.06 C-6.25,4.06 -6.25,-4.06 -6.25,-4.06 C-6.25,-4.31 -6.16,-4.53 -5.97,-4.72 C-5.78,-4.91 -5.56,-5 -5.31,-5 C-5.31,-5 2.81,-5 2.81,-5 C3.06,-5 3.28,-4.91 3.47,-4.72 C3.66,-4.53 3.75,-4.31 3.75,-4.06 C3.75,-4.06 3.75,-0.7 3.75,-0.7 C3.75,-0.7 6.25,-3.2 6.25,-3.2 C6.25,-3.2 6.25,3.2 6.25,3.2 C6.25,3.2 3.75,0.7 3.75,0.7 C3.75,0.7 3.75,4.06 3.75,4.06 C3.75,4.31 3.66,4.53 3.47,4.72 C3.28,4.91 3.06,5 2.81,5 C2.81,5 -5.31,5 -5.31,5c "/>
+            </group>
+        </group>
+        <group
+            android:name="_R_G_L_1_G"
+            android:translateX="16.18"
+            android:translateY="5.1">
+            <path
+                android:name="_R_G_L_1_G_D_0_P_0"
+                android:fillColor="0x7f06013f"
+                android:pathData=" M0.42 8.6 C2.11,6.54 2.26,3.76 0.78,1.57 C0.78,1.57 0.39,1 0.39,1 C0.25,0.79 0.32,0.51 0.56,0.38 C0.8,0.25 1.1,0.32 1.25,0.53 C1.25,0.53 1.64,1.11 1.64,1.11 C3.32,3.61 3.16,6.78 1.22,9.13 C1.06,9.33 0.74,9.37 0.52,9.23 C0.3,9.08 0.25,8.8 0.42,8.6c "
+                android:fillAlpha="0"/>
+        </group>
+        <group
+            android:name="_R_G_L_0_G"
+            android:translateX="14.7"
+            android:translateY="6.9">
+            <path
+                android:name="_R_G_L_0_G_D_0_P_0"
+                android:pathData=" M1 1 C1,1 1,1 1,1 C1.89,2.19 1.89,3.82 1,5 "
+                android:strokeColor="0x7f06013f"
+                android:strokeWidth="1"
+                android:strokeLineCap="round"
+                android:strokeLineJoin="round"
+                android:strokeAlpha="0"/>
+        </group>
+    </group>
+</vector>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout
+        android:id="0x7f0b121c"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0x7f070168">
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:id="0x7f0b13b3"
+            android:background="0x7f0807c7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.whatsapp.ui.coreui.components.button.ThumbnailButton
+                android:id="0x7f0b2b90"
+                android:layout_width="0x7f070736"
+                android:layout_height="0x7f070734"
+                android:scaleType="centerCrop"/>
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="0x7f0b2b42"
+                android:paddingLeft="0x7f071039"
+                android:paddingRight="0x7f071030"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <com.whatsapp.ui.coreui.base.TextEmojiLabel
+                    android:textSize="0x7f070fb6"
+                    android:textStyle="bold"
+                    android:textColor="?unknown_attr_ref: 7f04066e"
+                    android:ellipsize="end"
+                    android:id="0x7f0b13d8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="false"
+                    android:maxLength="60"
+                    android:lineSpacingMultiplier="1.08"
+                    app:NOT_FOUND_0x13="18sp"/>
+                <com.whatsapp.ui.coreui.base.TextEmojiLabel
+                    android:textSize="0x7f070fb6"
+                    android:textColor="?unknown_attr_ref: 7f040a46"
+                    android:ellipsize="end"
+                    android:gravity="top|left"
+                    android:id="0x7f0b1653"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:includeFontPadding="false"/>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</merge>

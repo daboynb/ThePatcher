@@ -1,0 +1,29 @@
+package p000X;
+
+/* renamed from: X.Mho, reason: case insensitive filesystem */
+/* loaded from: classes6.dex */
+public enum EnumC57810Mho implements InterfaceC26580vu {
+    BUSINESS_OR_LINKED_BUSINESS_ACCOUNT("BUSINESS_OR_LINKED_BUSINESS_ACCOUNT"),
+    DEFAULT_PRIVACY_AUDIENCE_CONTROL_OPT_IN_REQUIRED("DEFAULT_PRIVACY_AUDIENCE_CONTROL_OPT_IN_REQUIRED"),
+    DESTINATION_NOT_ELIGIBLE("DESTINATION_NOT_ELIGIBLE"),
+    INVALID_OR_MISSING_DESTINATION_AUDIENCE_TYPE("INVALID_OR_MISSING_AUDIENCE_TYPE"),
+    /* JADX INFO: Fake field, exist only in values array */
+    MISSING_DESTINATION("MISSING_DESTINATION"),
+    MISSING_REELS_DESTINATION("MISSING_REELS_DESTINATION"),
+    /* JADX INFO: Fake field, exist only in values array */
+    STORY_SURFACE_DESTINATION_ERROR("STORY_SURFACE_DESTINATION_ERROR"),
+    UNCLASSIFIED_REASON("UNCLASSIFIED_REASON"),
+    UNLINKED_MULTI_PARENT("UNLINKED_MULTI_PARENT"),
+    UNLINKED_WITH_BUSINESS_ACCOUNT_OR_FB_APP_NOT_INSTALLED("UNLINKED_WITH_BUSINESS_ACCOUNT_OR_FB_APP_NOT_INSTALLED");
+
+    public final String A00;
+
+    EnumC57810Mho(String str) {
+        this.A00 = str;
+    }
+
+    @Override // p000X.InterfaceC26580vu
+    public final /* bridge */ /* synthetic */ Object getValue() {
+        return this.A00;
+    }
+}

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:id="0x7f0b0aad"
+        android:focusable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="0x7f07012b"
+        android:minHeight="30dp">
+        <ViewStub
+            android:id="0x7f0b0b27"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:NOT_FOUND_0xb="true"/>
+        <include layout="0x7f0e054e"/>
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            layout="0x7f0e04e1"/>
+        <com.whatsapp.conversation.ui.conversationrow.businessmessaging.interactive.components.InteractiveAndDateLayout
+            android:orientation="vertical"
+            android:id="0x7f0b15cc"
+            android:paddingBottom="0x7f070b5f"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.whatsapp.conversation.ui.conversationrow.businessmessaging.interactive.InteractiveMessageView
+                android:layout_gravity="start"
+                android:orientation="vertical"
+                android:id="0x7f0b15d0"
+                android:paddingBottom="0x7f07042e"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:minWidth="0x7f0703d9"/>
+            <include layout="0x7f0e04ba"/>
+        </com.whatsapp.conversation.ui.conversationrow.businessmessaging.interactive.components.InteractiveAndDateLayout>
+        <View
+            android:id="0x7f0b0673"
+            style="0x7f150356"/>
+        <com.whatsapp.conversation.ui.conversationrow.businessmessaging.interactive.components.InteractiveMessageButton
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:id="0x7f0b0661"
+            android:focusable="true"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</merge>

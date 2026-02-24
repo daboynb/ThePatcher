@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="0x7f070cea"
+        android:paddingEnd="0x7f070cea">
+        <com.whatsapp.ui.coreui.base.WaTextView
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="?unknown_attr_ref: 7f040a47"
+            android:gravity="center_horizontal"
+            android:id="0x7f0b1cc5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0x7f070cea"
+            android:layout_marginBottom="0x7f070cea"
+            android:text="0x7f120c55"
+            android:textAlignment="center"
+            app:NOT_FOUND_0x12="0"/>
+        <com.whatsapp.ui.coreui.base.TextEmojiLabel
+            android:textSize="0x7f070fb0"
+            android:textColor="?unknown_attr_ref: 7f040a47"
+            android:id="0x7f0b1cc4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0x7f070cea"
+            android:layout_marginRight="0x7f070cea"
+            android:layout_marginBottom="0x7f070cea"/>
+        <RadioGroup
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:id="0x7f0b2270"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:NOT_FOUND_0x11="0x7f0b1cc5">
+            <com.whatsapp.ui.coreui.radio.RadioButtonWithSubtitle
+                android:id="0x7f0b1cc3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0x7f070cea"
+                app:NOT_FOUND_0x12="0"
+                app:NOT_FOUND_0x13="0x7f123dc6"
+                app:NOT_FOUND_0x14="0x7f123dc5"/>
+            <com.whatsapp.ui.coreui.radio.RadioButtonWithSubtitle
+                android:id="0x7f0b1cc2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0x7f070cea"
+                android:layout_marginBottom="0x7f070cea"
+                app:NOT_FOUND_0x11="0x7f0b1cc3"
+                app:NOT_FOUND_0x13="0x7f123dc4"
+                app:NOT_FOUND_0x14="0x7f123dc3"/>
+        </RadioGroup>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

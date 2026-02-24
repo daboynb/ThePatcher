@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="0x7f0b2b2e"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.whatsapp.ui.coreui.base.WaTextView
+            android:id="0x7f0b2b22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0x7f070be0"
+            android:layout_marginTop="0x7f070cea"
+            android:layout_marginRight="0x7f070be0"
+            style="0x7f15040c"/>
+        <com.whatsapp.ui.coreui.checkbox.RtlCheckBox
+            android:id="0x7f0b2387"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0x7f070be0"
+            android:layout_marginTop="0x7f070cea"
+            android:layout_marginRight="0x7f070be0"
+            style="0x7f15040c"/>
+    </LinearLayout>
+</ScrollView>

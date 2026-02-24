@@ -1,0 +1,7 @@
+package p000X;
+
+/* renamed from: X.4G2, reason: invalid class name */
+/* loaded from: classes6.dex */
+public final class C4G2 implements InterfaceC58210MoG {
+    public static final C4G2 A00 = new C4G2();
+}

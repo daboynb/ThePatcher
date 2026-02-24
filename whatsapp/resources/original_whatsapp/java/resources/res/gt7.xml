@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.whatsapp.ui.coreui.InfoCard xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="0x7f0b0cf2"
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="0x7f150256">
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="?unknown_attr_ref: 7f040a59"
+        android:padding="0x7f0706a4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="0x7f0b13a9"
+            android:paddingTop="0x7f071030"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.whatsapp.ui.coreui.base.text.ReadMoreTextView
+                android:textSize="0x7f070fb0"
+                android:textColor="0x7f0607a9"
+                android:id="0x7f0b132b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:NOT_FOUND_0xc="3"
+                app:NOT_FOUND_0xd="?unknown_attr_ref: 7f040a29"
+                app:NOT_FOUND_0xe="0x7f122aa4"/>
+            <ProgressBar
+                android:id="0x7f0b0812"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?android:attr/progressBarStyleSmallInverse"/>
+        </LinearLayout>
+        <com.whatsapp.ui.coreui.base.WaTextView
+            android:textColor="?unknown_attr_ref: 7f040a29"
+            android:id="0x7f0b1c9b"
+            android:paddingTop="0x7f071030"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0x7f1201ba"
+            style="0x7f15028a"/>
+        <com.whatsapp.ui.coreui.base.WaTextView
+            android:id="0x7f0b0bc3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0x7f070ce7"
+            app:NOT_FOUND_0xf="6"/>
+    </LinearLayout>
+</com.whatsapp.ui.coreui.InfoCard>

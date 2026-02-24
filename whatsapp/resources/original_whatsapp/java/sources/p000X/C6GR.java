@@ -1,0 +1,88 @@
+package p000X;
+
+import java.util.LinkedHashMap;
+import java.util.Map;
+
+/* renamed from: X.6GR, reason: invalid class name */
+/* loaded from: classes4.dex */
+public final class C6GR extends C0DA {
+    public Boolean A00;
+    public Boolean A01;
+    public Boolean A02;
+    public Boolean A03;
+    public Boolean A04;
+    public Boolean A05;
+    public Boolean A06;
+    public Boolean A07;
+    public Boolean A08;
+    public Boolean A09;
+    public Boolean A0A;
+    public Integer A0B;
+    public Integer A0C;
+    public Integer A0D;
+
+    public C6GR() {
+        super(1840, C0DA.DEFAULT_SAMPLING_RATE, 0, -1);
+    }
+
+    @Override // p000X.C0DA
+    public String getEventNameForFalco() {
+        return "wam_sticker_send";
+    }
+
+    @Override // p000X.C0DA
+    public Map getFieldsMapForLogging() {
+        return null;
+    }
+
+    @Override // p000X.C0DA
+    public Map getFieldsMap() {
+        LinkedHashMap A1C = AbstractC34801aa.A1C();
+        A1C.put(AbstractC34891aj.A0X(AbstractC34841ae.A12(AbstractC34841ae.A16(AbstractC34891aj.A0c(AbstractC34891aj.A0Z(AbstractC34841ae.A17(AbstractC34891aj.A0b(AbstractC34841ae.A18(AbstractC34891aj.A0a(AbstractC34841ae.A13(AbstractC34891aj.A0Y(AbstractC34841ae.A14(AbstractC34841ae.A11(AbstractC34821ac.A0z(), this.A00, A1C), this.A01, A1C), this.A02, A1C), this.A03, A1C), this.A04, A1C), this.A05, A1C), this.A06, A1C), this.A07, A1C), this.A08, A1C), this.A09, A1C), this.A0A, A1C), this.A0B, A1C), this.A0C, A1C), this.A0D);
+        return A1C;
+    }
+
+    @Override // p000X.C0DA
+    public Map getFieldsMapForFalco() {
+        LinkedHashMap A1C = AbstractC34801aa.A1C();
+        A1C.put("sticker_is_ai", this.A00);
+        A1C.put("sticker_is_animated", this.A01);
+        A1C.put("sticker_is_avatar", this.A02);
+        A1C.put("sticker_is_first_party", this.A03);
+        A1C.put("sticker_is_from_sticker_maker", this.A04);
+        A1C.put("sticker_is_from_user_created_pack", this.A05);
+        A1C.put("sticker_is_giphy", this.A06);
+        A1C.put("sticker_is_klipy", this.A07);
+        A1C.put("sticker_is_lottie", this.A08);
+        A1C.put("sticker_is_tenor", this.A09);
+        A1C.put("sticker_is_text", this.A0A);
+        A1C.put("sticker_maker_source_type", AbstractC34901ak.A0m(this.A0B));
+        A1C.put("sticker_send_message_type", AbstractC34901ak.A0m(this.A0C));
+        A1C.put("sticker_send_origin", AbstractC34901ak.A0m(this.A0D));
+        return A1C;
+    }
+
+    @Override // p000X.C0DA
+    public void serialize(InterfaceC77443Sm interfaceC77443Sm) {
+        throw AbstractC34871ah.A0h();
+    }
+
+    public String toString() {
+        StringBuilder A04 = AnonymousClass000.A04();
+        A04.append("WamStickerSend {");
+        C0DC.A00(this.A00, "stickerIsAi", A04);
+        C0DC.A00(this.A01, "stickerIsAnimated", A04);
+        C0DC.A00(this.A02, "stickerIsAvatar", A04);
+        C0DC.A00(this.A03, "stickerIsFirstParty", A04);
+        C0DC.A00(this.A04, "stickerIsFromStickerMaker", A04);
+        C0DC.A00(this.A05, "stickerIsFromUserCreatedPack", A04);
+        C0DC.A00(this.A06, "stickerIsGiphy", A04);
+        C0DC.A00(this.A07, "stickerIsKlipy", A04);
+        C0DC.A00(this.A08, "stickerIsLottie", A04);
+        C0DC.A00(this.A09, "stickerIsTenor", A04);
+        C0DC.A00(this.A0A, "stickerIsText", A04);
+        C0DC.A00(AbstractC34901ak.A0m(this.A0B), "stickerMakerSourceType", A04);
+        C0DC.A00(AbstractC34901ak.A0m(this.A0C), "stickerSendMessageType", A04);
+        return AbstractC34921am.A0T(AbstractC34901ak.A0m(this.A0D), "stickerSendOrigin", A04);
+    }
+}

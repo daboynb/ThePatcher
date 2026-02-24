@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.whatsapp.ui.coreui.base.WaTextView
+        android:id="0x7f0b13b3"
+        android:visibility="gone"
+        style="0x7f1502e0"/>
+    <com.whatsapp.ui.wds.components.list.header.WDSSectionHeader
+        android:id="0x7f0b3040"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="0x7f07102e"
+        android:paddingEnd="0x7f07102e"
+        app:NOT_FOUND_0x11="1"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="0x7f0b1768"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <FrameLayout
+        android:id="0x7f0b0bed"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:id="0x7f0b2637"
+        android:background="?android:attr/selectableItemBackground"
+        android:paddingLeft="0x7f070c93"
+        android:paddingTop="0x7f070ac6"
+        android:paddingRight="0x7f070c93"
+        android:paddingBottom="0x7f070ac6"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.whatsapp.ui.coreui.base.WaImageView
+            android:id="0x7f0b2638"
+            android:layout_width="0x7f070ac8"
+            android:layout_height="0x7f070ac8"
+            android:layout_marginRight="0x7f070c8a"
+            app:NOT_FOUND_0x12="0x7f080c4b"/>
+        <com.whatsapp.ui.coreui.base.WaTextView
+            android:textSize="0x7f070fb0"
+            android:textColor="?unknown_attr_ref: 7f040a47"
+            android:id="0x7f0b2639"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0x7f12266e"
+            app:NOT_FOUND_0x13="4"/>
+    </LinearLayout>
+</LinearLayout>

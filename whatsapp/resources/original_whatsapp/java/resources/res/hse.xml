@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="0x7f071039">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0x7f071030"
+        android:layout_toLeftOf="0x7f0b0ef5"
+        android:layout_alignBottom="0x7f0b0ef5"
+        android:layout_centerVertical="true">
+        <com.whatsapp.ui.coreui.WaEditText
+            android:textSize="0x7f070fb0"
+            android:textColorHint="?unknown_attr_ref: 7f040a46"
+            android:ellipsize="end"
+            android:id="0x7f0b134e"
+            android:paddingRight="0x7f070456"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="0x7f121804"
+            android:maxLines="1"
+            android:lines="1"
+            android:singleLine="true"
+            android:capitalize="sentences"
+            android:imeOptions="actionDone"/>
+        <com.whatsapp.ui.coreui.base.WaTextView
+            android:textSize="0x7f070fbc"
+            android:textColor="?unknown_attr_ref: 7f040a46"
+            android:id="0x7f0b2a66"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_alignBaseline="0x7f0b134e"
+            android:layout_alignParentRight="true"
+            app:NOT_FOUND_0x1a="8"/>
+    </RelativeLayout>
+    <com.whatsapp.ui.coreui.base.WaImageButton
+        android:id="0x7f0b0ef5"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="0x7f123e44"
+        app:NOT_FOUND_0x18="0x7f0805aa"
+        app:NOT_FOUND_0x19="0x7f06033e"
+        style="0x7f150006"/>
+</RelativeLayout>

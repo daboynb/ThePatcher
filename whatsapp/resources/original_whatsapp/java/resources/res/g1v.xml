@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.whatsapp.ui.coreui.base.WaTextView
+        android:textSize="0x7f070fc0"
+        android:textStyle="bold"
+        android:textColor="?unknown_attr_ref: 7f040a47"
+        android:gravity="left"
+        android:id="0x7f0b0d3f"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0x7f0705c1"
+        android:layout_marginTop="0x7f0705c1"
+        android:layout_marginRight="0x7f0705c1"
+        android:text="0x7f122c45"
+        app:NOT_FOUND_0x10="0"
+        app:NOT_FOUND_0x12="0"/>
+    <com.whatsapp.ui.coreui.base.TextEmojiLabel
+        android:textSize="0x7f070fb0"
+        android:textColor="?unknown_attr_ref: 7f040a46"
+        android:textColorLink="?unknown_attr_ref: 7f040a49"
+        android:gravity="left"
+        android:id="0x7f0b0d38"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0x7f0705c1"
+        android:layout_marginTop="0x7f0705c1"
+        android:layout_marginRight="0x7f0705c1"
+        android:lineSpacingExtra="2dp"
+        app:NOT_FOUND_0x10="0"
+        app:NOT_FOUND_0x11="0x7f0b0d3f"/>
+    <com.whatsapp.ui.wds.components.button.WDSButton
+        android:textColor="?unknown_attr_ref: 7f040a29"
+        android:id="0x7f0b2cf3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0x7f07102f"
+        android:text="0x7f123563"
+        android:textAllCaps="false"
+        app:NOT_FOUND_0xe="0"
+        app:NOT_FOUND_0x11="0x7f0b0d38"
+        style="0x7f150558"/>
+    <com.whatsapp.ui.wds.components.button.WDSButton
+        android:textColor="?unknown_attr_ref: 7f040a29"
+        android:id="0x7f0b2e58"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0x7f07102f"
+        android:text="0x7f1238f4"
+        android:textAllCaps="false"
+        app:NOT_FOUND_0xf="0x7f0b2cf3"
+        app:NOT_FOUND_0x11="0x7f0b0d38"
+        style="0x7f150558"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="0x7f0b0851"
+        android:paddingTop="0x7f070ce7"
+        android:clipToPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <ViewStub
+        android:layout_gravity="center"
+        android:id="0x7f0b0283"
+        android:layout="0x7f0e017b"
+        android:layout_width="0x7f070266"
+        android:layout_height="0x7f070266"/>
+    <ViewStub
+        android:layout_gravity="center"
+        android:id="0x7f0b0280"
+        android:layout="0x7f0e017a"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <ViewStub
+        android:layout_gravity="center"
+        android:id="0x7f0b0281"
+        android:layout="0x7f0e0bb3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</FrameLayout>

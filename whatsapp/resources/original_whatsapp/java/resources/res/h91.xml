@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="0x7f0b2314"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content">
+    <HorizontalScrollView
+        android:layout_gravity="center_horizontal"
+        android:id="0x7f0b2317"
+        android:scrollbars="none"
+        android:fadingEdge="horizontal"
+        android:fadingEdgeLength="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="0x7f0708ae"
+        android:layout_marginLeft="0x7f070cea"
+        android:layout_marginRight="0x7f0708b0"
+        android:layout_alignParentLeft="true"
+        android:requiresFadingEdge="horizontal">
+        <LinearLayout
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <com.whatsapp.ui.coreui.base.WaImageView
+                android:layout_gravity="bottom"
+                android:id="0x7f0b290e"
+                android:visibility="gone"
+                android:layout_width="0x7f0708ab"
+                android:layout_height="0x7f0708ab"
+                android:layout_marginRight="0x7f070cec"
+                android:layout_marginBottom="1dp"
+                app:NOT_FOUND_0x14="0x7f08068e"
+                app:NOT_FOUND_0x15="?unknown_attr_ref: 7f04066e"/>
+            <com.whatsapp.ui.coreui.base.TextEmojiLabel
+                android:textAppearance="0x7f1505a6"
+                android:textColor="?unknown_attr_ref: 7f04066e"
+                android:ellipsize="none"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:id="0x7f0b2312"
+                android:paddingRight="0x7f07102f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+</RelativeLayout>

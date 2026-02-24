@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.whatsapp.ui.wds.components.fab.WDSFab xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="0x7f0b2804"
+    android:contentDescription="0x7f121d04"
+    app:NOT_FOUND_0x2="?unknown_attr_ref: 7f040366"
+    style="0x7f150561"/>

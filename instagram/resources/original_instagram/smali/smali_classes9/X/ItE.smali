@@ -1,0 +1,31 @@
+.class public final LX/ItE;
+.super Ljava/lang/IllegalArgumentException;
+.source ""
+
+
+# direct methods
+.method public constructor <init>(II)V
+    .locals 1
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x0
+        }
+        names = {
+            "index",
+            "length"
+        }
+    .end annotation
+
+    invoke-static {}, LX/011;->A0X()Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-static {v0, p1, p2}, LX/21Q;->A0K(Ljava/lang/StringBuilder;II)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-direct {p0, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    return-void
+.end method

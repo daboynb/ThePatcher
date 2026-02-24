@@ -1,0 +1,149 @@
+{
+  "layout": {
+    "bloks_payload": {
+      "data": [],
+      "embedded_payloads": [
+        {
+          "id": "GyA9ECoBEjwh1EWU4DhsEQ:mmwebtro4",
+          "payload": {
+            "layout": {
+              "bloks_payload": {
+                "tree": {
+                  "\u3408": {
+                    ")": "column",
+                    ",": "center",
+                    "$": "center",
+                    " ": [
+                      {
+                        "\u3417": {
+                          ")": "Something went wrong",
+                          "-": "20",
+                          "5": "sp"
+                        }
+                      },
+                      {
+                        "\u3417": {
+                          ")": "Please try again later"
+                        }
+                      }
+                    ],
+                    "\u0084": {
+                      "\u3438": {
+                        "D": "100%",
+                        "*": "100%"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "error_attribution": {
+        "logging_id": "{\"callsite\":\"{\\\"product\\\":\\\"bloks_entrypoints_infra\\\",\\\"feature\\\":\\\"screen_query_root_template\\\",\\\"oncall\\\":\\\"bloks_www\\\"}\",\"push_phase\":\"intern\",\"version\":1,\"request_id\":\"AO_BCU4Yi0OcEAZcGyRbUcD\",\"www_revision\":1032379941}",
+        "source_map_id": "7Eaob1nsIZPAPyBp9-ZLfw"
+      },
+      "tree": {
+        "\u3408": {
+          ")": "column",
+          " ": [
+            {
+              "\u3408": {
+                " ": [
+                  {
+                    "\u3408": {
+                      " ": [
+                        {
+                          "\u3408": {
+                            " ": [
+                              {
+                                "\u3408": {
+                                  ",": "center",
+                                  " ": [
+                                    {
+                                      "\u3562": {
+                                        "\u0084": {
+                                          "\u3438": {
+                                            "D": "32dp",
+                                            "*": "32dp",
+                                            "#": "center"
+                                          }
+                                        }
+                                      }
+                                    }
+                                  ],
+                                  "!": "bkscreen_roottemplate_loadingflexbox:0",
+                                  "\u0084": {
+                                    "\u3438": {
+                                      "D": "100%",
+                                      "*": "100%"
+                                    }
+                                  }
+                                }
+                              }
+                            ],
+                            "!": "ak76u2:1"
+                          }
+                        }
+                      ],
+                      "\u0085": [
+                        {
+                          "\u3fb6": {
+                            "#": "\t(e1w (e24 (e2f (e2a (e56 \"failed\" (e25 1)) (e2f (e2a (h9h (dng \"__infra__ttrc_instance_id\")) null (fow (dng \"__infra__ttrc_marker_id\") (dng \"__infra__ttrc_instance_id\") \"\" null)) (e1w (e24 (e2f (e1w (e24 (dpn \"__infra_sq_root_id:0\" (dkc (dnh \"GyA9ECoBEjwh1EWU4DhsEQ:mmwebtro4\" (f6m 6))) \"__infra_sq_content_id:0\" (e25 0))) (e25 0)) (e1w (e24 (fjm false)) (e25 0)))) (e25 0))) null) (e2a (e2a (e56 \"resolved_sync\" (e25 1)) true (e56 \"resolved_async\" (e25 1))) (e1w (e24 (fjm true)) (e25 0)) null))) (e25 0) (e25 2))",
+                            "\u0087": [
+                              ")",
+                              "\t(e2a (h9h (dnt \"query_info_mmwebtrnk\")) null (f4g (igq (dnt \"query_info_mmwebtrnk\")) \"resolution_type\"))"
+                            ]
+                          }
+                        },
+                        {
+                          "\u365a": {
+                            ")": "\t(dn1 (dng \"__infra__app_id\") (f6m 6 \"__infra__container_config_id\" (dng \"__infra__container_config_id\")) (dng \"__infra__cache_ttl\") (fom 16376 36 \"fetch\" 38 \"mmwebtrnk\" 41 false 40 (dng \"__infra__enable_disk_cache\") 43 (dkc \"__infra__container_config_id\")))"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ],
+                "!": "__infra_sq_content_id:0",
+                "\u0084": {
+                  "\u3438": {
+                    ")": 1
+                  }
+                }
+              }
+            }
+          ],
+          "!": "__infra_sq_root_id:0",
+          "\u0085": [
+            {
+              "\u365a": {
+                ")": "\t(e2f (e2a (h9h (dng \"__infra__ttrc_instance_id\")) null (foz (dng \"__infra__ttrc_marker_id\") (dng \"__infra__ttrc_instance_id\") (dng \"__infra__ttrc_timestamp\") null)) (e2a (h9h (dng \"__infra__ttrc_instance_id\")) null (foo (dng \"__infra__ttrc_marker_id\") (dng \"__infra__ttrc_instance_id\") (f6m 6 \"app_id\" (dng \"__infra__app_id\")))) (e2a (h9h (dng \"__infra__ttrc_analytics_extras\")) null (e2a (h9h (dng \"__infra__ttrc_instance_id\")) null (foo (dng \"__infra__ttrc_marker_id\") (dng \"__infra__ttrc_instance_id\") (dng \"__infra__ttrc_analytics_extras\")))) (e2a (h9h (dng \"__infra__ttrc_instance_id\")) null (fop (dng \"__infra__ttrc_marker_id\") (dng \"__infra__ttrc_instance_id\") \"load_root_template\" (f6m 6))) (e2a (h9h (dng \"__infra__ttrc_instance_id\")) null (for (dng \"__infra__ttrc_marker_id\") (dng \"__infra__ttrc_instance_id\") (dng \"__infra__app_id\") (e1z (dng \"__infra__cache_ttl\") 86400))))"
+              }
+            },
+            {
+              "\u34e2": {
+                "&": "S:ak76u2:15",
+                "$": "\t(e2a (h9h (dng \"__infra__ttrc_instance_id\")) null (fp1 (dng \"__infra__ttrc_marker_id\") (dng \"__infra__ttrc_instance_id\") null))"
+              }
+            }
+          ]
+        }
+      },
+      "component_queries": [
+        {
+          "id": "mmwebtrnk",
+          "targets": {
+            "genScreenContent": "ak76u2:1"
+          },
+          "app_id_expr": "\t(dng \"__infra__app_id\")",
+          "params": "\t(f6m 6 \"__infra__container_config_id\" (dng \"__infra__container_config_id\"))",
+          "client_params": "\t(f6m 6 \"__infra_component_did_render\" (dyx (e24 (e2f (dod (dng \"__infra__ttrc_marker_id\") (dng \"__infra__ttrc_instance_id\") (dng \"__infra__app_id\") (f4g (igq (dnt \"query_info_mmwebtrnk\")) \"response_summary\")) (e1w (e24 (e2a (e56 (f4g (igq (dnt \"query_info_mmwebtrnk\")) \"resolution_type\") \"resolved_sync\") (e2a (h9h (dng \"__infra__ttrc_instance_id\")) null (fot (dng \"__infra__ttrc_marker_id\") (dng \"__infra__ttrc_instance_id\") (dng \"__infra__app_id\") (e1z (f4g (igq (dnt \"query_info_mmwebtrnk\")) \"cache_age\") (eud 0)) (fom 16524 35 true))) (e2a (h9h (dng \"__infra__ttrc_instance_id\")) null (fp0 (dng \"__infra__ttrc_marker_id\") (dng \"__infra__ttrc_instance_id\") (dng \"__infra__app_id\"))))))))))",
+          "cache_ttl_expr": "\t(dng \"__infra__cache_ttl\")",
+          "is_scoped": false
+        }
+      ]
+    }
+  }
+}

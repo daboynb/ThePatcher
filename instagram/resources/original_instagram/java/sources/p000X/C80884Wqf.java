@@ -1,0 +1,48 @@
+package p000X;
+
+/* renamed from: X.Wqf, reason: case insensitive filesystem */
+/* loaded from: classes17.dex */
+public final class C80884Wqf extends DDH implements InterfaceC63306OoH {
+    public static final C80884Wqf zzh;
+    public static volatile InterfaceC98120nzc zzi;
+    public int zzc;
+    public WtG zzd;
+    public WY1 zze;
+    public WsT zzf;
+    public InterfaceC65017Paq zzg = DDU.A02;
+
+    static {
+        C80884Wqf c80884Wqf = new C80884Wqf();
+        zzh = c80884Wqf;
+        DDH.A02(c80884Wqf, C80884Wqf.class);
+    }
+
+    /* JADX WARN: Type inference failed for: r0v12, types: [X.eeN, X.nzc, java.lang.Object] */
+    @Override // p000X.DDH
+    public final Object A04(int i, Object obj) {
+        ?? A0U;
+        switch (AbstractC89213axq.A00[i - 1]) {
+            case 1:
+                return new C80884Wqf();
+            case 2:
+                return new WKU();
+            case 3:
+                return DDH.A00(zzh, "\u0001\u0004\u0000\u0001\u0001\u0004\u0004\u0000\u0001\u0000\u0001ဉ\u0000\u0002ဉ\u0001\u0003ဉ\u0002\u0004\u001b", new Object[]{"zzc", "zzd", "zze", "zzf", "zzg", WqV.class});
+            case 4:
+                return zzh;
+            case 5:
+                synchronized (C80884Wqf.class) {
+                    C92702dlX c92702dlX = C93627eeN.A01;
+                    A0U = C37.A0U(zzh);
+                    zzi = A0U;
+                }
+                return A0U;
+            case 6:
+                return (byte) 1;
+            case 7:
+                return null;
+            default:
+                throw AnonymousClass031.A0e();
+        }
+    }
+}

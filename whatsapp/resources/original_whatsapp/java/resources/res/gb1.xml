@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="0x7f0b210a"
+    android:clipChildren="false"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.whatsapp.stickers.coinflip.CoinFlipAnimatedProfileView
+        android:id="0x7f0b0354"
+        android:layout_width="0x7f0702b1"
+        android:layout_height="0x7f0702b1"
+        android:src="0x7f08066d"
+        android:contentDescription="0x7f1241e1"
+        app:NOT_FOUND_0xc="0"
+        app:NOT_FOUND_0xd="0"
+        app:NOT_FOUND_0xe="0"
+        app:NOT_FOUND_0x10="0"/>
+    <com.whatsapp.ui.coreui.base.WaTextView
+        android:gravity="center"
+        android:id="0x7f0b2ab8"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0x7f0702b0"
+        android:text="0x7f120b7e"
+        android:layout_marginStart="0x7f0702ac"
+        android:layout_marginEnd="0x7f0702ac"
+        app:NOT_FOUND_0xd="0"
+        app:NOT_FOUND_0xe="0"
+        app:NOT_FOUND_0xf="0x7f0b0354"
+        style="0x7f15040b"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

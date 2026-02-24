@@ -1,0 +1,92 @@
+{
+  "name": "Grid Zoom",
+  "curve": "Exponential InOut",
+  "type": "fixed-intro",
+  "duration": 0.75,
+  "passes": [
+    {
+      "name": "grid zoom",
+      "inputs": [
+        "default"
+      ],
+      "glsl": "precision highp float;
+
+varying vec2 textureCoordinate;
+varying vec2 sourceTextureCoordinate;
+
+// default uniforms for all filters
+uniform float time;
+uniform float strength;
+uniform vec2 inputSize; // size of the original default input texture
+uniform vec2 tex0Size; // size of tex0 for this pass
+
+// default uniforms for transitions and video effects
+uniform float progress; // normalized 0-1
+
+// default uniforms for video effects
+uniform float duration; // in seconds
+uniform float clipDuration; // in seconds
+
+// effect uniforms
+void main() {
+
+vec2 uv = sourceTextureCoordinate;
+
+vec2 gridUV = fract(uv * 3.0);
+vec4 gridColor = sampleInput(gridUV);
+
+float scale = mix(1.0, 1.0/3.0, progress);
+vec2 zoomed = (uv - 0.5) * scale + 0.5;
+vec2 zoomGridUV = fract(zoomed * 3.0);
+vec4 zoomCol = sampleInput(zoomGridUV);
+
+vec4 color = mix(gridColor, zoomCol, progress);
+
+
+
+
+gl_FragColor = toOutputFormat(zoomCol);
+}
+",
+"metal": "
+using namespace metal;
+struct fragmentIn { float2 sourceTextureCoordinate [[user(locn1)]]; };
+struct fragmentOut { float4 _gl_FragColor [[color(0)]]; };
+typedef struct {
+  float4x4 content_transform;
+  float4x4 texture_transform;
+  float strength;
+  float progress;
+  float time_sec;
+  float duration_sec;
+  float clip_duration_sec;
+  float2 output_size;
+  float2 input_size;
+  float2 tex0Size;
+ } Uniforms;
+fragment fragmentOut fragmentShader(fragmentIn in [[stage_in]],
+ constant Uniforms & uniforms [[buffer(1)]],
+ DefaultInputs defaultInputs) {
+
+float2 uv = in.sourceTextureCoordinate;
+
+float2 gridUV = fract(uv * 3.0);
+float4 gridColor = sampleInput(defaultInputs, gridUV);
+
+float scale = mix(1.0, 1.0/3.0, uniforms.progress);
+float2 zoomed = (uv - 0.5) * scale + 0.5;
+float2 zoomGridUV = fract(zoomed * 3.0);
+float4 zoomCol = sampleInput(defaultInputs, zoomGridUV);
+
+float4 color = mix(gridColor, zoomCol, uniforms.progress);
+
+
+
+
+return {toOutputFormat(zoomCol)};
+}
+  ",
+      "uniforms": {}
+    }
+  ]
+}

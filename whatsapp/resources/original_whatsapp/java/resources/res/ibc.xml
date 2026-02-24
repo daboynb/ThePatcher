@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ViewStub
+        android:id="0x7f0b2ce1"
+        android:layout="0x7f0e0167"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0x7f071039"
+        android:layout_marginBottom="0x7f071039"
+        android:layout_marginStart="0x7f07103a"
+        android:layout_marginEnd="0x7f07103a"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:orientation="horizontal"
+        android:id="0x7f0b0f4f"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0x7f070c2a"
+        android:layout_marginStart="0x7f070cec"
+        app:NOT_FOUND_0xa="androidx.recyclerview.widget.StaggeredGridLayoutManager"/>
+    <View
+        android:background="0x7f0608e5"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginBottom="0x7f070cec"/>
+</androidx.appcompat.widget.LinearLayoutCompat>

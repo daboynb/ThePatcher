@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:height="54dp"
+    android:width="54dp"
+    android:viewportWidth="54"
+    android:viewportHeight="54">
+    <group android:name="_R_G">
+        <group
+            android:name="_R_G_L_4_G"
+            android:translateX="51"
+            android:translateY="27">
+            <path
+                android:name="_R_G_L_4_G_D_0_P_0"
+                android:fillColor="?unknown_attr_ref: 7f04058a"
+                android:pathData=" M0 -3 C1.66,-3 3,-1.66 3,0 C3,1.66 1.66,3 0,3 C-1.66,3 -3,1.66 -3,0 C-3,-1.66 -1.66,-3 0,-3c "/>
+        </group>
+        <group
+            android:name="_R_G_L_3_G"
+            android:translateX="39"
+            android:translateY="27">
+            <path
+                android:name="_R_G_L_3_G_D_0_P_0"
+                android:fillColor="?unknown_attr_ref: 7f04058a"
+                android:pathData=" M0 -3 C1.66,-3 3,-1.66 3,0 C3,1.66 1.66,3 0,3 C-1.66,3 -3,1.66 -3,0 C-3,-1.66 -1.66,-3 0,-3c "/>
+        </group>
+        <group
+            android:name="_R_G_L_2_G"
+            android:translateX="27"
+            android:translateY="27">
+            <path
+                android:name="_R_G_L_2_G_D_0_P_0"
+                android:fillColor="?unknown_attr_ref: 7f04058a"
+                android:pathData=" M0 -3 C1.66,-3 3,-1.66 3,0 C3,1.66 1.66,3 0,3 C-1.66,3 -3,1.66 -3,0 C-3,-1.66 -1.66,-3 0,-3c "/>
+        </group>
+        <group
+            android:name="_R_G_L_1_G"
+            android:translateX="15"
+            android:translateY="27">
+            <path
+                android:name="_R_G_L_1_G_D_0_P_0"
+                android:fillColor="?unknown_attr_ref: 7f04058a"
+                android:pathData=" M0 -3 C1.66,-3 3,-1.66 3,0 C3,1.66 1.66,3 0,3 C-1.66,3 -3,1.66 -3,0 C-3,-1.66 -1.66,-3 0,-3c "/>
+        </group>
+        <group
+            android:name="_R_G_L_0_G"
+            android:translateX="3"
+            android:translateY="27">
+            <path
+                android:name="_R_G_L_0_G_D_0_P_0"
+                android:fillColor="?unknown_attr_ref: 7f04058a"
+                android:pathData=" M0 -3 C1.66,-3 3,-1.66 3,0 C3,1.66 1.66,3 0,3 C-1.66,3 -3,1.66 -3,0 C-3,-1.66 -1.66,-3 0,-3c "/>
+        </group>
+    </group>
+</vector>

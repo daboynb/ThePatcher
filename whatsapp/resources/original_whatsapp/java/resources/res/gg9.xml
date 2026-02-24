@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="0x7f0b0c00"
+    android:paddingLeft="0x7f070392"
+    android:paddingRight="0x7f070392"
+    android:paddingBottom="0x7f070393"
+    android:clipChildren="false"
+    android:layout_width="match_parent"
+    android:layout_height="?unknown_attr_ref: 7f04000d">
+    <include layout="0x7f0e0427"/>
+    <include layout="0x7f0e0420"/>
+</RelativeLayout>

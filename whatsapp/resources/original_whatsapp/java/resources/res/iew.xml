@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="0x7f0b18a6"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ViewStub
+        android:layout_gravity="center"
+        android:id="0x7f0b1893"
+        android:layout="0x7f0e001c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <FrameLayout
+        android:id="0x7f0b18a3"
+        android:background="0x7f060790"
+        android:layout_width="match_parent"
+        android:layout_height="0x7f070b26"
+        android:layout_marginTop="0x7f07089b"
+        android:adjustViewBounds="true">
+        <ViewStub
+            android:layout_gravity="bottom"
+            android:id="0x7f0b18a4"
+            android:layout="0x7f0e0a38"
+            android:layout_width="match_parent"
+            android:layout_height="0x7f07089c"/>
+        <androidx.cardview.widget.CardView
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="0x7f070b26"
+            android:layout_height="match_parent"
+            app:NOT_FOUND_0xc="?unknown_attr_ref: 7f040a59"
+            app:NOT_FOUND_0xd="0x7f070b25"
+            app:NOT_FOUND_0xe="0dp">
+            <com.whatsapp.ui.coreui.components.button.ThumbnailButton
+                android:layout_gravity="center"
+                android:id="0x7f0b18a2"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:src="0x7f0801a4"
+                android:adjustViewBounds="true"
+                android:contentDescription="0x7f1241e1"
+                app:NOT_FOUND_0xf="true"
+                app:NOT_FOUND_0x10="0x7f0708da"
+                app:NOT_FOUND_0x11="true"/>
+        </androidx.cardview.widget.CardView>
+    </FrameLayout>
+</LinearLayout>
