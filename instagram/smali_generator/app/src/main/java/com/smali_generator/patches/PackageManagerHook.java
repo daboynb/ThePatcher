@@ -11,21 +11,79 @@ import android.util.Log;
 
 import com.smali_generator.Hook;
 
-import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.util.Collections;
+import java.util.IdentityHashMap;
+import java.util.Set;
 
 import lab.galaxy.yahfa.HookMain;
 
 
 public class PackageManagerHook implements Hook {
+
+    // Track SigningInfo objects belonging to Instagram so the method hooks know which to intercept
+    private static final Set<SigningInfo> instagramSigningInfos =
+            Collections.synchronizedSet(Collections.newSetFromMap(new IdentityHashMap<>()));
+
+    private static final Signature ORIGINAL_SIGNATURE = new Signature("{{PACKAGE_SIGNATURE}}");
+
+    private static void replaceSigningInfo(PackageInfo package_info) {
+        package_info.signatures = new Signature[]{ORIGINAL_SIGNATURE};
+        if (package_info.signingInfo == null) {
+            Log.i("PATCH", "PackageManagerHook: signingInfo is null, only replaced signatures");
+            return;
+        }
+        try {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.VANILLA_ICE_CREAM) {
+                package_info.signingInfo = new SigningInfo(2, Collections.singletonList(ORIGINAL_SIGNATURE), null, null);
+                Log.i("PATCH", "PackageManagerHook: signingInfo replaced via constructor (API 35+)");
+                return;
+            }
+        } catch (Exception e) {
+            Log.e("PATCH", "PackageManagerHook: SigningInfo constructor failed: " + e.getMessage());
+        }
+        // For API < 35: track this SigningInfo so getApkContentsSigners/getSigningCertificateHistory hooks intercept it
+        instagramSigningInfos.add(package_info.signingInfo);
+        Log.i("PATCH", "PackageManagerHook: tracked signingInfo for method hooks");
+    }
+
+    // --- SigningInfo.getApkContentsSigners() hook ---
+
+    static Signature[] getApkContentsSigners_backup(SigningInfo obj) {
+        Log.e("PATCH", "PackageManagerHook: WTF getApkContentsSigners_backup called");
+        return null;
+    }
+
+    static Signature[] getApkContentsSigners_hook(SigningInfo obj) {
+        if (instagramSigningInfos.contains(obj)) {
+            Log.i("PATCH", "PackageManagerHook: getApkContentsSigners intercepted -> returning original signature");
+            return new Signature[]{ORIGINAL_SIGNATURE};
+        }
+        return getApkContentsSigners_backup(obj);
+    }
+
+    // --- SigningInfo.getSigningCertificateHistory() hook ---
+
+    static Signature[] getSigningCertificateHistory_backup(SigningInfo obj) {
+        Log.e("PATCH", "PackageManagerHook: WTF getSigningCertificateHistory_backup called");
+        return null;
+    }
+
+    static Signature[] getSigningCertificateHistory_hook(SigningInfo obj) {
+        if (instagramSigningInfos.contains(obj)) {
+            Log.i("PATCH", "PackageManagerHook: getSigningCertificateHistory intercepted -> returning original signature");
+            return new Signature[]{ORIGINAL_SIGNATURE};
+        }
+        return getSigningCertificateHistory_backup(obj);
+    }
+
     static PackageInfo get_package_info_hook_backup(PackageManager obj, VersionedPackage package_name, int flags) {
         Log.e("PATCH", "PackageManagerHook: WTF get_package_info_hook_backup(VersionedPackage, int) called");
         return null;
     }
 
     static PackageInfo get_package_info_hook_backup(PackageManager obj, VersionedPackage package_name, PackageManager.PackageInfoFlags flags) {
-        Log.e("PATCH", "PackageManagerHook: WTF get_package_info_hook_backup(VersionedPackage, int) called");
+        Log.e("PATCH", "PackageManagerHook: WTF get_package_info_hook_backup(VersionedPackage, PackageInfoFlags) called");
         return null;
     }
 
@@ -56,27 +114,7 @@ public class PackageManagerHook implements Hook {
         Log.i("PATCH", "PackageManagerHook: package_info: " + package_info + ", package_name: " + package_name + ", flags: " + flags.getValue());
         if (package_name.equals("com.instagram.android") && ((flags.getValue() & 64) != 0 || (flags.getValue() & 0x8000000) != 0) && package_info != null) {
             Log.i("PATCH", "PackageManagerHook: Replacing package info...");
-            package_info.signatures = new Signature[]{new Signature("{{PACKAGE_SIGNATURE}}")};
-            try {
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.VANILLA_ICE_CREAM) {
-                    package_info.signingInfo = new SigningInfo(2, Collections.singletonList(new Signature("{{PACKAGE_SIGNATURE}}")), null, null);
-                } else {
-                    Class<?> SigningInfoClass = Class.forName("android.content.pm.SigningInfo");
-                    // Is this field actually exist?
-                    @SuppressLint("SoonBlockedPrivateApi") Field mSigningDetails = SigningInfoClass.getDeclaredField("mSigningDetails");
-                    mSigningDetails.setAccessible(true);
-                    Object signing_details = mSigningDetails.get(package_info.signingInfo);
-                    if (signing_details == null) {
-                        Log.e("PATCH", "PackageManagerHook: signing_details is null");
-                        return package_info;
-                    }
-                    Field signatures = signing_details.getClass().getDeclaredField("signatures");
-                    signatures.setAccessible(true);
-                    signatures.set(signing_details, new Signature[]{new Signature("{{PACKAGE_SIGNATURE}}")});
-                }
-            } catch (Exception e) {
-                Log.e("PATCH", "PackageManagerHook: Error: " + e.getMessage());
-            }
+            replaceSigningInfo(package_info);
         }
         return package_info;
     }
@@ -98,11 +136,11 @@ public class PackageManagerHook implements Hook {
         Log.i("PATCH", "PackageManagerHook: package_info: " + package_info + ", package_name: " + package_name + ", flags: " + flags);
         if (package_name.equals("com.instagram.android") && ((flags & 64) != 0 || (flags & 0x8000000) != 0) && package_info != null) {
             Log.i("PATCH", "PackageManagerHook: Replacing package info...");
-            package_info.signatures = new Signature[]{new Signature("{{PACKAGE_SIGNATURE}}")};
-            package_info.signingInfo = null;
+            replaceSigningInfo(package_info);
         }
         return package_info;
     }
+
     static PackageInfo get_package_info_hook(PackageManager obj, VersionedPackage versioned_package, int flags) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
             Log.e("PATCH", "PackageManagerHook: Unsupported flags type: " + flags);
@@ -113,23 +151,7 @@ public class PackageManagerHook implements Hook {
         Log.e("PATCH", "PackageManagerHook: package_info: " + package_info + ", package_name: " + package_name + ", flags: " + flags);
         if (package_name.equals("com.instagram.android") && ((flags & 64) != 0 || (flags & 0x8000000) != 0) && package_info != null) {
             Log.i("PATCH", "PackageManagerHook: Replacing package info...");
-            package_info.signatures = new Signature[]{new Signature("{{PACKAGE_SIGNATURE}}")};
-            try {
-                Class<?> SigningInfoClass = Class.forName("android.content.pm.SigningInfo");
-                // Is this field actually exist?
-                @SuppressLint("SoonBlockedPrivateApi") Field mSigningDetails = SigningInfoClass.getDeclaredField("mSigningDetails");
-                mSigningDetails.setAccessible(true);
-                Object signing_details = mSigningDetails.get(package_info.signingInfo);
-                if (signing_details == null) {
-                    Log.e("PATCH", "PackageManagerHook: signing_details is null");
-                    return package_info;
-                }
-                Field signatures = signing_details.getClass().getDeclaredField("signatures");
-                signatures.setAccessible(true);
-                signatures.set(signing_details, new Signature[]{new Signature("{{PACKAGE_SIGNATURE}}")});
-            } catch (Exception e) {
-                Log.e("PATCH", "PackageManagerHook: Error: " + e.getMessage());
-            }
+            replaceSigningInfo(package_info);
         }
         return package_info;
     }
@@ -144,33 +166,31 @@ public class PackageManagerHook implements Hook {
         Log.e("PATCH", "PackageManagerHook: package_info: " + package_info + ", package_name: " + package_name + ", flags: " + flags.getValue());
         if (package_name.equals("com.instagram.android") && ((flags.getValue() & 64) != 0 || (flags.getValue() & 0x8000000) != 0) && package_info != null) {
             Log.i("PATCH", "PackageManagerHook: Replacing package info...");
-            package_info.signatures = new Signature[]{new Signature("{{PACKAGE_SIGNATURE}}")};
-            try {
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.VANILLA_ICE_CREAM) {
-                    package_info.signingInfo = new SigningInfo(2, Collections.singletonList(new Signature("{{PACKAGE_SIGNATURE}}")), null, null);
-                } else {
-                    Class<?> SigningInfoClass = Class.forName("android.content.pm.SigningInfo");
-                    // Is this field actually exist?
-                    @SuppressLint("SoonBlockedPrivateApi") Field mSigningDetails = SigningInfoClass.getDeclaredField("mSigningDetails");
-                    mSigningDetails.setAccessible(true);
-                    Object signing_details = mSigningDetails.get(package_info.signingInfo);
-                    if (signing_details == null) {
-                        Log.e("PATCH", "PackageManagerHook: signing_details is null");
-                        return package_info;
-                    }
-                    Field signatures = signing_details.getClass().getDeclaredField("signatures");
-                    signatures.setAccessible(true);
-                    signatures.set(signing_details, new Signature[]{new Signature("{{PACKAGE_SIGNATURE}}")});
-                }
-            } catch (Exception e) {
-                Log.e("PATCH", "PackageManagerHook: Error: " + e.getMessage());
-            }
+            replaceSigningInfo(package_info);
         }
         return package_info;
     }
 
     public void load() {
         Log.i("PATCH", "PackageManagerHook: Patch loaded");
+
+        // Hook SigningInfo methods (getApkContentsSigners, getSigningCertificateHistory)
+        try {
+            Method hook = PackageManagerHook.class.getDeclaredMethod("getApkContentsSigners_hook", SigningInfo.class);
+            Method backup = PackageManagerHook.class.getDeclaredMethod("getApkContentsSigners_backup", SigningInfo.class);
+            Method original = SigningInfo.class.getDeclaredMethod("getApkContentsSigners");
+            HookMain.backupAndHook(original, hook, backup);
+            Log.i("PATCH", "PackageManagerHook: hooked SigningInfo.getApkContentsSigners()");
+
+            hook = PackageManagerHook.class.getDeclaredMethod("getSigningCertificateHistory_hook", SigningInfo.class);
+            backup = PackageManagerHook.class.getDeclaredMethod("getSigningCertificateHistory_backup", SigningInfo.class);
+            original = SigningInfo.class.getDeclaredMethod("getSigningCertificateHistory");
+            HookMain.backupAndHook(original, hook, backup);
+            Log.i("PATCH", "PackageManagerHook: hooked SigningInfo.getSigningCertificateHistory()");
+        } catch (Exception e) {
+            Log.e("PATCH", "PackageManagerHook: Error hooking SigningInfo methods: " + e.getMessage());
+        }
+
         try {
             @SuppressLint("PrivateApi") Class<?> ApplicationPackageManager = Class.forName("android.app.ApplicationPackageManager");
 
