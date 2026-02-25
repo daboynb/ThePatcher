@@ -1,9 +1,9 @@
 [submodule "whatsapp/smali_generator/library"]
 	path = whatsapp/smali_generator/library
-	url = https://github.com/PAGalaxyLab/YAHFA.git
+	url = https://github.com/Schwartzblat/YAHFA.git
 [submodule "telegram/smali_generator/library"]
 	path = telegram/smali_generator/library
-	url = https://github.com/PAGalaxyLab/YAHFA.git
+	url = https://github.com/Schwartzblat/YAHFA.git
 [submodule "instagram/smali_generator/library"]
 	path = instagram/smali_generator/library
-	url = https://github.com/PAGalaxyLab/YAHFA.git
+	url = https://github.com/Schwartzblat/YAHFA.git

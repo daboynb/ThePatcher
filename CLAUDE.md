@@ -27,9 +27,23 @@ python instagram/main.py -p ./Instagram.apk -o PatchedInstagram.apk
 cd <platform>/smali_generator && ./gradlew assembleRelease
 ```
 
-### Docker (from within a platform directory)
+### Build All (Docker)
 ```bash
-docker-compose run patcher -p /data/<App>.apk -o /data/Patched<App>.apk -t /tmp/<app>-temp
+# Build all three patchers sequentially
+./build.sh
+
+# Or build a single platform
+cd <platform> && docker compose up --build
+```
+
+### Docker (single platform, from within a platform directory)
+```bash
+docker compose run patcher -p /data/<App>.apk -o /data/Patched<App>.apk -t /tmp/<app>-temp
+```
+
+### Deploy to Device (per-platform, requires adb)
+```bash
+cd <platform> && ./deploy.sh
 ```
 
 ### Linting
@@ -57,7 +71,7 @@ The system is a two-layer pipeline:
 - `TheAmazingPatch.on_load()` is the injection entry point
 - Calls `init()` on each `Wrapper`, then `load()` on each `Hook`
 - All hooks use YAHFA (`HookMain.backupAndHook()`) for runtime method interception
-- YAHFA is included as a git submodule at `smali_generator/library/`
+- YAHFA is included as a git submodule at `smali_generator/library/`. The submodule must point to `Schwartzblat/YAHFA` (a cleaned fork with only the library module — `src/`, `CMakeLists.txt`), NOT the upstream `PAGalaxyLab/YAHFA` (which is the full repo with `demoApp/`, `settings.gradle`, etc. and causes `FAIL_ON_PROJECT_REPOS` build failures). The correct commit is `e2131c8`.
 
 ## Key Patterns
 

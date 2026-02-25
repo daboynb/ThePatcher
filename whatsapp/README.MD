@@ -1,41 +1,3 @@
-# WhatsApp Patcher
-
-WhatsApp patcher is a program that patches WhatsApp apk.
-
-## Features
-
-|            Feature             | Availability |
-|:------------------------------:|:------------:|
-|   Signature Verifier Bypass    |      ✔       |
-| Keep revoked for all messages  |      ✔       |
-| Option to save view once media |      ✔       |
-|   Profile Picture Screenshot   |      ✔       |
-
-There is support for apks, apkm and xapk files.
-
-## Requirements
-
-1. Python 3.11
-2. Java installed
-
-## Installation
-
-```bash
-git clone https://github.com/Schwartzblat/WhatsAppPatcher.git
-
-cd WhatsAppPatcher
-
-git submodule update --init --recursive
-```
-
-Requirements installation:
-
-```bash
-pip install -r requirements.txt
-# Until stitch is available on PyPI
-pip install --index-url https://test.pypi.org/simple/ stitch-test -U
-```
-
 ## Usage
 
 ```bash
@@ -59,12 +21,3 @@ To get a Google API key, follow these steps:
 7. Select "API Key" from the dropdown menu.
 8. Copy the generated API key and use it in the Moovit Patcher.
 9. Make sure to restrict the API key to your app's package name and SHA-1 certificate fingerprint for security.
-
-## Contributing
-
-If you want to add patches you can open an issue and I will implement it, or you can add patches yourself and open pull
-request.
-
-## Disclaimer
-
-For educational purpose only or something like that. I am not responsible for any misuse of this software.
