@@ -5,6 +5,7 @@ import android.util.Log;
 import com.smali_generator.patches.PackageManagerHook;
 import com.smali_generator.patches.ZipFileHook;
 import com.smali_generator.patches.ViewOnceHook;
+import com.smali_generator.patches.AdBlockerHook;
 
 import java.util.concurrent.atomic.AtomicBoolean;
 
@@ -16,6 +17,7 @@ public class TheAmazingPatch {
             new PackageManagerHook(),
             new ZipFileHook(),
             new ViewOnceHook(),
+            new AdBlockerHook(),
     };
 
     static AtomicBoolean is_loaded = new AtomicBoolean(false);
