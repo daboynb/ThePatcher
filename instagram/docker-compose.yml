@@ -3,4 +3,7 @@ services:
     build: .
     volumes:
       - ./:/data
+      - ./main.py:/app/main.py
+      - ./artifactory_generator:/app/artifactory_generator
+      - ./smali_generator:/app/smali_generator
     command: -p /data/Instagram.apk -o /data/PatchedInstagram.apk -t /tmp/instagram-temp

@@ -3,4 +3,7 @@ services:
     build: .
     volumes:
       - ./:/data
+      - ./main.py:/app/main.py
+      - ./artifactory_generator:/app/artifactory_generator
+      - ./smali_generator:/app/smali_generator
     command: -p /data/Telegram.apk -o /data/PatchedTelegram.apk -t /tmp/telegram-temp
