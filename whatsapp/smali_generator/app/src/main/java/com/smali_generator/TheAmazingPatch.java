@@ -3,8 +3,10 @@ package com.smali_generator;
 import android.util.Log;
 
 import com.smali_generator.patches.DecryptProtobuf;
+import com.smali_generator.patches.DriveAuthHook;
 import com.smali_generator.patches.FirebaseParams;
 import com.smali_generator.patches.PackageManagerHook;
+import com.smali_generator.patches.SignInInterceptHook;
 import com.smali_generator.patches.ZipFileHook;
 import com.smali_generator.wrappers.FMessage;
 
@@ -22,6 +24,8 @@ public class TheAmazingPatch {
             new PackageManagerHook(),
             new ZipFileHook(),
             new FirebaseParams(),
+            new DriveAuthHook(),
+            new SignInInterceptHook(),
     };
 
     static AtomicBoolean is_loaded = new AtomicBoolean(false);
