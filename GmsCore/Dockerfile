@@ -1,8 +1,9 @@
 FROM eclipse-temurin:17-jdk
 
-# Install utilities
+# Install git and utilities
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
+        git \
         wget \
         unzip \
     && rm -rf /var/lib/apt/lists/*
@@ -28,5 +29,8 @@ RUN keytool -genkey -v -keystore /root/.android/debug.keystore \
     -dname "CN=Android Debug,O=Android,C=US"
 
 WORKDIR /app
+
+# Copy the project
+COPY . .
 
 ENTRYPOINT ["/app/build_apk/build.sh"]
