@@ -22,6 +22,8 @@ python telegram/main.py -p ./Telegram.apk -o PatchedTelegram.apk
 python instagram/main.py -p ./Instagram.apk -o PatchedInstagram.apk
 ```
 
+The `-g` Google API key arg is optional for WhatsApp; it enables Google Maps features (OAuth bypass via `FirebaseParams` hook).
+
 ### Build Android Hook Module Only
 ```bash
 cd <platform>/smali_generator && ./gradlew assembleRelease
@@ -29,7 +31,7 @@ cd <platform>/smali_generator && ./gradlew assembleRelease
 
 ### Build All (Docker)
 ```bash
-# Build all three patchers sequentially
+# Build all three patchers sequentially (Instagram → Telegram → WhatsApp)
 ./build.sh
 
 # Or build a single platform
@@ -41,10 +43,11 @@ cd <platform> && docker compose up --build
 docker compose run patcher -p /data/<App>.apk -o /data/Patched<App>.apk -t /tmp/<app>-temp
 ```
 
-### Deploy to Device (per-platform, requires adb)
+### Deploy to Device (Telegram and Instagram only, requires adb)
 ```bash
 cd <platform> && ./deploy.sh
 ```
+WhatsApp has no `deploy.sh`.
 
 ### Linting
 ```bash
@@ -67,11 +70,14 @@ The system is a two-layer pipeline:
 5. A `ZipFileHook` redirects runtime `classes.dex` reads to `classes69.dex`
 6. The patched APK is signed and output
 
+WhatsApp has an additional `artifactory.py` caching wrapper that short-circuits `generate_artifactory` if a valid `artifactory.json` already exists.
+
 **Layer 2 — Java runtime hooks** (`smali_generator/`):
-- `TheAmazingPatch.on_load()` is the injection entry point
+- `TheAmazingPatch.on_load()` is the injection entry point (guarded by `AtomicBoolean` to prevent double-init)
 - Calls `init()` on each `Wrapper`, then `load()` on each `Hook`
 - All hooks use YAHFA (`HookMain.backupAndHook()`) for runtime method interception
 - YAHFA is included as a git submodule at `smali_generator/library/`. The submodule must point to `Schwartzblat/YAHFA` (a cleaned fork with only the library module — `src/`, `CMakeLists.txt`), NOT the upstream `PAGalaxyLab/YAHFA` (which is the full repo with `demoApp/`, `settings.gradle`, etc. and causes `FAIL_ON_PROJECT_REPOS` build failures). The correct commit is `e2131c8`.
+- Note: The `.gitmodules` in each platform uses SSH URLs for YAHFA, but the Dockerfile uses HTTPS `git clone` instead of `git submodule update`.
 
 ## Key Patterns
 
@@ -86,7 +92,9 @@ The system is a two-layer pipeline:
 
 **Obfuscation-resistant string fingerprinting**: For obfuscated APKs (WhatsApp, Instagram), finders locate classes by searching for known string constants in smali (e.g., `"Unable to parse map entry."`, `"photo_cant_load"`) rather than class names.
 
-**API-level branching**: `PackageManagerHook` branches on `Build.VERSION.SDK_INT` (API 28–35) because `PackageManager` signatures changed across Android versions.
+**API-level branching**: `PackageManagerHook` branches on `Build.VERSION.SDK_INT` (API 28–35) because `PackageManager` signatures changed across Android versions. Instagram's implementation differs significantly from WhatsApp/Telegram — it directly mutates `mSigningDetails` via reflection for pre-API-35, rather than using the tracked-`SigningInfo` pattern.
+
+**Docker cross-device workarounds**: Both the Dockerfile (patches `stitch/apk_utils.py` to use `shutil.move` + glob) and `entrypoint.sh` (redirects output to `/tmp` before copying) work around `os.rename` failing across Docker volume mount boundaries.
 
 ## Platform Differences
 
@@ -94,9 +102,12 @@ The system is a two-layer pipeline:
 |---|---|---|---|
 | Package check | `com.whatsapp` | `startsWith("org.telegram.messenger")` | `com.instagram.android` |
 | Finders | Signature, DexCopier, FMessage, DecryptProtobuf, FirebaseParams | Signature, DexCopier | Signature, DexCopier, MediaSaver, VideoSaver |
-| Extra CLI args | `-g` Google API key | — | — |
-| Cert location | `META-INF/*.DSA` | `*.DSA` and `*.RSA` | `META-INF/*.DSA` |
+| Extra CLI args | `-g` Google API key (optional) | — | — |
+| Cert search | `unknown/META-INF/*.DSA` only | `*.DSA` + `*.RSA` in `unknown/` + `original/` | `*.DSA` + `*.RSA` in `unknown/` + `original/` |
 | Wrappers | FMessage | None | None |
+| deploy.sh | No | Yes | Yes |
+| View-once mechanism | `DecryptProtobuf` hook (also anti-delete) | `ViewOnceHook` (saves + decrypts `.enc` files) | `MediaSaverHook` (photo) + `VideoSaverHook` (video download) |
+| `ActivityHook` | Defined but NOT registered | Defined but NOT registered | Not present |
 
 ## Android Build Config
 
@@ -104,6 +115,7 @@ The system is a two-layer pipeline:
 - Java package: `com.smali_generator` (all platforms)
 - Gradle wrapper is per-platform at `<platform>/smali_generator/gradlew`
 - `assembleRelease` copies the APK to `smali_generator/smali_generator.apk` for Stitch consumption
+- YAHFA library module: compileSdkVersion 36, native build via CMake, depends on `io.github.rk700:dlfunc:0.1.0`
 
 ## Version Tracking
 

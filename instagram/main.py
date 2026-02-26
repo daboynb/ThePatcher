@@ -8,6 +8,7 @@ from artifactory_generator.dex_copier import DexCopier
 from artifactory_generator.signature_finder import SignatureFinder
 from artifactory_generator.media_saver_finder import MediaSaverFinder
 from artifactory_generator.video_saver_finder import VideoSaverFinder
+from artifactory_generator.ad_blocker_finder import AdBlockerFinder
 
 
 def get_args():
@@ -44,6 +45,7 @@ def main():
         SignatureFinder(args),
         MediaSaverFinder(args),
         VideoSaverFinder(args),
+        AdBlockerFinder(args),
     ]
     with Stitch(
             apk_path=args.apk_path,

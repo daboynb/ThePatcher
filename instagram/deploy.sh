@@ -1,8 +1,14 @@
 #!/bin/bash
 set -e
 
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+cd "$SCRIPT_DIR"
+
 APK="PatchedInstagram.apk"
 PKG="com.instagram.android"
+
+echo "[*] Building patched APK with Docker..."
+docker compose up
 
 echo "[*] Installing $APK (keeping data)..."
 adb install -r -d "$APK"
