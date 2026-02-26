@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    android:padding="16dp">
+
+    <!-- Status card -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/surface"
+        android:padding="16dp"
+        android:layout_marginBottom="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/service_status_label"
+            android:textColor="@color/text_secondary"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/status_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="4dp" />
+    </LinearLayout>
+
+    <!-- Log viewer -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/log_label"
+        android:textColor="@color/text_secondary"
+        android:textSize="12sp"
+        android:layout_marginBottom="4dp" />
+
+    <ScrollView
+        android:id="@+id/log_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/log_background"
+        android:padding="8dp"
+        android:layout_marginBottom="12dp">
+
+        <TextView
+            android:id="@+id/log_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_secondary"
+            android:textSize="11sp"
+            android:fontFamily="monospace"
+            android:text="@string/log_empty" />
+    </ScrollView>
+
+    <!-- Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_accessibility"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/btn_open_accessibility"
+            android:layout_marginEnd="6dp" />
+
+        <Button
+            android:id="@+id/btn_clear_log"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/btn_clear_log"
+            android:layout_marginStart="6dp" />
+    </LinearLayout>
+
+</LinearLayout>

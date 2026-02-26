@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Background circle -->
+    <path
+        android:fillColor="#BB86FC"
+        android:pathData="M54,54m-40,0a40,40 0,1 1,80 0a40,40 0,1 1,-80 0" />
+    <!-- Speech bubble -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M38,36h32c2.2,0 4,1.8 4,4v20c0,2.2 -1.8,4 -4,4h-8l-8,8 -8,-8h-8c-2.2,0 -4,-1.8 -4,-4v-20c0,-2.2 1.8,-4 4,-4z" />
+    <!-- X mark (dismiss) -->
+    <path
+        android:fillColor="#BB86FC"
+        android:pathData="M48,43l12,12M60,43l-12,12"
+        android:strokeWidth="3"
+        android:strokeColor="#BB86FC" />
+</vector>

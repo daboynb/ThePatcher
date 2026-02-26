@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="assistant_dismiss_service_description">Automatically dismisses the Google Assistant overlay after a voice command plays music.</string>
+    <string name="app_name">Assistant Dismiss</string>
+    <string name="service_status_label">SERVICE STATUS</string>
+    <string name="status_active">Service ACTIVE</string>
+    <string name="status_inactive">Service NOT ACTIVE</string>
+    <string name="log_label">LOG</string>
+    <string name="log_empty">No log entries yet.</string>
+    <string name="btn_open_accessibility">Open Accessibility</string>
+    <string name="btn_clear_log">Clear Log</string>
+    <string name="notif_channel_name">Service Status</string>
+    <string name="notif_title">Assistant Dismiss</string>
+    <string name="notif_text">Service active</string>
+    <string name="dialog_accessibility_title">Accessibility service disabled</string>
+    <string name="dialog_accessibility_message">The accessibility service is not enabled. Assistant Dismiss needs it to work.\n\nOpen Accessibility settings to enable it?</string>
+    <string name="dialog_open_settings">Open Settings</string>
+    <string name="dialog_later">Later</string>
+    <string name="dialog_adb_title">Auto-restart not configured</string>
+    <string name="dialog_adb_message">Android disables the accessibility service after reboot. To fix this, run once via ADB:\n\nadb shell pm grant app.revanced.android.gms.assistant android.permission.WRITE_SECURE_SETTINGS\n\nAfter that, the service will re-enable itself automatically at boot.</string>
+    <string name="notif_boot_channel_name">Boot Alerts</string>
+    <string name="notif_boot_title">Assistant Dismiss disabled</string>
+    <string name="notif_boot_text">Tap to re-enable the accessibility service</string>
+</resources>
