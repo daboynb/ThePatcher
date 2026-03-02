@@ -1,7 +1,5 @@
 services:
   builder:
     build: .
-    environment:
-      - GRADLE_MICROG_VERSION_WITHOUT_GIT=1
     volumes:
       - ./:/app

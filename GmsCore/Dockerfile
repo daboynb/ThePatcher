@@ -1,6 +1,6 @@
 FROM eclipse-temurin:17-jdk
 
-# Install git and utilities
+# Install utilities
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
         git \
@@ -28,9 +28,8 @@ RUN keytool -genkey -v -keystore /root/.android/debug.keystore \
     -storepass android -keypass android \
     -dname "CN=Android Debug,O=Android,C=US"
 
-WORKDIR /app
+ENV GRADLE_MICROG_VERSION_WITHOUT_GIT=1
 
-# Copy the project
-COPY . .
+WORKDIR /app
 
 ENTRYPOINT ["/app/build_apk/build.sh"]
