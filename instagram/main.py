@@ -1,4 +1,5 @@
 import argparse
+import sys
 from pathlib import Path
 
 from stitch import Stitch
@@ -56,7 +57,24 @@ def main():
             should_sign=args.should_sign,
             extra_artifacts=extra_artifacts,
     ) as stitch:
-        stitch.patch()
+        try:
+            stitch.patch()
+        except RuntimeError as e:
+            print(f'\n[!] Finder error during scan:\n{e}', file=sys.stderr)
+            sys.exit(1)
+
+        errors = []
+        for finder in artifactory_list:
+            if hasattr(finder, 'validate'):
+                try:
+                    finder.validate()
+                except RuntimeError as e:
+                    errors.append(str(e))
+        if errors:
+            print(f'\n[!] {len(errors)} finder(s) failed after scan:', file=sys.stderr)
+            for err in errors:
+                print(f'\n{err}', file=sys.stderr)
+            sys.exit(1)
 
 
 if __name__ == '__main__':

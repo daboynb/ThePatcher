@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThePatcher</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="bg-mesh"></div>
+
+    <header>
+        <h1>ThePatcher</h1>
+        <p class="subtitle">APK Patcher &amp; Builder</p>
+    </header>
+
+    <main>
+        <!-- App Cards Grid -->
+        <div class="bento">
+
+            <!-- Instagram -->
+            <section class="app-card accent-instagram" data-patcher="instagram">
+                <div class="app-header">
+                    <div class="app-icon">IG</div>
+                    <div>
+                        <h2>Instagram</h2>
+                        <span class="app-tag">Patcher</span>
+                    </div>
+                </div>
+                <div class="features">
+                    <span class="chip chip-green">Signature Bypass</span>
+                    <span class="chip chip-blue">View-Once Save</span>
+                    <span class="chip chip-purple">Ad Blocker</span>
+                </div>
+                <div class="tested-badge">v416.0.0.47.66 <span class="tested-dim">(382206172)</span></div>
+                <p class="tested-warn">Other versions may not work &mdash; finders look up classes and methods by name and signature, which change across versions. Always test first.</p>
+                <div class="details">
+                    <h3>Features</h3>
+                    <ul>
+                        <li><b>View-Once</b> &mdash; saves photos (bitmap from ImageView) and videos (download from URL) to <code>Pictures/InstagramViewOnce/</code></li>
+                        <li><b>Ad Blocker</b> &mdash; blocks sponsored content insertion in the feed</li>
+                        <li><b>Signature Bypass</b> &mdash; spoofs original signature on API 28-35</li>
+                    </ul>
+                </div>
+                <div class="card-actions">
+                    <label class="file-drop">
+                        <input type="file" accept=".apk" class="apk-input" hidden>
+                        <span class="drop-text">Drop APK or click</span>
+                    </label>
+                    <button class="btn-patch" disabled>Patch</button>
+                </div>
+            </section>
+
+            <!-- WhatsApp -->
+            <section class="app-card accent-whatsapp" data-patcher="whatsapp">
+                <div class="app-header">
+                    <div class="app-icon">WA</div>
+                    <div>
+                        <h2>WhatsApp</h2>
+                        <span class="app-tag">Patcher</span>
+                    </div>
+                </div>
+                <div class="features">
+                    <span class="chip chip-green">Signature Bypass</span>
+                    <span class="chip chip-blue">View-Once Save</span>
+                    <span class="chip chip-red">Anti-Delete</span>
+                    <span class="chip chip-orange">Firebase Restore</span>
+                </div>
+                <div class="tested-badge">v2.26.7.70 <span class="tested-dim">(260707004)</span></div>
+                <p class="tested-warn">Other versions may not work &mdash; protobuf field names (<code>viewOnce_</code>, <code>key_</code>) and method signatures change across versions. Always test first.</p>
+                <div class="details">
+                    <h3>Features</h3>
+                    <ul>
+                        <li><b>View-Once</b> &mdash; flips <code>viewOnce_=false</code> on the decrypted protobuf, WhatsApp saves the media normally</li>
+                        <li><b>Anti-Delete</b> &mdash; invalidates delete messages by replacing the message ID with a dummy</li>
+                        <li><b>Firebase Restore</b> &mdash; re-signing the APK breaks Google Maps inside WhatsApp because the API key is tied to the original certificate. This patch extracts the original <code>google_api_key</code> from resources and injects it back at runtime, so location sharing and map previews keep working. Optional: you can also provide your own API key with Maps SDK + Places API enabled</li>
+                    </ul>
+                    <h3>Known Issue</h3>
+                    <ul class="bugs">
+                        <li><b>Google Drive backup broken</b> &mdash; patched APK has a different signature, so Google Drive rejects it (<a href="https://github.com/Schwartzblat/WhatsAppPatcher/issues/69" target="_blank" rel="noopener">#69</a>). A fix is available on the <code>experimental</code> branch (GMS bypass for Drive backup without Play Services) but still needs testing.</li>
+                    </ul>
+                </div>
+                <div class="card-actions">
+                    <div class="field-inline" id="wa-api-key-field">
+                        <input type="text" class="api-key-input" placeholder="Google API Key (optional)" autocomplete="off">
+                    </div>
+                    <label class="file-drop">
+                        <input type="file" accept=".apk" class="apk-input" hidden>
+                        <span class="drop-text">Drop APK or click</span>
+                    </label>
+                    <button class="btn-patch" disabled>Patch</button>
+                </div>
+            </section>
+
+            <!-- Telegram -->
+            <section class="app-card accent-telegram" data-patcher="telegram">
+                <div class="app-header">
+                    <div class="app-icon">TG</div>
+                    <div>
+                        <h2>Telegram</h2>
+                        <span class="app-tag">Patcher</span>
+                    </div>
+                </div>
+                <div class="features">
+                    <span class="chip chip-green">Signature Bypass</span>
+                    <span class="chip chip-blue">View-Once Save</span>
+                    <span class="chip chip-purple">Ad Blocker</span>
+                </div>
+                <div class="tested-badge">v12.4.3 <span class="tested-dim">(65279)</span></div>
+                <p class="tested-warn">Other versions may not work &mdash; Telegram is open-source but class names like <code>SecretMediaViewer</code> can change between major versions. Always test first.</p>
+                <div class="details">
+                    <h3>Features</h3>
+                    <ul>
+                        <li><b>View-Once</b> &mdash; hooks <code>SecretMediaViewer.openMedia()</code>, 4 file lookup strategies + <code>.enc</code> decryption, saves to <code>Pictures/TelegramViewOnce/</code> via MediaStore API</li>
+                        <li><b>Ad Blocker</b> &mdash; hooks <code>MessagesController.getSponsoredMessages()</code> and returns null, blocking sponsored messages from loading</li>
+                    </ul>
+                </div>
+                <div class="card-actions">
+                    <label class="file-drop">
+                        <input type="file" accept=".apk" class="apk-input" hidden>
+                        <span class="drop-text">Drop APK or click</span>
+                    </label>
+                    <button class="btn-patch" disabled>Patch</button>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- Jobs -->
+        <section class="card" id="jobs-section" style="display:none">
+            <h2>Jobs</h2>
+            <div id="jobs-list"></div>
+        </section>
+    </main>
+
+    <script>
+    const jobsSection = document.getElementById('jobs-section');
+    const jobsList = document.getElementById('jobs-list');
+    const activeJobs = new Set();
+
+    function escHtml(s) {
+        return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+    }
+
+    // File input -> enable patch button + show filename
+    document.querySelectorAll('.apk-input').forEach(input => {
+        input.addEventListener('change', () => {
+            const card = input.closest('.app-card');
+            const btn = card.querySelector('.btn-patch');
+            const dropText = card.querySelector('.drop-text');
+            if (input.files.length > 0) {
+                btn.disabled = false;
+                dropText.textContent = input.files[0].name;
+                card.querySelector('.file-drop').classList.add('has-file');
+            } else {
+                btn.disabled = true;
+                dropText.textContent = 'Drop APK or click';
+                card.querySelector('.file-drop').classList.remove('has-file');
+            }
+        });
+    });
+
+    // Drag & drop
+    document.querySelectorAll('.file-drop').forEach(drop => {
+        drop.addEventListener('dragover', e => { e.preventDefault(); drop.classList.add('drag-over'); });
+        drop.addEventListener('dragleave', () => drop.classList.remove('drag-over'));
+        drop.addEventListener('drop', e => {
+            e.preventDefault();
+            drop.classList.remove('drag-over');
+            const input = drop.querySelector('.apk-input');
+            if (e.dataTransfer.files.length > 0) {
+                input.files = e.dataTransfer.files;
+                input.dispatchEvent(new Event('change'));
+            }
+        });
+    });
+
+    // Patch buttons
+    document.querySelectorAll('.btn-patch').forEach(btn => {
+        btn.addEventListener('click', async () => {
+            const card = btn.closest('.app-card');
+            const patcher = card.dataset.patcher;
+            const fileInput = card.querySelector('.apk-input');
+            if (!fileInput.files.length) return;
+
+            btn.disabled = true;
+            btn.textContent = 'Uploading...';
+
+            const fd = new FormData();
+            fd.append('patcher', patcher);
+            fd.append('apk', fileInput.files[0]);
+
+            const apiKeyInput = card.querySelector('.api-key-input');
+            if (apiKeyInput && apiKeyInput.value.trim()) {
+                fd.append('google_api_key', apiKeyInput.value.trim());
+            }
+
+            try {
+                const res = await fetch('/patch', { method: 'POST', body: fd });
+                const data = await res.json();
+                if (data.error) {
+                    alert(data.error);
+                } else {
+                    trackJob(data.job_id, 'Patch ' + patcher);
+                }
+            } catch (err) {
+                alert('Request failed: ' + err.message);
+            }
+
+            btn.disabled = true;
+            btn.textContent = 'Patch';
+            fileInput.value = '';
+            card.querySelector('.drop-text').textContent = 'Drop APK or click';
+            card.querySelector('.file-drop').classList.remove('has-file');
+        });
+    });
+
+    function trackJob(jobId, label) {
+        jobsSection.style.display = '';
+        jobsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+        const el = document.createElement('div');
+        el.className = 'job';
+        el.id = 'job-' + escHtml(jobId);
+        el.innerHTML =
+            '<div class="job-header">' +
+                '<span class="job-label">' + escHtml(label) + '</span>' +
+                '<span class="job-id">' + escHtml(jobId) + '</span>' +
+                '<span class="job-status status-running">running</span>' +
+            '</div>' +
+            '<pre class="job-log"></pre>' +
+            '<div class="job-downloads"></div>';
+        jobsList.prepend(el);
+
+        activeJobs.add(jobId);
+        pollJob(jobId, 0);
+    }
+
+    async function pollJob(jobId, retries) {
+        if (!activeJobs.has(jobId)) return;
+
+        try {
+            const res = await fetch('/status/' + encodeURIComponent(jobId));
+            const data = await res.json();
+            const el = document.getElementById('job-' + jobId);
+            if (!el) return;
+
+            const logEl = el.querySelector('.job-log');
+            logEl.textContent = data.log;
+            logEl.scrollTop = logEl.scrollHeight;
+
+            const badge = el.querySelector('.job-status');
+            badge.textContent = data.status;
+            badge.className = 'job-status status-' + data.status;
+
+            if (data.status === 'done' && data.output_files.length > 0) {
+                const dl = el.querySelector('.job-downloads');
+                dl.innerHTML = data.output_files.map(f =>
+                    '<a class="dl-link" href="/download/' + encodeURIComponent(jobId) + '/' + encodeURIComponent(f) + '" download>' + escHtml(f) + '</a>'
+                ).join('');
+            }
+
+            if (data.status === 'running') {
+                setTimeout(() => pollJob(jobId, 0), 2000);
+            } else {
+                activeJobs.delete(jobId);
+            }
+        } catch {
+            if (retries < 30) {
+                setTimeout(() => pollJob(jobId, retries + 1), 3000);
+            } else {
+                activeJobs.delete(jobId);
+                const badge = document.querySelector('#job-' + jobId + ' .job-status');
+                if (badge) { badge.textContent = 'unreachable'; badge.className = 'job-status status-error'; }
+            }
+        }
+    }
+    </script>
+</body>
+</html>

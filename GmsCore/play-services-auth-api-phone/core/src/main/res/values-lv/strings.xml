@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="sms_user_consent_allow">Atļaut</string>
-    <string name="sms_user_consent_deny">Liegt</string>
-</resources>

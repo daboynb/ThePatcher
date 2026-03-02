@@ -14,10 +14,6 @@ Based on the work of [Schwartzblat](https://github.com/Schwartzblat):
 
 - **[PAGalaxyLab/YAHFA](https://github.com/PAGalaxyLab/YAHFA)** — "Yet Another Hook Framework for ART", the runtime method hooking engine used by all patchers to intercept Android method calls at runtime. Used via [Schwartzblat's fork](https://github.com/Schwartzblat/YAHFA).
 
-## GmsCore
-
-- **[microg/GmsCore](https://github.com/microg/GmsCore)** — Free implementation of Google Play Services. The GmsCore module in this project is a fork of [ReVanced/GmsCore](https://github.com/ReVanced/GmsCore), which is itself a fork of the original microG project.
-
 ## Telegram for Android
 
 - **[nicegram/Nicegram-Android](https://github.com/nicegram/Nicegram-Android)** — Modified Telegram client for Android. The `telegram/resources/telegram-android/` directory is based on Nicegram's source code, which is itself built on top of the official [DrKLO/Telegram](https://github.com/DrKLO/Telegram) source by Telegram LLC.

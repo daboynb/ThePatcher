@@ -1,0 +1,12 @@
+services:
+  webapp:
+    build: .
+    ports:
+      - "5000:5000"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ../:/repo:ro
+      - ./data:/app/data
+    environment:
+      HOST_WEBAPP_DIR: ${PWD}
+      BUILDKIT_PROGRESS: plain
