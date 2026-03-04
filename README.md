@@ -22,6 +22,20 @@ By using this software, you acknowledge and agree that:
 
 The `experimental` branch has a WIP GMS bypass for Google Drive backups — it does the full auth flow directly without needing Play Services. Also untested.
 
+<details>
+<summary>Google API Key (optional)</summary>
+
+You can optionally provide a Google API key to patch the OAuth bypass feature (needed for Google Maps features inside WhatsApp). The key can be entered in the webapp UI when patching WhatsApp.
+
+To get a key:
+
+1. Go to the [Google Cloud Console](https://console.cloud.google.com/)
+2. Create a new project or select an existing one
+3. Enable **Maps SDK for Android** and **Places API**
+4. Go to **Credentials** → **Create Credentials** → **API Key**
+5. Restrict the key to your app's package name and SHA-1 fingerprint
+</details>
+
 ### Telegram (`telegram/`) — *tested*
 - Signature bypass
 - View-once saving with `.enc` decryption
@@ -32,9 +46,16 @@ The `experimental` branch has a WIP GMS bypass for Google Drive backups — it d
 - View-once photo and video saving
 - Ad blocking in the feed
 
-## Build
+## How to Use
 
-All three patchers build via Docker.
+```bash
+cd webapp
+docker compose up --build
+```
+
+Then open [http://localhost:5000](http://localhost:5000), select a patcher, upload the APK, and download the patched version.
+
+![ThePatcher Web UI](docs/screenshot.png)
 
 ## Acknowledgements
 
