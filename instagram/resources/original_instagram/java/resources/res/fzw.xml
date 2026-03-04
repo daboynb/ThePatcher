@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
-    <item
-        android:state_pressed="true"
-        android:drawable="0x7f080134"/>
-    <item android:drawable="0x7f080133"/>
-</selector>

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.whatsapp.calling.ui.PeerAvatarLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:enabled="false"
-    android:layout_gravity="center"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:src="0x7f0801a4"
-    android:scaleType="fitCenter"
-    app:NOT_FOUND_0x6="0x7f070cc5"/>

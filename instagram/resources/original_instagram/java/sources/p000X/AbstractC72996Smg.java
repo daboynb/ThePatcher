@@ -1,9 +1,0 @@
-package p000X;
-
-import java.lang.ref.WeakReference;
-
-/* renamed from: X.Smg, reason: case insensitive filesystem */
-/* loaded from: classes12.dex */
-public abstract class AbstractC72996Smg implements YAC {
-    public static WeakReference A00;
-}

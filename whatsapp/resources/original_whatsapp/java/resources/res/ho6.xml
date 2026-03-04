@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.whatsapp.calling.ui.controls.view.RaiseHandButton xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="0x7f0b227b"
-    android:background="0x7f08087f"
-    android:padding="0x7f07102e"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"/>

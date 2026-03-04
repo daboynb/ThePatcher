@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ViewStub xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="0x7f0b3052"
-    android:layout="0x7f0e0585"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    style="0x7f1505d3"/>

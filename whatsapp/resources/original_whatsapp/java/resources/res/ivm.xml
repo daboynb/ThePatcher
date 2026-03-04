@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.whatsapp.status.ui.mentions.StatusMentionsView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:gravity="center"
-    android:layout_gravity="bottom"
-    android:id="0x7f0b291d"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:scaleType="center"
-    style="0x7f150006"/>

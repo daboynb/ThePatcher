@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.whatsapp.calling.ui.PeerAvatarLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:paddingLeft="0x7f070ce7"
-    android:paddingRight="0x7f070ce7"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:importantForAccessibility="no"/>

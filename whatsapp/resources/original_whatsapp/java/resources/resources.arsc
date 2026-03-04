@@ -1,8 +1,0 @@
-Error decode arsc
-java.io.IOException: Expected start of entry 1, expected offset: 0x2d93b0, actual: 0x2d93c0
-	at jadx.core.xmlgen.ParserStream.checkPos(ParserStream.java:125)
-	at jadx.core.xmlgen.ResTableBinaryParser.parseTypeChunk(ResTableBinaryParser.java:289)
-	at jadx.core.xmlgen.ResTableBinaryParser.parsePackage(ResTableBinaryParser.java:164)
-	at jadx.core.xmlgen.ResTableBinaryParser.decodeTableChunk(ResTableBinaryParser.java:111)
-	at jadx.core.xmlgen.ResTableBinaryParser.decode(ResTableBinaryParser.java:84)
-

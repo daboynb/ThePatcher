@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<View xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_gravity="bottom"
-    android:background="0x7f0801fa"
-    android:layout_width="match_parent"
-    android:layout_height="0x7f070bf2"
-    android:translationX="0x7f070cf3"
-    android:translationY="0x7f070c10"
-    android:layout_marginStart="0x7f070cf3"/>

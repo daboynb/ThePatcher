@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.whatsapp.status.playback.widget.StatusPlaybackCounterView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:textColor="0x7f060904"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:lines="1"
-    android:singleLine="true"
-    style="0x7f1505a9"/>

@@ -1,9 +1,0 @@
-.class public final LX/2Hg;
-.super LX/1JI;
-.source ""
-
-
-# instance fields
-.field public A00:I
-
-.field public A01:Z

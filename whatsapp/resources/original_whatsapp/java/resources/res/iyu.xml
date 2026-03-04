@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.AppCompatImageButton xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="0x7f0b3021"
-    android:background="@null"
-    android:layout_width="34dp"
-    android:layout_height="45dp"
-    app:NOT_FOUND_0x4="0dp"/>

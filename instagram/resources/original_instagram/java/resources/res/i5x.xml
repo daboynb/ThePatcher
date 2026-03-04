@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<inset xmlns:android="http://schemas.android.com/apk/res/android" android:inset="2dp">
-    <bitmap
-        android:src="0x7f0825e1"
-        android:tint="0x7f060185"/>
-</inset>

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.whatsapp.evolvedabout.ui.bubble.AboutChatViewBubble xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="0x7f0b0024"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:translationY="0x7f070032"
-    android:paddingStart="0x7f070031"
-    android:translationZ="0x7f070033"
-    app:NOT_FOUND_0x6="0"/>

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item
-        android:id="0x7f0b14c1"
-        android:title="0x7f123ea0"/>
-    <item
-        android:id="0x7f0b14c0"
-        android:title="0x7f123fed"/>
-</menu>

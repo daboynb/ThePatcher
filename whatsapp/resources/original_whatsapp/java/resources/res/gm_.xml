@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.whatsapp.conversation.ui.conversationrow.ConversationRowMediaControlView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="0x7f0b18d7"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:minHeight="0x7f0703ed"/>

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.airbnb.lottie.LottieAnimationView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_gravity="center"
-    android:id="0x7f0b1815"
-    android:layout_width="0x7f0703c3"
-    android:layout_height="0x7f0703c3"
-    android:elevation="1dp"/>

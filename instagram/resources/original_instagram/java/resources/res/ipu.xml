@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.facebook.fbui.drawable.custom.AppThemedDrawable xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fbui="http://schemas.android.com/apk/res-auto"
-    fbui:variant_dark="0x7f082ab0"
-    fbui:variant_light="0x7f082ab1"/>

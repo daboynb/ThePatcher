@@ -1,9 +1,0 @@
-.class public final LX/C5l;
-.super Ljava/lang/Object;
-.source ""
-
-
-# instance fields
-.field public A00:Landroid/view/View;
-
-.field public A01:Ljava/util/ArrayList;

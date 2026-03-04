@@ -1,9 +1,0 @@
-.class public final LX/Bay;
-.super LX/7Xa;
-.source ""
-
-
-# instance fields
-.field public A00:Landroid/content/Context;
-
-.field public A01:Lcom/instagram/common/ui/base/IgTextView;

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.facebook.fbui.drawable.custom.AppBitmapDrawable xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fbui="http://schemas.android.com/apk/res-auto"
-    android:height="0x7f070013"
-    android:width="0x7f070013"
-    fbui:fbui_gravity="0x11"
-    fbui:fbui_src="0x7f08212d"
-    fbui:fbui_tint="0x7f0600cb"/>

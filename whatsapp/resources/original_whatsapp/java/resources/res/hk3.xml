@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:gravity="left"
-    android:orientation="horizontal"
-    android:id="0x7f0b190a"
-    android:focusable="true"
-    android:clickable="true"
-    android:layout_width="match_parent"
-    android:layout_height="0x7f0708ae"/>

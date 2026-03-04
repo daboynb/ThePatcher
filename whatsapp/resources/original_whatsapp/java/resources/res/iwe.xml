@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.whatsapp.ui.coreui.base.WaImageView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:whatsapp="http://schemas.android.com/apk/res-auto"
-    android:background="0x7f08095d"
-    android:layout_width="0x7f070c6e"
-    android:layout_height="0x7f070c6e"
-    whatsapp:NOT_FOUND_0x3="0x7f080465"
-    whatsapp:NOT_FOUND_0x4="0x7f060503"/>

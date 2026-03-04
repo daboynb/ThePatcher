@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.whatsapp.conversation.ui.conversationrow.media.component.ControlFrameView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_gravity="center"
-    android:id="0x7f0b0ad9"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    app:NOT_FOUND_0x4="0x7f1504d4"/>

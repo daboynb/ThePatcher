@@ -1,7 +1,0 @@
-package p000X;
-
-/* renamed from: X.Ooz, reason: case insensitive filesystem */
-/* loaded from: classes9.dex */
-public interface InterfaceC63350Ooz {
-    boolean Dk4();
-}

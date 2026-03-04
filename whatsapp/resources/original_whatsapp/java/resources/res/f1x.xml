@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.whatsapp.camera.areffects.button.CameraArEffectsLottieButton xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="0x7f0b02cd"
-    android:focusable="true"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:nextFocusForward="0x7f0b27d8"/>

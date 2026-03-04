@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.whatsapp.settings.SettingsRowIconText xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:paddingTop="16dp"
-    android:paddingBottom="16dp"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    app:NOT_FOUND_0x4="?unknown_attr_ref: 7f040a46"
-    app:NOT_FOUND_0x5="0x7f080bbc"
-    app:NOT_FOUND_0x6="0x7f1203c0"/>

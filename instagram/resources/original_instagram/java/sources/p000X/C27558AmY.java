@@ -1,7 +1,0 @@
-package p000X;
-
-/* renamed from: X.AmY, reason: case insensitive filesystem */
-/* loaded from: classes6.dex */
-public final class C27558AmY {
-    public final B69 A00 = AbstractC27847ArD.A03(new C29203BVf(59));
-}

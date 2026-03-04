@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.whatsapp.ui.wds.components.banners.WDSBannerCompact xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:icon="0x7f080c8d"
-    android:id="0x7f0b132c"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    app:NOT_FOUND_0x4="2"
-    app:NOT_FOUND_0x5="0x7f122aa4"/>

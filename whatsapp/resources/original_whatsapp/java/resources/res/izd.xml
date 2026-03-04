@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.google.android.material.textfield.TextInputLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:whatsapp="http://schemas.android.com/apk/res-auto"
-    android:theme="0x7f1505d0"
-    android:id="0x7f0b0c7c"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    whatsapp:NOT_FOUND_0x4="true"/>

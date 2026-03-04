@@ -1,6 +1,0 @@
-package p000X;
-
-/* renamed from: X.HTu, reason: case insensitive filesystem */
-/* loaded from: classes8.dex */
-public class C38778HTu extends AbstractC40289Hy5 {
-}

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.whatsapp.conversation.ui.conversationrow.media.component.HdControlFrameView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_gravity="start|bottom"
-    android:id="0x7f0b13ad"
-    android:paddingBottom="0x7f071035"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:paddingStart="0x7f071030"
-    android:paddingEnd="0x7f071030"/>

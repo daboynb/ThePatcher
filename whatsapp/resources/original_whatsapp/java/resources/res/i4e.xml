@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <item
-        android:icon="0x7f0804b8"
-        android:id="0x7f0b1964"
-        android:title="0x7f123d5e"
-        android:contentDescription="0x7f123d5f"
-        app:showAsAction="never"/>
-</menu>

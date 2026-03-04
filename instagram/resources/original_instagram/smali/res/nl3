@@ -1,1 +1,0 @@
-window!==window.top||document.prerendering||Object.defineProperty(document,"prerendering",{value:!0,configurable:!0,writable:!0});

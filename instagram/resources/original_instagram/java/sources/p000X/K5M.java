@@ -1,9 +1,0 @@
-package p000X;
-
-import android.os.Bundle;
-
-/* loaded from: classes10.dex */
-public final class K5M {
-    public Bundle A00;
-    public boolean A01;
-}

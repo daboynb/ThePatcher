@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.whatsapp.avatar.ui.profilephoto.AvatarProfilePhotoImageView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:background="?unknown_attr_ref: 7f04076e"
-    android:focusable="true"
-    android:clickable="true"
-    android:layout_width="0x7f0700f6"
-    android:layout_height="0x7f0700f6"
-    android:layout_marginLeft="0x7f0700f8"
-    android:layout_marginRight="0x7f0700f8"/>

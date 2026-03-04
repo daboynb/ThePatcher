@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<set xmlns:android="http://schemas.android.com/apk/res/android"
-    android:interpolator="0x7f010089"
-    android:duration="0x7f0c0004">
-    <alpha
-        android:fromAlpha="1"
-        android:toAlpha="1"/>
-</set>

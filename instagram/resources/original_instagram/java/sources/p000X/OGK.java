@@ -1,7 +1,0 @@
-package p000X;
-
-/* loaded from: classes12.dex */
-public final class OGK {
-    public String A00;
-    public B69 A01;
-}

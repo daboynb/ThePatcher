@@ -1,1 +1,0 @@
-window.requestIdleCallback((function(){window.iabjs_unified_bridge.postMessage(JSON.stringify({method:"iabjs_idle_callback",payload:{},nonce:window.__iabjs_unified_bridge_nonce}))}));

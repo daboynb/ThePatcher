@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.whatsapp.ui.coreui.base.WaTextView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="0x7f0b25ec"
-    android:textIsSelectable="true"
-    style="0x7f150565"/>

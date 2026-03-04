@@ -1,7 +1,0 @@
-package p000X;
-
-/* renamed from: X.1D3, reason: invalid class name */
-/* loaded from: classes6.dex */
-public final class C1D3 {
-    public C46708IJm A00;
-}

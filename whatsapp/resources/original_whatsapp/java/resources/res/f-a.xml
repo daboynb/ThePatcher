@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.whatsapp.ui.coreui.components.SelectionCheckView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="0x7f0b267c"
-    android:layout_width="0x7f070c6e"
-    android:layout_height="0x7f070c6e"
-    app:NOT_FOUND_0x3="0"
-    app:NOT_FOUND_0x4="0x7f0b0a54"/>

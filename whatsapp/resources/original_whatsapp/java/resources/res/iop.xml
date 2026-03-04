@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.fragment.app.FragmentContainerView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:name="com.whatsapp.mediacomposer.ui.caption.CaptionFragment"
-    android:id="0x7f0b0787"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"/>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<shape xmlns:android="http://schemas.android.com/apk/res/android"
-    android:shape="ring"
-    android:useLevel="false"
-    android:innerRadius="0x7f0700b2"
-    android:thickness="0x7f070092">
-    <solid android:color="0x7f0600a8"/>
-</shape>

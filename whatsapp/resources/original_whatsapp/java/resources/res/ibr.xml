@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.google.android.material.chip.Chip xmlns:android="http://schemas.android.com/apk/res/android" xmlns:whatsapp="http://schemas.android.com/apk/res-auto"
-    android:textColor="?unknown_attr_ref: 7f04075b"
-    android:ellipsize="end"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginRight="0x7f070b62"
-    android:maxWidth="0x7f070c26"
-    whatsapp:NOT_FOUND_0x6="?unknown_attr_ref: 7f04074b"/>

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.whatsapp.ui.wds.components.button.WDSButton xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="0x7f1207ed"
-    android:textAllCaps="false"
-    app:NOT_FOUND_0x4="?unknown_attr_ref: 7f040a5c"
-    app:NOT_FOUND_0x5="1"
-    app:NOT_FOUND_0x6="small"/>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.whatsapp.expressions.ui.app.tray.expression.emoji.view.EmojiImageView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_gravity="center"
-    android:id="0x7f0b0eee"
-    android:background="?unknown_attr_ref: 7f04076d"
-    android:focusable="true"
-    android:layout_width="0x7f070541"
-    android:layout_height="0x7f070541"/>

@@ -1,8 +1,0 @@
-package p000X;
-
-import com.mcftypeholder.McfTypeHolder;
-
-/* renamed from: X.6b1, reason: invalid class name and case insensitive filesystem */
-/* loaded from: classes2.dex */
-public final class C166516b1 extends McfTypeHolder {
-}
